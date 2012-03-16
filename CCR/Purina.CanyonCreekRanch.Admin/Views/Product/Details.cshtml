@@ -1,0 +1,50 @@
+﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Product</legend>
+
+    <div class="display-label">Title</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">Description</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">Protein</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Protein)
+    </div>
+
+    <div class="display-label">Fat</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Fat)
+    </div>
+
+    <div class="display-label">Vitamins</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Vitamins)
+    </div>
+
+    <div class="display-label">Ingredientes</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ingredientes)
+    </div>
+
+    <div class="display-label">Nutrition</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nutrition)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
