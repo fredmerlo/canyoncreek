@@ -37,7 +37,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
 
         public ActionResult Create()
         {
-            ProductViewModel product = new ProductViewModel();
+            ProductModel product = new ProductModel();
             return View(product);
         } 
 
