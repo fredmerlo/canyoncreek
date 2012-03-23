@@ -11,19 +11,16 @@ namespace Purina.CanyonCreekRanch.Admin.Models
 {
   public class ProductModel
   {
-    private Product entity;
-
     public ProductModel() { }
 
     public ProductModel(Product product)
     {
       if (product != null)
       {
-        entity = product;
         Description = product.Description;
         Fat = product.Fat;
         Id = product.Id;
-        Ingredientes = product.Ingredientes;
+        Ingredients = product.Ingredients;
         Nutrition = product.Nutrition;
         ProductCategory = product.ProductCategory;
         Protein = product.Protein;
@@ -32,12 +29,10 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       }
     }
 
-    public Product Entity { get { return entity; } }
-
     public string Description { get; set; }
     public string Fat { get; set; }
     public int Id { get; set; }
-    public string Ingredientes { get; set; }
+    public string Ingredients { get; set; }
     public string Nutrition { get; set; }
     public string Protein { get; set; }
     public string Title { get; set; }
@@ -46,18 +41,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     [Display(Name="Category")]
     public Category ProductCategory { get; set; }
 
-    public IEnumerable<Category> Categories 
-    {
-      get
-      {
-        IEnumerable<Category> list = null;
-        using (var db = new CCRDb())
-        {
-          list = db.Categories.ToList<Category>();
-        }
-        return list;
-      }
-    }
+    public IEnumerable<Category> Categories { get; set; }
 
     public Product GetEntity()
     {
@@ -73,7 +57,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
         entity.Description = product.Description;
         entity.Fat = product.Fat;
         entity.Id = product.Id;
-        entity.Ingredientes = product.Ingredientes;
+        entity.Ingredients = product.Ingredients;
         entity.Nutrition = product.Nutrition;
         entity.ProductCategory = product.ProductCategory;
         entity.Protein = product.Protein;
