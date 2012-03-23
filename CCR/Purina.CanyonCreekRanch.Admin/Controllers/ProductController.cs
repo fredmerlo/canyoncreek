@@ -20,19 +20,19 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
           List<ProductModel> products = new List<ProductModel>();
 
           foreach (var product in repository.Products.ToList<Product>())
-            products.Add(new ProductModel(product));
+            products.Add(new ProductModel(product) { Categories = repository.Categories.ToList<Category>() });
 
             return View(products);
         }
 
         public ViewResult Details(int id)
         {
-            return View(new ProductModel(repository.Products.Find(id)));
+            return View(new ProductModel(repository.Products.Find(id)) { Categories = repository.Categories.ToList<Category>() });
         }
 
         public ActionResult Create()
         {
-            ProductModel product = new ProductModel();
+            ProductModel product = new ProductModel { Categories = repository.Categories.ToList<Category>() };
             return View(product);
         } 
 
@@ -41,7 +41,9 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                repository.Products.Add(product.GetEntity());
+                var entity = product.GetEntity();
+                entity.ProductCategory = repository.Categories.Find(entity.ProductCategory.Id);
+                repository.Products.Add(entity);
                 repository.SaveChanges();
                 return RedirectToAction("Index");  
             }
@@ -51,7 +53,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         
         public ActionResult Edit(int id)
         {
-            return View(new ProductModel(repository.Products.Find(id)));
+          return View(new ProductModel(repository.Products.Find(id)) { Categories = repository.Categories.ToList<Category>() });
         }
 
         [HttpPost]
@@ -59,7 +61,9 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                repository.Entry(product.GetEntity()).State = EntityState.Modified;
+                var entity = product.GetEntity();
+                entity.ProductCategory = repository.Categories.Find(entity.ProductCategory.Id);
+                repository.Entry(entity).State = EntityState.Modified;
                 repository.SaveChanges();
                 return RedirectToAction("Index");
             }

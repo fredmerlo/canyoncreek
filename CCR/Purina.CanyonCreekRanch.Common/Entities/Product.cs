@@ -13,7 +13,7 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     public string Protein { get; set; }
     public string Fat { get; set; }
     public string Vitamins { get; set; }
-    public string Ingredientes { get; set; }
+    public string Ingredients { get; set; }
     public string Nutrition { get; set; }
 
     public virtual Category ProductCategory { get; set; }
