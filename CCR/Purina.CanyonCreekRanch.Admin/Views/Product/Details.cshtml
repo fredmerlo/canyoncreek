@@ -1,4 +1,4 @@
-﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
+﻿@model Purina.CanyonCreekRanch.Admin.Models.ProductModel
 
 @{
     ViewBag.Title = "Details";
@@ -8,6 +8,11 @@
 
 <fieldset>
     <legend>Product</legend>
+
+    <div class="display-label">Category</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProductCategory.Name)
+    </div>
 
     <div class="display-label">Title</div>
     <div class="display-field">

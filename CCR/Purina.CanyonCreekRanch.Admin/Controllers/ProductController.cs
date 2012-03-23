@@ -13,27 +13,22 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
 { 
     public class ProductController : Controller
     {
-        private CCRDb db = new CCRDb();
-
-        //
-        // GET: /Product/
+        private CCRDb repository = new CCRDb();
 
         public ViewResult Index()
         {
-            return View(db.Products.ToList());
-        }
+          List<ProductModel> products = new List<ProductModel>();
 
-        //
-        // GET: /Product/Details/5
+          foreach (var product in repository.Products.ToList<Product>())
+            products.Add(new ProductModel(product));
+
+            return View(products);
+        }
 
         public ViewResult Details(int id)
         {
-            Product product = db.Products.Find(id);
-            return View(product);
+            return View(new ProductModel(repository.Products.Find(id)));
         }
-
-        //
-        // GET: /Product/Create
 
         public ActionResult Create()
         {
@@ -41,70 +36,53 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
             return View(product);
         } 
 
-        //
-        // POST: /Product/Create
-
         [HttpPost]
-        public ActionResult Create(Product product)
+        public ActionResult Create(ProductModel product)
         {
             if (ModelState.IsValid)
             {
-                db.Products.Add(product);
-                db.SaveChanges();
+                repository.Products.Add(product.GetEntity());
+                repository.SaveChanges();
                 return RedirectToAction("Index");  
             }
 
             return View(product);
         }
         
-        //
-        // GET: /Product/Edit/5
- 
         public ActionResult Edit(int id)
         {
-            Product product = db.Products.Find(id);
-            return View(product);
+            return View(new ProductModel(repository.Products.Find(id)));
         }
 
-        //
-        // POST: /Product/Edit/5
-
         [HttpPost]
-        public ActionResult Edit(Product product)
+        public ActionResult Edit(ProductModel product)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(product).State = EntityState.Modified;
-                db.SaveChanges();
+                repository.Entry(product.GetEntity()).State = EntityState.Modified;
+                repository.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(product);
         }
-
-        //
-        // GET: /Product/Delete/5
  
         public ActionResult Delete(int id)
         {
-            Product product = db.Products.Find(id);
-            return View(product);
+            return View(new ProductModel(repository.Products.Find(id)));
         }
-
-        //
-        // POST: /Product/Delete/5
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {            
-            Product product = db.Products.Find(id);
-            db.Products.Remove(product);
-            db.SaveChanges();
+            Product product = repository.Products.Find(id);
+            repository.Products.Remove(product);
+            repository.SaveChanges();
             return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
         {
-            db.Dispose();
+            repository.Dispose();
             base.Dispose(disposing);
         }
     }
