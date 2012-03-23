@@ -1,4 +1,4 @@
-﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
+﻿@model Purina.CanyonCreekRanch.Admin.Models.ProductModel
 
 @{
     ViewBag.Title = "Edit";
@@ -16,6 +16,13 @@
 
         @Html.HiddenFor(model => model.Id)
 
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ProductCategory)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.ProductCategory.Id, new SelectList(Model.Categories, "Id", "Name"))
+            @Html.ValidationMessageFor(model => model.ProductCategory)
+        </div>
         <div class="editor-label">
             @Html.LabelFor(model => model.Title)
         </div>

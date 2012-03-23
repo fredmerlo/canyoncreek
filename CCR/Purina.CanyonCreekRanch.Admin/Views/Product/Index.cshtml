@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Purina.CanyonCreekRanch.Common.Entities.Product>
+﻿@model IEnumerable<Purina.CanyonCreekRanch.Admin.Models.ProductModel>
 
 @{
     ViewBag.Title = "Index";
@@ -11,6 +11,9 @@
 </p>
 <table>
     <tr>
+        <th>
+            Category
+        </th>
         <th>
             Title
         </th>
@@ -37,6 +40,9 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductCategory.Name)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
         </td>
