@@ -5,6 +5,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
+using Purina.CanyonCreekRanch.Admin.Models;
 using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Controllers
@@ -13,90 +15,75 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
     {
         private CCRDb db = new CCRDb();
 
-        //
-        // GET: /Guarantee/
-
         public ViewResult Index()
         {
-            return View(db.Guarantees.ToList());
-        }
+          List<GuaranteeModel> guarantees = new List<GuaranteeModel>();
 
-        //
-        // GET: /Guarantee/Details/5
+          foreach (var guarantee in db.Guarantees.ToList<Guarantee>())
+            guarantees.Add(new GuaranteeModel(guarantee) { Products = db.Products.ToList<Product>() });
+
+          return View(guarantees);
+        }
 
         public ViewResult Details(int id)
         {
-            Guarantee guarantee = db.Guarantees.Find(id);
-            return View(guarantee);
+          return View(new GuaranteeModel(db.Guarantees.Find(id)) { Products = db.Products.ToList<Product>() });
         }
-
-        //
-        // GET: /Guarantee/Create
 
         public ActionResult Create()
         {
-            return View();
-        } 
-
-        //
-        // POST: /Guarantee/Create
+          GuaranteeModel guarantee = new GuaranteeModel { Products = db.Products.ToList<Product>() };
+          return View(guarantee);
+        }
 
         [HttpPost]
-        public ActionResult Create(Guarantee guarantee)
+        public ActionResult Create(GuaranteeModel guarantee)
         {
-            if (ModelState.IsValid)
-            {
-                db.Guarantees.Add(guarantee);
-                db.SaveChanges();
-                return RedirectToAction("Index");  
-            }
+          if (ModelState.IsValid)
+          {
+            var entity = guarantee.GetEntity();
+            entity.Product = db.Products.Find(entity.Product.Id);
+            db.Guarantees.Add(entity);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+          }
 
-            return View(guarantee);
+          return View(guarantee);
         }
-        
-        //
-        // GET: /Guarantee/Edit/5
- 
+
         public ActionResult Edit(int id)
         {
-            Guarantee guarantee = db.Guarantees.Find(id);
-            return View(guarantee);
-        }
+          GuaranteeModel guarantee = new GuaranteeModel(db.Guarantees.Find(id)) { Products = db.Products.ToList<Product>() };
+          return View(guarantee);
 
-        //
-        // POST: /Guarantee/Edit/5
+        }
 
         [HttpPost]
-        public ActionResult Edit(Guarantee guarantee)
+        public ActionResult Edit(GuaranteeModel guarantee)
         {
-            if (ModelState.IsValid)
-            {
-                db.Entry(guarantee).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(guarantee);
+          if (ModelState.IsValid)
+          {
+            var entity = guarantee.GetEntity();
+            entity.Product = db.Products.Find(entity.Product.Id);
+            db.Entry(entity).State = EntityState.Modified;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+          }
+          return View(guarantee);
         }
 
-        //
-        // GET: /Guarantee/Delete/5
- 
         public ActionResult Delete(int id)
         {
-            Guarantee guarantee = db.Guarantees.Find(id);
-            return View(guarantee);
+          return View(new GuaranteeModel(db.Guarantees.Find(id)));
         }
-
-        //
-        // POST: /Guarantee/Delete/5
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
-        {            
-            Guarantee guarantee = db.Guarantees.Find(id);
-            db.Guarantees.Remove(guarantee);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+        {
+          Guarantee guarantee = db.Guarantees.Find(id);
+          db.Guarantees.Remove(guarantee);
+          db.SaveChanges();
+          return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
