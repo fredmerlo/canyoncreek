@@ -1,4 +1,4 @@
-﻿@model Purina.CanyonCreekRanch.Common.Entities.Guarantee
+﻿@model Purina.CanyonCreekRanch.Admin.Models.GuaranteeModel
 
 @{
     ViewBag.Title = "Delete";
@@ -9,6 +9,11 @@
 <h3>Are you sure you want to delete this?</h3>
 <fieldset>
     <legend>Guarantee</legend>
+
+    <div class="display-label">Product</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.GuarnateeProduct.Description)
+    </div>
 
     <div class="display-label">Analysis</div>
     <div class="display-field">
