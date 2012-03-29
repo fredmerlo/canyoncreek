@@ -17,7 +17,7 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     public string Nutrition { get; set; }
 
     public virtual Category ProductCategory { get; set; }
-    public virtual Feed FeedingTable { get; set; }
-    public virtual Guarantee GuaranteeTable { get; set; }
+    public virtual ICollection<Feed> FeedingTable { get; set; }
+    public virtual ICollection<Guarantee> GuaranteeTable { get; set; }
   }
 }

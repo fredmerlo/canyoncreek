@@ -11,5 +11,7 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     public string Analysis { get; set; }
     public string Percent { get; set; }
     public string Description { get; set; }
+
+    public virtual Product Product { get; set; }
   }
 }
