@@ -1,0 +1,30 @@
+﻿@model Purina.CanyonCreekRanch.Common.Entities.Guarantee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Guarantee</legend>
+
+    <div class="display-label">Analysis</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Analysis)
+    </div>
+
+    <div class="display-label">Percent</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Percent)
+    </div>
+
+    <div class="display-label">Description</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

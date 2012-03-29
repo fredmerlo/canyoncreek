@@ -17,7 +17,17 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     {
       base.OnModelCreating(modelBuilder);
 
-      modelBuilder.Entity<Product>().HasRequired<Category>(p => p.ProductCategory);
+      modelBuilder.Entity<Product>()
+        .HasRequired<Category>(p => p.ProductCategory);
+
+      modelBuilder.Entity<Feed>()
+        .HasRequired(f => f.Product)
+        .WithMany(p => p.FeedingTable);
+
+      modelBuilder.Entity<Guarantee>()
+        .HasRequired(g => g.Product)
+        .WithMany(p => p.GuaranteeTable);
+
     }
   }
 }
