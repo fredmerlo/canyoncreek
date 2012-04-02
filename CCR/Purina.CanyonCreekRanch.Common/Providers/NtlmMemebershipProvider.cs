@@ -21,10 +21,6 @@ namespace Purina.CanyonCreekRanch.Common.Providers
   {
     [DllImport("ADVAPI32.dll", EntryPoint = "LogonUserW", SetLastError = true, CharSet = CharSet.Auto)]
     public static extern bool LogonUser(string lpszUsername, string lpszDomain, string lpszPassword, int dwLogonType, int dwLogonProvider, ref IntPtr phToken);
-    [DllImport("ADVAPI32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-    public static extern int DuplicateToken(IntPtr hToken,int impersonationLevel,ref IntPtr hNewToken);
-    [DllImport("ADVAPI32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-    public static extern bool RevertToSelf();
     [DllImport("KERNEL32.dll", CharSet = CharSet.Auto)]
     public static extern bool CloseHandle(IntPtr handle);
 
@@ -85,15 +81,6 @@ namespace Purina.CanyonCreekRanch.Common.Providers
         default:
           throw new ProviderException("Password format not supported.");
       }
-
-      //// Get encryption and decryption key information from the configuration.
-      //Configuration cfg = WebConfigurationManager.OpenWebConfiguration(System.Web.Hosting.HostingEnvironment.ApplicationVirtualPath);
-      //machineKey = (MachineKeySection)cfg.GetSection("system.web/machineKey");
-
-      //if (machineKey.ValidationKey.Contains("AutoGenerate"))
-      //  if (PasswordFormat != MembershipPasswordFormat.Clear)
-      //    throw new ProviderException("Hashed or Encrypted passwords " +
-      //                                "are not supported with auto-generated keys.");
     }
 
 
@@ -266,15 +253,9 @@ namespace Purina.CanyonCreekRanch.Common.Providers
       IntPtr token = IntPtr.Zero;
       bool result = false;
 
-      if (RevertToSelf())
+      if (LogonUser(userName, domainName, password, 2, 0, ref token))
       {
-        if (LogonUser(userName, domainName, password, 2, 0, ref token))
-        {
-          if(WindowsIdentity.Impersonate(token) != null)
-          {
-            result = true;
-          }
-        }
+        result = true;
       }
 
       if (token != IntPtr.Zero)
