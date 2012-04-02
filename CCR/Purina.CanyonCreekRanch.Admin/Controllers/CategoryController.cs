@@ -9,20 +9,15 @@ using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Controllers
 { 
+    [Authorize]
     public class CategoryController : Controller
     {
         private CCRDb db = new CCRDb();
-
-        //
-        // GET: /Category/
 
         public ViewResult Index()
         {
             return View(db.Categories.ToList());
         }
-
-        //
-        // GET: /Category/Details/5
 
         public ViewResult Details(int id)
         {
@@ -30,16 +25,10 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
             return View(category);
         }
 
-        //
-        // GET: /Category/Create
-
         public ActionResult Create()
         {
             return View();
         } 
-
-        //
-        // POST: /Category/Create
 
         [HttpPost]
         public ActionResult Create(Category category)
@@ -54,17 +43,11 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
             return View(category);
         }
         
-        //
-        // GET: /Category/Edit/5
- 
         public ActionResult Edit(int id)
         {
             Category category = db.Categories.Find(id);
             return View(category);
         }
-
-        //
-        // POST: /Category/Edit/5
 
         [HttpPost]
         public ActionResult Edit(Category category)
@@ -78,17 +61,11 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
             return View(category);
         }
 
-        //
-        // GET: /Category/Delete/5
- 
         public ActionResult Delete(int id)
         {
             Category category = db.Categories.Find(id);
             return View(category);
         }
-
-        //
-        // POST: /Category/Delete/5
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)

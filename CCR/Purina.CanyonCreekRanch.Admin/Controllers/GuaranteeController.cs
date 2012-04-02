@@ -11,6 +11,7 @@ using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Controllers
 { 
+    [Authorize]
     public class GuaranteeController : Controller
     {
         private CCRDb db = new CCRDb();
