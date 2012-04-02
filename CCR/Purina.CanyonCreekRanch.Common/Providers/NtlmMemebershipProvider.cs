@@ -1,18 +1,9 @@
-﻿using System.Web.Security;
-using System.Configuration.Provider;
+﻿using System;
 using System.Collections.Specialized;
-using System;
-using System.Data;
-using System.Data.Odbc;
-using System.Configuration;
+using System.Configuration.Provider;
 using System.Diagnostics;
-using System.Web;
-using System.Globalization;
-using System.Security.Cryptography;
-using System.Security.Principal;
-using System.Text;
-using System.Web.Configuration;
 using System.Runtime.InteropServices;
+using System.Web.Security;
 
 namespace Purina.CanyonCreekRanch.Common.Providers
 {
