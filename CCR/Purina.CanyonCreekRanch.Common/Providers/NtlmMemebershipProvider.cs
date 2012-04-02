@@ -24,12 +24,8 @@ namespace Purina.CanyonCreekRanch.Common.Providers
     [DllImport("KERNEL32.dll", CharSet = CharSet.Auto)]
     public static extern bool CloseHandle(IntPtr handle);
 
-    private int newPasswordLength = 8;
     private string eventSource = "NtlmMembershipProvider";
     private string eventLog = "Application";
-    private string exceptionMessage = "An exception occurred. Please check the Event Log.";
-    private string connectionString;
-    private MachineKeySection machineKey;
     private bool writeExceptionsToEventLog;
 
     public bool WriteExceptionsToEventLog
