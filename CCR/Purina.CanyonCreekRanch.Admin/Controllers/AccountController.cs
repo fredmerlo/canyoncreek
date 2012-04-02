@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
+using System.Security.Principal;
 using Purina.CanyonCreekRanch.Admin.Models;
 
 namespace Purina.CanyonCreekRanch.Admin.Controllers
@@ -31,6 +32,8 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         if (Membership.ValidateUser(model.UserName, model.Password))
         {
           FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
+          HttpContext.User = new GenericPrincipal(WindowsIdentity.GetCurrent(), null);
+
           if (Url.IsLocalUrl(returnUrl) && returnUrl.Length > 1 && returnUrl.StartsWith("/")
               && !returnUrl.StartsWith("//") && !returnUrl.StartsWith("/\\"))
           {
