@@ -1,22 +1,15 @@
 ﻿using System;
 using System.Collections.Specialized;
 using System.Configuration.Provider;
-using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.Web.Security;
+
+using Purina.CanyonCreekRanch.Common.Native;
 
 namespace Purina.CanyonCreekRanch.Common.Providers
 {
 
   public sealed class NtlmMembershipProvider : MembershipProvider
   {
-    [DllImport("ADVAPI32.dll", EntryPoint = "LogonUserW", SetLastError = true, CharSet = CharSet.Auto)]
-    public static extern bool LogonUser(string lpszUsername, string lpszDomain, string lpszPassword, int dwLogonType, int dwLogonProvider, ref IntPtr phToken);
-    [DllImport("KERNEL32.dll", CharSet = CharSet.Auto)]
-    public static extern bool CloseHandle(IntPtr handle);
-
-    private string eventSource = "NtlmMembershipProvider";
-    private string eventLog = "Application";
     private bool writeExceptionsToEventLog;
 
     public bool WriteExceptionsToEventLog
@@ -235,20 +228,7 @@ namespace Purina.CanyonCreekRanch.Common.Providers
 
     public override bool ValidateUser(string username, string password)
     {
-      string domainName = GetDomainName(username);
-      string userName = GetUsername(username);
-      IntPtr token = IntPtr.Zero;
-      bool result = false;
-
-      if (LogonUser(userName, domainName, password, 2, 0, ref token))
-      {
-        result = true;
-      }
-
-      if (token != IntPtr.Zero)
-        CloseHandle(token);
-
-      return result;
+      return NativeMethods.Logon(GetUsername(username), GetDomainName(username), password);
     }
 
     public override MembershipUserCollection FindUsersByName(string usernameToMatch, int pageIndex, int pageSize, out int totalRecords)
@@ -306,19 +286,5 @@ namespace Purina.CanyonCreekRanch.Common.Providers
         return usernameDomain;
       }
     } 
-
-    private void WriteToEventLog(Exception e, string action)
-    {
-      EventLog log = new EventLog();
-      log.Source = eventSource;
-      log.Log = eventLog;
-
-      string message = "An exception occurred communicating with the data source.\n\n";
-      message += "Action: " + action + "\n\n";
-      message += "Exception: " + e.ToString();
-
-      log.WriteEntry(message);
-    }
-
   }
 }
