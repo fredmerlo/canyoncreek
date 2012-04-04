@@ -64,8 +64,10 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         {
           if (ModelState.IsValid)
           {
-            var entity = guarantee.GetEntity();
-            entity.Product = db.Products.Find(entity.Product.Id);
+            var entity = db.Guarantees.Find(guarantee.Id);
+            guarantee.GuarnateeProduct = db.Products.Find(guarantee.GuarnateeProduct.Id);
+            guarantee.MapEntity(entity);
+
             db.Entry(entity).State = EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");

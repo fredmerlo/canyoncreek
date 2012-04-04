@@ -48,5 +48,17 @@ namespace Purina.CanyonCreekRanch.Admin.Models
 
       return entity;
     }
+
+    public void MapEntity(Guarantee entity)
+    {
+      if (entity != null)
+      {
+        entity.Analysis = Analysis;
+        entity.Description = Description;
+        entity.Id = Id;
+        entity.Percent = Percent;
+        entity.Product = GuarnateeProduct;
+      }
+    }
   }
 }

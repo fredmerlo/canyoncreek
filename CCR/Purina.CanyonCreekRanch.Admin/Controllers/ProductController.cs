@@ -43,7 +43,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var entity = product.GetEntity();
-                entity.ProductCategory = db.Categories.Find(entity.ProductCategory.Id);
+                entity.ProductCategory = db.Categories.Find(product.ProductCategory.Id);
                 db.Products.Add(entity);
                 db.SaveChanges();
                 return RedirectToAction("Index");  
@@ -62,11 +62,13 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var entity = product.GetEntity();
-                entity.ProductCategory = db.Categories.Find(entity.ProductCategory.Id);
-                db.Entry(entity).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+              var entity = db.Products.Find(product.Id);
+              product.ProductCategory = db.Categories.Find(product.ProductCategory.Id);
+              product.MapEntity(entity);
+
+              db.Entry<Product>(entity).State = EntityState.Modified;
+              db.SaveChanges();
+              return RedirectToAction("Index");
             }
             return View(product);
         }

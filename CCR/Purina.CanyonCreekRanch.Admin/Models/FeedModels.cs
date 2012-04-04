@@ -51,5 +51,16 @@ namespace Purina.CanyonCreekRanch.Admin.Models
 
       return entity;
     }
+
+    public void MapEntity(Feed entity)
+    {
+      if (entity != null)
+      {
+        entity.Amount = Amount;
+        entity.Id = Id;
+        entity.Product = FeedProduct;
+        entity.Weight = Weight;
+      }
+    }
   }
 }

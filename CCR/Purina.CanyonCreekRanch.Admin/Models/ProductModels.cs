@@ -39,6 +39,9 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     [Required()]
     public string Title { get; set; }
     public string Vitamins { get; set; }
+
+    public List<FeedModel> FeedTable { get; set; }
+    public List<GuaranteeModel> GuaranteeTable { get; set; }
     
     [Display(Name="Category")]
     public Category ProductCategory { get; set; }
@@ -68,6 +71,22 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       }
 
       return entity;
+    }
+
+    public void MapEntity(Product entity)
+    {
+      if (entity != null)
+      {
+        entity.Description = Description;
+        entity.Fat = Fat;
+        entity.Id = Id;
+        entity.Ingredients = Ingredients;
+        entity.Nutrition = Nutrition;
+        entity.ProductCategory = ProductCategory;
+        entity.Protein = Protein;
+        entity.Title = Title;
+        entity.Vitamins = Vitamins;
+      }
     }
   }
 }
