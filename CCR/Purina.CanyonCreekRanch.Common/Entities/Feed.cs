@@ -9,6 +9,8 @@ namespace Purina.CanyonCreekRanch.Common.Entities
   {
     public int Id { get; set; }
     public string Weight { get; set; }
-    public string Ammount { get; set; }
+    public string Amount { get; set; }
+
+    public virtual Product Product { get; set; }
   }
 }

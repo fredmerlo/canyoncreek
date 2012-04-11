@@ -11,28 +11,29 @@ using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Controllers
 { 
+    [Authorize]
     public class ProductController : Controller
     {
-        private CCRDb repository = new CCRDb();
+        private CCRDb db = new CCRDb();
 
         public ViewResult Index()
         {
           List<ProductModel> products = new List<ProductModel>();
 
-          foreach (var product in repository.Products.ToList<Product>())
-            products.Add(new ProductModel(product) { Categories = repository.Categories.ToList<Category>() });
+          foreach (var product in db.Products.ToList<Product>())
+            products.Add(new ProductModel(product) { Categories = db.Categories.ToList<Category>() });
 
             return View(products);
         }
 
         public ViewResult Details(int id)
         {
-            return View(new ProductModel(repository.Products.Find(id)) { Categories = repository.Categories.ToList<Category>() });
+            return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.ToList<Category>() });
         }
 
         public ActionResult Create()
         {
-            ProductModel product = new ProductModel { Categories = repository.Categories.ToList<Category>() };
+            ProductModel product = new ProductModel { Categories = db.Categories.ToList<Category>() };
             return View(product);
         } 
 
@@ -42,9 +43,9 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var entity = product.GetEntity();
-                entity.ProductCategory = repository.Categories.Find(entity.ProductCategory.Id);
-                repository.Products.Add(entity);
-                repository.SaveChanges();
+                entity.ProductCategory = db.Categories.Find(product.ProductCategory.Id);
+                db.Products.Add(entity);
+                db.SaveChanges();
                 return RedirectToAction("Index");  
             }
 
@@ -53,7 +54,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         
         public ActionResult Edit(int id)
         {
-          return View(new ProductModel(repository.Products.Find(id)) { Categories = repository.Categories.ToList<Category>() });
+          return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.ToList<Category>() });
         }
 
         [HttpPost]
@@ -61,32 +62,34 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var entity = product.GetEntity();
-                entity.ProductCategory = repository.Categories.Find(entity.ProductCategory.Id);
-                repository.Entry(entity).State = EntityState.Modified;
-                repository.SaveChanges();
-                return RedirectToAction("Index");
+              var entity = db.Products.Find(product.Id);
+              product.ProductCategory = db.Categories.Find(product.ProductCategory.Id);
+              product.MapEntity(entity);
+
+              db.Entry<Product>(entity).State = EntityState.Modified;
+              db.SaveChanges();
+              return RedirectToAction("Index");
             }
             return View(product);
         }
  
         public ActionResult Delete(int id)
         {
-            return View(new ProductModel(repository.Products.Find(id)));
+            return View(new ProductModel(db.Products.Find(id)));
         }
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {            
-            Product product = repository.Products.Find(id);
-            repository.Products.Remove(product);
-            repository.SaveChanges();
+            Product product = db.Products.Find(id);
+            db.Products.Remove(product);
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
         {
-            repository.Dispose();
+            db.Dispose();
             base.Dispose(disposing);
         }
     }
