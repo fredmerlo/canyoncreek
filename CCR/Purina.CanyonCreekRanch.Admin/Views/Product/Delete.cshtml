@@ -20,35 +20,17 @@
         @Html.DisplayFor(model => model.Title)
     </div>
 
+    <div class="display-label">Subtitle</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Subtitle)
+    </div>
+
     <div class="display-label">Description</div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Description)
     </div>
 
-    <div class="display-label">Protein</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Protein)
-    </div>
 
-    <div class="display-label">Fat</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Fat)
-    </div>
-
-    <div class="display-label">Vitamins</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Vitamins)
-    </div>
-
-    <div class="display-label">Ingredients</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Ingredients)
-    </div>
-
-    <div class="display-label">Nutrition</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Nutrition)
-    </div>
 </fieldset>
 @using (Html.BeginForm()) {
     <p>

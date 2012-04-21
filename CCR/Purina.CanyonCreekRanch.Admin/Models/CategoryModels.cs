@@ -15,13 +15,19 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     {
       if (category != null)
       {
+        FriendlyUrl = category.FriendlyUrl;
         Id = category.Id;
         Name = category.Name;
+        Subtitle = category.Subtitle;
+        Title = category.Title;
       }
     }
 
+    public string FriendlyUrl { get; set; }
     public int Id { get; set; }
     public string Name { get; set; }
+    public string Subtitle { get; set; }
+    public string Title { get; set; }
 
     List<ProductModel> Products { get; set; }
 
@@ -36,8 +42,11 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       if (category != null)
       {
         entity = new Category();
+        entity.FriendlyUrl = category.FriendlyUrl;
         entity.Id = category.Id;
         entity.Name = category.Name;
+        entity.Subtitle = category.Subtitle;
+        entity.Title = category.Title;
       }
 
       return entity;

@@ -24,9 +24,18 @@
         <div class="editor-label">
             @Html.LabelFor(model => model.Title)
         </div>
+
         <div class="editor-field">
             @Html.EditorFor(model => model.Title)
             @Html.ValidationMessageFor(model => model.Title)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Subtitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Subtitle)
+            @Html.ValidationMessageFor(model => model.Subtitle)
         </div>
 
         <div class="editor-label">
@@ -38,27 +47,27 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Protein)
+            @Html.LabelFor(model => model.Image1)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Protein)
-            @Html.ValidationMessageFor(model => model.Protein)
+            @Html.EditorFor(model => model.Image1)
+            @Html.ValidationMessageFor(model => model.Image1)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Fat)
+            @Html.LabelFor(model => model.Image2)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Fat)
-            @Html.ValidationMessageFor(model => model.Fat)
+            @Html.EditorFor(model => model.Image2)
+            @Html.ValidationMessageFor(model => model.Image2)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Vitamins)
+            @Html.LabelFor(model => model.Image3)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Vitamins)
-            @Html.ValidationMessageFor(model => model.Vitamins)
+            @Html.EditorFor(model => model.Image3)
+            @Html.ValidationMessageFor(model => model.Image3)
         </div>
 
         <div class="editor-label">

@@ -18,22 +18,10 @@
             Title
         </th>
         <th>
+            Subtitle
+        </th>
+        <th>
             Description
-        </th>
-        <th>
-            Protein
-        </th>
-        <th>
-            Fat
-        </th>
-        <th>
-            Vitamins
-        </th>
-        <th>
-            Ingredients
-        </th>
-        <th>
-            Nutrition
         </th>
         <th></th>
     </tr>
@@ -47,22 +35,10 @@
             @Html.DisplayFor(modelItem => item.Title)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Subtitle)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Protein)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fat)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Vitamins)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ingredients)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nutrition)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
