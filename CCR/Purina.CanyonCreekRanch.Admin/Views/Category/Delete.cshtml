@@ -14,6 +14,17 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.Name)
     </div>
+
+    <div class="display-label">Title</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">Subtitle</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Subtitle)
+    </div>
+
 </fieldset>
 @using (Html.BeginForm()) {
     <p>

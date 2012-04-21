@@ -18,27 +18,29 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       if (product != null)
       {
         Description = product.Description;
-        Fat = product.Fat;
         Id = product.Id;
+        Image1 = product.Image1;
+        Image2 = product.Image2;
+        Image3 = product.Image3;
         Ingredients = product.Ingredients;
         Nutrition = product.Nutrition;
         ProductCategory = product.ProductCategory;
-        Protein = product.Protein;
         Title = product.Title;
-        Vitamins = product.Vitamins;
+        Subtitle = product.SubTitle;
       }
     }
 
     [Required()]
     public string Description { get; set; }
-    public string Fat { get; set; }
     public int Id { get; set; }
+    public string Image1 { get; set; }
+    public string Image2 { get; set; }
+    public string Image3 { get; set; }
     public string Ingredients { get; set; }
     public string Nutrition { get; set; }
-    public string Protein { get; set; }
     [Required()]
     public string Title { get; set; }
-    public string Vitamins { get; set; }
+    public string Subtitle { get; set; }
 
     public List<FeedModel> FeedTable { get; set; }
     public List<GuaranteeModel> GuaranteeTable { get; set; }
@@ -60,14 +62,15 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       {
         entity = new Product();
         entity.Description = product.Description;
-        entity.Fat = product.Fat;
         entity.Id = product.Id;
+        entity.Image1 = product.Image1;
+        entity.Image2 = product.Image2;
+        entity.Image3 = product.Image3;
         entity.Ingredients = product.Ingredients;
         entity.Nutrition = product.Nutrition;
         entity.ProductCategory = product.ProductCategory;
-        entity.Protein = product.Protein;
+        entity.SubTitle = product.Subtitle;
         entity.Title = product.Title;
-        entity.Vitamins = product.Vitamins;
       }
 
       return entity;
@@ -78,14 +81,15 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       if (entity != null)
       {
         entity.Description = Description;
-        entity.Fat = Fat;
         entity.Id = Id;
+        entity.Image1 = Image1;
+        entity.Image2 = Image2;
+        entity.Image3 = Image3;
         entity.Ingredients = Ingredients;
         entity.Nutrition = Nutrition;
         entity.ProductCategory = ProductCategory;
-        entity.Protein = Protein;
+        entity.SubTitle = Subtitle;
         entity.Title = Title;
-        entity.Vitamins = Vitamins;
       }
     }
   }
