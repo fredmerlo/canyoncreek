@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -56,7 +56,7 @@
             <li class="dogs">
               <a href="natural-food-for-dogs.html">Natural Food For Dogs</a> <!-- Begin Dog Dropdown -->
 
-              <ul id="dogs">
+              <ul id="dogs" class="menu">
                 <li><img src="img/shared/nav-selected.png" class="selected" /></li>
 
                 <li>
@@ -122,7 +122,7 @@
             <li class="cats">
               <a href="natural-food-for-cats.html">Natural Food For Cats</a> <!-- Begin Cat Dropdown -->
 
-              <ul id="cats">
+              <ul id="cats" class="menu">
                 <li><img src="img/shared/nav-selected.png" class="selected" /></li>
 
                 <li>
@@ -188,14 +188,14 @@
             <li class="snacks">
               <a href="snacks.html">Snacks</a> <!-- Begin Snacks Dropdown -->
 
-              <ul id="snacks">
+              <ul id="snacks" class="menu">
                 <li><img src="img/shared/nav-selected.png" class="selected" /></li>
 
                 <li>
                   <p>Explore the world of Canyon Creek Ranch <strong>TREATS &#187;</strong></p>
                 </li>
 
-                <li>
+                <li class="ie_nav_fix">
                   <ul>
                     <li><a href="snacks-detail.html" class="product_category">Category Name</a></li>
 
@@ -299,7 +299,7 @@
             <li class="health">
               <a href="health-and-nutrition.html">Health &amp; Nutrition</a> <!-- Begin Health Dropdown -->
 
-              <ul id="health">
+              <ul id="health" class="menu">
                 <li><img src="img/shared/nav-selected.png" class="selected" /></li>
 
                 <li>
@@ -330,7 +330,7 @@
             <li class="story">
               <a href="our-story.html">Our Story</a>
 
-              <ul id="story">
+              <ul id="story" class="menu">
                 <li><img src="img/shared/nav-selected.png" class="selected" /></li>
 
                 <li>
@@ -365,25 +365,65 @@
       </div><!-- End Content Wrap -->
     </div><!-- End Header -->
     <!-- Begin Content -->
+
     <div id="content" class="home">
       <!-- Begin Content Wrap -->
 
       <div class="wrap">
-        <!-- Begin Slideshow -->
+        <!-- Begin Home Left Navigation --><a class="prev arrows left"></a><!-- End Home Left Navigation -->
+         <!-- Begin Featured -->
 
-        <div class="slideshow">
-          <!-- Slide 1 -->
+        <div class="featured slide">
+          <!-- Begin Slider Images -->
 
-          <div id="slide1">
-            <h3>A better way is on the horizon</h3>
+          <div id="home_slider">
+            <!-- Begin Slide 1 -->
 
-            <p>There's a spirit that defines us at Canyon Creek Ranch. It’s about being wide open to possibilities, setting forth in a new direction, pioneering a new way of doing things.</p>
+            <div class="slide1">
+              <h3>A better way is on the horizon</h3>
 
-            <p>We create natural pet food and healthy pet snacks for pets and owners just like us.</p>
+              <p>There's a spirit that defines us at Canyon Creek Ranch. It’s about being wide open to possibilities, setting forth in a new direction, pioneering a new way of doing things.</p>
 
-            <h5><a href="our-story.html">LEARN the canyon creek ranch story &#187;</a></h5>
-          </div><!-- End Slide 1 -->
-        </div><!-- End Slideshow -->
+              <p>We create natural pet food and healthy pet snacks for pets and owners just like us.</p>
+
+              <h5><a href="our-story.html">LEARN the canyon creek ranch story &#187;</a></h5>
+            </div><!-- End Slide 1 -->
+            <!-- Begin Slide 2 -->
+
+            <div class="slide2">
+              <h3>A better way is on the horizon</h3>
+
+              <p>There's a spirit that defines us at Canyon Creek Ranch. It’s about being wide open to possibilities, setting forth in a new direction, pioneering a new way of doing things.</p>
+
+              <p>We create natural pet food and healthy pet snacks for pets and owners just like us.</p>
+
+              <h5><a href="our-story.html">LEARN the canyon creek ranch story &#187;</a></h5>
+            </div><!-- End Slide 2 -->
+            <!-- Begin Slide 3 -->
+
+            <div class="slide3">
+              <h3>A better way is on the horizon</h3>
+
+              <p>There's a spirit that defines us at Canyon Creek Ranch. It’s about being wide open to possibilities, setting forth in a new direction, pioneering a new way of doing things.</p>
+
+              <p>We create natural pet food and healthy pet snacks for pets and owners just like us.</p>
+
+              <h5><a href="our-story.html">LEARN the canyon creek ranch story &#187;</a></h5>
+            </div><!-- End Slide 3 -->
+          </div><!-- End Slider Images -->
+          <!-- Begin Slider Navigation -->
+
+          <div id="home_slider_nav">
+            <div class="navi">
+              <a class="home_tab"><span class="tiny_white_text">OUR STORY</span><br />
+              <span class="align_left paddingtop10">A better way is on the horizon™</span></a> <a class="home_tab"><span class="tiny_white_text">HEALTH &amp; NUTRITION</span><br />
+              <span class="align_left paddingtop10">Nourish the bond you share.</span></a> <a class="home_tab"><span class="tiny_white_text">SNACKS</span><br />
+              <span class="align_left paddingtop10">Any journey is better with your best friend.</span></a>
+            </div>
+          </div><!-- End Slider Navigation -->
+        </div><!-- End Featured -->
+        <!-- Begin Home Right Navigation --><a class="next arrows right"></a><!-- End Home Right Navigation -->
+        <hr />
         <!-- Begin Left Column -->
 
         <div class="leftcol">
@@ -430,64 +470,66 @@
           </div>
         </div><!-- End Right Column -->
       </div><!-- End Content -->
-      <!-- Begin Footer -->
-
-      <div id="footer">
-        <!-- Begin Footer Content Wrap -->
-
-        <div class="wrap">
-          <!-- Begin Footer Left Column -->
-
-          <div class="leftcol">
-            <div id="accolades">
-              <p>&#8220;Of course my life is busy. But one thing I never worry about is my dogs' nutrition. I choose premium pet food so that I know they have the very best... and that they'll be around for a long time&#8221;</p><span class="small_grey_text">&#8212;Cheryl Calcaterra, with Maverick and Charlie</span>
-            </div>
-          </div><!-- End Footer Left Column -->
-          <!-- Begin Footer Right Column -->
-
-          <div class="rightcol">
-            <h6>WHAT’S HAPPENING</h6>
-
-            <ul id="whats_happening">
-              <li><a href="#">Article title About Natural Pet Food &#187;</a></li>
-
-              <li><a href="#">Article title that is really long and goes two lines About Natural Pet Food &#187;</a></li>
-
-              <li><a href="#">Article About Natural Pet Food &#187;</a></li>
-            </ul>
-          </div><!-- End Footer Right Column -->
-          <!-- Begin Full Width Column -->
-
-          <div class="fullcol">
-            <!-- Begin Newsletter Signup -->
-
-            <div id="newsletter">
-              <p>Looking for the latest canyon creek ranch news, from product information to special offers?</p>
-
-              <form>
-                <label class="medium_white_text">Begin the Journey</label> <input type="text" value="Enter your email address" class="blur" /> <input type="submit" value="SUBMIT &#187;" />
-              </form>
-            </div><!-- End Newsletter Signup -->
-            <!-- Begin Footer Nav -->
-
-            <div id="footer_nav">
-              <ul>
-                <li><a href="contact.html">Contact</a></li>
-
-                <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
-
-                <li class="last"><a href="site-map.html">Site Map</a></li>
-              </ul>
-            </div><!-- End Footer Nav -->
-            <!-- Begin Legal -->
-
-            <div id="legal">
-              <p>All trademarks and other intellectual properties on this site are owned by Société des Produits Nestlé S.A., Vevey, Switzerland or are used with permission.</p>
-            </div><!-- End Legal -->
-          </div><!-- End Full Width Column -->
-        </div><!-- End Footer Content Wrap -->
-      </div><!-- End Footer -->
     </div><!-- End Content Wrap -->
+    <!-- Begin Footer -->
+
+    <div id="footer">
+      <!-- Begin Footer Content Wrap -->
+
+      <div class="wrap">
+        <!-- Begin Footer Left Column -->
+
+        <div class="leftcol">
+          <div id="accolades">
+            <p>&#8220;Of course my life is busy. But one thing I never worry about is my dogs' nutrition. I choose premium pet food so that I know they have the very best... and that they'll be around for a long time&#8221;</p><span class="small_grey_text">&#8212;Cheryl Calcaterra, with Maverick and Charlie</span>
+          </div>
+        </div><!-- End Footer Left Column -->
+        <!-- Begin Footer Right Column -->
+
+        <div class="rightcol">
+          <h6>WHAT’S HAPPENING</h6>
+
+          <ul id="whats_happening">
+            <li><a href="#">Article title About Natural Pet Food &#187;</a></li>
+
+            <li><a href="#">Article title that is really long and goes two lines About Natural Pet Food &#187;</a></li>
+
+            <li><a href="#">Article About Natural Pet Food &#187;</a></li>
+          </ul>
+        </div><!-- End Footer Right Column -->
+        <!-- Begin Full Width Column -->
+
+        <div class="fullcol">
+          <!-- Begin Newsletter Signup -->
+
+          <div id="newsletter">
+            <p>Looking for the latest canyon creek ranch news, from product information to special offers?</p>
+
+            <form>
+              <label class="medium_white_text">Begin the Journey</label> <input type="text" value="Enter your email address" class="blur" /> <input type="submit" value="SUBMIT &#187;" />
+            </form>
+          </div><!-- End Newsletter Signup -->
+          <!-- Begin Footer Nav -->
+
+          <div id="footer_nav">
+            <ul>
+              <li><a href="contact.html">Contact</a></li>
+
+              <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+
+              <li class="last"><a href="site-map.html">Site Map</a></li>
+            </ul>
+          </div><!-- End Footer Nav -->
+          <!-- Begin Legal -->
+
+          <div id="legal">
+            <p>All trademarks and other intellectual properties on this site are owned by Société des Produits Nestlé S.A., Vevey, Switzerland or are used with permission.</p>
+          </div><!-- End Legal -->
+        </div><!-- End Full Width Column -->
+      </div><!-- End Footer Content Wrap -->
+    </div><!-- End Footer -->
   </div><!-- End Content Container -->
 </body>
 </html>
+
+<!-- Localized -->
