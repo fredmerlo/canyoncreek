@@ -109,7 +109,12 @@ p {
 body {
 	width:100%
 }
-
+#container {
+	background-color:#fefefe;
+	background-image:url(../img/shared/background.jpg);
+	background-position:bottom left;
+	background-repeat:repeat-x;
+}
 .fullcol {
 	float:left;
 	position:relative;
@@ -175,7 +180,8 @@ body {
 	list-style:none;
 	position:relative;
 	text-align:right;
-	top:30px
+	top:30px;
+	*top: 0;
 }
 
 #header ul#links li a {
@@ -191,14 +197,15 @@ body {
 
 #header #nav ul {
 	position:absolute;
-	top:105px
+	top:105px;
+	_z-index: 999;
 }
 
 #header #nav ul li {
 	float:left;
 	border-right:1px #999694 solid;
 	padding:0 14px;
-	text-transform:uppercase
+	text-transform:uppercase;
 }
 
 #header #nav ul li a {
@@ -222,10 +229,10 @@ body {
 }
 
 #header #nav ul li.dogs a.selected {
-	background-image:url(../img/shared/nav-main-selected.jpg);
+	/*background-image:url(../img/shared/nav-main-selected.jpg);
 	background-position:bottom center;
 	background-position-y:28px;
-	background-repeat:no-repeat;
+	background-repeat:no-repeat;*/
 	color:#819ac1
 }
 
@@ -234,10 +241,6 @@ body {
 }
 
 #header #nav ul li.cats a.selected {
-	background-image:url(../img/shared/nav-main-selected.jpg);
-	background-position:bottom center;
-	background-position-y:28px;
-	background-repeat:no-repeat;
 	color:#ce7b72
 }
 
@@ -246,10 +249,6 @@ body {
 }
 
 #header #nav ul li.snacks a.selected {
-	background-image:url(../img/shared/nav-main-selected.jpg);
-	background-position:bottom center;
-	background-position-y:28px;
-	background-repeat:no-repeat;
 	color:#90af5e
 }
 
@@ -258,10 +257,6 @@ body {
 }
 
 #header #nav ul li.health a.selected {
-	background-image:url(../img/shared/nav-main-selected.jpg);
-	background-position:bottom center;
-	background-position-y:28px;
-	background-repeat:no-repeat;
 	color:#c69f47
 }
 
@@ -270,23 +265,19 @@ body {
 }
 
 #header #nav ul li.story a.selected {
-	background-image:url(../img/shared/nav-main-selected.jpg);
-	background-position:bottom center;
-	background-position-y:28px;
-	background-repeat:no-repeat;
 	color:#bfb2a3
 }
 
 #header #nav ul li ul#dogs {
 	background-image:url(../img/shared/nav-dogs.png);
 	background-repeat:repeat-x;
-	display:none;
 	height:338px;
+	left: 0;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
 	top:25px;
-	width:620px
+	width:625px
 }
 
 #header #nav ul li ul#dogs img.selected {
@@ -298,7 +289,6 @@ body {
 #header #nav ul li ul#cats {
 	background-image:url(../img/shared/nav-cats.png);
 	background-repeat:repeat-x;
-	display:none;
 	height:338px;
 	left:0;
 	margin:0;
@@ -317,14 +307,16 @@ body {
 #header #nav ul li ul#snacks {
 	background-image:url(../img/shared/nav-snacks.png);
 	background-repeat:repeat-x;
-	display:none;
 	height:338px;
 	left:0;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
 	top:25px;
-	width:924px
+	width:924px;
+}
+#header #nav ul li ul#snacks li ul li a {
+	*font-size: 10px;
 }
 
 #header #nav ul li ul#snacks img.selected {
@@ -336,7 +328,6 @@ body {
 #header #nav ul li ul#health {
 	background-image:url(../img/shared/nav-health-nutrition.png);
 	background-repeat:repeat-x;
-	display:none;
 	height:246px;
 	left:486px;
 	margin:0;
@@ -355,7 +346,6 @@ body {
 #header #nav ul li ul#story {
 	background-image:url(../img/shared/nav-our-story.png);
 	background-repeat:repeat-x;
-	display:none;
 	height:246px;
 	left:486px;
 	margin:0;
@@ -381,8 +371,12 @@ body {
 	font-size:15px;
 	font-style:italic;
 	font-weight:400;
-	letter-spacing:.1em;
-	line-height:29px
+	letter-spacing:.08em;
+	letter-spacing:normal\0/;
+	*letter-spacing:normal;
+	line-height:29px;
+	*margin-left:-28px;
+	
 }
 
 #header #nav ul li ul#health p,#header #nav ul li ul#story p {
@@ -392,7 +386,9 @@ body {
 	font-size:15px;
 	font-style:italic;
 	font-weight:400;
-	letter-spacing:.1em;
+	letter-spacing:.08em;
+	letter-spacing:normal\0/;
+	*letter-spacing:normal;
 	line-height:20px;
 	width:184px
 }
@@ -403,7 +399,7 @@ body {
 	font-family:brandon-grotesque,sans-serif;
 	font-size:13px;
 	font-weight:700;
-	letter-spacing:0;
+	letter-spacing:normal;
 	line-height:20px;
 	z-index:10
 }
@@ -420,7 +416,8 @@ body {
 	position:relative;
 	text-align:left;
 	top:0;
-	width:180px
+	width:180px;
+	*width: 200px
 }
 
 #header #nav ul li ul#snacks li ul {
@@ -429,9 +426,9 @@ body {
 	position:relative;
 	text-align:left;
 	top:0;
-	width:173px
+	*top: 40px;
+	width:173px;
 }
-
 #header #nav ul li ul#health li ul,#header #nav ul li ul#story li ul {
 	left:15px;
 	padding:0;
@@ -457,6 +454,7 @@ body {
 
 #header #nav ul li ul#dogs li ul#nav_last,#header #nav ul li ul#cats li ul#nav_last {
 	margin-left:35px;
+	*margin-left: 15px;
 	margin-top:35px;
 	width:173px
 }
@@ -500,10 +498,10 @@ body {
 	font-size:15px;
 	font-style:italic;
 	font-weight:400;
-	height:78px;
+	height:76px;
 	line-height:18px;
 	margin-top:11px;
-	padding-top:6px;
+	padding-top:10px;
 	text-align:center;
 	text-transform:none;
 	width:173px
@@ -519,7 +517,7 @@ body {
 	margin-bottom:11px;
 	padding:8px 2px;
 	text-align:center;
-	width:169px
+	width:169px;
 }
 
 #header #nav ul li ul#health li.nav_box,#header #nav ul li ul#story li.nav_box {
@@ -528,7 +526,7 @@ body {
 	margin-bottom:11px;
 	padding:8px;
 	text-align:center;
-	width:173px
+	width:173px;
 }
 
 #header #nav ul li ul#snacks li.nav_box a,#header #nav ul li ul#health li.nav_box a,#header #nav ul li ul#story li.nav_box a {
@@ -537,6 +535,9 @@ body {
 	font-size:15px;
 	font-style:italic;
 	font-weight:400;
+	letter-spacing: .08em;
+	letter-spacing:normal\0/;
+	*letter-spacing:normal;
 	line-height:18px;
 	text-transform:none
 }
@@ -544,8 +545,10 @@ body {
 #header #nav ul li ul#snacks li.blue,#header #nav ul li ul#health li.blue,#header #nav ul li ul#story li.blue {
 	background-color:#83a3aa;
 	border:none;
+	letter-spacing: .08em;
 	margin-bottom:15px;
-	margin-right:30px
+	margin-right:30px;
+	white-space: nowrap;
 }
 
 #header #nav ul li ul#health li.pink,#header #nav ul li ul#story li.pink {
@@ -568,13 +571,11 @@ body {
 /* =Content
 --------------------------------*/
 #content {
-	background-color:#fefefe;
-	background-image:url(../img/shared/background.jpg);
-	background-position:bottom left;
-	background-repeat:repeat-x;
 	height:100%;
 	margin-top:134px;
-	width:100%
+	_margin-top: 0;
+	width:100%;
+	_z-index: 5;
 }
 
 table {
@@ -660,7 +661,7 @@ ul.categories li {
 .featured {
 	height:557px;
 	position:relative;
-	width:940px
+	width:940px;
 }
 
 #natural_dog_food {
@@ -948,6 +949,15 @@ ul.tabs a.current,ul.tabs a.current:hover,ul.tabs li.current a {
 
 /* =Main Scrollable Items
 --------------------------------*/
+.scrollable .items {
+	width:20000em;
+	position:absolute
+}
+
+.scrollable {
+	float:left
+}
+
 .scrollable {
 	position:relative;
 	overflow:hidden;
@@ -960,7 +970,7 @@ ul.tabs a.current,ul.tabs a.current:hover,ul.tabs li.current a {
 	margin-left:25px;
 	margin-right:43px;
 	text-align:center;
-	width:157px
+	width:157px;
 }
 
 a.browse {
@@ -975,78 +985,37 @@ a.browse {
 	width:28px
 }
 
-a.right {
+a.snack_right,a.product_right {
 	background-position:0 -51px;
 	clear:right;
 	margin-right:0
 }
 
-a.right:hover {
-	background-position:0 -51px
-}
-
-a.right:active {
-	background-position:0 -51px
-}
-
-a.left {
+a.snack_left,a.product_left {
 	margin-left:0
 }
 
-a.left:hover {
-	background-position:0 0
+a.disabled {
+	visibility:visible!important
 }
 
-a.left:active {
-	background-position:0 0
-}
-
-/* =Product Scrollable Items
+/* =Shared Product Content
 --------------------------------*/
-.scrollable_products {
+#content.natural_cat .product_content,#content.natural_dog .product_content {
 	height:622px;
 	position:relative;
 	overflow:hidden;
 	width:940px
 }
 
-.scrollable_products .items div {
-	float:left;
-	margin:0;
-	text-align:left;
-	width:940px
-}
-
-#content.natural_dog a.browse {
-	background-image:url(../img/shared/slideshow-arrows.png);
-	background-repeat:no-repeat;
-	clear:both;
-	cursor:pointer;
-	display:block;
-	float:left;
-	height:74px;
-	position:absolute;
-	top:80px;
-	width:39px
-}
-
-/* =Snacks Scrollable Items
---------------------------------*/
-.scrollable_snacks {
+#content.snacks .snack_content {
 	height:535px;
 	position:relative;
 	overflow:hidden;
 	width:940px
 }
 
-.scrollable_snacks .items div {
-	float:left;
-	margin:0;
-	text-align:left;
-	width:940px
-}
-
-#content.snacks a.browse {
+#content.home a.arrows,#content.natural_cat a.arrows,#content.natural_dog a.arrows,#content.snacks a.arrows,#content.our_story a.arrows {
 	background-image:url(../img/shared/slideshow-arrows.png);
 	background-repeat:no-repeat;
 	clear:both;
@@ -1055,78 +1024,26 @@ a.left:active {
 	float:left;
 	height:74px;
 	position:absolute;
-	top:80px;
+	top:240px;
 	width:39px
 }
 
-/* =Shared Scrollable Items
---------------------------------*/
-.scrollable .items,.scrollable_products .items,.scrollable_snacks .items {
-	width:20000em;
-	position:absolute
+#content.home a.left,#content.natural_cat a.left,#content.natural_dog a.left,#content.snacks a.left,#content.our_story a.left {
+	left:-50px
 }
 
-.scrollable,.scrollable_products,.scrollable_snacks {
-	float:left
-}
-
-#content.natural_dog a.left,#content.snacks a.left {
-	margin-left:0;
-	left:-60px
-}
-
-#content.natural_dog a.left:hover,#content.snacks a.left:hover {
-	background-position:0 0
-}
-
-#content.natural_dog a.left:active,#content.snacks a.left:active {
-	background-position:0 0
-}
-
-#content.natural_dog a.right,#content.snacks a.right {
+#content.home a.right,#content.natural_cat a.right,#content.natural_dog a.right,#content.snacks a.right,#content.our_story a.right {
 	background-position:0 -74px;
 	clear:right;
-	left:950px;
-	margin-right:0
-}
-
-#content.natural_dog a.right:hover,#content.snacks a.right:hover {
-	background-position:0 -74px
-}
-
-#content.natural_dog a.right:active,#content.snacks a.right:active {
-	background-position:0 -74px
-}
-
-a.disabled,#content.natural_dog a.disabled,#content.snacks a.disabled {
-	visibility:visible!important
+	left:950px
 }
 
 /* =Content Home
 --------------------------------*/
-#content.home .slideshow #slide1 {
-	background-image:url(../img/home/slide-image.jpg);
-	background-repeat:no-repeat;
-	height:487px;
-	padding:40px 375px 0 50px;
-	width:515px
-}
-
-#content.home .slideshow #slide1 h5 a {
-	float:right
-}
-
-#content.home .slideshow #slide2 {
-	background-image:url(../img/home/slide-image.jpg);
-	background-repeat:no-repeat;
-	height:527px;
-	width:940px
-}
-
-#content.home .slideshow #slide3 {
-	background-image:url(../img/home/slide-image.jpg);
-	background-repeat:no-repeat;
-	height:527px;
+#content.home .featured {
+	height:528px;
+	overflow:hidden;
+	position:relative;
 	width:940px
 }
 
@@ -1134,9 +1051,126 @@ a.disabled,#content.natural_dog a.disabled,#content.snacks a.disabled {
 	margin:20px 0
 }
 
+#home_slider {
+	height:528px;
+	overflow:hidden;
+	position:absolute;
+	width:9999em
+}
+
+#home_slider_nav {
+	left:0;
+	position:absolute;
+	top:528px
+}
+
+#home_slider_nav a {
+	display:block;
+	float:left;
+	cursor:pointer
+}
+
+#home_slider_nav a.active {
+	cursor:default!important
+}
+
+#home_slider .slide1 {
+	background-image:url(../img/home/slide1.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:487px;
+	padding:40px 375px 0 50px;
+	width:515px;
+	width: 520px\0/;
+	*width: 520px;
+}
+
+#home_slider .slide1 h5 a {
+	float:right
+}
+
+#home_slider .slide2 {
+	background-image:url(../img/home/slide2.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:487px;
+	padding:40px 375px 0 50px;
+	width:515px;
+	width: 520px\0/;
+	*width: 520px;
+}
+
+#home_slider .slide2 h5 a {
+	float:right
+}
+
+#home_slider .slide3 {
+	background-image:url(../img/home/slide3.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:487px;
+	padding:40px 375px 0 50px;
+	width:515px;
+	width: 520px\0/;
+	*width: 520px;
+}
+
+#home_slider .slide3 h5 a {
+	float:right
+}
+
+.home_tab {
+	background-image:url(../img/home/callout.png);
+	background-repeat:no-repeat;
+	color:#fff;
+	font-family:Georgia,sans-serif;
+	font-size:11px;
+	height:91px;
+	line-height:15px;
+	margin-right:1px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:2px;
+	text-align:center;
+	width:203px
+}
+
+.home_tab:hover {
+	background-image:url(../img/home/callout-active.png);
+	background-repeat:no-repeat;
+	color:#fff;
+	height:93px;
+	margin-top:-11px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:13px;
+	width:203px
+}
+
+.home_tab:active {
+	background-image:url(../img/home/callout-active.png);
+	background-repeat:no-repeat;
+	height:93px;
+	margin-top:-11px;
+	padding-left:15px;
+	padding-right:15px;
+	width:203px
+}
+
+.home_tab.active {
+	background-image:url(../img/home/callout-active.png);
+	background-repeat:no-repeat;
+	height:93px;
+	margin-top:-11px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:13px;
+	width:203px
+}
+
 /* =Content Dogs
 --------------------------------*/
-#content.dogs .featured #slide1 {
+#content.dogs .banner #banner_image {
 	background-image:url(../img/dogs/slide1.jpg);
 	background-repeat:no-repeat;
 	height:320px;
@@ -1155,7 +1189,7 @@ a.disabled,#content.natural_dog a.disabled,#content.snacks a.disabled {
 
 /* =Content Natural Dry Dog Food
 --------------------------------*/
-#content.natural_dog .featured {
+#content.natural_dog .banner {
 	height:622px;
 	width:940px
 }
@@ -1197,7 +1231,30 @@ a.disabled,#content.natural_dog a.disabled,#content.snacks a.disabled {
 
 /* =Content Cats
 --------------------------------*/
-#content.cats .featured #slide1 {
+#content.cats .banner #banner_image {
+	background-image:url(../img/cats/slide1.jpg);
+	background-repeat:no-repeat;
+	height:320px;
+	padding:224px 406px 0 53px;
+	width:515px
+}
+
+#content.cats .banner #slide1 h3,#content.cats .banner #slide1 p {
+	color:#fff
+}
+
+#content.cats h2 {
+	margin-bottom:0;
+	margin-top:20px
+}
+
+#content.cats .ingredients {
+	margin:20px 0
+}
+
+/* =Content Cats
+--------------------------------*/
+#content.cats .banner #banner_image {
 	background-image:url(../img/cats/slide1.jpg);
 	background-repeat:no-repeat;
 	height:320px;
@@ -1218,14 +1275,30 @@ a.disabled,#content.natural_dog a.disabled,#content.snacks a.disabled {
 	margin:20px 0
 }
 
-/* =Content Snacks
+/* =Content Holistic Living
 --------------------------------*/
-#content.snacks .featured {
+#content.holistic .banner {
 	height:550px;
 	width:940px
 }
 
-#content.snacks .featured #slide1 {
+#content.holistic .banner #banner_image {
+	background-image:url(../img/health/slide1.jpg);
+	background-repeat:no-repeat;
+	height:320px;
+	margin-bottom:20px;
+	padding:207px 346px 0 122px;
+	width:515px
+}
+
+/* =Content Snacks
+--------------------------------*/
+#content.snacks .banner {
+	height:550px;
+	width:940px
+}
+
+#content.snacks .banner #banner_image {
 	background-image:url(../img/snacks/slide1.jpg);
 	background-repeat:no-repeat;
 	height:320px;
@@ -1245,11 +1318,12 @@ a.disabled,#content.natural_dog a.disabled,#content.snacks a.disabled {
 
 /* =Content Health & Nutrition
 --------------------------------*/
-#content.health_and_nutrition .featured {
-	height:527px
+#content.health_and_nutrition .banner {
+	height:528px;
+	width:940px
 }
 
-#content.health_and_nutrition .featured #slide1 {
+#content.health_and_nutrition .banner #banner_image {
 	background-image:url(../img/health/slide1.jpg);
 	background-repeat:no-repeat;
 	height:527px;
@@ -1296,18 +1370,76 @@ a.disabled,#content.natural_dog a.disabled,#content.snacks a.disabled {
 
 /* =Content Ingredient Dictionary
 --------------------------------*/
-#content.ingredient_dictionary {
-	width:440px;
-	float:right
+ul#ingredients {
+	background-image:url(../img/health/bg-ingredient-list.jpg);
+	background-repeat:repeat-y;
+	float:left;
+	height:470px;
+	overflow:hidden;
+	overflow-y:scroll;
+	width:123px
 }
 
-#ingredient_list {
+ul#ingredients li {
+	line-height:18px;
+	list-style:none;
+	margin-bottom:4px;
+	margin-top:4px;
+	width:123px
+}
+
+ul#ingredients li a.current {
+	background-color:#e8e2e0;
+	color:#726659
+}
+
+ul#ingredients a {
+	color:#726659;
+	cursor:pointer;
+	display:block;
+	font-family:Georgia,sans-serif;
+	font-size:15px;
+	padding-bottom:4px;
+	padding-left:8px;
+	padding-top:4px;
+	white-space:nowrap
+}
+
+ul#ingredients a:active {
+	background-color:#e8e2e0;
+	outline:none
+}
+
+.list .pane {
+	clear:both;
+	display:none
+}
+
+.list div {
+	display:block;
+	height:320px;
+	padding:0;
+	width:440px
+}
+
+.ingredient_dictionary {
+	float:right;
+	height:700px;
+	overflow:hidden;
+	width:440px
+}
+
+#content.health_and_nutrition .ingredient_dictionary h1 {
+	margin-top:0
+}
+
+/*#ingredient_list {
 	background-image:url(../img/health/bg-ingredient-list.jpg);
 	background-repeat:repeat-y;
 	display:block;
 	float:left;
 	height:470px;
-	margin-right:30px;
+	margin-right:0px;
 	width:123px
 }
 
@@ -1333,25 +1465,120 @@ a.disabled,#content.natural_dog a.disabled,#content.snacks a.disabled {
 
 #ingredient_list ul li:active {
 	background-color:#e8e2e0
-}
-
+}*/
 /* =Content Our Story
 --------------------------------*/
 #content.our_story .featured {
-	height:622px;
-	width:940px
-}
-
-#content.our_story .featured #slide1 {
-	background-image:url(../img/story/slide1.jpg);
-	background-repeat:no-repeat;
-	height:527px;
+	height:528px;
+	overflow:hidden;
+	position:relative;
 	width:940px
 }
 
 #content.our_story h2 {
 	margin-bottom:10px;
 	margin-top:20px
+}
+
+#our_story_slider {
+	height:528px;
+	overflow:hidden;
+	position:absolute;
+	width:9999em
+}
+
+#our_story_slider_nav {
+	left:0;
+	position:absolute;
+	top:528px
+}
+
+#our_story_slider_nav a {
+	display:block;
+	float:left;
+	cursor:pointer
+}
+
+#our_story_slider_nav a.active {
+	cursor:default!important
+}
+
+.navi {
+	margin-top:2px;
+	width:950px
+}
+
+#our_story_slider .slide1 {
+	background-image:url(../img/story/slide1.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:528px;
+	width:940px
+}
+
+#our_story_slider .slide2 {
+	background-image:url(../img/story/slide2.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:528px;
+	width:940px
+}
+
+#our_story_slider .slide3 {
+	background-image:url(../img/story/slide3.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:528px;
+	width:940px
+}
+
+.our_story_tab {
+	background-image:url(../img/story/callout.png);
+	background-repeat:no-repeat;
+	color:#fff;
+	font-family:Georgia,sans-serif;
+	font-size:11px;
+	height:91px;
+	line-height:15px;
+	margin-right:1px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:2px;
+	text-align:center;
+	width:126px
+}
+
+.our_story_tab:hover {
+	background-image:url(../img/story/callout-active.png);
+	background-repeat:no-repeat;
+	color:#fff;
+	height:93px;
+	margin-top:-11px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:13px;
+	width:126px
+}
+
+.our_story_tab:active {
+	background-image:url(../img/story/callout-active.png);
+	background-repeat:no-repeat;
+	height:93px;
+	margin-top:-11px;
+	padding-left:15px;
+	padding-right:15px;
+	width:126px
+}
+
+.our_story_tab.active {
+	background-image:url(../img/story/callout-active.png);
+	background-repeat:no-repeat;
+	height:93px;
+	margin-top:-11px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:13px;
+	width:126px
 }
 
 /* =Content Our Story - FAQ
@@ -1446,6 +1673,8 @@ ul.faqs p {
 	font-style:normal;
 	font-weight:900;
 	letter-spacing:.1em;
+	letter-spacing:normal\0/;
+	*letter-spacing:normal;
 	line-height:29px;
 	margin:0;
 	text-transform:uppercase
@@ -1453,8 +1682,11 @@ ul.faqs p {
 
 #footer #newsletter label {
 	display:inline-block;
+	*line-height: 36px;
 	margin-right:8px;
-	vertical-align:middle
+	*margin-top: -4px;
+	vertical-align:middle;
+	*vertical-align: top;
 }
 
 #footer #newsletter input[type="text"] {
@@ -1486,13 +1718,17 @@ ul.faqs p {
 	font-size:18px;
 	font-style:italic;
 	font-weight:700;
-	line-height:29px;
 	height:36px;
 	letter-spacing:.1em;
-	line-height:26px;
+	letter-spacing:normal\0/;
+	*letter-spacing:normal;
+	line-height:29px;
 	padding:3px 0;
+	padding:0\0/;
 	margin:0;
 	text-transform:uppercase;
+	vertical-align: middle;
+	*vertical-align: top;
 	width:109px
 }
 
@@ -1503,12 +1739,14 @@ ul.faqs p {
 }
 
 #footer #footer_nav ul {
-	float:none
+	float:none;
+	*margin-left: 320px;
 }
 
 #footer #footer_nav ul li {
-	display:inline-block;
 	border-right:1px #fff solid;
+	display:inline-block;
+	*float: left;
 	padding:0 9px;
 	text-transform:uppercase
 }
@@ -1539,10 +1777,18 @@ ul.faqs p {
 
 /* =Classes
 --------------------------------*/
+.align_left {
+	display:block;
+	text-align:left
+}
+
 .align_right {
 	text-align:right
 }
-
+.ie_nav_fix {
+	*position: absolute; 
+	*left: 15px;
+}
 .clear {
 	clear:both
 }
@@ -1631,6 +1877,17 @@ ul.faqs p {
 	text-transform:uppercase
 }
 
+.tiny_white_text {
+	color:#fff;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:12px;
+	font-style:normal;
+	font-weight:700;
+	line-height:26px;
+	text-transform:uppercase;
+	white-space:nowrap
+}
+
 .small_grey_text {
 	color:#eeeceb;
 	font-family:brandon-grotesque,sans-serif;
@@ -1677,8 +1934,16 @@ ul.faqs p {
 	margin-top:40px
 }
 
+.margintop60 {
+	margin-top:60px
+}
+
 .margintop85 {
 	margin-top:85px
+}
+
+.paddingtop10 {
+	padding-top:10px
 }
 
 .padding30 {
