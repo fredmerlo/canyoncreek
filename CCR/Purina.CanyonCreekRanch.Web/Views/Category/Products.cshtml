@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Purina.CanyonCreekRanch.Common.Entities.Product>
+
+<table>
+    <tr>
+        <th>
+            Title
+        </th>
+        <th>
+            SubTitle
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            ResourcePath
+        </th>
+        <th>
+            ResourcePrefix
+        </th>
+        <th>
+            FeedTable
+        </th>
+        <th>
+            GuaranteeTable
+        </th>
+        <th>
+            Ingredients
+        </th>
+        <th>
+            Nutrition
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResourcePath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResourcePrefix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FeedTable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuaranteeTable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ingredients)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nutrition)
+        </td>
+    </tr>
+}
+
+</table>
