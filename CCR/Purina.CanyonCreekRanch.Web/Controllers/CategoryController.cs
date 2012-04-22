@@ -14,11 +14,17 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
     public ActionResult Products(string url)
     {
-      var category = db.Categories.FirstOrDefault<Category>(c => c.FriendlyUrl == url);
-      var products = db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id).ToList();
-      
-      return PartialView(products);
-    }
+      try
+      {
+        var category = db.Categories.FirstOrDefault<Category>(c => c.FriendlyUrl == url);
+        var products = db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id).ToList();
 
+        return PartialView(products);
+      }
+      catch
+      {
+        return PartialView(null);
+      }
+    }
   }
 }
