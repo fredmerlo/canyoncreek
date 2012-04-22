@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Purina.CanyonCreekRanch.Admin.Models.FeedModel>
+﻿@model IEnumerable<Purina.CanyonCreekRanch.Admin.Models.BlogEntryModel>
 
 @{
     ViewBag.Title = "Index";
@@ -12,13 +12,19 @@
 <table>
     <tr>
         <th>
-            Product
+            Title
         </th>
         <th>
-            Weight
+            Content
         </th>
         <th>
-            Ammount
+            Created
+        </th>
+        <th>
+            Active
+        </th>
+        <th>
+            Author
         </th>
         <th></th>
     </tr>
@@ -26,13 +32,19 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.FeedProduct.Description)
+            @Html.DisplayFor(modelItem => item.Title)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Weight)
+            @Html.DisplayFor(modelItem => item.Content)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Amount)
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Author)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
