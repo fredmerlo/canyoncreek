@@ -47,27 +47,35 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Image1)
+            @Html.LabelFor(model => model.ResourcePath)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Image1)
-            @Html.ValidationMessageFor(model => model.Image1)
+            @Html.EditorFor(model => model.ResourcePath)
+            @Html.ValidationMessageFor(model => model.ResourcePath)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Image2)
+            @Html.LabelFor(model => model.ResourcePrefix)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Image2)
-            @Html.ValidationMessageFor(model => model.Image2)
+            @Html.EditorFor(model => model.ResourcePrefix)
+            @Html.ValidationMessageFor(model => model.ResourcePrefix)
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Image3)
+            @Html.LabelFor(model => model.FeedTable)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Image3)
-            @Html.ValidationMessageFor(model => model.Image3)
+            @Html.EditorFor(model => model.FeedTable)
+            @Html.ValidationMessageFor(model => model.FeedTable)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.GuaranteeTable)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.GuaranteeTable)
+            @Html.ValidationMessageFor(model => model.GuaranteeTable)
         </div>
 
         <div class="editor-label">

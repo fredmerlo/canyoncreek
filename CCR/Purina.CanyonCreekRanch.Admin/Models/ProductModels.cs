@@ -19,9 +19,10 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       {
         Description = product.Description;
         Id = product.Id;
-        Image1 = product.Image1;
-        Image2 = product.Image2;
-        Image3 = product.Image3;
+        ResourcePath = product.ResourcePath;
+        ResourcePrefix = product.ResourcePrefix;
+        FeedTable = product.FeedTable;
+        GuaranteeTable = product.GuaranteeTable;
         Ingredients = product.Ingredients;
         Nutrition = product.Nutrition;
         ProductCategory = product.ProductCategory;
@@ -33,17 +34,15 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     [Required()]
     public string Description { get; set; }
     public int Id { get; set; }
-    public string Image1 { get; set; }
-    public string Image2 { get; set; }
-    public string Image3 { get; set; }
+    public string ResourcePath { get; set; }
+    public string ResourcePrefix { get; set; }
+    public string FeedTable { get; set; }
+    public string GuaranteeTable { get; set; }
     public string Ingredients { get; set; }
     public string Nutrition { get; set; }
     [Required()]
     public string Title { get; set; }
     public string Subtitle { get; set; }
-
-    public List<FeedModel> FeedTable { get; set; }
-    public List<GuaranteeModel> GuaranteeTable { get; set; }
     
     [Display(Name="Category")]
     public Category ProductCategory { get; set; }
@@ -63,12 +62,13 @@ namespace Purina.CanyonCreekRanch.Admin.Models
         entity = new Product();
         entity.Description = product.Description;
         entity.Id = product.Id;
-        entity.Image1 = product.Image1;
-        entity.Image2 = product.Image2;
-        entity.Image3 = product.Image3;
+        entity.FeedTable = product.FeedTable;
+        entity.GuaranteeTable = product.GuaranteeTable;
         entity.Ingredients = product.Ingredients;
         entity.Nutrition = product.Nutrition;
         entity.ProductCategory = product.ProductCategory;
+        entity.ResourcePath = product.ResourcePath;
+        entity.ResourcePrefix = product.ResourcePrefix;
         entity.SubTitle = product.Subtitle;
         entity.Title = product.Title;
       }
@@ -82,12 +82,13 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       {
         entity.Description = Description;
         entity.Id = Id;
-        entity.Image1 = Image1;
-        entity.Image2 = Image2;
-        entity.Image3 = Image3;
+        entity.FeedTable = FeedTable;
+        entity.GuaranteeTable = GuaranteeTable;
         entity.Ingredients = Ingredients;
         entity.Nutrition = Nutrition;
         entity.ProductCategory = ProductCategory;
+        entity.ResourcePath = ResourcePath;
+        entity.ResourcePrefix = ResourcePrefix;
         entity.SubTitle = Subtitle;
         entity.Title = Title;
       }
