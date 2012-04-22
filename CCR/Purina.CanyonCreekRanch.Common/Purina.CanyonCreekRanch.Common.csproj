@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BlogCategory.cs" />
+    <Compile Include="Entities\BlogEntry.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\CCRDb.cs" />
     <Compile Include="Entities\Product.cs" />

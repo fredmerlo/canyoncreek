@@ -10,6 +10,8 @@ namespace Purina.CanyonCreekRanch.Common.Entities
   {
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
+    public DbSet<BlogCategory> BlogCategories { get; set; }
+    public DbSet<BlogEntry> BlogEntries { get; set; }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
     {
@@ -17,6 +19,9 @@ namespace Purina.CanyonCreekRanch.Common.Entities
 
       modelBuilder.Entity<Product>()
         .HasRequired<Category>(p => p.ProductCategory);
+
+      modelBuilder.Entity<BlogEntry>()
+        .HasRequired<BlogCategory>(e => e.EntryCategory);
     }
   }
 }

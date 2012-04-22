@@ -31,7 +31,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       }
     }
 
-    [Required()]
+    [Required]
     public string Description { get; set; }
     public int Id { get; set; }
     public string ResourcePath { get; set; }
@@ -40,7 +40,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     public string GuaranteeTable { get; set; }
     public string Ingredients { get; set; }
     public string Nutrition { get; set; }
-    [Required()]
+    [Required]
     public string Title { get; set; }
     public string Subtitle { get; set; }
     
