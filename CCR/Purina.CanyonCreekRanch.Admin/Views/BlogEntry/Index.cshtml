@@ -12,6 +12,10 @@
 <table>
     <tr>
         <th>
+            Category
+        </th>
+
+        <th>
             Title
         </th>
         <th>
@@ -31,6 +35,9 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntryCategory.Name)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
         </td>

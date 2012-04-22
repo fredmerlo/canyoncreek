@@ -31,49 +31,49 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         } 
 
         [HttpPost]
-        public ActionResult Create(BlogCategoryModel blogcategorymodel)
+        public ActionResult Create(BlogCategory blogcategory)
         {
             if (ModelState.IsValid)
             {
-                db.BlogCategoryModels.Add(blogcategorymodel);
-                db.SaveChanges();
-                return RedirectToAction("Index");  
+              db.BlogCategories.Add(blogcategory);
+              db.SaveChanges();
+              return RedirectToAction("Index");  
             }
 
-            return View(blogcategorymodel);
+            return View(blogcategory);
         }
         
         public ActionResult Edit(int id)
         {
-            BlogCategoryModel blogcategorymodel = db.BlogCategoryModels.Find(id);
-            return View(blogcategorymodel);
+          BlogCategory blogcategory = db.BlogCategories.Find(id);
+          return View(blogcategory);
         }
 
         [HttpPost]
-        public ActionResult Edit(BlogCategoryModel blogcategorymodel)
+        public ActionResult Edit(BlogCategory blogcategory)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(blogcategorymodel).State = EntityState.Modified;
+                db.Entry(blogcategory).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(blogcategorymodel);
+            return View(blogcategory);
         }
 
         public ActionResult Delete(int id)
         {
-            BlogCategoryModel blogcategorymodel = db.BlogCategoryModels.Find(id);
-            return View(blogcategorymodel);
+          BlogCategory blogcategory = db.BlogCategories.Find(id);
+          return View(blogcategory);
         }
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
-        {            
-            BlogCategoryModel blogcategorymodel = db.BlogCategoryModels.Find(id);
-            db.BlogCategoryModels.Remove(blogcategorymodel);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+        {
+          BlogCategory blogcategory = db.BlogCategories.Find(id);
+          db.BlogCategories.Remove(blogcategory);
+          db.SaveChanges();
+          return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

@@ -9,6 +9,11 @@
 <fieldset>
     <legend>BlogEntryModel</legend>
 
+    <div class="display-label">Category</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EntryCategory.Name)
+    </div>
+
     <div class="display-label">Title</div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Title)

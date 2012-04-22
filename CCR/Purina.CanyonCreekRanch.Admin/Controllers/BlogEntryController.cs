@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 using Purina.CanyonCreekRanch.Admin.Models;
 using Purina.CanyonCreekRanch.Common.Entities;
 
@@ -16,61 +17,71 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
 
         public ViewResult Index()
         {
-            return View(db.BlogEntries.ToList());
+          List<BlogEntryModel> entries = new List<BlogEntryModel>();
+
+          foreach (var entry in db.BlogEntries.ToList<BlogEntry>())
+            entries.Add(new BlogEntryModel(entry) { Categories = db.BlogCategories.ToList<BlogCategory>() });
+
+          return View(entries);
         }
 
         public ViewResult Details(int id)
         {
-            BlogEntryModel blogentrymodel = db.BlogEntryModels.Find(id);
-            return View(blogentrymodel);
+          return View(new BlogEntryModel(db.BlogEntries.Find(id)) { Categories = db.BlogCategories.ToList<BlogCategory>() });
         }
+
         public ActionResult Create()
         {
-            return View();
+          return View(new BlogEntryModel { Categories = db.BlogCategories.ToList<BlogCategory>() });
         } 
 
-      [HttpPost]
-        public ActionResult Create(BlogEntryModel blogentrymodel)
+        [HttpPost]
+        public ActionResult Create(BlogEntryModel entry)
         {
             if (ModelState.IsValid)
             {
-                db.BlogEntryModels.Add(blogentrymodel);
-                db.SaveChanges();
-                return RedirectToAction("Index");  
+              var entity = entry.GetEntity();
+              entity.EntryCategory = db.BlogCategories.Find(entry.EntryCategory.Id);
+              db.BlogEntries.Add(entity);
+              db.SaveChanges();
+              return RedirectToAction("Index");  
             }
 
-            return View(blogentrymodel);
+            return View(entry);
         }
         
         public ActionResult Edit(int id)
         {
-            BlogEntryModel blogentrymodel = db.BlogEntryModels.Find(id);
-            return View(blogentrymodel);
+          return View(new BlogEntryModel(db.BlogEntries.Find(id)) { Categories = db.BlogCategories.ToList<BlogCategory>() });
         }
 
         [HttpPost]
-        public ActionResult Edit(BlogEntryModel blogentrymodel)
+        public ActionResult Edit(BlogEntryModel entry)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(blogentrymodel).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+              var entity = db.BlogEntries.Find(entry.Id);
+              entry.EntryCategory = db.BlogCategories.Find(entry.EntryCategory.Id);
+              entry.MapEntity(entity);
+
+              db.Entry<BlogEntry>(entity).State = EntityState.Modified;
+              db.SaveChanges();
+              return RedirectToAction("Index");
             }
-            return View(blogentrymodel);
+
+            return View(entry);
         }
 
         public ActionResult Delete(int id)
         {
-            BlogEntryModel blogentrymodel = db.BlogEntryModels.Find(id);
-            return View(blogentrymodel);
+          return View(new BlogEntryModel(db.BlogEntries.Find(id)));
         }
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {            
-            BlogEntryModel blogentrymodel = db.BlogEntryModels.Find(id);
-            db.BlogEntryModels.Remove(blogentrymodel);
+            BlogEntry entry = db.BlogEntries.Find(id);
+            db.BlogEntries.Remove(entry);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

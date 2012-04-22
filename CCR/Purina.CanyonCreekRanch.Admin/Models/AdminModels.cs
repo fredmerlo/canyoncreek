@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
 
 using Purina.CanyonCreekRanch.Common.Entities;
 
@@ -43,8 +42,8 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     [Required]
     public string Title { get; set; }
     public string Subtitle { get; set; }
-    
-    [Display(Name="Category")]
+
+    [Display(Name = "Category")]
     public Category ProductCategory { get; set; }
 
     public IEnumerable<Category> Categories { get; set; }

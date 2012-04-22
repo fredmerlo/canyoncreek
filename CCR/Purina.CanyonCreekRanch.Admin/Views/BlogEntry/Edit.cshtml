@@ -17,6 +17,14 @@
         @Html.HiddenFor(model => model.Id)
 
         <div class="editor-label">
+            @Html.LabelFor(model => model.EntryCategory)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.EntryCategory.Id, new SelectList(Model.Categories, "Id", "Name"))
+            @Html.ValidationMessageFor(model => model.EntryCategory)
+        </div>
+
+        <div class="editor-label">
             @Html.LabelFor(model => model.Title)
         </div>
         <div class="editor-field">
