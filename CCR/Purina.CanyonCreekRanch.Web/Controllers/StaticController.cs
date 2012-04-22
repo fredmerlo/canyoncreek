@@ -34,5 +34,15 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
         public ActionResult SiteMap() {return View();}
 
         public ActionResult TermsAndConditions() {return View();}
+
+
+        //These will be moved to the project controller when this is integrated w/the backend
+        public ActionResult DryCatFood() {return View();}
+
+        public ActionResult CatFood() {return View();}
+
+        public ActionResult DryDogFood() {return View();}
+        
+        public ActionResult DogFood() {return View();}
     }
 }

@@ -328,6 +328,18 @@
   <ItemGroup>
     <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Static\DryCatFood.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Static\CatFood.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Static\DryDogFood.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Static\DogFood.cshtml" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
