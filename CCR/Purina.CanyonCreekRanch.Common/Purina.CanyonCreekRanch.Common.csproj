@@ -51,8 +51,6 @@
   <ItemGroup>
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\CCRDb.cs" />
-    <Compile Include="Entities\Feed.cs" />
-    <Compile Include="Entities\Guarantee.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Helpers\LowercaseRoute.cs" />
     <Compile Include="Helpers\RouteCollectionExtensions.cs" />

@@ -10,8 +10,6 @@ namespace Purina.CanyonCreekRanch.Common.Entities
   {
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
-    public DbSet<Feed> Feeds { get; set; }
-    public DbSet<Guarantee> Guarantees { get; set; }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
     {
@@ -19,15 +17,6 @@ namespace Purina.CanyonCreekRanch.Common.Entities
 
       modelBuilder.Entity<Product>()
         .HasRequired<Category>(p => p.ProductCategory);
-
-      modelBuilder.Entity<Feed>()
-        .HasRequired(f => f.Product)
-        .WithMany(p => p.FeedingTable);
-
-      modelBuilder.Entity<Guarantee>()
-        .HasRequired(g => g.Product)
-        .WithMany(p => p.GuaranteeTable);
-
     }
   }
 }
