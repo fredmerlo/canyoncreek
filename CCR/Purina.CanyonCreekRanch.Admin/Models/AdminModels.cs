@@ -3,12 +3,57 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
 
 using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Models
 {
+  public class CategoryModel
+  {
+    public CategoryModel() { }
+
+    public CategoryModel(Category category)
+    {
+      if (category != null)
+      {
+        FriendlyUrl = category.FriendlyUrl;
+        Id = category.Id;
+        Name = category.Name;
+        Subtitle = category.Subtitle;
+        Title = category.Title;
+      }
+    }
+
+    public string FriendlyUrl { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Subtitle { get; set; }
+    public string Title { get; set; }
+
+    List<ProductModel> Products { get; set; }
+
+    public Category GetEntity()
+    {
+      return GetEntity(this);
+    }
+
+    public Category GetEntity(CategoryModel category)
+    {
+      Category entity = null;
+      if (category != null)
+      {
+        entity = new Category();
+        entity.FriendlyUrl = category.FriendlyUrl;
+        entity.Id = category.Id;
+        entity.Name = category.Name;
+        entity.Subtitle = category.Subtitle;
+        entity.Title = category.Title;
+      }
+
+      return entity;
+    }
+  }
+
   public class ProductModel
   {
     public ProductModel() { }
@@ -43,8 +88,8 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     [Required]
     public string Title { get; set; }
     public string Subtitle { get; set; }
-    
-    [Display(Name="Category")]
+
+    [Display(Name = "Category")]
     public Category ProductCategory { get; set; }
 
     public IEnumerable<Category> Categories { get; set; }
