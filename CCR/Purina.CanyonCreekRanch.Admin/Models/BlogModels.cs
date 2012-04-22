@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 using Purina.CanyonCreekRanch.Common.Entities;
 
@@ -30,6 +31,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     public int Id { get; set; }
     [Required]
     public string Title { get; set; }
+    [AllowHtml]
     [Required]
     public string Content { get; set; }
     public DateTime Created { get; set; }

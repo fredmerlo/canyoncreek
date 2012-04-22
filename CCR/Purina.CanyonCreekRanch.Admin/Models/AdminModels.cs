@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 using Purina.CanyonCreekRanch.Common.Entities;
 
@@ -30,14 +31,23 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       }
     }
 
+    [AllowHtml]
     [Required]
     public string Description { get; set; }
     public int Id { get; set; }
     public string ResourcePath { get; set; }
     public string ResourcePrefix { get; set; }
+    [AllowHtml]
+    [Required]
     public string FeedTable { get; set; }
+    [Required]
+    [AllowHtml]
     public string GuaranteeTable { get; set; }
+    [AllowHtml]
+    [Required]
     public string Ingredients { get; set; }
+    [AllowHtml]
+    [Required]
     public string Nutrition { get; set; }
     [Required]
     public string Title { get; set; }
