@@ -8,41 +8,6 @@ using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Models
 {
-  public class BlogCategoryModel
-  {
-    public BlogCategoryModel() { }
-
-    public BlogCategoryModel(BlogCategory category)
-    {
-      if (category != null)
-      {
-        Id = category.Id;
-        Name = category.Name;
-      }
-    }
-
-    public int Id { get; set; }
-    public string Name { get; set; }
-
-    public BlogCategory GetEntity()
-    {
-      return GetEntity(this);
-    }
-
-    public BlogCategory GetEntity(BlogCategoryModel category)
-    {
-      BlogCategory entity = null;
-      if (category != null)
-      {
-        entity = new BlogCategory();
-        entity.Id = category.Id;
-        entity.Name = category.Name;
-      }
-
-      return entity;
-    }
-  }
-
   public class BlogEntryModel
   {
     public BlogEntryModel() { }

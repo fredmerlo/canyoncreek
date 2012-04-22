@@ -65,6 +65,7 @@
     <Compile Include="Controllers\BlogCategoryController.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controllers\BlogEntryController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
