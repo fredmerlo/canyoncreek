@@ -36,23 +36,28 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     public bool Active { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string Description { get; set; }
     public int Id { get; set; }
     public string ResourcePath { get; set; }
     public string ResourcePrefix { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string FeedTable { get; set; }
     [Required]
     public string FriendlyUrl { get; set; }
     [Required]
     [AllowHtml]
+    [DataType(DataType.MultilineText)]
     public string GuaranteeTable { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string Ingredients { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string Nutrition { get; set; }
     [Required]
     public string Title { get; set; }
