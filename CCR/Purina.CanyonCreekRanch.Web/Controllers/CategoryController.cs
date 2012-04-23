@@ -17,7 +17,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
       try
       {
         var category = db.Categories.FirstOrDefault<Category>(c => c.FriendlyUrl == url);
-        var products = db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id).ToList();
+        var products = db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id && p.Active == true).ToList();
 
         return PartialView(products);
       }
