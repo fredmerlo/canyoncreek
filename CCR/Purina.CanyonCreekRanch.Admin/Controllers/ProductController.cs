@@ -20,20 +20,20 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         {
           List<ProductModel> products = new List<ProductModel>();
 
-          foreach (var product in db.Products.ToList<Product>())
-            products.Add(new ProductModel(product) { Categories = db.Categories.ToList<Category>() });
+          foreach (var product in db.Products.OrderBy(p => p.Title).ToList<Product>())
+            products.Add(new ProductModel(product) { Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
 
             return View(products);
         }
 
         public ViewResult Details(int id)
         {
-            return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.ToList<Category>() });
+          return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
         }
 
         public ActionResult Create()
         {
-            return View(new ProductModel { Categories = db.Categories.ToList<Category>() });
+          return View(new ProductModel { Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
         } 
 
         [HttpPost]
@@ -53,7 +53,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         
         public ActionResult Edit(int id)
         {
-          return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.ToList<Category>() });
+          return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
         }
 
         [HttpPost]

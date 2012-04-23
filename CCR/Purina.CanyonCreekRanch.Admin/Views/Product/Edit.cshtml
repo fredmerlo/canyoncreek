@@ -95,6 +95,22 @@
             @Html.ValidationMessageFor(model => model.Nutrition)
         </div>
 
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FriendlyUrl)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FriendlyUrl)
+            @Html.ValidationMessageFor(model => model.FriendlyUrl)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Active)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Active)
+            @Html.ValidationMessageFor(model => model.Active)
+        </div>
+
         <p>
             <input type="submit" value="Save" />
         </p>

@@ -16,7 +16,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
 
         public ViewResult Index()
         {
-            return View(db.BlogCategories.ToList());
+            return View(db.BlogCategories.OrderBy(c => c.Name).ToList());
         }
 
         public ViewResult Details(int id)
