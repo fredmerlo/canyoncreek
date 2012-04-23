@@ -19,20 +19,20 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         {
           List<BlogEntryModel> entries = new List<BlogEntryModel>();
 
-          foreach (var entry in db.BlogEntries.ToList<BlogEntry>())
-            entries.Add(new BlogEntryModel(entry) { Categories = db.BlogCategories.ToList<BlogCategory>() });
+          foreach (var entry in db.BlogEntries.OrderByDescending(e => e.Created).ToList<BlogEntry>())
+            entries.Add(new BlogEntryModel(entry) { Categories = db.BlogCategories.OrderBy(c => c.Name).ToList<BlogCategory>() });
 
           return View(entries);
         }
 
         public ViewResult Details(int id)
         {
-          return View(new BlogEntryModel(db.BlogEntries.Find(id)) { Categories = db.BlogCategories.ToList<BlogCategory>() });
+          return View(new BlogEntryModel(db.BlogEntries.Find(id)) { Categories = db.BlogCategories.OrderBy(c => c.Name).ToList<BlogCategory>() });
         }
 
         public ActionResult Create()
         {
-          return View(new BlogEntryModel { Categories = db.BlogCategories.ToList<BlogCategory>() });
+          return View(new BlogEntryModel { Active = true, Created = DateTime.Now, Categories = db.BlogCategories.OrderBy(c => c.Name).ToList<BlogCategory>() });
         } 
 
         [HttpPost]
@@ -52,7 +52,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         
         public ActionResult Edit(int id)
         {
-          return View(new BlogEntryModel(db.BlogEntries.Find(id)) { Categories = db.BlogCategories.ToList<BlogCategory>() });
+          return View(new BlogEntryModel(db.BlogEntries.Find(id)) { Categories = db.BlogCategories.OrderBy(c => c.Name).ToList<BlogCategory>() });
         }
 
         [HttpPost]

@@ -17,11 +17,13 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     {
       if (product != null)
       {
+        Active = product.Active;
         Description = product.Description;
         Id = product.Id;
         ResourcePath = product.ResourcePath;
         ResourcePrefix = product.ResourcePrefix;
         FeedTable = product.FeedTable;
+        FriendlyUrl = product.FriendlyUrl;
         GuaranteeTable = product.GuaranteeTable;
         Ingredients = product.Ingredients;
         Nutrition = product.Nutrition;
@@ -31,23 +33,31 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       }
     }
 
+    public bool Active { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string Description { get; set; }
     public int Id { get; set; }
     public string ResourcePath { get; set; }
     public string ResourcePrefix { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string FeedTable { get; set; }
     [Required]
+    public string FriendlyUrl { get; set; }
+    [Required]
     [AllowHtml]
+    [DataType(DataType.MultilineText)]
     public string GuaranteeTable { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string Ingredients { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string Nutrition { get; set; }
     [Required]
     public string Title { get; set; }
@@ -69,9 +79,11 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       if (product != null)
       {
         entity = new Product();
+        entity.Active = Active;
         entity.Description = product.Description;
         entity.Id = product.Id;
         entity.FeedTable = product.FeedTable;
+        entity.FriendlyUrl = FriendlyUrl;
         entity.GuaranteeTable = product.GuaranteeTable;
         entity.Ingredients = product.Ingredients;
         entity.Nutrition = product.Nutrition;
@@ -89,9 +101,11 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     {
       if (entity != null)
       {
+        entity.Active = Active;
         entity.Description = Description;
         entity.Id = Id;
         entity.FeedTable = FeedTable;
+        entity.FriendlyUrl = FriendlyUrl;
         entity.GuaranteeTable = GuaranteeTable;
         entity.Ingredients = Ingredients;
         entity.Nutrition = Nutrition;
