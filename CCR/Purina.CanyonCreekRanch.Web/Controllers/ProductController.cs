@@ -14,7 +14,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
     public ActionResult Detail(string url)
     {
-      var product = db.Products.Where<Product>(p => p.FriendlyUrl == url).FirstOrDefault();
+      var product = db.Products.Where(p => p.Active == true && p.FriendlyUrl == url).FirstOrDefault();
 
       if(product == null)
         return RedirectToAction("Index", "Home");
