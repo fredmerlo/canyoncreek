@@ -33,6 +33,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     public string Title { get; set; }
     [AllowHtml]
     [Required]
+    [DataType(DataType.MultilineText)]
     public string Content { get; set; }
     public DateTime Created { get; set; }
     public bool Active { get; set; }
