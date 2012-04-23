@@ -2,9 +2,9 @@
 
 @if (Model != null) {
   foreach (var item in Model) {
-                    <li><a href="natural-dry-dog-food.html">@Html.DisplayFor(modelItem => item.Title)</a></li>
+                    <li>@Html.ActionLink(item.Title, item.FriendlyUrl, "Product")</li>
 
-                    <li><a href="natural-dry-dog-food.html">@Html.DisplayFor(modelItem => item.SubTitle)</a></li>
+                    <li>@Html.ActionLink(item.SubTitle, item.FriendlyUrl, "Product")</li>
   }
 }
 
