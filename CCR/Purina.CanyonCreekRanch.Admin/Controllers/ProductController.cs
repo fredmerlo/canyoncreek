@@ -33,7 +33,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
 
         public ActionResult Create()
         {
-          return View(new ProductModel { Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
+          return View(new ProductModel { Active = true, Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
         } 
 
         [HttpPost]
