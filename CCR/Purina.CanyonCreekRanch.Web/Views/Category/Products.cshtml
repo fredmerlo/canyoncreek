@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Purina.CanyonCreekRanch.Common.Entities.Product>
+
+@if (Model != null) {
+  foreach (var item in Model) {
+                    <li><a href="natural-dry-dog-food.html">@Html.DisplayFor(modelItem => item.Title)</a></li>
+
+                    <li><a href="natural-dry-dog-food.html">@Html.DisplayFor(modelItem => item.SubTitle)</a></li>
+  }
+}
+

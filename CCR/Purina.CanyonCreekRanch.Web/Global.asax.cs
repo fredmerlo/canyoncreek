@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
+using Purina.CanyonCreekRanch.Common.Helpers;
+
 namespace Purina.CanyonCreekRanch.Web
 {
   // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -21,12 +23,17 @@ namespace Purina.CanyonCreekRanch.Web
     {
       routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-      routes.MapRoute(
+      routes.MapRouteLowercase(
+          "CategoryRoute", // Route name
+          "category/{url}", // URL with parameters
+          new { controller = "Category", action = "Products" }
+      );
+
+      routes.MapRouteLowercase(
           "Default", // Route name
           "{controller}/{action}/{id}", // URL with parameters
           new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
       );
-
     }
 
     protected void Application_Start()
