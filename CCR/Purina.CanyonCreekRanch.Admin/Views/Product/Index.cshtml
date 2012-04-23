@@ -23,6 +23,12 @@
         <th>
             Description
         </th>
+        <th>
+            Url
+        </th>
+        <th>
+            Active
+        </th>
         <th></th>
     </tr>
 
@@ -39,6 +45,12 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FriendlyUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

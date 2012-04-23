@@ -17,6 +17,8 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     public string GuaranteeTable { get; set; }
     public string Ingredients { get; set; }
     public string Nutrition { get; set; }
+    public string FriendlyUrl { get; set; }
+    public bool Active { get; set; }
 
     public virtual Category ProductCategory { get; set; }
   }

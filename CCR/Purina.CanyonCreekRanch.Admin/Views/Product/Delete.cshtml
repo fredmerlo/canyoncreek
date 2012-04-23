@@ -30,6 +30,15 @@
         @Html.DisplayFor(model => model.Description)
     </div>
 
+    <div class="display-label">Url</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FriendlyUrl)
+    </div>
+
+    <div class="display-label">Active</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Active)
+    </div>
 
 </fieldset>
 @using (Html.BeginForm()) {
