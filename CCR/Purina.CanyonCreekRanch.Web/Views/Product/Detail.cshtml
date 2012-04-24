@@ -72,7 +72,7 @@
             <div class="leftcol">
               <span class="small_brown_text">Ingredients:</span>
 
-              <p>Chicken, chicken meal, brewers rice, barley, dried egg product, brown rice, beef fat preserved with mixed-tocopherols (form of Vitamin E), pea protein, natural flavor, brewers dried yeast, potatoes, zucchini, canola meal, sodium caseinate, gelatin, malted barley flour, L-Lysine monohydrochloride, salt, phosphoric acid, potassium chloride, zinc proteinate, taurine, calcium carbonate, choline chloride, Vitamin E supplement, DL-Methionine, manganese proteinate, ferrous sulfate, niacin, copper proteinate, Vitamin A supplement, calcium pantothenate, thiamine mononitrate, riboflavin supplement, Vitamin B-12 supplement, pyridoxine hydrochloride, folic acid, Vitamin D-3 supplement, calcium iodate, biotin, menadione sodium bisulfite complex (source of Vitamin K activity), sodium selenite.</p>
+              <p>@Html.Raw(Model.Ingredients)</p>
 
               <div id="ingredient_dictionary">
                 <a href="ingredient-dictionary.html">Explore Healthy Benefits<br />
@@ -83,17 +83,7 @@
             <!-- Begin Right Column -->
 
             <div class="rightcol">
-              <span class="small_brown_text">CHICKEN IS THE #1 INGREDIENT</span>
-
-              <p>High-quality protein to help support strong muscles, healthy heart and immune system</p><span class="small_brown_text">WHOLE GRAIN BROWN RICE</span>
-
-              <p>Easily digestible, high-quality sources of carbohydrate for energy, not filler</p><span class="small_brown_text">WHOLE EGG</span>
-
-              <p>Nutrient-rich protein sources to help maintain healthy skin and shiny coat</p><span class="small_brown_text">34% PROTEIN</span>
-
-              <p>Rich in high-quality sources of protein to help meet your cat’s unique metabolic needs</p><span class="small_brown_text">REAL INGREDIENTS. REAL NUTRITION.</span>
-
-              <p>Real ingredients like diced potatoes and zucchini, plus a recipe rich in vitamins, minerals, and antioxidants to help support your cat's overall health</p>
+              @Html.Raw(Model.Nutrition)
             </div><!-- End Right Column -->
           </div><!-- End Our Ingredients Content -->
           <!-- Begin Our Guarantee Content -->
@@ -103,68 +93,7 @@
 
             <div class="leftcol">
               <h2>GUARANTEED ANALYSIS</h2>
-
-              <table border="0" cellspacing="0" cellpadding="0" width="460">
-                <tr class="on">
-                  <td>Crude Protein (Min)</td>
-
-                  <td class="align_right">34.0%</td>
-                </tr>
-
-                <tr class="off">
-                  <td>Crude Fat (Min)</td>
-
-                  <td class="align_right">15.0%</td>
-                </tr>
-
-                <tr class="on">
-                  <td>Crude Fiber (Max)</td>
-
-                  <td class="align_right">3.0%</td>
-                </tr>
-
-                <tr class="off">
-                  <td>Moisture (Max)</td>
-
-                  <td class="align_right">12.0%</td>
-                </tr>
-
-                <tr class="on">
-                  <td>Linoleic Acid (Min)</td>
-
-                  <td class="align_right">1.5%</td>
-                </tr>
-
-                <tr class="off">
-                  <td>Calcium (Ca) (Min)</td>
-
-                  <td class="align_right">1.0%</td>
-                </tr>
-
-                <tr class="on">
-                  <td>Phosphorus (P) (Min)</td>
-
-                  <td class="align_right">0.9%</td>
-                </tr>
-
-                <tr class="off">
-                  <td>Vitamin A (Min)</td>
-
-                  <td class="align_right">10,000 IU/kg</td>
-                </tr>
-
-                <tr class="on">
-                  <td>Vitamin E (Min)</td>
-
-                  <td class="align_right">250 IU/kg</td>
-                </tr>
-
-                <tr class="off">
-                  <td>Taurine (Min)</td>
-
-                  <td class="align_right">0.15%</td>
-                </tr>
-              </table>
+              @Html.Raw(Model.GuaranteeTable)
             </div><!-- End Left Column -->
             <!-- Begin Right Column -->
 
@@ -182,50 +111,7 @@
 
             <div class="leftcol">
               <h2>RECOMMENDED DAILY FEEDING DIRECTIONS</h2>
-
-              <table border="0" cellspacing="0" cellpadding="0" width="460">
-                <tr class="on">
-                  <td><span class="small_brown_text">Weight (lbs)</span></td>
-
-                  <td><span class="small_brown_text">Feeding Amount (cups)</span></td>
-                </tr>
-
-                <tr class="off">
-                  <td>3 - 12</td>
-
-                  <td>1/2 - 1</td>
-                </tr>
-
-                <tr class="on">
-                  <td>13 - 2-</td>
-
-                  <td>1 - 1-1/2</td>
-                </tr>
-
-                <tr class="off">
-                  <td>21 - 35</td>
-
-                  <td>1-1/2 - 2</td>
-                </tr>
-
-                <tr class="on">
-                  <td>36 - 50</td>
-
-                  <td>2 - 2-1/2</td>
-                </tr>
-
-                <tr class="off">
-                  <td>51 - 75</td>
-
-                  <td>2-1/2 - 3-1/2</td>
-                </tr>
-
-                <tr class="on">
-                  <td>76 - 100</td>
-
-                  <td>3-1/2 - 4</td>
-                </tr>
-              </table>
+              @Html.Raw(Model.FeedTable)
             </div><!-- End Left Column -->
           </div><!-- End Feeding Guideline Content -->
           <!-- End Product Tab Content -->
