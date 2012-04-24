@@ -33,7 +33,15 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
 
         public ActionResult Create()
         {
-          return View(new ProductModel { Active = true, Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
+          return View(new ProductModel 
+                          { 
+                            Active = true, 
+                            Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>(),
+                            FeedTable = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"460\"/>",
+                            GuaranteeTable = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"460\"/>",
+                            Ingredients = "none",
+                            Nutrition = "<p/>"
+                          });
         } 
 
         [HttpPost]
