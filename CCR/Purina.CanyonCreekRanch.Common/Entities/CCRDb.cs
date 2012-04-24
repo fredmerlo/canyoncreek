@@ -17,6 +17,8 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     {
       base.OnModelCreating(modelBuilder);
 
+      modelBuilder.Entity<Category>().Ignore(i => i.ClassifierType);
+
       modelBuilder.Entity<Product>()
         .HasRequired<Category>(p => p.ProductCategory);
 

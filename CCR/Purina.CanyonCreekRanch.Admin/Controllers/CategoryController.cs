@@ -27,7 +27,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
 
         public ActionResult Create()
         {
-            return View();
+          return View();
         } 
 
         [HttpPost]

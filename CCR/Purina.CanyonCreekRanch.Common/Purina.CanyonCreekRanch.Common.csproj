@@ -54,6 +54,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\CCRDb.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Helpers\HtmlDropDownExtension.cs" />
     <Compile Include="Helpers\LowercaseRoute.cs" />
     <Compile Include="Helpers\RouteCollectionExtensions.cs" />
     <Compile Include="Native\NativeMethods.cs" />
