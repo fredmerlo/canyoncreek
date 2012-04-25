@@ -12,14 +12,22 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
   {
     private CCRDb db = new CCRDb();
 
-    public ActionResult Products(string url)
+    public ActionResult Type(string type)
     {
       try
       {
-        var category = db.Categories.FirstOrDefault<Category>(c => c.FriendlyUrl == url);
-        var products = db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id && p.Active == true).ToList();
+        var classType = (int)Enum.GetValues(typeof(Category.Classifier))
+           .Cast<Category.Classifier>().
+           First(e => e.ToString().ToLower().Equals(type));
 
-        return PartialView(products);
+        var categories = db.Categories.Where<Category>(c => c.Type == classType).ToList().OrderBy(o => o.Title);
+
+        foreach(var category in categories)
+        {
+          TempData.Add(category.FriendlyUrl, db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id && p.Active == true).ToList().OrderBy(o => o.Title));
+        }
+
+        return PartialView(categories);
       }
       catch
       {

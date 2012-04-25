@@ -25,8 +25,8 @@ namespace Purina.CanyonCreekRanch.Web
 
       routes.MapRouteLowercase(
           "CategoryRoute", // Route name
-          "category/{url}", // URL with parameters
-          new { controller = "Category", action = "Products" }
+          "type/{type}", // URL with parameters
+          new { controller = "Category", action = "Type" }
       );
 
       routes.MapRouteLowercase(
