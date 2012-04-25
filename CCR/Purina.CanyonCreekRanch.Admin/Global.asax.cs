@@ -36,6 +36,7 @@ namespace Purina.CanyonCreekRanch.Admin
     protected void Application_Start()
     {
       Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CCRDb>());
+      //Database.SetInitializer(new DropCreateDatabaseAlways<CCRDb>());
 
       AreaRegistration.RegisterAllAreas();
 
