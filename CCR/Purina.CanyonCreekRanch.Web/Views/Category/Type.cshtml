@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Purina.CanyonCreekRanch.Common.Entities.Category>
+@using Purina.CanyonCreekRanch.Common.Entities
+
+@if (Model != null) {
+  foreach (var category in Model) {
+                  <ul>
+                    <li>@Html.ActionLink(category.Title, category.FriendlyUrl, "Category", null, new {@class = "product_category"})</li>
+
+    @foreach(var product in (IEnumerable<Product>)TempData[category.FriendlyUrl]) {
+                    <li>@Html.ActionLink(product.Title, product.FriendlyUrl, "Product")</li>
+
+                    <li>@Html.ActionLink(product.SubTitle, product.FriendlyUrl, "Product")</li>
+      }
+                  </ul>
+  }
+}
+

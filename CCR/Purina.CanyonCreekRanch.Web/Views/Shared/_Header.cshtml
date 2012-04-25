@@ -27,17 +27,7 @@
                 </li>
 
                 <li>
-                  <ul>
-                    <li><a href="natural-dry-dog-food.html" class="product_category">Dry Dog Food</a></li>
-
-                    @{Html.RenderAction("Products", "Category", new { url = "dry-dog-food"});}
-                  </ul>
-
-                  <ul>
-                    <li><a href="natural-dry-dog-food.html" class="product_category">Wet Dog Food</a></li>
-
-                    @{Html.RenderAction("Products", "Category", new { url = "wet-dog-food"});}
-                  </ul>
+                  @{Html.RenderAction("Type", "Category", new { type = "dog" });}
 
                   <ul id="nav_last">
                     <li><a href="#"><img src="/img/shared/nav-video.jpg" /></a></li>
@@ -63,17 +53,7 @@
                 </li>
 
                 <li>
-                  <ul>
-                    <li><a href="natural-dry-cat-food.html" class="product_category">Dry Cat Food</a></li>
-
-                    @{Html.RenderAction("Products", "Category", new {url = "dry-cat-food"});}
-                  </ul>
-
-                  <ul>
-                    <li><a href="natural-dry-cat-food.html" class="product_category">Wet Cat Food</a></li>
-
-                    @{Html.RenderAction("Products", "Category", new { url = "wet-cat-food"});}
-                  </ul>
+                  @{Html.RenderAction("Type", "Category", new { type = "cat" });}
 
                   <ul id="nav_last">
                     <li><a href="#"><img src="/img/shared/nav-video.jpg" /></a></li>
@@ -99,89 +79,7 @@
                 </li>
 
                 <li class="ie_nav_fix">
-                  <ul>
-                    <li><a href="snacks-detail.html" class="product_category">Category Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-                  </ul>
-
-                  <ul>
-                    <li><a href="snacks-detail.html" class="product_category">Category Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-                  </ul>
-
-                  <ul>
-                    <li><a href="snacks-detail.html" class="product_category">Category Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-                  </ul>
-
-                  <ul>
-                    <li><a href="snacks-detail.html" class="product_category">Category Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name</a></li>
-
-                    <li><a href="snacks-detail.html">Product Name Very Long</a></li>
-                  </ul>
+                  @{Html.RenderAction("Type", "Category", new { type = "snack" });}
 
                   <ul id="nav_last">
                     <li class="nav_box blue"><a href="natural-food-for-dogs.html">Learn About<br />
