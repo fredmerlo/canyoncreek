@@ -34,5 +34,23 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
         return PartialView(null);
       }
     }
+
+    public ActionResult Detail(string type)
+    {
+      try
+      {
+        var classType = (int)Enum.GetValues(typeof(Category.Classifier))
+           .Cast<Category.Classifier>().
+           First(e => e.ToString().ToLower().Equals(type));
+
+        var detailType = Enum.GetName(typeof(Category.Classifier), classType) + "Detail";
+
+        return View(detailType);
+      }
+      catch
+      {
+        return null;
+      }
+    }
   }
 }
