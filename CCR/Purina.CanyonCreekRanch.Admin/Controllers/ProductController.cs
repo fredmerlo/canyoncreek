@@ -20,15 +20,15 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         {
           List<ProductModel> products = new List<ProductModel>();
 
-          foreach (var product in db.Products.OrderBy(p => p.Title).ToList<Product>())
-            products.Add(new ProductModel(product) { Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
+          foreach (var product in db.Products.ToList<Product>())
+            products.Add(new ProductModel(product) { Categories = db.Categories.OrderBy(c => c.Title).ToList<Category>() });
 
-            return View(products);
+            return View(products.OrderBy(c => c.ProductCategory.Title).ThenBy(p => p.Title));
         }
 
         public ViewResult Details(int id)
         {
-          return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
+          return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.OrderBy(c => c.Title).ToList<Category>() });
         }
 
         public ActionResult Create()
@@ -36,7 +36,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
           return View(new ProductModel 
                           { 
                             Active = true, 
-                            Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>(),
+                            Categories = db.Categories.OrderBy(c => c.Title).ToList<Category>(),
                             FeedTable = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"460\"/>",
                             GuaranteeTable = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"460\"/>",
                             Ingredients = "none",
@@ -61,7 +61,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
         
         public ActionResult Edit(int id)
         {
-          return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.OrderBy(c => c.Name).ToList<Category>() });
+          return View(new ProductModel(db.Products.Find(id)) { Categories = db.Categories.OrderBy(c => c.Title).ToList<Category>() });
         }
 
         [HttpPost]
