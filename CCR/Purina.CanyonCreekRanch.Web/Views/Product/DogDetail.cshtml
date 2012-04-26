@@ -1,0 +1,146 @@
+﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
+
+    <!-- Begin Content -->
+
+    <div id="content" class="natural_dog">
+      <!-- Begin Content Wrap -->
+
+      <div class="wrap">
+        <!-- Begin AddThis Button -->
+
+        <div id="addthis">
+          <div class="addthis_toolbox addthis_default_style addthis">
+            <a href="http://www.addthis.com/bookmark.php?v=250&pubid=xa-4f7b288c1af4d69b" class="addthis_button_compact">Share</a> <span class="addthis_separator">|</span> <a class="addthis_button_preferred_1"></a> <a class="addthis_button_preferred_2"></a> <a class="addthis_button_preferred_3"></a> <a class="addthis_button_preferred_4"></a>
+          </div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f7b288c1af4d69b">
+</script>
+        </div><!-- End AddThis Button -->
+        <hr />
+        <!-- Begin Product -->
+        <!-- Begin Product Left Navigation --><a href="#" class="arrows left"></a><!-- End Product Left Navigation -->
+
+        <div class="product_content"><img src="/img/dogs/chicken-brown-rice-packaging.png" class="float_left" />
+
+        <h1>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
+
+        <p class="tag_line"><em>NATURAL FOOD FOR ADULT DOGS<br />
+        plus vitamins and minerals</em></p><img src="/img/dogs/chicken-brown-rice-ingredients.png" class="ingredients" />
+
+        <p>Chicken & Brown Rice Mix is simply savory and wholesome food full of all the nutrients that speak to a dog’s true nature and instincts. It’s natural dry dog food for a well-balanced meal.</p>
+
+        <ul class="product_list">
+          <li>Chicken is the #1 ingredient</li>
+
+          <li>High-quality proteins to support strong muscles, healthy heart, healthy immune system, healthy skin, and shiny coat</li>
+
+          <li>Available in 5 lb., 11 lb., and 24 lb. bags</li>
+        </ul><img src="/img/dogs/chicken-brown-rice-nutritionals.png" class="nutritionals" /></div><!-- End Product -->
+        <!-- Begin Product Right Navigation --><a href="#" class="arrows right"></a><!-- End Product Right Navigation -->
+        <hr />
+        <!-- Begin Full Width Column -->
+
+        <div class="fullcol marginbottom20">
+          <!-- Begin Product Tabs -->
+
+          <ul class="tabs">
+            <li><a href="#tab1">Recognizably Real</a></li>
+
+            <li><a href="#tab2">Our Ingredients</a></li>
+
+            <li><a href="#tab3">Our Guarantee</a></li>
+
+            <li class="last"><a href="#tab4">Feeding Guidelines</a></li>
+          </ul><!-- End Product Tabs -->
+          <!-- Begin Recognizably Real Content -->
+
+          <div class="pane">
+            <!-- Begin Left Column -->
+
+            <div class="leftcol">
+              <h2>A better way is on the horizon</h2>
+
+              <p>Our natural dog food and natural cat food provides superior nutrition for the journey each and every day. But we didn’t stop at that. Each formula includes recognizably real ingredients, for a more satisfying food experience for our pets. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div><!-- End Left Column -->
+            <!-- Begin Right Column -->
+
+            <div class="rightcol"><img src="/img/dogs/pea-pods.jpg" class="margin10 padding30" /> <img src="/img/dogs/carrots.jpg" /></div><!-- End Right Column -->
+          </div><!-- End Recognizably Real Content -->
+          <!-- Begin Our Ingredients Content -->
+
+          <div class="pane">
+            <!-- Begin Left Column -->
+
+            <div class="leftcol">
+              <span class="small_brown_text">Ingredients:</span>
+
+               <p>@Html.Raw(Model.Ingredients)</p>
+
+              <div id="ingredient_dictionary">
+                <a href="ingredient-dictionary.html">Explore Healthy Benefits<br />
+                with our<br />
+                <span class="small_white_text">INGREDIENTS DICTIONARY</span></a>
+              </div>
+            </div><!-- End Left Column -->
+            <!-- Begin Right Column -->
+
+            <div class="rightcol">
+                @Html.Raw(Model.Nutrition)
+            </div><!-- End Right Column -->
+          </div><!-- End Our Ingredients Content -->
+          <!-- Begin Our Guarantee Content -->
+
+          <div class="pane">
+            <!-- Begin Left Column -->
+
+            <div class="leftcol">
+              <h2>GUARANTEED ANALYSIS</h2>
+                @Html.Raw(Model.GuaranteeTable)
+            </div><!-- End Left Column -->
+            <!-- Begin Right Column -->
+
+            <div class="rightcol">
+            <h2>OUR BETTER WAY guarantee</h2>
+
+            <p>If this food has not met your expectations, we will refund the amount of your purchase. Just send us the "BEST BY" date box and UPC from the bag with your original store receipt (with price circled), your name, address and reason for return.</p>
+
+            <h5><a href="satisfaction-guarantee.html">LEARN MORE &#187;</a></h5><img src="/img/shared/satisfaction-guarantee.png" class="satisfaction" /></div><!-- End Right Column -->
+          </div><!-- End Our Guarantee Content -->
+          <!-- Begin Feeding Guideline Content -->
+
+          <div class="pane">
+            <!-- Begin Left Column -->
+
+            <div class="leftcol">
+              <h2>RECOMMENDED DAILY FEEDING DIRECTIONS</h2>
+              @Html.Raw(Model.FeedTable)
+            </div><!-- End Left Column -->
+          </div><!-- End Feeding Guideline Content -->
+          <!-- End Product Tab Content -->
+        </div><!-- End Full Width Column -->
+        <hr class="margin40" />
+        <!-- Begin Left Column -->
+
+        <div class="leftcol">
+          <div id="snacks">
+            <span class="large_white_text">SNACKS</span>
+
+            <p>An incredible variety of all-natural pet snacks<br />
+            made from only high quality ingredients.</p>@Html.ActionLink("LEARN MORE »", "snack", "Info")
+          </div>
+        </div><!-- End Left Column -->
+        <!-- Begin Right Column -->
+
+        <div class="rightcol">
+          <div id="large_promo">
+            <p>Make the switch<br />
+            to a better pet food</p><span class="large_brown_text"><a href="#">SAVE NOW</a></span>
+          </div>
+        </div><!-- End Right Column -->
+        <!-- Begin Clear Content -->
+
+        <div id="clear_content"></div><!-- End Clear Content -->
+      </div><!-- End Content -->
+    </div><!-- End Content Wrap -->

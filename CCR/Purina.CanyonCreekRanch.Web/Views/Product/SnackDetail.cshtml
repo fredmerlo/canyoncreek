@@ -1,0 +1,68 @@
+﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
+
+    <!-- MY REAL Begin Content -->
+
+     <!-- Begin Content -->
+
+    <div id="content" class="snacks">
+      <!-- Begin Content Wrap -->
+
+      <div class="wrap">
+        <!-- Begin AddThis Button -->
+
+        <div id="addthis">
+          <div class="addthis_toolbox addthis_default_style addthis">
+            <a href="http://www.addthis.com/bookmark.php?v=250&pubid=xa-4f7b288c1af4d69b" class="addthis_button_compact">Share</a> <span class="addthis_separator">|</span> <a class="addthis_button_preferred_1"></a> <a class="addthis_button_preferred_2"></a> <a class="addthis_button_preferred_3"></a> <a class="addthis_button_preferred_4"></a>
+          </div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f7b288c1af4d69b">
+</script>
+        </div><!-- End AddThis Button -->
+        <hr />
+        <!-- Begin Snack -->
+        <!-- Begin Product Left Navigation --><a href="#" class="arrows left"></a><!-- End Product Left Navigation -->
+
+        <div class="snack_content">
+          <img src="/img/snacks/snack-packaging.jpg" class="float_left_snacks" />
+
+          <h1>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
+
+          <p class="tag_line_snacks"><em>WHOLESOME SNACKS FOR DOGS</em></p>
+
+          <p class="marginbottom10">Lots of goodies packed on an edible skewer will keep your dog busy and happy. Kabobs are full of wholesome chicken, pork skin, and potato.</p>
+
+          <h2>Ingredients:</h2>
+
+          @Html.Raw(Model.Ingredients)
+
+          <h2>Feeding Guidelines:</h2>
+
+          @Html.Raw(Model.FeedTable)
+
+          <h2>GURANTEED ANALYSIS:</h2>
+          @Html.Raw(Model.GuaranteeTable)
+        </div><!-- End Snack -->
+        <!-- Begin Product Right Navigation --><a href="#" class="arrows right"></a><!-- End Product Right Navigation -->
+        <hr class="margin40" />
+        <!-- Begin Left Column -->
+
+        <div class="leftcol">
+          <div id="natural_dog_food">
+            <span class="large_white_text">NATURAL<br />
+            DOG FOOD</span>
+
+            <p>High quality ingredients you want with none that you don’t,<br />
+            so you can see a real difference in your dog.</p>@Html.ActionLink("LEARN MORE »", "dog", "Info")
+          </div>
+        </div><!-- End Left Column -->
+        <!-- Begin Right Column -->
+
+        <div class="rightcol">
+          <div id="large_promo">
+            <p>Make the switch<br />
+            to a better pet food</p><span class="large_brown_text"><a href="#">SAVE NOW</a></span>
+          </div>
+        </div><!-- End Right Column -->
+        <!-- Begin Clear Content -->
+
+        <div id="clear_content"></div><!-- End Clear Content -->
+      </div><!-- End Content -->
+    </div><!-- End Content Wrap -->
