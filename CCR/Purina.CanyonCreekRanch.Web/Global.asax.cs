@@ -24,13 +24,25 @@ namespace Purina.CanyonCreekRanch.Web
       routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
       routes.MapRouteLowercase(
-          "CategoryRoute", // Route name
+          "CategoryType", // Route name
           "type/{type}", // URL with parameters
           new { controller = "Category", action = "Type" }
       );
 
       routes.MapRouteLowercase(
-          "ProductRoute", // Route name
+          "CategoryInfo", // Route name
+          "info/{type}", // URL with parameters
+          new { controller = "Category", action = "Info" }
+      );
+
+      routes.MapRouteLowercase(
+          "CategoryHome", // Route name
+          "category/{url}", // URL with parameters
+          new { controller = "Category", action = "Category" }
+      );
+
+      routes.MapRouteLowercase(
+          "ProductDetail", // Route name
           "product/{url}", // URL with parameters
           new { controller = "Product", action = "Detail" }
       );
