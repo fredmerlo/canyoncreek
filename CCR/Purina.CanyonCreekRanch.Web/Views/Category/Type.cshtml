@@ -4,7 +4,7 @@
 @if (Model != null) {
   foreach (var category in Model) {
                   <ul>
-                    <li>@Html.ActionLink(category.Title, Enum.GetName(typeof(Category.Classifier), category.Type), "Detail", null, new {@class = "product_category"})</li>
+                    <li>@Html.ActionLink(category.Title, category.FriendlyUrl, "Category", null, new {@class = "product_category"})</li>
 
     @foreach(var product in (IEnumerable<Product>)TempData[category.FriendlyUrl]) {
                     <li>@Html.ActionLink(product.Title, product.FriendlyUrl, "Product")</li>

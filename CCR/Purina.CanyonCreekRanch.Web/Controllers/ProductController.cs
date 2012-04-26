@@ -19,7 +19,9 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
       if(product == null)
         return RedirectToAction("Index", "Home");
 
-      return View(product);
+      var detailType = Enum.GetName(typeof(Category.Classifier), product.ProductCategory.Type) + "Detail";
+
+      return View(detailType, product);
     }
   }
 }

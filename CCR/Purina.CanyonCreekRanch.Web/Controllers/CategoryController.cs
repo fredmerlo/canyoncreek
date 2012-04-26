@@ -35,7 +35,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
       }
     }
 
-    public ActionResult Detail(string type)
+    public ActionResult Info(string type)
     {
       try
       {
@@ -43,13 +43,25 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
            .Cast<Category.Classifier>().
            First(e => e.ToString().ToLower().Equals(type));
 
-        var detailType = Enum.GetName(typeof(Category.Classifier), classType) + "Detail";
+        var detailType = Enum.GetName(typeof(Category.Classifier), classType) + "Info";
 
         return View(detailType);
       }
       catch
       {
-        return null;
+        return RedirectToAction("Index", "Home");
+      }
+    }
+
+    public ActionResult Category(string url)
+    {
+      try
+      {
+        return View();
+      }
+      catch
+      {
+        return RedirectToAction("Index", "Home");
       }
     }
   }

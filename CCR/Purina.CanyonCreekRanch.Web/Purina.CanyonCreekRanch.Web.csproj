@@ -260,6 +260,9 @@
     <Content Include="Static\terms-and-conditions.html" />
     <Content Include="Static\whats-happening-article.html" />
     <Content Include="Static\whats-happening.html" />
+    <Content Include="Views\Category\DogInfo.cshtml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -341,16 +344,22 @@
     <Content Include="Views\Static\DogFood.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Product\Detail.cshtml" />
+    <Content Include="Views\Product\CatDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Category\Type.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Category\CatDetail.cshtml" />
+    <Content Include="Views\Category\CatInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Category\DogDetail.cshtml" />
+    <Content Include="Views\Category\SnackInfo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Product\DogDetail.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Product\SnackDetail.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
