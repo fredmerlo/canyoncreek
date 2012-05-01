@@ -57,6 +57,7 @@
     <Compile Include="Helpers\HtmlDropDownExtension.cs" />
     <Compile Include="Helpers\LowercaseRoute.cs" />
     <Compile Include="Helpers\RouteCollectionExtensions.cs" />
+    <Compile Include="Helpers\TransferResult.cs" />
     <Compile Include="Native\NativeMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\NtlmMemebershipProvider.cs" />

@@ -55,14 +55,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
     public ActionResult Category(string url)
     {
-      try
-      {
-        return View();
-      }
-      catch
-      {
-        return RedirectToAction("Index", "Home");
-      }
+      return RedirectToAction("Index", "Home");
     }
   }
 }
