@@ -19,5 +19,17 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     {
       return View();
     }
+
+    [ActionName("holistic-living")]
+    public ActionResult HolisticLiving() { return View(); }
+
+    [ActionName("ingredient-dictionary")]
+    public ActionResult IngredientDictionary() { return View(); }
+
+    [ActionName("our-story")]
+    public ActionResult OurStory() { return View(); }
+
+    [ActionName("our-story-faq")]
+    public ActionResult OurStoryFaq() { return View(); }
   }
 }
