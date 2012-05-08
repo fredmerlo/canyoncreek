@@ -18,22 +18,19 @@
         <!-- Begin Product -->
         <!-- Begin Product Left Navigation --><a href="#" class="arrows left"></a><!-- End Product Left Navigation -->
 
-        <div class="product_content"><img src="/img/cats/chicken-brown-rice-packaging.png" class="float_left" />
+        <div class="product_content">
+        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left" />
 
         <h1>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
 
         <p class="tag_line"><em>NATURAL DRY CAT FOOD FOR ADULT CATS<br />
-        plus vitamins and minerals</em></p><img src="/img/cats/chicken-brown-rice-ingredients.png" class="ingredients" />
-
-        <p>Our savory Chicken &amp; Brown Rice Mix is full of nutrient-rich protein and whole grains. Made with antioxidants and essential vitamins, it's a well-round natural dry cat food for every day.</p>
-
-        <ul class="product_list">
-          <li>Chicken is the #1 ingredient</li>
-
-          <li>High-quality proteins to support strong muscles, healthy heart, healthy immune system, healthy skin, and shiny coat</li>
-
-          <li>Available in 2 lb., 5 lb., and 11 lb. bags</li>
-        </ul><img src="/img/cats/chicken-brown-rice-nutritionals.png" class="nutritionals" /></div><!-- End Product -->
+        plus vitamins and minerals</em></p>
+        
+        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/ingredients.png" class="ingredients" />
+        @Html.Raw(Model.Description)
+        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/breakdown.png" class="nutritionals" />
+        </div>
+        <!-- End Product -->
         <!-- Begin Product Right Navigation --><a href="#" class="arrows right"></a><!-- End Product Right Navigation -->
         <hr />
         <!-- Begin Full Width Column -->
