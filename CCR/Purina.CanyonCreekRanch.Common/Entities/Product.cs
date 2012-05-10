@@ -12,6 +12,7 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     public string SubTitle { get; set; }
     public string TagLine { get; set; }
     public string Description { get; set; }
+    public string Recognizably { get; set; }
     public string ResourcePath { get; set; }
     public string ResourcePrefix { get; set; }
     public string FeedTable { get; set; }

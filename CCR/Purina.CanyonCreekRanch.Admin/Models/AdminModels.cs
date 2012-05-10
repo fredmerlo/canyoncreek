@@ -28,6 +28,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
         Ingredients = product.Ingredients;
         Nutrition = product.Nutrition;
         ProductCategory = product.ProductCategory;
+        Recognizably = product.Recognizably;
         TagLine = product.TagLine;
         Title = product.Title;
         Subtitle = product.SubTitle;
@@ -39,6 +40,10 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     [Required]
     [DataType(DataType.MultilineText)]
     public string Description { get; set; }
+    [AllowHtml]
+    [Required]
+    [DataType(DataType.MultilineText)]
+    public string Recognizably { get; set; }
     public int Id { get; set; }
     public string ResourcePath { get; set; }
     public string ResourcePrefix { get; set; }
@@ -95,6 +100,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
         entity.ProductCategory = product.ProductCategory;
         entity.ResourcePath = product.ResourcePath;
         entity.ResourcePrefix = product.ResourcePrefix;
+        entity.Recognizably = product.Recognizably;
         entity.SubTitle = product.Subtitle;
         entity.TagLine = product.TagLine;
         entity.Title = product.Title;
@@ -118,6 +124,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
         entity.ProductCategory = ProductCategory;
         entity.ResourcePath = ResourcePath;
         entity.ResourcePrefix = ResourcePrefix;
+        entity.Recognizably = Recognizably;
         entity.SubTitle = Subtitle;
         entity.TagLine = TagLine;
         entity.Title = Title;
