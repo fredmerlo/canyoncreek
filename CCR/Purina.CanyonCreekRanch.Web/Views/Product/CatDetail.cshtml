@@ -22,8 +22,7 @@
 
         <h1>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
 
-        <p class="tag_line"><em>NATURAL DRY CAT FOOD FOR ADULT CATS<br />
-        plus vitamins and minerals</em></p><img src="/img/cats/chicken-brown-rice-ingredients.png" class="ingredients" />
+        <p class="tag_line">@Html.Raw(Model.TagLine)</p><img src="/img/cats/chicken-brown-rice-ingredients.png" class="ingredients" />
 
         <p>Our savory Chicken &amp; Brown Rice Mix is full of nutrient-rich protein and whole grains. Made with antioxidants and essential vitamins, it's a well-round natural dry cat food for every day.</p>
 
@@ -58,7 +57,7 @@
             <div class="leftcol">
               <img src="/img/shared/zucchini.png" class="margin10" />
 
-              <p>Made with diced potatoes and zucchini, these wholesome, recognizably real ingredients create a more flavorful and satisfying food experience for our cats. Additional protein-rich, real ingredients like whole egg, plant-based pea protein, and brewers dried yeast help to support our dogs' overall health.</p>
+              <p>@Html.Raw(Model.Description)</p>
             </div><!-- End Left Column -->
             <!-- Begin Right Column -->
 
