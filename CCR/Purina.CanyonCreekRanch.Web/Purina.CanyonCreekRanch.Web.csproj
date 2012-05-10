@@ -252,7 +252,6 @@
     <Content Include="Static\our-story.html" />
     <Content Include="Static\satisfaction-guarantee.html" />
     <Content Include="Static\scripts\global.js" />
-    <Content Include="Static\scripts\jquery.js" />
     <Content Include="Static\scripts\plugins.js" />
     <Content Include="Static\site-map.html" />
     <Content Include="Static\snacks-detail.html" />
