@@ -56,6 +56,14 @@
         </div>
 
         <div class="editor-label">
+            @Html.LabelFor(model => model.Recognizably)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Recognizably)
+            @Html.ValidationMessageFor(model => model.Recognizably)
+        </div>
+
+        <div class="editor-label">
             @Html.LabelFor(model => model.ResourcePath)
         </div>
         <div class="editor-field">
