@@ -325,7 +325,6 @@
     <Content Include="Static\our-story.html" />
     <Content Include="Static\satisfaction-guarantee.html" />
     <Content Include="Static\scripts\global.js" />
-    <Content Include="Static\scripts\jquery.js" />
     <Content Include="Static\scripts\plugins.js" />
     <Content Include="Static\site-map.html" />
     <Content Include="Static\snacks-detail.html" />
@@ -369,37 +368,37 @@
     <Content Include="Views\Shared\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\Contact.cshtml" />
+    <Content Include="Views\Shared\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\FindRetailer.cshtml" />
+    <Content Include="Views\Shared\FindRetailer.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\HealthAndNutrition.cshtml" />
+    <Content Include="Views\Shared\HealthAndNutrition.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\HolisticLiving.cshtml" />
+    <Content Include="Views\Shared\HolisticLiving.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\IngredientDictionary.cshtml" />
+    <Content Include="Views\Shared\IngredientDictionary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Static\IngredientList.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\OurStoryFaq.cshtml" />
+    <Content Include="Views\Shared\OurStoryFaq.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\OurStory.cshtml" />
+    <Content Include="Views\Shared\OurStory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Static\SatisfactionGuarantee.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\SiteMap.cshtml" />
+    <Content Include="Views\Shared\SiteMap.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\TermsAndConditions.cshtml" />
+    <Content Include="Views\Shared\TermsAndConditions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Footer.cshtml" />
