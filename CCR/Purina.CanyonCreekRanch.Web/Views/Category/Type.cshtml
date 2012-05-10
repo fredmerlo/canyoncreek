@@ -8,6 +8,8 @@
 
     @foreach(var product in (IEnumerable<Product>)TempData[category.FriendlyUrl]) {
                     <li>@Html.ActionLink(product.Title, product.FriendlyUrl, "Product")</li>
+
+                    <li>@Html.ActionLink(product.SubTitle, product.FriendlyUrl, "Product")</li>
       }
                   </ul>
   }

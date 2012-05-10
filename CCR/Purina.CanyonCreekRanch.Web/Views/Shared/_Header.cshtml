@@ -5,9 +5,9 @@
         <a href="/"><img src="/img/shared/logo.png" height="40" width="480" class="logo" /></a> <!-- Begin Header Links -->
 
         <ul id="links">
-          <li><a href="find-a-retailer.html">Find our food &#187;</a></li>
+          <li><a href="/find-a-retailer">Find our food &#187;</a></li>
 
-          <li><a href="whats-happening.html">What's Happening &#187;</a></li>
+          <li><a href=/"whats-happening">What's Happening &#187;</a></li>
         </ul><!-- End Header Links -->
 
         <div id="nav">
@@ -17,7 +17,8 @@
             <!-- Begin Dog Navigation -->
 
             <li class="dogs">
-              @Html.ActionLink("Natural Food For Dogs", "dog", "Info")<!-- Begin Dog Dropdown -->
+
+              <a href="/natural-food-for-dogs">Natural Food For Dogs</a><!-- Begin Dog Dropdown -->
 
               <ul id="dogs" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -32,7 +33,7 @@
                   <ul id="nav_last">
                     <li><a href="#"><img src="/img/shared/nav-video.jpg" /></a></li>
 
-                    <li class="nav_gold_box"><a href="health-and-nutrition.html">Explore<br />
+                    <li class="nav_gold_box"><a href="health-and-nutrition">Explore<br />
                     <span class="small_white_text">HEALTH &amp;<br />
                     NUTRITION</span><br />
                     Benefits</a></li>
@@ -43,7 +44,8 @@
             <!-- Begin Cat Navigation -->
 
             <li class="cats">
-              @Html.ActionLink("Natural Food For Cats", "cat", "Info")<!-- Begin Cat Dropdown -->
+
+              <a href="/natural-food-for-cats">Natural Food For Cats</a><!-- Begin Cat Dropdown -->
 
               <ul id="cats" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -58,7 +60,7 @@
                   <ul id="nav_last">
                     <li><a href="#"><img src="/img/shared/nav-video.jpg" /></a></li>
 
-                    <li class="nav_gold_box"><a href="health-and-nutrition.html">Explore<br />
+                    <li class="nav_gold_box"><a href="health-and-nutrition">Explore<br />
                     <span class="small_white_text">HEALTH &amp;<br />
                     NUTRITION</span><br />
                     Benefits</a></li>
@@ -69,7 +71,8 @@
             <!-- Begin Snacks Navigation -->
 
             <li class="snacks">
-              @Html.ActionLink("Snacks", "snack", "Info")<!-- Begin Snacks Dropdown -->
+
+              <a href="/snacks">Snacks</a><!-- Begin Snacks Dropdown -->
 
               <ul id="snacks" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -82,12 +85,12 @@
                   @{Html.RenderAction("Type", "Category", new { type = "snack" });}
 
                   <ul id="nav_last">
-                    <li class="nav_box blue"><a href="natural-food-for-dogs.html">Learn About<br />
+                    <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
                     <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
 
                     <li><a href="#"><img src="/img/shared/nav-video.jpg" /></a></li>
 
-                    <li class="nav_gold_box"><a href="health-and-nutrition.html">Explore<br />
+                    <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
                     <span class="small_white_text">HEALTH &amp;<br />
                     NUTRITION</span><br />
                     Benefits</a></li>
@@ -98,7 +101,7 @@
             <!-- Begin Health Navigation -->
 
             <li class="health">
-              <a href="health-and-nutrition.html">Health &amp; Nutrition</a> <!-- Begin Health Dropdown -->
+              <a href="/health-and-nutrition">Health &amp; Nutrition</a> <!-- Begin Health Dropdown -->
 
               <ul id="health" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -106,21 +109,22 @@
                 <li>
                   <ul>
                     <li>
-                      <p>Explore Canyon Creek Ranch <strong>HEALTH &amp; NUTRITION &#187;</strong></p><a href="ingredient-dictionary.html">Ingredients Dictionary</a><br />
-                      <a href="holistic-living.html">Holistic Living</a>
+                      <p>Explore Canyon Creek Ranch <strong>HEALTH &amp; NUTRITION &#187;</strong></p><a href="/ingredient-dictionary">Ingredients Dictionary</a><br />
+                      <a href="holistic-living">Holistic Living</a>
                     </li>
                   </ul>
                 </li>
 
                 <li>
                   <ul id="nav_last">
-                    <li class="nav_box blue"><a href="@Url.Action("dog", "Info")">Learn About<br />
+                    <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
                     <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
 
-                    <li class="nav_box pink"><a href="@Url.Action("cat", "Info")">Learn About<br />
+                    <li class="nav_box pink"><a href="/natural-food-for-cats">Learn About<br />
                     <span class="small_white_text">NATURAL CAT FOOD</span></a></li>
 
-                    <li class="nav_box yellow"><a href="@Url.Action("snack", "Info")">Learn About<br />
+                    <li class="nav_box yellow"><a href="/snacks">Learn About<br />
+
                     <span class="small_white_text">HEALTHY SNACKS</span></a></li>
                   </ul>
                 </li>
@@ -129,7 +133,7 @@
             <!-- Begin Story Navigation -->
 
             <li class="story">
-              <a href="our-story.html">Our Story</a>
+              <a href="/our-story">Our Story</a>
 
               <ul id="story" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -139,16 +143,24 @@
                     <li>
                       <p>Explore Canyon Creek Ranch <strong>STORY &#187;</strong></p>
 
+<<<<<<< HEAD
                       <p><a href="our-story-faq.html" class="nav_link">FAQ</a></p><a href="@Url.Action("dog", "Info")">Natural Food for Dogs</a><br />
                       <a href="@Url.Action("cat", "Info")">Natural Food for Cats</a><br />
                       <a href="@Url.Action("snack", "Info")">Snacks</a><br />
                       <a href="health-and-nutrition.html">Health &amp; Nutrition</a>
+=======
+                      <p><a href="/our-story-faq" class="nav_link">FAQ</a></p><a href="/natural-food-for-dogs">Natural Food for Dogs</a><br />
+                      <a href="/natural-food-for-cats">Natural Food for Cats</a><br />
+                      <a href="/snacks">Snacks</a><br />
+                      <a href="/health-and-nutrition">Health &amp; Nutrition</a>
+>>>>>>> master
                     </li>
                   </ul>
                 </li>
 
                 <li>
                   <ul id="nav_last">
+<<<<<<< HEAD
                     <li class="nav_box blue"><a href="@Url.Action("dog", "Info")">Learn About<br />
                     <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
 
@@ -156,6 +168,15 @@
                     <span class="small_white_text">NATURAL CAT FOOD</span></a></li>
 
                     <li class="nav_box yellow"><a href="@Url.Action("snack", "Info")">Learn About<br />
+=======
+                    <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
+                    <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
+
+                    <li class="nav_box pink"><a href="/natural-food-for-cats">Learn About<br />
+                    <span class="small_white_text">NATURAL CAT FOOD</span></a></li>
+
+                    <li class="nav_box yellow"><a href="/snacks">Learn About<br />
+>>>>>>> master
                     <span class="small_white_text">HEALTHY SNACKS</span></a></li>
                   </ul>
                 </li>

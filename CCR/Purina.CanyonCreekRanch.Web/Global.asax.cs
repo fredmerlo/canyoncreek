@@ -47,6 +47,14 @@ namespace Purina.CanyonCreekRanch.Web
           new { controller = "Product", action = "Detail" }
       );
 
+
+      routes.MapRouteLowercase(
+          "HomeAction", // Route name
+          "{action}", // URL with parameters
+          new { controller = "Home", action = "Index" } // Parameter defaults
+      );
+
+
       routes.MapRouteLowercase(
           "Default", // Route name
           "{controller}/{action}/{id}", // URL with parameters
