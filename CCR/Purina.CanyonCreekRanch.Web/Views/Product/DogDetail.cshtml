@@ -18,22 +18,18 @@
         <!-- Begin Product -->
         <!-- Begin Product Left Navigation --><a href="#" class="arrows left"></a><!-- End Product Left Navigation -->
 
-        <div class="product_content"><img src="/img/dogs/chicken-brown-rice-packaging.png" class="float_left" />
-
+        <div class="product_content">
+        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left" />
         <h1>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
 
-        <p class="tag_line"><em>NATURAL FOOD FOR ADULT DOGS<br />
-        plus vitamins and minerals</em></p><img src="/img/dogs/chicken-brown-rice-ingredients.png" class="ingredients" />
-
-        <p>Chicken & Brown Rice Mix is simply savory and wholesome food full of all the nutrients that speak to a dog’s true nature and instincts. It’s natural dry dog food for a well-balanced meal.</p>
-
-        <ul class="product_list">
-          <li>Chicken is the #1 ingredient</li>
-
-          <li>High-quality proteins to support strong muscles, healthy heart, healthy immune system, healthy skin, and shiny coat</li>
-
-          <li>Available in 5 lb., 11 lb., and 24 lb. bags</li>
-        </ul><img src="/img/dogs/chicken-brown-rice-nutritionals.png" class="nutritionals" /></div><!-- End Product -->
+        <p class="tag_line">@Html.Raw(Model.TagLine)</p>
+        
+        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/ingredients.png" class="ingredients" />
+        @Html.Raw(Model.Description)
+        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/breakdown.png" class="nutritionals" />
+        
+        </div>
+        <!-- End Product -->
         <!-- Begin Product Right Navigation --><a href="#" class="arrows right"></a><!-- End Product Right Navigation -->
         <hr />
         <!-- Begin Full Width Column -->

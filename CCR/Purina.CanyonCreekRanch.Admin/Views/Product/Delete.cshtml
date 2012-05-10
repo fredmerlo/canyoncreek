@@ -12,7 +12,7 @@
 
     <div class="display-label">Category</div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.ProductCategory.Name)
+        @Html.DisplayFor(model => model.ProductCategory.Title)
     </div>
 
     <div class="display-label">Title</div>
@@ -23,6 +23,11 @@
     <div class="display-label">Subtitle</div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Subtitle)
+    </div>
+
+    <div class="display-label">Tag Line</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TagLine)
     </div>
 
     <div class="display-label">Description</div>

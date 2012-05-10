@@ -25,7 +25,7 @@
 
           <h1>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
 
-          <p class="tag_line_snacks"><em>WHOLESOME SNACKS FOR DOGS</em></p>
+          <p class="tag_line_snacks">@Html.Raw(Model.TagLine)</p>
 
           <p class="marginbottom10">Lots of goodies packed on an edible skewer will keep your dog busy and happy. Kabobs are full of wholesome chicken, pork skin, and potato.</p>
 
