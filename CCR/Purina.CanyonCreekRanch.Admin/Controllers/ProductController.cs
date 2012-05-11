@@ -37,9 +37,6 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
                           { 
                             Active = true, 
                             Categories = db.Categories.OrderBy(c => c.Title).ToList<Category>(),
-                            Description = "<p/>",
-                            TagLine = "<p/>",
-                            Recognizably = "<p/>",
                             FeedTable = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"460\"/>",
                             GuaranteeTable = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"460\"/>",
                             Ingredients = "none",
