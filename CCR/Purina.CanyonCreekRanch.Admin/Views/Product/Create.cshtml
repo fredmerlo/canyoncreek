@@ -111,6 +111,13 @@
         </div>
 
         <div class="editor-label">
+            @Html.LabelFor(model => model.Meta)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Meta)
+        </div>
+
+        <div class="editor-label">
             @Html.LabelFor(model => model.FriendlyUrl)
         </div>
         <div class="editor-field">

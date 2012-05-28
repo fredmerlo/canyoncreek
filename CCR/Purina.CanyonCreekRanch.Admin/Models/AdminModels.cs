@@ -26,6 +26,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
         FriendlyUrl = product.FriendlyUrl;
         GuaranteeTable = product.GuaranteeTable;
         Ingredients = product.Ingredients;
+        Meta = product.Meta;
         Nutrition = product.Nutrition;
         ProductCategory = product.ProductCategory;
         Recognizably = product.Recognizably;
@@ -62,6 +63,9 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     [DataType(DataType.MultilineText)]
     public string Ingredients { get; set; }
     [AllowHtml]
+    [DataType(DataType.MultilineText)]
+    public string Meta { get; set; }
+    [AllowHtml]
     [Required]
     [DataType(DataType.MultilineText)]
     public string Nutrition { get; set; }
@@ -96,6 +100,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
         entity.FriendlyUrl = FriendlyUrl;
         entity.GuaranteeTable = product.GuaranteeTable;
         entity.Ingredients = product.Ingredients;
+        entity.Meta = product.Meta;
         entity.Nutrition = product.Nutrition;
         entity.ProductCategory = product.ProductCategory;
         entity.ResourcePath = product.ResourcePath;
@@ -120,6 +125,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
         entity.FriendlyUrl = FriendlyUrl;
         entity.GuaranteeTable = GuaranteeTable;
         entity.Ingredients = Ingredients;
+        entity.Meta = Meta;
         entity.Nutrition = Nutrition;
         entity.ProductCategory = ProductCategory;
         entity.ResourcePath = ResourcePath;
