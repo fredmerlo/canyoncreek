@@ -21,6 +21,7 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     public string Nutrition { get; set; }
     public string FriendlyUrl { get; set; }
     public bool Active { get; set; }
+    public string Meta { get; set; }
 
     public virtual Category ProductCategory { get; set; }
   }
