@@ -109,12 +109,14 @@ p {
 body {
 	width:100%
 }
+
 #container {
 	background-color:#fefefe;
 	background-image:url(../img/shared/background.jpg);
 	background-position:bottom left;
-	background-repeat:repeat-x;
+	background-repeat:repeat-x
 }
+
 .fullcol {
 	float:left;
 	position:relative;
@@ -160,9 +162,10 @@ body {
 /* =Header
 --------------------------------*/
 #header {
-	background-image:url(../img/shared/header.jpg);
+	background-image:url(../img/shared/header-sm.jpg);
 	background-repeat:repeat-x;
-	height:131px;
+	height:105px;
+/*height: 131px;*/
 	position:fixed;
 	top:0;
 	width:100%;
@@ -172,7 +175,8 @@ body {
 #header .logo {
 	left:0;
 	position:relative;
-	top:35px
+/*top:35px*/
+	top:17px
 }
 
 #header ul#links {
@@ -180,8 +184,9 @@ body {
 	list-style:none;
 	position:relative;
 	text-align:right;
-	top:30px;
-	*top: 0;
+/*top:30px;*/
+	top:27px;
+	*top:-15px
 }
 
 #header ul#links li a {
@@ -194,24 +199,26 @@ body {
 	text-decoration:none;
 	text-transform:uppercase
 }
+
 #header ul#links li a:hover {
 	color:#bfb2a3;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul {
 	position:absolute;
-	top:105px;
-	_z-index: 999;
+/*top:105px;*/
+	top:78px;
+	_z-index:999
 }
 
 #header #nav ul li {
 	float:left;
 	border-right:1px #999694 solid;
 	padding:0 14px;
-	text-transform:uppercase;
+	text-transform:uppercase
 }
 
 #header #nav ul li a {
@@ -221,56 +228,76 @@ body {
 	font-style:normal;
 	font-weight:700;
 	letter-spacing:.1em;
+	*letter-spacing:normal;
 	line-height:19px;
 	padding:8px 0;
 	text-decoration:none
 }
 
-#header #nav ul li.dogs {
+#header #nav ul li.home {
 	padding-left:0
+}
+
+#header #nav ul li.home a:hover,#header #nav ul li.home a.selected {
+	color:#bfb2a3;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul li.dogs a:hover {
 	color:#819ac1;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul li.dogs a.selected {
-	/*background-image:url(../img/shared/nav-main-selected.jpg);
-	background-position:bottom center;
-	background-position-y:28px;
-	background-repeat:no-repeat;*/
 	color:#819ac1
 }
 
-#header #nav ul li.cats a:hover, #header #nav ul li.cats a.selected {
-	color:#ce7b72
+#header #nav ul li.cats a:hover,#header #nav ul li.cats a.selected {
+	color:#ce7b72;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul li.snacks a:hover,#header #nav ul li.snacks a.selected {
-	color:#90af5e
+	color:#90af5e;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
-#header #nav ul li.health a:hover, #header #nav ul li.health a.selected {
-	color:#c69f47
+#header #nav ul li.health a:hover,#header #nav ul li.health a.selected {
+	color:#c69f47;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
-#header #nav ul li.story a:hover, #header #nav ul li.story a.selected {
-	color:#bfb2a3
+#header #nav ul li.story {
+	border-right:0
+}
+
+#header #nav ul li.story a:hover,#header #nav ul li.story a.selected {
+	color:#bfb2a3;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul li ul#dogs {
 	background-image:url(../img/shared/nav-dogs.png);
 	background-repeat:repeat-x;
 	height:338px;
-	left: 0;
+	left:0;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
 	top:25px;
-	width:625px
+	width:924px
 }
 
 #header #nav ul li ul#dogs img.selected {
@@ -288,7 +315,7 @@ body {
 	padding:35px 0 0 16px;
 	position:absolute;
 	top:25px;
-	width:620px
+	width:924px
 }
 
 #header #nav ul li ul#cats img.selected {
@@ -306,16 +333,19 @@ body {
 	padding:35px 0 0 16px;
 	position:absolute;
 	top:25px;
-	width:924px;
+	width:924px
 }
+
 #header #nav ul li ul#snacks li ul li a {
-	*font-size: 10px;
+	font-size:11px\0/;
+	*font-size:11px
 }
+
 #header #nav ul li ul#snacks li ul li a:hover {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul li ul#snacks img.selected {
@@ -374,8 +404,7 @@ body {
 	letter-spacing:normal\0/;
 	*letter-spacing:normal;
 	line-height:29px;
-	*margin-left:-28px;
-	
+	margin-left:-28px
 }
 
 #header #nav ul li ul#health p,#header #nav ul li ul#story p {
@@ -411,12 +440,12 @@ body {
 
 #header #nav ul li ul#dogs li ul,#header #nav ul li ul#cats li ul {
 	float:left;
+	margin-right:10px;
 	padding:0;
 	position:relative;
 	text-align:left;
 	top:0;
-	width:180px;
-	*width: 200px
+	width:330px
 }
 
 #header #nav ul li ul#snacks li ul {
@@ -425,9 +454,12 @@ body {
 	position:relative;
 	text-align:left;
 	top:0;
-	*top: 40px;
+	*top:40px;
 	width:173px;
+	width:170px\0/;
+	*width:168px
 }
+
 #header #nav ul li ul#health li ul,#header #nav ul li ul#story li ul {
 	left:15px;
 	padding:0;
@@ -452,30 +484,44 @@ body {
 }
 
 #header #nav ul li ul#dogs li ul#nav_last,#header #nav ul li ul#cats li ul#nav_last {
-	margin-left:35px;
-	*margin-left: 15px;
-	margin-top:35px;
+	margin-left:17px;
+	*margin-left:15px;
+	margin-top:-30px;
 	width:173px
 }
 
-#header #nav ul li ul#dogs li ul#nav_last img:hover,#header #nav ul li ul#cats li ul#nav_last img:hover, #header #nav ul li ul#snacks li ul#nav_last img:hover {
-	opacity: 0.7;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+#header #nav ul li ul#dogs li ul#nav_last img:hover,#header #nav ul li ul#cats li ul#nav_last img:hover,#header #nav ul li ul#snacks li ul#nav_last img:hover {
+	opacity:.7;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul li ul#snacks li ul#nav_last {
 	margin-left:15px;
-	margin-top:-20px;
+	margin-top:-30px;
 	width:173px
 }
 
-#header #nav ul li ul#dogs li a,#header #nav ul li ul#cats li a,#header #nav ul li ul#story li a,#header #nav ul li ul#snacks li a,#header #nav ul li ul#health li a {
+#header #nav ul li ul#dogs li,#header #nav ul li ul#cats li,#header #nav ul li ul#story li,#header #nav ul li ul#snacks li,#header #nav ul li ul#health li {
+	margin-bottom:4px
+}
+
+#header #nav ul li ul#dogs li a,#header #nav ul li ul#cats li a,#header #nav ul li ul#snacks li a {
 	border:none;
 	font-family:Georgia;
-	font-size:11px;
+	font-size:13px;
 	font-weight:400;
+	line-height:20px;
+	text-transform:none
+}
+
+#header #nav ul li ul#story li a,#header #nav ul li ul#health li a {
+	border:none;
+	font-family:Georgia;
+	font-size:13px;
+	font-weight:400;
+	line-height:20px;
 	text-transform:none
 }
 
@@ -488,23 +534,24 @@ body {
 	line-height:20px;
 	text-decoration:none;
 	text-transform:uppercase
-} 
+}
+
 #header #nav ul li ul#dogs li a strong:hover,#header #nav ul li ul#cats li a strong:hover,#header #nav ul li ul#story li a strong:hover,#header #nav ul li ul#snacks li a strong:hover,#header #nav ul li ul#health li a strong:hover {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-} 
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
+}
 
 #header #nav ul li ul#dogs li a:hover,#header #nav ul li ul#cats li a:hover,#header #nav ul li ul#snacks li a:hover,#header #nav ul li ul#health li a:hover,#header #nav ul li ul#story li a:hover {
 	color:#58493a;
 	text-decoration:none;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
-#header #nav ul li ul#dogs li a.product_category,#header #nav ul li ul#cats li a.product_category,#header #nav ul li ul#snacks li a.product_category {
+#header #nav ul li ul#dogs li span.product_category,#header #nav ul li ul#cats li span.product_category,#header #nav ul li ul#snacks li span.product_category {
 	border:none;
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
@@ -514,11 +561,29 @@ body {
 	line-height:30px;
 	text-transform:uppercase
 }
-#header #nav ul li ul#dogs li a.product_category:hover,#header #nav ul li ul#cats li a.product_category:hover,#header #nav ul li ul#snacks li a.product_category:hover {
-	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+
+#header #nav ul li ul#snacks li span.product_category_proteins {
+	border:none;
+	color:#fff;
+	display:block;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:15px;
+	font-style:normal;
+	font-weight:700;
+	line-height:15px;
+	padding-top:7px;
+	text-transform:uppercase
+}
+
+#header #nav ul li ul#story li span.faq_category {
+	border:none;
+	color:#fff;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:15px;
+	font-style:normal;
+	font-weight:700;
+	line-height:30px;
+	text-transform:uppercase
 }
 
 #header #nav ul li ul#dogs li.nav_gold_box a,#header #nav ul li ul#cats li.nav_gold_box a,#header #nav ul li ul#snacks li.nav_gold_box a {
@@ -542,16 +607,17 @@ body {
 #header #nav ul li ul#dogs li.nav_gold_box a:hover,#header #nav ul li ul#cats li.nav_gold_box a:hover,#header #nav ul li ul#snacks li.nav_gold_box a:hover,#header #nav ul li ul#health li.nav_gold_box a:hover {
 	color:#726659;
 	text-decoration:none;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
+
 #header #nav ul li ul#dogs li.nav_gold_box a:hover span,#header #nav ul li ul#cats li.nav_gold_box a:hover span,#header #nav ul li ul#snacks li.nav_gold_box a:hover span,#header #nav ul li ul#health li.nav_gold_box a:hover span {
 	color:#726659;
 	text-decoration:none;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul li ul#snacks li.nav_box {
@@ -560,7 +626,7 @@ body {
 	margin-bottom:11px;
 	padding:8px 2px;
 	text-align:center;
-	width:169px;
+	width:169px
 }
 
 #header #nav ul li ul#health li.nav_box,#header #nav ul li ul#story li.nav_box {
@@ -569,7 +635,7 @@ body {
 	margin-bottom:11px;
 	padding:8px;
 	text-align:center;
-	width:173px;
+	width:173px
 }
 
 #header #nav ul li ul#snacks li.nav_box a,#header #nav ul li ul#health li.nav_box a,#header #nav ul li ul#story li.nav_box a {
@@ -578,7 +644,7 @@ body {
 	font-size:15px;
 	font-style:italic;
 	font-weight:400;
-	letter-spacing: .08em;
+	letter-spacing:.08em;
 	letter-spacing:normal\0/;
 	*letter-spacing:normal;
 	line-height:18px;
@@ -586,59 +652,67 @@ body {
 }
 
 #header #nav ul li ul#snacks li.blue,#header #nav ul li ul#health li.blue,#header #nav ul li ul#story li.blue {
-	background-color:#83a3aa;
+	background-color:#819ac1;
 	border:none;
-	letter-spacing: .08em;
+	letter-spacing:.08em;
 	margin-bottom:15px;
 	margin-right:30px;
-	white-space: nowrap;
+	white-space:nowrap
 }
+
 #header #nav ul li ul#snacks li.blue a:hover,#header #nav ul li ul#health li.blue a:hover,#header #nav ul li ul#story li.blue a:hover {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
+
 #header #nav ul li ul#snacks li.blue a:hover span,#header #nav ul li ul#health li.blue a:hover span,#header #nav ul li ul#story li.blue a:hover span {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
+
 #header #nav ul li ul#health li.pink,#header #nav ul li ul#story li.pink {
-	background-color:#c586a6;
+	background-color:#ce7b72;
 	border:none;
 	margin-bottom:15px;
 	margin-right:30px
 }
+
 #header #nav ul li ul#health li.pink a:hover,#header #nav ul li ul#story li.pink a:hover {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
+
 #header #nav ul li ul#health li.pink a:hover span,#header #nav ul li ul#story li.pink a:hover span {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
+
 #header #nav ul li ul#health li.yellow,#header #nav ul li ul#story li.yellow {
 	background-color:#c8be46;
 	border:none;
 	margin-right:30px
 }
+
 #header #nav ul li ul#health li.yellow a:hover,#header #nav ul li ul#story li.yellow a:hover {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
+
 #header #nav ul li ul#health li.yellow a:hover span,#header #nav ul li ul#story li.yellow a:hover span {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #header #nav ul li ul#dogs li.nav_box a:hover,#header #nav ul li ul#cats li.nav_box a:hover,#header #nav ul li ul#snacks li.nav_box a:hover,#header #nav ul li ul#health li.nav_box a:hover {
@@ -649,10 +723,12 @@ body {
 --------------------------------*/
 #content {
 	height:100%;
-	margin-top:134px;
-	_margin-top: 0;
+	margin-top:94px;
+/*margin-top:134px;
+	margin-top:4px;*/
+	_margin-top:0;
 	width:100%;
-	_z-index: 5;
+	_z-index:5
 }
 
 table {
@@ -660,7 +736,8 @@ table {
 	font-family:Georgia,sans-serif;
 	font-size:14px;
 	font-style:normal;
-	line-height:22px
+	line-height:22px;
+	margin-bottom:10px
 }
 
 tr.on {
@@ -697,17 +774,22 @@ ul.list li {
 	padding-left:5px
 }
 
+ul.product_list {
+	margin-bottom:20px;
+	white-space:normal
+}
+
 ul.product_list li {
 	color:#58493a;
-	display:list-item;
 	font-family:Georgia,sans-serif;
 	font-size:14px;
 	font-style:normal;
 	line-height:22px;
 	list-style:disc;
-	list-style-position:inside;
 	margin-bottom:10px;
-	padding-left:5px
+	margin-left:253px;
+	padding-left:5px;
+	width:620px
 }
 
 ul.categories li {
@@ -720,6 +802,13 @@ ul.categories li {
 	text-align:left;
 	text-decoration:none;
 	text-transform:uppercase
+}
+
+ul.categories li a:hover {
+	color:#bfb2a3;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #clear_content {
@@ -738,72 +827,112 @@ ul.categories li {
 .featured {
 	height:557px;
 	position:relative;
-	width:940px;
+	width:940px
 }
+
 .featured a:hover {
 	color:#bfb2a3
 }
+
+#holistic_box {
+	background-image:url(../img/shared/holistic.jpg);
+	background-repeat:no-repeat;
+	height:221px;
+	padding-top:40px;
+	text-align:center;
+	width:461px
+}
+
+#holistic_box p {
+	color:#fff
+}
+
+#holistic_box a {
+	color:#fff;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:15px;
+	font-style:italic;
+	font-weight:700;
+	line-height:29px;
+	padding:146px 185px 70px 165px;
+	text-align:left;
+	text-decoration:none;
+	text-transform:uppercase
+}
+
+#holistic_box:hover span,#holistic_box:hover p,#holistic_box a:hover {
+	color:#bfb2a3;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
+}
+
 #natural_dog_food {
 	background-image:url(../img/shared/natural-dog-food.jpg);
 	background-repeat:no-repeat;
-	height:191px;
-	padding:40px 0 0;
+	height:221px;
+	padding:20px 0 0;
 	text-align:center;
 	width:459px
 }
+
 #natural_dog_food a {
-	padding: 191px 183px 20px 184px;
+	padding:191px 183px 20px 184px
 }
-#natural_dog_food:hover span, #natural_dog_food:hover p, #natural_dog_food a:hover {
+
+#natural_dog_food:hover span,#natural_dog_food:hover p,#natural_dog_food a:hover {
 	color:#bfb2a3;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #natural_cat_food {
 	background-image:url(../img/shared/natural-cat-food.jpg);
 	background-repeat:no-repeat;
-	height:191px;
-	padding:40px 0 0;
+	height:221px;
+	padding:20px 0 0;
 	text-align:center;
 	width:461px
 }
+
 #natural_cat_food a {
-	padding: 191px 185px 20px 184px;
+	padding:191px 185px 20px 184px
 }
-#natural_cat_food:hover span, #natural_cat_food:hover p, #natural_cat_food a:hover {
+
+#natural_cat_food:hover span,#natural_cat_food:hover p,#natural_cat_food a:hover {
 	color:#bfb2a3;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #snack_box {
 	background-image:url(../img/shared/snacks.jpg);
 	background-repeat:no-repeat;
-	height:191px;
-	padding-top:40px;
+	height:211px;
+	padding-top:30px;
 	text-align:center;
 	width:461px
 }
+
 #snack_box a {
 	font-family:brandon-grotesque,sans-serif;
 	font-size:15px;
 	font-style:italic;
 	font-weight:700;
 	line-height:29px;
-	padding: 146px 185px 70px 183px;
+	padding:146px 185px 70px 183px;
 	text-align:left;
 	text-decoration:none;
 	text-transform:uppercase
-	
 }
-#snack_box:hover span, #snack_box:hover p, #snack_box a:hover {
+
+#snack_box:hover span,#snack_box:hover p,#snack_box a:hover {
 	color:#bfb2a3;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #ingredient_dictionary {
@@ -828,11 +957,12 @@ ul.categories li {
 	font-size:20px;
 	line-height:24px
 }
-#ingredient_dictionary a:hover, #ingredient_dictionary a:hover span {
+
+#ingredient_dictionary a:hover,#ingredient_dictionary a:hover span {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #natural_dog_food p,#natural_cat_food p,#snack_box p,#ingredient_dictionary p {
@@ -863,7 +993,7 @@ ul.categories li {
 	height:119px;
 	padding:84px 170px 0 0;
 	text-align:center;
-	white-space: nowrap;
+	white-space:nowrap;
 	width:290px
 }
 
@@ -874,13 +1004,19 @@ ul.categories li {
 }
 
 #large_promo a {
-	padding: 120px 200px 30px 30px;
+	padding:120px 200px 30px 30px
 }
-#large_promo:hover span, #large_promo:hover p, #large_promo a:hover {
+
+#large_promo span {
+	*display:block;
+	*margin-left:30px
+}
+
+#large_promo:hover span,#large_promo:hover p,#large_promo a:hover {
 	color:#fff;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #addthis {
@@ -956,8 +1092,12 @@ ul.no li.last {
 	font-size:18px;
 	line-height:22px
 }
-#sidebar_ingredient_dictionary a:hover, #sidebar_ingredient_dictionary a:hover span {
+
+#sidebar_ingredient_dictionary a:hover,#sidebar_ingredient_dictionary a:hover span {
 	color:#726659;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #sidebar_natural_cat_food {
@@ -989,18 +1129,19 @@ ul.no li.last {
 	line-height:22px;
 	text-transform:uppercase
 }
-#sidebar_healthy_snacks a:hover, #sidebar_natural_cat_food a:hover, #sidebar_natural_dog_food a:hover, #sidebar_healthy_snacks a:hover span, #sidebar_natural_cat_food a:hover span, #sidebar_natural_dog_food a:hover span {
+
+#sidebar_healthy_snacks a:hover,#sidebar_natural_cat_food a:hover,#sidebar_natural_dog_food a:hover,#sidebar_healthy_snacks a:hover span,#sidebar_natural_cat_food a:hover span,#sidebar_natural_dog_food a:hover span {
 	color:#726659;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #sidebar_promo {
 	background-image:url(../img/sidebar/sidebar-promo.png);
 	background-repeat:no-repeat;
-	height:123px;
-	padding-top:35px;
+	height:120px;
+	padding-top:38px;
 	text-align:center;
 	width:279px
 }
@@ -1017,11 +1158,12 @@ ul.no li.last {
 	text-decoration:none;
 	text-transform:uppercase
 }
+
 #sidebar_promo a:hover {
 	color:#fff;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #sidebar_promo a span {
@@ -1031,7 +1173,7 @@ ul.no li.last {
 /* =Content Tabs
 --------------------------------*/
 ul.tabs {
-	margin-top:40px;
+	margin-top:15px;
 	position:relative;
 	padding:0
 }
@@ -1043,7 +1185,7 @@ ul.tabs li {
 	position:relative
 }
 
-ul.tabs li a.current, ul.tabs li a:hover {
+ul.tabs li a.current,ul.tabs li a:hover {
 	background-image:url(../img/shared/tab-active.jpg);
 	background-repeat:no-repeat;
 	color:#e7ece1;
@@ -1115,9 +1257,15 @@ ul.tabs a.current,ul.tabs a.current:hover,ul.tabs li.current a {
 .items div {
 	float:left;
 	margin-left:25px;
-	margin-right:43px;
+	margin-right:25px;
 	text-align:center;
-	width:157px;
+	width:850px
+}
+
+.items div ul li {
+	float:left;
+	margin-right:45px;
+	width:165px
 }
 
 a.browse {
@@ -1135,8 +1283,9 @@ a.browse {
 a.snack_left,a.product_left {
 	margin-left:0
 }
+
 a.snack_left:hover,a.product_left:hover {
-	background-position:0 -100px;
+	background-position:0 -100px
 }
 
 a.snack_right,a.product_right {
@@ -1146,24 +1295,40 @@ a.snack_right,a.product_right {
 }
 
 a.snack_right:hover,a.product_right:hover {
-	background-position:0 -152px;
+	background-position:0 -152px
 }
 
 a.disabled {
 	visibility:visible!important
 }
 
+/*.scrollable a {
+	white-space: nowrap;
+}*/
+.scrollable a:hover {
+	color:#bfb2a3;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
+}
+
 /* =Shared Product Content
 --------------------------------*/
-#content.natural_cat .product_content, #content.natural_dog .product_content {
-	/*height:622px;*/
+#content.natural_cat .product_content,#content.natural_dog .product_content {
+/*height:622px;*/
 	position:relative;
-	white-space: nowrap;
+	white-space:nowrap;
 	width:940px
 }
 
 #content.snacks .snack_content {
-	height:535px;
+	height:750px;
+	position:relative;
+	overflow:hidden;
+	width:940px
+}
+
+#content.snacks .snack_content_variety {
 	position:relative;
 	overflow:hidden;
 	width:940px
@@ -1185,17 +1350,19 @@ a.disabled {
 #content.home a.left,#content.natural_cat a.left,#content.natural_dog a.left,#content.snacks a.left,#content.our_story a.left {
 	left:-50px
 }
+
 #content.home a.left:hover,#content.natural_cat a.left:hover,#content.natural_dog a.left:hover,#content.snacks a.left:hover,#content.our_story a.left:hover {
-	background-position: 0 -146px;
+	background-position:0 -146px
 }
 
 #content.home a.right,#content.natural_cat a.right,#content.natural_dog a.right,#content.snacks a.right,#content.our_story a.right {
-	background-position:0 -74px;
+	background-position:0 -73px;
 	clear:right;
 	left:950px
 }
+
 #content.home a.right:hover,#content.natural_cat a.right:hover,#content.natural_dog a.right:hover,#content.snacks a.right:hover,#content.our_story a.right:hover {
-	background-position: 0 -217px;
+	background-position:0 -219px
 }
 
 /* =Content Home
@@ -1208,7 +1375,7 @@ a.disabled {
 }
 
 #content.home .ingredients {
-	margin:20px 0
+	margin-bottom:20px
 }
 
 #home_slider {
@@ -1239,29 +1406,29 @@ a.disabled {
 	background-repeat:no-repeat;
 	float:left;
 	height:487px;
-	padding:40px 375px 0 50px;
-	width:515px;
-	width: 520px\0/;
-	*width: 520px;
+	padding:40px 355px 0 50px;
+	width:535px
 }
 
 #home_slider .slide1 h5 a {
-	float:right
+	float:right;
+	margin-right:12px
 }
 
 #home_slider .slide2 {
 	background-image:url(../img/home/slide2.jpg);
 	background-repeat:no-repeat;
 	float:left;
-	height:487px;
-	padding:40px 375px 0 50px;
+	height:327px;
+	padding:200px 375px 0 50px;
 	width:515px;
-	width: 520px\0/;
-	*width: 520px;
+	width:520px\0/;
+	*width:520px
 }
 
 #home_slider .slide2 h5 a {
-	float:right
+	float:right;
+	margin-right:25px
 }
 
 #home_slider .slide3 {
@@ -1271,8 +1438,8 @@ a.disabled {
 	height:487px;
 	padding:40px 375px 0 50px;
 	width:515px;
-	width: 520px\0/;
-	*width: 520px;
+	width:520px\0/;
+	*width:520px
 }
 
 #home_slider .slide3 h5 a {
@@ -1318,7 +1485,7 @@ a.disabled {
 }
 
 .home_tab.active {
-	background-image:url(../img/home/callout-active.png);
+	background-image:url(../img/home/callout-selected.png);
 	background-repeat:no-repeat;
 	height:93px;
 	margin-top:-11px;
@@ -1338,13 +1505,27 @@ a.disabled {
 	width:515px
 }
 
+#content.dogs .fullcol {
+	width:940px
+}
+
+#content.dogs h1 {
+	font-size:14px;
+	margin-bottom:0;
+	margin-top:300px
+}
+
 #content.dogs h2 {
 	margin-bottom:0;
-	margin-top:20px
+	margin-top:250px
 }
 
 #content.dogs .ingredients {
 	margin:20px 0
+}
+
+#content.dogs .scrollable {
+	height:500px
 }
 
 /* =Content Natural Dry Dog Food
@@ -1355,17 +1536,29 @@ a.disabled {
 }
 
 #content.natural_dog h1 {
-	font-size:28px;
-	margin-bottom:0
+	color:#58493A;
+	font-family:Georgia,sans-serif;
+	font-size:14px;
+	font-weight:400;
+	letter-spacing:normal;
+	line-height:18px;
+	margin-top:10px;
+	text-transform:none
 }
 
 #content.natural_dog h2 {
-	font-size:21px;
-	margin-bottom:15px
+	font-size:28px;
+	line-height:34px;
+	margin-bottom:0
+}
+
+#content.natural_dog h6 {
+	line-height:28px;
+	margin-bottom:5px
 }
 
 #content.natural_dog .ingredients {
-	margin:20px 0
+	margin-bottom:20px
 }
 
 #content.natural_dog ul.tabs {
@@ -1399,40 +1592,87 @@ a.disabled {
 	width:515px
 }
 
+#content.cats .fullcol {
+	width:940px
+}
+
 #content.cats .banner #slide1 h3,#content.cats .banner #slide1 p {
 	color:#fff
 }
 
+#content.cats h1 {
+	font-size:14px;
+	margin-bottom:0;
+	margin-top:330px
+}
+
 #content.cats h2 {
 	margin-bottom:0;
-	margin-top:20px
+	margin-top:250px
 }
 
 #content.cats .ingredients {
 	margin:20px 0
 }
 
-/* =Content Cats
+#content.cats .scrollable {
+	height:520px
+}
+
+/* =Content Natural Cat Food
 --------------------------------*/
-#content.cats .banner #banner_image {
-	background-image:url(../img/cats/slide1.jpg);
-	background-repeat:no-repeat;
-	height:320px;
-	padding:224px 406px 0 53px;
-	width:515px
+#content.natural_cat .banner {
+	height:622px;
+	width:940px
 }
 
-#content.cats .featured #slide1 h3,#content.cats .featured #slide1 p {
-	color:#fff
+#content.natural_cat h1 {
+	color:#58493A;
+	font-family:Georgia,sans-serif;
+	font-size:14px;
+	font-weight:400;
+	letter-spacing:normal;
+	line-height:18px;
+	margin-bottom:10px;
+	margin-top:10px;
+	text-transform:none
 }
 
-#content.cats h2 {
-	margin-bottom:0;
+#content.natural_cat h2 {
+	font-size:28px;
+	line-height:34px;
+	margin-bottom:0
+}
+
+#content.natural_cat h6 {
+	line-height:28px;
+	margin-bottom:5px
+}
+
+#content.natural_cat .ingredients {
+	margin-bottom:20px;
+	margin-top:0
+}
+
+#content.natural_cat ul.tabs {
+	clear:both;
+	margin-top:8px;
+	margin-bottom:50px
+}
+
+#content.natural_cat ul.tabs li {
+	margin-right:20px;
+	width:220px
+}
+
+#content.natural_cat .leftcol {
+	clear:both;
+	float:none:
+}
+
+#content.natural_cat .satisfaction {
+	margin-left:131px;
 	margin-top:20px
-}
-
-#content.cats .ingredients {
-	margin:20px 0
 }
 
 /* =Content Holistic Living
@@ -1451,6 +1691,22 @@ a.disabled {
 	width:515px
 }
 
+#content.holistic h3 {
+	color:#726659;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:14px;
+	font-style:normal;
+	font-weight:900;
+	letter-spacing:.1em;
+	line-height:22px;
+	margin-bottom:12px;
+	text-transform:uppercase
+}
+
+#content.holistic ul.tabs li a {
+	margin-right:26px
+}
+
 /* =Content Snacks
 --------------------------------*/
 #content.snacks .banner {
@@ -1467,13 +1723,136 @@ a.disabled {
 	width:515px
 }
 
+#content.snacks h1 {
+	color:#58493A;
+	font-family:Georgia,sans-serif;
+	font-size:14px;
+	font-weight:400;
+	letter-spacing:normal;
+	line-height:18px;
+	margin-top:10px;
+	text-transform:none
+}
+
 #content.snacks h2 {
-	margin-bottom:0;
-	margin-top:20px
+	font-size:28px;
+	line-height:34px;
+	margin-bottom:0
+}
+
+#content.snacks h3 {
+	font-size:22px;
+	line-height:28px;
+	margin-bottom:5px
+}
+
+#content.snacks h4 {
+	color:#58493A;
+	font-size:15px;
+	line-height:24px;
+	margin-bottom:10px
+}
+
+#content.snacks h6 {
+	font-size:15px;
+	line-height:24px;
+	margin-bottom:10px;
+	margin-top:10px
+}
+
+#content.snacks hr.variety {
+	clear:none;
+	display:block;
+	margin-bottom:25px;
+	margin-left:0;
+	margin-top:25px;
+	width:675px
 }
 
 #content.snacks .ingredients {
 	margin:20px 0
+}
+
+ul.tabs_snack {
+	margin-top:15px;
+	position:relative;
+	padding:0
+}
+
+ul.tabs_snack li {
+	float:left;
+	list-style:none;
+	margin-right:1px;
+	position:relative
+}
+
+ul.tabs_snack li a.current,ul.tabs_snack li a:hover {
+	background-image:url(../img/shared/tab-active-snacks.jpg);
+	background-repeat:no-repeat;
+	color:#e7ece1;
+	height:49px;
+	margin-right:19px;
+	padding-bottom:12px;
+	padding-top:12px;
+	width:172px
+}
+
+ul.tabs_snack a {
+	background-image:url(../img/shared/tab.jpg);
+	background-repeat:no-repeat;
+	color:#58493a;
+	font-family:Georgia;
+	font-size:16px;
+	float:left;
+	height:25px;
+	line-height:23px;
+	margin-right:19px;
+	padding-bottom:12px;
+	padding-top:12px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	width:172px
+}
+
+ul.tabs_snack li a.current.proteins,ul.tabs_snack li a.proteins:hover {
+	background-image:url(../img/shared/tab-active-snacks.jpg);
+	background-repeat:no-repeat;
+	color:#e7ece1;
+	height:63px;
+	margin-right:19px;
+	padding-bottom:4px;
+	padding-top:6px;
+	width:172px
+}
+
+ul.tabs_snack a.proteins {
+	background-image:url(../img/shared/tab.jpg);
+	background-repeat:no-repeat;
+	color:#58493a;
+	font-family:Georgia;
+	font-size:16px;
+	float:left;
+	height:31px;
+	line-height:18px;
+	margin-right:19px;
+	padding-bottom:12px;
+	padding-top:6px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	width:172px
+}
+
+ul.tabs_snack a:active {
+	outline:none
+}
+
+ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a {
+	color:#e7ece1;
+	cursor:pointer
 }
 
 /* =Content Health & Nutrition
@@ -1486,8 +1865,15 @@ a.disabled {
 #content.health_and_nutrition .banner #banner_image {
 	background-image:url(../img/health/slide1.jpg);
 	background-repeat:no-repeat;
-	height:527px;
-	width:940px
+	height:487px;
+	padding:40px 375px 0 50px;
+	width:515px;
+	width:520px\0/;
+	*width:520px
+}
+
+#content.health_and_nutrition .banner h3 {
+	font-size:30px
 }
 
 #content.health_and_nutrition h1 {
@@ -1498,8 +1884,21 @@ a.disabled {
 }
 
 #content.health_and_nutrition h2 {
+	font-size:21px;
 	margin-bottom:10px;
 	margin-top:20px
+}
+
+#content.health_and_nutrition h3,#content.health_and_nutrition h4 {
+	color:#726659;
+	font-size:13px
+}
+
+#content.health_and_nutrition h3 a:hover {
+	color:#bfb2a3;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #content.health_and_nutrition ul.tabs {
@@ -1511,11 +1910,10 @@ a.disabled {
 	margin-right:17px
 }
 
-#content.health_and_nutrition ul.tabs li a.current, #content.health_and_nutrition ul.tabs li a:hover {
+#content.health_and_nutrition ul.tabs li a.current,#content.health_and_nutrition ul.tabs li a:hover {
 	background-image:url(../img/health/tab-active.jpg);
 	width:194px
 }
-
 
 #content.health_and_nutrition ul.tabs a {
 	background-image:url(../img/health/tab.jpg);
@@ -1641,6 +2039,13 @@ ul#ingredients a:active {
 	margin-top:20px
 }
 
+#content.our_story .leftcol625 a:hover {
+	color:#bfb2a3;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
+}
+
 #our_story_slider {
 	height:528px;
 	overflow:hidden;
@@ -1693,6 +2098,30 @@ ul#ingredients a:active {
 	width:940px
 }
 
+#our_story_slider .slide4 {
+	background-image:url(../img/story/slide1.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:528px;
+	width:940px
+}
+
+#our_story_slider .slide5 {
+	background-image:url(../img/story/slide2.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:528px;
+	width:940px
+}
+
+#our_story_slider .slide6 {
+	background-image:url(../img/story/slide3.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:528px;
+	width:940px
+}
+
 .our_story_tab {
 	background-image:url(../img/story/callout.png);
 	background-repeat:no-repeat;
@@ -1732,7 +2161,7 @@ ul#ingredients a:active {
 }
 
 .our_story_tab.active {
-	background-image:url(../img/story/callout-active.png);
+	background-image:url(../img/story/callout-selected.png);
 	background-repeat:no-repeat;
 	height:93px;
 	margin-top:-11px;
@@ -1781,14 +2210,22 @@ ul.faqs p {
 	margin-top:10px
 }
 
+#content h5 a:hover,#content .articles a:hover {
+	color:#bfb2a3;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
+}
+
 /* =Footer
 --------------------------------*/
 #footer {
 	background-image:url(../img/shared/footer.jpg);
 	background-repeat:repeat-x;
 	clear:both;
-	height:418px;
+	height:423px;
 	padding-top:75px;
+	*padding-top:75px;
 	width:100%
 }
 
@@ -1799,9 +2236,14 @@ ul.faqs p {
 	list-style:none;
 	margin-top:5px
 }
+
 #footer h6 a:hover {
 	color:#fff;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
+
 #footer ul#whats_happening li {
 	padding-bottom:7px;
 	text-transform:uppercase
@@ -1816,11 +2258,12 @@ ul.faqs p {
 	line-height:17px;
 	text-decoration:none
 }
+
 #footer ul#whats_happening li a:hover {
 	color:#fff;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #footer #newsletter {
@@ -1851,11 +2294,11 @@ ul.faqs p {
 
 #footer #newsletter label {
 	display:inline-block;
-	*line-height: 36px;
+	*line-height:36px;
 	margin-right:8px;
-	*margin-top: -4px;
+	*margin-top:-4px;
 	vertical-align:middle;
-	*vertical-align: top;
+	*vertical-align:top
 }
 
 #footer #newsletter input[type="text"] {
@@ -1896,14 +2339,15 @@ ul.faqs p {
 	padding:0\0/;
 	margin:0;
 	text-transform:uppercase;
-	vertical-align: top;
+	vertical-align:top;
 	width:109px
 }
+
 #footer #newsletter input[type="submit"]:hover {
 	color:#90af5e;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #footer #footer_nav {
@@ -1914,13 +2358,13 @@ ul.faqs p {
 
 #footer #footer_nav ul {
 	float:none;
-	*margin-left: 320px;
+	*margin-left:240px
 }
 
 #footer #footer_nav ul li {
 	border-right:1px #fff solid;
 	display:inline-block;
-	*float: left;
+	*float:left;
 	padding:0 9px;
 	text-transform:uppercase
 }
@@ -1938,11 +2382,12 @@ ul.faqs p {
 	line-height:13px;
 	text-decoration:none
 }
+
 #footer #footer_nav ul li a:hover {
 	color:#bfb2a3;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+	transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
 }
 
 #footer #legal p {
@@ -1965,10 +2410,18 @@ ul.faqs p {
 .align_right {
 	text-align:right
 }
+
 .ie_nav_fix {
-	*position: absolute; 
-	*left: 15px;
+	*left:15px;
+	*position:absolute
 }
+
+.ie_nav_fix_cat_dog {
+	*left:15px;
+	*position:absolute;
+	*top:73px
+}
+
 .clear {
 	clear:both
 }
@@ -1979,16 +2432,36 @@ ul.faqs p {
 	margin-bottom:10px;
 	margin-right:15px
 }
-.float_left_canned{
+
+.float_left_dry_dog {
 	display:block;
 	float:left;
-	margin-bottom:200px;
-	margin-right:30px
+	margin-right:15px
 }
+
+.float_left_canned {
+	display:block;
+	float:left;
+	margin-right:15px
+}
+
+.float_left_dry_cat {
+	display:block;
+	float:left;
+	margin-right:15px
+}
+
 .float_left_snacks {
 	display:block;
 	float:left;
-	margin-bottom:200px;
+	margin-bottom:700px;
+	margin-right:15px
+}
+
+.float_left_snack_variety {
+	display:block;
+	float:left;
+	margin-bottom:1850px;
 	margin-right:15px
 }
 
@@ -1997,6 +2470,10 @@ ul.faqs p {
 	float:right;
 	margin-bottom:10px;
 	margin-left:10px
+}
+
+.intro {
+	width:930px
 }
 
 .large_brown_text,.large_brown_text a {
@@ -2053,6 +2530,27 @@ ul.faqs p {
 	text-transform:uppercase
 }
 
+.tiny_brown_text {
+	color:#726659;
+	display:block;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:12px;
+	font-style:normal;
+	font-weight:700;
+	line-height:16px;
+	text-transform:uppercase
+}
+
+.small_white_text_box {
+	color:#fff;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:18px;
+	font-style:normal;
+	font-weight:900;
+	margin-bottom:4px;
+	text-transform:uppercase
+}
+
 .small_white_text {
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
@@ -2091,6 +2589,10 @@ ul.faqs p {
 	margin:20px 0
 }
 
+.margin30 {
+	margin:30px 0
+}
+
 .marginbottom10 {
 	margin-bottom:10px
 }
@@ -2104,7 +2606,7 @@ ul.faqs p {
 }
 
 .marginright25 {
-	margin-right: 25px;
+	margin-right:25px
 }
 
 .margin40 {
@@ -2129,6 +2631,10 @@ ul.faqs p {
 
 .margintop85 {
 	margin-top:85px
+}
+
+.paddingbottom10 {
+	padding-bottom:10px
 }
 
 .paddingtop10 {
