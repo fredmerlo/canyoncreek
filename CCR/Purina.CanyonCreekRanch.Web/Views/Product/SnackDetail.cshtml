@@ -21,24 +21,25 @@
         <!-- Begin Product Left Navigation --><a href="#" class="arrows left"></a><!-- End Product Left Navigation -->
 
         <div class="snack_content">
-          <img src="/img/snacks/snack-packaging.jpg" class="float_left_snacks" />
+          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snacks" />
 
-          <h1>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
+          <h2>@Html.DisplayFor(model => model.Title)</h2>
+          <h1>@Html.Raw(Model.TagLine)</h1>
 
-          <p class="tag_line_snacks">@Html.Raw(Model.TagLine)</p>
+          @Html.Raw(Model.Description)
 
-          <p class="marginbottom10">@Html.Raw(Model.Recognizably)</p>
+          <h6>GURANTEED ANALYSIS:</h6>
+          @Html.Raw(Model.GuaranteeTable)
 
-          <h2>Ingredients:</h2>
+          <h6>Ingredients:</h6>
 
           @Html.Raw(Model.Ingredients)
 
-          <h2>Feeding Guidelines:</h2>
+          <h6>DAILY MAXIMUM NUMBER OF PIECE(S) BASED ON YOUR DOG'S WEIGHT</h6>
 
           @Html.Raw(Model.FeedTable)
 
-          <h2>GURANTEED ANALYSIS:</h2>
-          @Html.Raw(Model.GuaranteeTable)
+          
         </div><!-- End Snack -->
         <!-- Begin Product Right Navigation --><a href="#" class="arrows right"></a><!-- End Product Right Navigation -->
         <hr class="margin40" />

@@ -19,17 +19,17 @@
         <!-- Begin Product Left Navigation --><a href="#" class="arrows left"></a><!-- End Product Left Navigation -->
 
         <div class="product_content">
-        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left" />
-        <h1>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
+          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_dry_cat" />
 
-        <p class="tag_line">@Html.Raw(Model.TagLine)</p>
-        
-        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/ingredients.png" class="ingredients" />
-        @Html.Raw(Model.Description)
-        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/breakdown.png" class="nutritionals" />
-        
-        </div>
-        <!-- End Product -->
+          <h2>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
+
+          <h1>@Html.Raw(Model.TagLine)</h1>
+
+          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/ingredients.png" class="ingredients" />
+          @Html.Raw(Model.Description)
+          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/breakdown.png" class="nutritionals" />
+
+        </div><!-- End Product -->
         <!-- Begin Product Right Navigation --><a href="#" class="arrows right"></a><!-- End Product Right Navigation -->
         <hr />
         <!-- Begin Full Width Column -->
@@ -38,26 +38,14 @@
           <!-- Begin Product Tabs -->
 
           <ul class="tabs">
-            <li><a href="#tab1">Recognizably Real</a></li>
+            <li><a href="#tab1">Our Ingredients</a></li>
 
-            <li><a href="#tab2">Our Ingredients</a></li>
+            <li><a href="#tab2">Recognizably Real</a></li>
 
             <li><a href="#tab3">Our Guarantee</a></li>
 
             <li class="last"><a href="#tab4">Feeding Guidelines</a></li>
           </ul><!-- End Product Tabs -->
-          <!-- Begin Recognizably Real Content -->
-
-          <div class="pane">
-            <!-- Begin Left Column -->
-
-            <div class="leftcol">
-              @Html.Raw(Model.Recognizably)
-            </div><!-- End Left Column -->
-            <!-- Begin Right Column -->
-
-            <div class="rightcol"><img src="/img/dogs/pea-pods.jpg" class="margin10 padding30" /> <img src="/img/dogs/carrots.jpg" /></div><!-- End Right Column -->
-          </div><!-- End Recognizably Real Content -->
           <!-- Begin Our Ingredients Content -->
 
           <div class="pane">
@@ -66,7 +54,7 @@
             <div class="leftcol">
               <span class="small_brown_text">Ingredients:</span>
 
-               <p>@Html.Raw(Model.Ingredients)</p>
+              <p>@Html.Raw(Model.Ingredients)</p>
 
               <div id="ingredient_dictionary">
                 <a href="/ingredient-dictionary">Explore Healthy Benefits<br />
@@ -77,24 +65,37 @@
             <!-- Begin Right Column -->
 
             <div class="rightcol">
-                @Html.Raw(Model.Nutrition)
+              @Html.Raw(Model.Nutrition)
             </div><!-- End Right Column -->
           </div><!-- End Our Ingredients Content -->
+          <!-- Begin Recognizably Real Content -->
+
+          <div class="pane">
+            <!-- Begin Left Column -->
+
+            <div class="leftcol">
+              @Html.Raw(Model.Recognizably)
+            </div><!-- End Left Column -->
+            <!-- Begin Right Column -->
+
+            <div class="rightcol"><img src="/img/dogs/pea-pods.jpg" /> <img src="/img/dogs/carrots.jpg" /></div><!-- End Right Column -->
+          </div><!-- End Recognizably Real Content -->
           <!-- Begin Our Guarantee Content -->
 
           <div class="pane">
             <!-- Begin Left Column -->
 
             <div class="leftcol">
-              <h2>GUARANTEED ANALYSIS</h2>
-                @Html.Raw(Model.GuaranteeTable)
+              <h6>GUARANTEED ANALYSIS</h6>
+
+              @Html.Raw(Model.GuaranteeTable)
             </div><!-- End Left Column -->
             <!-- Begin Right Column -->
 
             <div class="rightcol">
-            <h2>OUR BETTER WAY guarantee</h2>
+            <h6>Our Better Way Guarantee</h6>
 
-            <p>If this food has not met your expectations, we will refund the amount of your purchase. Just send us the "BEST BY" date box and UPC from the bag with your original store receipt (with price circled), your name, address and reason for return.</p>
+            <p>If this food has not met your expectations, we will refund the amount of your purchase. Just send us the "Best Buy" date box and UPC from the bag with your original store receipt (with the price circled), your name, address and reason for return within 60 days of purchase.</p>
 
             <h5><a href="/satisfaction-guarantee">LEARN MORE &#187;</a></h5><img src="/img/shared/satisfaction-guarantee.png" class="satisfaction" /></div><!-- End Right Column -->
           </div><!-- End Our Guarantee Content -->
@@ -104,9 +105,17 @@
             <!-- Begin Left Column -->
 
             <div class="leftcol">
-              <h2>RECOMMENDED DAILY FEEDING DIRECTIONS</h2>
+              <h6>RECOMMENDED DAILY FEEDING AMOUNTS:</h6>
+
               @Html.Raw(Model.FeedTable)
             </div><!-- End Left Column -->
+            <!-- Begin Left Column -->
+
+            <div class="rightcol">
+              <h6>Making the Switch</h6>
+
+              <p>Although you'll be anxious to see the difference Canyon Creek Ranch can make in your cat, please allow 7-10 days to ease the transition from your cat's current food. This will help avoid stomach upset. Each day, simply feed a little less of the previous food and a little more Canyon Creek Ranch until you're feeding Canyon Creek Ranch exclusively.</p>
+            </div><!-- End Right Column -->
           </div><!-- End Feeding Guideline Content -->
           <!-- End Product Tab Content -->
         </div><!-- End Full Width Column -->
@@ -114,8 +123,8 @@
         <!-- Begin Left Column -->
 
         <div class="leftcol">
-          <div id="snacks">
-            <span class="large_white_text">SNACKS</span>
+          <div id="snack_box">
+            <span class="large_white_text">WHOLESOME SNACKS</span>
 
             <p>An incredible variety of all-natural pet snacks<br />
             made from only high quality ingredients.</p><a href="/snacks">LEARN MORE &#187;</a>
