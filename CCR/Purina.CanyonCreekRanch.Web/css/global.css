@@ -64,9 +64,8 @@ table {
 /* =PNG Fix for IE6
 --------------------------------*/
 .png_hack {
-	background-image:url(../img/blank.gif)!important;
+	background-image:url(/img/blank.gif)!important;
 	background-image:none;
 	filter:none!important;
 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=’img/blank.gif’)
 }
-/* Localized */

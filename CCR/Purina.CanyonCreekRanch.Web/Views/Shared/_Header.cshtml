@@ -1,4 +1,6 @@
-﻿<div id="header">
+﻿    <!-- Begin Header -->
+
+    <div id="header">
       <!-- Begin Content Wrap -->
 
       <div class="wrap">
@@ -6,34 +8,31 @@
 
         <ul id="links">
           <li><a href="/find-a-retailer">Find our food &#187;</a></li>
-
-          <li><a href=/"whats-happening">What's Happening &#187;</a></li>
         </ul><!-- End Header Links -->
 
         <div id="nav">
           <!-- Begin Main Navigation -->
 
           <ul>
-            <!-- Begin Dog Navigation -->
+            <li class="home"><a href="/" class="selected">Home</a></li><!-- Begin Dog Navigation -->
 
             <li class="dogs">
-
-              <a href="/natural-food-for-dogs">Natural Food For Dogs</a><!-- Begin Dog Dropdown -->
+              <a href="/natural-food-for-dogs">Natural Food For Dogs</a> <!-- Begin Dog Dropdown -->
 
               <ul id="dogs" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
 
                 <li>
-                  <p>Explore the world of Canyon Creek Ranch <strong>NATURAL FOOD FOR DOGS &#187;</strong></p>
+                  <p><a href="/natural-food-for-dogs"><strong>NATURAL FOOD FOR DOGS &#187;</strong></a></p>
                 </li>
 
-                <li>
-                  @{Html.RenderAction("Type", "Category", new { type = "dog" });}
+                <li class="ie_nav_fix_cat_dog">
+                   @{Html.RenderAction("Type", "Category", new { type = "dog" });}
 
                   <ul id="nav_last">
-                    <li><a href="#"><img src="/img/shared/nav-video.jpg" /></a></li>
+                    <li><a href="/our-story"><img src="/img/shared/nav-video.jpg" /></a></li>
 
-                    <li class="nav_gold_box"><a href="health-and-nutrition">Explore<br />
+                    <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
                     <span class="small_white_text">HEALTH &amp;<br />
                     NUTRITION</span><br />
                     Benefits</a></li>
@@ -44,23 +43,22 @@
             <!-- Begin Cat Navigation -->
 
             <li class="cats">
-
-              <a href="/natural-food-for-cats">Natural Food For Cats</a><!-- Begin Cat Dropdown -->
+              <a href="/natural-food-for-cats">Natural Food For Cats</a> <!-- Begin Cat Dropdown -->
 
               <ul id="cats" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
 
                 <li>
-                  <p>Explore the world of Canyon Creek Ranch <strong>NATURAL FOOD FOR CATS &#187;</strong></p>
+                  <p><a href="/natural-food-for-cats"><strong>NATURAL FOOD FOR CATS &#187;</strong></a></p>
                 </li>
 
-                <li>
+                <li class="ie_nav_fix_cat_dog">
                   @{Html.RenderAction("Type", "Category", new { type = "cat" });}
 
                   <ul id="nav_last">
-                    <li><a href="#"><img src="/img/shared/nav-video.jpg" /></a></li>
+                    <li><a href="/our-story"><img src="/img/shared/nav-video.jpg" /></a></li>
 
-                    <li class="nav_gold_box"><a href="health-and-nutrition">Explore<br />
+                    <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
                     <span class="small_white_text">HEALTH &amp;<br />
                     NUTRITION</span><br />
                     Benefits</a></li>
@@ -71,14 +69,13 @@
             <!-- Begin Snacks Navigation -->
 
             <li class="snacks">
-
-              <a href="/snacks">Snacks</a><!-- Begin Snacks Dropdown -->
+              <a href="/snacks">Snacks</a> <!-- Begin Snacks Dropdown -->
 
               <ul id="snacks" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
 
                 <li>
-                  <p>Explore the world of Canyon Creek Ranch <strong>TREATS &#187;</strong></p>
+                  <p><a href="/snacks"><strong>WHOLESOME SNACKS &#187;</strong></a></p>
                 </li>
 
                 <li class="ie_nav_fix">
@@ -88,7 +85,7 @@
                     <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
                     <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
 
-                    <li><a href="#"><img src="/img/shared/nav-video.jpg" /></a></li>
+                    <li><a href="/our-story"><img src="/img/shared/nav-video.jpg" /></a></li>
 
                     <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
                     <span class="small_white_text">HEALTH &amp;<br />
@@ -109,8 +106,8 @@
                 <li>
                   <ul>
                     <li>
-                      <p>Explore Canyon Creek Ranch <strong>HEALTH &amp; NUTRITION &#187;</strong></p><a href="/ingredient-dictionary">Ingredients Dictionary</a><br />
-                      <a href="holistic-living">Holistic Living</a>
+                      <p><a href="/health-and-nutrition"><strong>HEALTH &amp; NUTRITION &#187;</strong></a></p><a href="/ingredient-dictionary">Ingredients Dictionary</a><br />
+                      <a href="/holistic-living">Holistic Living</a>
                     </li>
                   </ul>
                 </li>
@@ -124,8 +121,7 @@
                     <span class="small_white_text">NATURAL CAT FOOD</span></a></li>
 
                     <li class="nav_box yellow"><a href="/snacks">Learn About<br />
-
-                    <span class="small_white_text">HEALTHY SNACKS</span></a></li>
+                    <span class="small_white_text">WHOLESOME SNACKS</span></a></li>
                   </ul>
                 </li>
               </ul><!-- End Health Dropdown -->
@@ -141,34 +137,16 @@
                 <li>
                   <ul>
                     <li>
-                      <p>Explore Canyon Creek Ranch <strong>STORY &#187;</strong></p>
+                      <p><a href="/our-story"><strong>OUR STORY &#187;</strong></a></p>
 
-<<<<<<< HEAD
-                      <p><a href="our-story-faq.html" class="nav_link">FAQ</a></p><a href="@Url.Action("dog", "Info")">Natural Food for Dogs</a><br />
-                      <a href="@Url.Action("cat", "Info")">Natural Food for Cats</a><br />
-                      <a href="@Url.Action("snack", "Info")">Snacks</a><br />
-                      <a href="health-and-nutrition.html">Health &amp; Nutrition</a>
-=======
-                      <p><a href="/our-story-faq" class="nav_link">FAQ</a></p><a href="/natural-food-for-dogs">Natural Food for Dogs</a><br />
-                      <a href="/natural-food-for-cats">Natural Food for Cats</a><br />
-                      <a href="/snacks">Snacks</a><br />
-                      <a href="/health-and-nutrition">Health &amp; Nutrition</a>
->>>>>>> master
+                      <p><span class="faq_category">FAQ</span></p><a href="/our-story-faq-feeding">Feeding</a><br />
+                      <a href="/our-story-faq-quality">Quality</a>
                     </li>
                   </ul>
                 </li>
 
                 <li>
                   <ul id="nav_last">
-<<<<<<< HEAD
-                    <li class="nav_box blue"><a href="@Url.Action("dog", "Info")">Learn About<br />
-                    <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
-
-                    <li class="nav_box pink"><a href="@Url.Action("cat", "Info")">Learn About<br />
-                    <span class="small_white_text">NATURAL CAT FOOD</span></a></li>
-
-                    <li class="nav_box yellow"><a href="@Url.Action("snack", "Info")">Learn About<br />
-=======
                     <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
                     <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
 
@@ -176,8 +154,7 @@
                     <span class="small_white_text">NATURAL CAT FOOD</span></a></li>
 
                     <li class="nav_box yellow"><a href="/snacks">Learn About<br />
->>>>>>> master
-                    <span class="small_white_text">HEALTHY SNACKS</span></a></li>
+                    <span class="small_white_text">WHOLESOME SNACKS</span></a></li>
                   </ul>
                 </li>
               </ul><!-- End Story Dropdown -->
