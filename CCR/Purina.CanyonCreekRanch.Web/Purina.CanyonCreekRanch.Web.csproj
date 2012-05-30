@@ -143,9 +143,9 @@
     <Content Include="img\products\cat-canned\cod-shrimp-recipe\breakdown.png" />
     <Content Include="img\products\cat-canned\cod-shrimp-recipe\product-sm.png" />
     <Content Include="img\products\cat-canned\cod-shrimp-recipe\product.png" />
-    <Content Include="img\products\cat-canned\salmon -brown-rice-recipe\breakdown.png" />
-    <Content Include="img\products\cat-canned\salmon -brown-rice-recipe\product-sm.png" />
-    <Content Include="img\products\cat-canned\salmon -brown-rice-recipe\product.png" />
+    <Content Include="img\products\cat-canned\salmon-brown-rice-recipe\breakdown.png" />
+    <Content Include="img\products\cat-canned\salmon-brown-rice-recipe\product-sm.png" />
+    <Content Include="img\products\cat-canned\salmon-brown-rice-recipe\product.png" />
     <Content Include="img\products\cat-canned\trout-catfish-recipe\breakdown.png" />
     <Content Include="img\products\cat-canned\trout-catfish-recipe\product-sm.png" />
     <Content Include="img\products\cat-canned\trout-catfish-recipe\product.png" />
