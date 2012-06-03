@@ -10,17 +10,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 {
   public class HomeController : Controller
   {
-    public ActionResult Index()
-    {
-      ViewBag.Message = "Welcome to ASP.NET MVC!";
-
-      return View();
-    }
-
-    public ActionResult About()
-    {
-      return View();
-    }
+    public ActionResult Index() { return View(); }
 
     [ActionName("natural-food-for-cats")]
     public ActionResult NaturalFoodForCats() { return new TransferResult(new { controller = "Category", action = "Info", type = "cat" }); }
@@ -60,7 +50,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     [ActionName("retailer-program")]
     public ActionResult RetailerProgram() { return View("RetailerProgram"); }
 
-    [ActionName("our-better-way-guarantee")]
+    [ActionName("satisfaction-guarantee")]
     public ActionResult OurBetterWayGuarantee() { return View("OurBetterWayGuarantee"); }
 
     [ActionName("our-story-faq-quality")]

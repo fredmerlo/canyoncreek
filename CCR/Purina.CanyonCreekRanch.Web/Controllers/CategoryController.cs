@@ -20,11 +20,11 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
            .Cast<Category.Classifier>().
            First(e => e.ToString().ToLower().Equals(type));
 
-        var categories = db.Categories.Where<Category>(c => c.Type == classType).ToList().OrderBy(o => o.Title);
+        var categories = db.Categories.Where<Category>(c => c.Type == classType).OrderBy(o => o.Title).ToList();
 
         foreach(var category in categories)
         {
-          TempData.Add(category.FriendlyUrl, db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id && p.Active == true).ToList().OrderBy(o => o.Title));
+          TempData.Add(category.FriendlyUrl, db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id && p.Active == true).OrderBy(o => o.Title).ToList());
         }
 
         return PartialView(categories);
