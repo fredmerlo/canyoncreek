@@ -64,7 +64,6 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Controllers\StaticController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -372,16 +371,10 @@
     <Content Include="Views\Shared\IngredientDictionary.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Static\IngredientList.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Shared\OurStoryFaqFeeding.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\OurStory.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Static\SatisfactionGuarantee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\SiteMap.cshtml" />
@@ -391,18 +384,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Footer.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Static\DryCatFood.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Static\CatFood.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Static\DryDogFood.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Static\DogFood.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Product\CatDetail.cshtml" />
