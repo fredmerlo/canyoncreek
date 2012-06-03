@@ -40,8 +40,8 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     [ActionName("our-story")]
     public ActionResult OurStory() { return View("OurStory"); }
 
-    [ActionName("our-story-faq")]
-    public ActionResult OurStoryFaq() { return View("OurStoryFaq"); }
+    [ActionName("our-story-faq-feeding")]
+    public ActionResult OurStoryFaq() { return View("OurStoryFaqFeeding"); }
 
     [ActionName("health-and-nutrition")]
     public ActionResult HealthAndNutrition() { return View("HealthAndNutrition"); }
@@ -57,6 +57,14 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
     public ActionResult Contact() { return View(); }
 
+    [ActionName("retailer-program")]
+    public ActionResult RetailerProgram() { return View("RetailerProgram"); }
+
+    [ActionName("our-better-way-guarantee")]
+    public ActionResult OurBetterWayGuarantee() { return View("OurBetterWayGuarantee"); }
+
+    [ActionName("our-story-faq-quality")]
+    public ActionResult OurStoryFaqQuality() { return View("OurStoryFaqQuality"); }
 
   }
 }
