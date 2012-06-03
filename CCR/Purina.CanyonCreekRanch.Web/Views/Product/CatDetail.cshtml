@@ -1,4 +1,5 @@
 ﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
+@using Purina.CanyonCreekRanch.Common.Entities
 
     <!-- Begin Content -->
 
@@ -16,7 +17,9 @@
         </div><!-- End AddThis Button -->
         <hr />
         <!-- Begin Product -->
-        <!-- Begin Product Left Navigation --><a href="/product/dry-cat-food-natural-chicken-brown-rice-for-kittens" class="arrows left"></a><!-- End Product Left Navigation -->
+        <!-- Begin Product Left Navigation -->
+        @Html.ActionLink(" ", ((Product)TempData["previous"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows left" })
+        <!-- End Product Left Navigation -->
 
         <div class="product_content">
           <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_dry_cat" />
@@ -31,7 +34,9 @@
 
         </div><!-- End Product -->
 
-        <!-- Begin Product Right Navigation --><a href="/product/dry-cat-food-natural-salmon-brown-rice-mix" class="arrows right"></a><!-- End Product Right Navigation -->
+        <!-- Begin Product Right Navigation -->
+        @Html.ActionLink(" ", ((Product)TempData["next"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows right" })
+        <!-- End Product Right Navigation -->
         <hr />
         <!-- Begin Full Width Column -->
 
