@@ -1,0 +1,21 @@
+﻿@model List<Purina.CanyonCreekRanch.Common.Entities.Product>
+
+            @if (Model != null && Model.Count > 0)
+            {
+              <div class="items">
+                @for (int x = 0; x < Model.Count; x += 4)
+                {
+                <div>
+                  <ul>
+                  @for (int y = x; (y < x + 4 && y < Model.Count); y++)
+                  {
+                    <li>
+                      <a href="/product/@Model[y].FriendlyUrl"><img src="/img/products/@Model[y].ResourcePath/@Model[y].ResourcePrefix/product-sm.png" /></a>
+                      <p><a href="/product/@Model[y].FriendlyUrl"><em>@Model[y].Title</em></a></p>
+                    </li>
+                  }
+                  </ul>
+                </div>
+                }
+              </div>
+            }

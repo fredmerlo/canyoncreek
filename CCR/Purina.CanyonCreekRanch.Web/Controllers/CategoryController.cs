@@ -55,7 +55,14 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
     public ActionResult Category(string url)
     {
-      return RedirectToAction("Index", "Home");
+      var category = db.Categories.Where<Category>(c => c.FriendlyUrl == url).FirstOrDefault();
+
+      if (category == null)
+        return PartialView(null);
+
+      var products = db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id).OrderBy(o => o.Title).ToList();
+
+      return PartialView(products);
     }
   }
 }

@@ -10,179 +10,63 @@
           <!-- Begin Banner Image -->
 
           <div id="banner_image">
-            <h3>Following Their Lead</h3>
+            <h3>Following their lead</h3>
 
-            <p>It's the story of all of us, on a journey together. Our dogs will always inspire us with their warm spirits and that amazing bond that holds us together. Because of that strong connection, we stay on a path that allows us to offer a simple, natural dog food that our best pals love.</p>
+            <p>It’s the story of all of us, on a journey together. Our dogs will always inspire us with their warm spirits and that amazing bond that holds us together. Because of that strong connection, we stay on a path that allows us to offer a simple, natural dog food with essential vitamins and minerals.</p>
+
+            <p>Everyone at Canyon Creek Ranch is proud to share this natural dog food and to be part of a community of people who are always in search of a better way for their dogs.</p>
           </div><!-- End Banner Image -->
         </div><!-- End Banner -->
         <!-- Begin Full Width Column -->
 
         <div class="fullcol">
-          <p>Everyone at Canyon Creek Ranch is proud to share this natural dog food and to be part of a community of people who are always in search of a better way for their dogs.</p>
 
-          <h2>NATURAL DRY DOG FOOD</h2>
-
-          <p><em>plus vitamins and minerals</em></p>
-
-          <p>Each recipe has high-quality protein sources as the #1 ingredient and provides all essential vitamins and minerals. Plus, every natural dry dog food recipe is made with recognizably real ingredients like whole peas and diced carrots, easily digestible carbohydrate sources, antioxidants, and omega-rich fish oil. We offer simple, real ingredients for real nutrition.</p>
-
-          <p>Our dry recipes contain no corn, no wheat, no soy, and no artificial colors, flavors, or preservatives added.</p>
-
-          <h2>NATURAL CANNED DOG FOOD</h2>
-
-          <p><em>plus vitamins and minerals</em></p>
-
-          <p>Each savory recipe provides healthy sources of protein with wholesome grains, antioxidants, and vegetables. And, all of our natural canned dog food meals are made with tomatoes, potatoes, carrots, and blueberry pomace. It’s a 100% complete and balanced meal for adult maintenance or growing puppies. Our canned recipes are formulated without corn, wheat, soy, or artificial colors or flavors</p>
+          <!-- Begin Product Slider -->
 
           <ul class="tabs">
-            <li><a href="#tab1">Dry Dog Food</a></li>
+            <li><a href="#tab1">Dry Food</a></li>
 
-            <li><a href="#tab2">Canned Dog Food</a></li>
+            <li><a href="#tab2">Canned Food</a></li>
           </ul>
 
           <div class="pane">
             <a class="prev browse product_left"></a>
-
             <div class="scrollable">
-              <div class="items">
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
+              @{Html.RenderAction("category", "category", new { url = "dry-dog-food" });}
+              <h1>NATURAL DRY DOG FOOD</h1>
 
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
+          <p><em>plus vitamins and minerals</em></p>
 
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
+          <p>Each savory mix has healthy protein sources like beef, chicken, turkey, and salmon as the #1 ingredient. Plus, every natural dry dog food mix is made with easily digestible carbohydrate sources, recognizably real ingredients like whole peas and diced carrots, antioxidants, and omega-rich fish oil. We offer simple, real ingredients with 100% complete and balanced nutrition for each life stage.</p>
 
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-              </div>
-            </div><a class="next browse product_right"></a>
+          <p>Our dry recipes contain no corn, no wheat, no soy, and no artificial colors, flavors, or preservatives are added.</p>
+            </div>
+            <a class="next browse product_right"></a>
           </div>
 
           <div class="pane">
             <a class="prev browse product_left"></a>
 
-            <div class="scrollable">
-              <div class="items">
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
+            <div class="scrollable" style="height: 470px;">
+            @{Html.RenderAction("category", "category", new { url = "canned-dog-food" });}
 
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
+          <h2>NATURAL CANNED DOG FOOD</h2>
 
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
+          <p><em>plus vitamins and minerals</em></p>
 
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
+          <p>Each savory recipe provides healthy protein sources like turkey, beef, chicken, or salmon as the #1 ingredient with wholesome grains, antioxidants, and vegetables. And, all of our natural canned dog food meals are accented with carrots, potatoes, tomatoes, and blueberry pomace. Just like our dry recipes, we offer simple, real ingredients with 100% complete and balanced nutrition for maintenance of adult dogs and growing puppies.</p>
 
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-
-                <div>
-                  <img src="/img/dogs/dog-food-bag.jpg" />
-
-                  <p><em>Product name could be long &#187;</em></p>
-                </div>
-              </div>
+          <p>Our canned recipes are formulated without corn, wheat, or soy, and no artificial colors, flavors, preservatives are added.</p>
             </div><a class="next browse product_right"></a>
-          </div><!-- End Full Width Column -->
+          </div><!-- End Product Slider -->
           <!-- Begin Left Column -->
 
           <div class="leftcol">
-            <div id="snacks">
-              <span class="large_white_text">SNACKS</span>
+            <div id="snack_box">
+              <span class="large_white_text">WHOLESOME SNACKS</span>
 
-              <p>An incredible variety of all-natural pet snacks<br />
-              made from only high quality ingredients.</p><a href="/snacks">LEARN MORE &#187;</a>
+              <p>An incredible variety of snacks made from<br />
+              natural, high quality ingredients.</p><a href="/snacks">LEARN MORE &#187;</a>
             </div>
 
             <h6 class="margintop40">What are pet owners saying?</h6>
@@ -194,10 +78,11 @@
           <div class="rightcol">
             <div id="natural_cat_food">
               <span class="large_white_text">NATURAL<br />
-              CAT FOOD</span>
+              CAT FOOD</span><br />
+              <span class="small_white_text_box">with vitamins and minerals</span>
 
-              <p>Made with only the highest quality protein for superior<br />
-              digestibility, that naturally tastes good.</p><a href="/natural-food-for-cats">LEARN MORE &#187;</a>
+              <p>Made with high quality protein sources for high<br />
+              digestibility in a flavorful mix she'll enjoy.</p><a href="/natural-food-for-cats">LEARN MORE &#187;</a>
             </div>
 
             <div id="large_promo" class="margintop85">
