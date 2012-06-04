@@ -13,6 +13,16 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.Title)
     </div>
+
+    <div class="display-label">Url</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FriendlyUrl)
+    </div>
+
+    <div class="display-label">Sequence</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Sequence)
+    </div>
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |

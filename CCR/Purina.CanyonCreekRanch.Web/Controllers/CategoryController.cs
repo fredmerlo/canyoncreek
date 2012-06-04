@@ -20,14 +20,17 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
            .Cast<Category.Classifier>().
            First(e => e.ToString().ToLower().Equals(type));
 
-        var categories = db.Categories.Where<Category>(c => c.Type == classType).OrderBy(o => o.Title).ToList();
+        var categories = db.Categories.Where<Category>(c => c.Type == classType).OrderBy(o => o.Sequence).ToList();
 
         foreach(var category in categories)
         {
-          TempData.Add(category.FriendlyUrl, db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id && p.Active == true).OrderBy(o => o.Title).ToList());
+          if (category.FriendlyUrl.Equals("snacks-variety", StringComparison.OrdinalIgnoreCase))
+            ((List<Product>)TempData["snacks-chews"]).AddRange(db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id && p.Active == true).OrderBy(o => o.Title).ToList());
+          else
+            TempData.Add(category.FriendlyUrl, db.Products.Where<Product>(p => p.ProductCategory.Id == category.Id && p.Active == true).OrderBy(o => o.Title).ToList());
         }
 
-        return PartialView(categories);
+        return PartialView(categories.Where(c => !c.FriendlyUrl.Equals("snacks-variety",StringComparison.OrdinalIgnoreCase)).ToList());
       }
       catch
       {

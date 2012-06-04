@@ -3,12 +3,18 @@
 
 @if (Model != null) {
   foreach (var category in Model) {
+    var once = true;
                   <ul>
                     <li><span class="product_category">@category.Title</span></li>
 
     @foreach(var product in (IEnumerable<Product>)TempData[category.FriendlyUrl]) {
+        if(category.Id != product.ProductCategory.Id && once) {
+          once = false;
+                    
+                    <li><span class="product_category">@product.ProductCategory.Title</span></li>
+        }
                     <li>@Html.ActionLink(product.Title, product.FriendlyUrl, "Product")</li>
-      }
+    }
                   </ul>
   }
 }

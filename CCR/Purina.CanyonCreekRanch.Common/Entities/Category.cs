@@ -23,5 +23,6 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     }
 
     public int Type { get; set; }
+    public int Sequence { get; set; }
   }
 }
