@@ -208,6 +208,7 @@ body {
 }
 
 #header #nav ul {
+	left: 42px;
 	position:absolute;
 /*top:105px;*/
 	top:78px;
@@ -277,7 +278,7 @@ body {
 	-moz-transition:all .25s ease-in-out
 }
 
-#header #nav ul li.story {
+#header #nav ul li.snacks {
 	border-right:0
 }
 
@@ -357,13 +358,13 @@ body {
 #header #nav ul li ul#health {
 	background-image:url(../img/shared/nav-health-nutrition.png);
 	background-repeat:repeat-x;
-	height:246px;
-	left:486px;
+	height:338px;
+	left:0;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
 	top:25px;
-	width:438px
+	width:924px
 }
 
 #header #nav ul li ul#health img.selected {
@@ -375,13 +376,13 @@ body {
 #header #nav ul li ul#story {
 	background-image:url(../img/shared/nav-our-story.png);
 	background-repeat:repeat-x;
-	height:246px;
-	left:486px;
+	height:338px;
+	left:0;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
 	top:25px;
-	width:438px
+	width:924px
 }
 
 #header #nav ul li ul#story img.selected {
@@ -470,7 +471,7 @@ body {
 }
 
 #header #nav ul li ul#health li ul#nav_last,#header #nav ul li ul#story li ul#nav_last {
-	left:225px;
+	left:710px;
 	padding:0;
 	position:absolute;
 	text-align:left;
@@ -1446,6 +1447,21 @@ a.disabled {
 	float:right
 }
 
+#home_slider .slide4 {
+	background-image:url(../img/home/slide4.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	height:487px;
+	padding:40px 375px 0 50px;
+	width:515px;
+	width:520px\0/;
+	*width:520px
+}
+
+#home_slider .slide4 h5 a {
+	float:right
+}
+
 .home_tab {
 	background-image:url(../img/home/callout.png);
 	background-repeat:no-repeat;
@@ -1498,7 +1514,7 @@ a.disabled {
 /* =Content Dogs
 --------------------------------*/
 #content.dogs .banner #banner_image {
-	background-image:url(../img/dogs/slide1.jpg);
+	background-image:url(../img/dogs/dog-banner.jpg);
 	background-repeat:no-repeat;
 	height:320px;
 	padding:233px 324px 0 99px;
@@ -1585,7 +1601,7 @@ a.disabled {
 /* =Content Cats
 --------------------------------*/
 #content.cats .banner #banner_image {
-	background-image:url(../img/cats/slide1.jpg);
+	background-image:url(../img/cats/cat-banner.jpg);
 	background-repeat:no-repeat;
 	height:320px;
 	padding:224px 406px 0 53px;
@@ -1683,7 +1699,7 @@ a.disabled {
 }
 
 #content.holistic .banner #banner_image {
-	background-image:url(../img/health/slide1.jpg);
+	background-image:url(../img/health/holistic-banner.jpg);
 	background-repeat:no-repeat;
 	height:320px;
 	margin-bottom:20px;
@@ -1715,7 +1731,7 @@ a.disabled {
 }
 
 #content.snacks .banner #banner_image {
-	background-image:url(../img/snacks/slide1.jpg);
+	background-image:url(../img/snacks/snack-family-banner.jpg);
 	background-repeat:no-repeat;
 	height:320px;
 	margin-bottom:20px;
@@ -1863,7 +1879,7 @@ ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a
 }
 
 #content.health_and_nutrition .banner #banner_image {
-	background-image:url(../img/health/slide1.jpg);
+	background-image:url(../img/health/health-banner.jpg);
 	background-repeat:no-repeat;
 	height:487px;
 	padding:40px 375px 0 50px;
@@ -2075,7 +2091,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide1 {
-	background-image:url(../img/story/slide1.jpg);
+	background-image:url(../img/story/cheryl-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2083,7 +2099,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide2 {
-	background-image:url(../img/story/slide2.jpg);
+	background-image:url(../img/story/ellen-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2091,7 +2107,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide3 {
-	background-image:url(../img/story/slide3.jpg);
+	background-image:url(../img/story/todd-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2099,7 +2115,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide4 {
-	background-image:url(../img/story/slide1.jpg);
+	background-image:url(../img/story/carolyn-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2107,7 +2123,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide5 {
-	background-image:url(../img/story/slide2.jpg);
+	background-image:url(../img/story/better-way-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2115,7 +2131,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide6 {
-	background-image:url(../img/story/slide3.jpg);
+	background-image:url(../img/story/our-plants-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
