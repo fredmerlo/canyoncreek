@@ -293,7 +293,7 @@ body {
 	background-image:url(../img/shared/nav-dogs.png);
 	background-repeat:repeat-x;
 	height:338px;
-	left:0;
+	left:-42px;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
@@ -302,7 +302,7 @@ body {
 }
 
 #header #nav ul li ul#dogs img.selected {
-	left:81px;
+	left:483px;
 	position:absolute;
 	top:0
 }
@@ -311,7 +311,7 @@ body {
 	background-image:url(../img/shared/nav-cats.png);
 	background-repeat:repeat-x;
 	height:338px;
-	left:0;
+	left:-42px;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
@@ -320,7 +320,7 @@ body {
 }
 
 #header #nav ul li ul#cats img.selected {
-	left:294px;
+	left:700px;
 	position:absolute;
 	top:0
 }
@@ -329,7 +329,7 @@ body {
 	background-image:url(../img/shared/nav-snacks.png);
 	background-repeat:repeat-x;
 	height:338px;
-	left:0;
+	left:-42px;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
@@ -350,7 +350,7 @@ body {
 }
 
 #header #nav ul li ul#snacks img.selected {
-	left:442px;
+	left:850px;
 	position:absolute;
 	top:0
 }
@@ -359,7 +359,7 @@ body {
 	background-image:url(../img/shared/nav-health-nutrition.png);
 	background-repeat:repeat-x;
 	height:338px;
-	left:0;
+	left:-42px;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
@@ -368,7 +368,7 @@ body {
 }
 
 #header #nav ul li ul#health img.selected {
-	left:95px;
+	left:280px;
 	position:absolute;
 	top:0
 }
@@ -377,7 +377,7 @@ body {
 	background-image:url(../img/shared/nav-our-story.png);
 	background-repeat:repeat-x;
 	height:338px;
-	left:0;
+	left:-42px;
 	margin:0;
 	padding:35px 0 0 16px;
 	position:absolute;
@@ -386,7 +386,7 @@ body {
 }
 
 #header #nav ul li ul#story img.selected {
-	left:238px;
+	left:140px;
 	position:absolute;
 	top:0
 }
@@ -441,6 +441,7 @@ body {
 
 #header #nav ul li ul#dogs li ul,#header #nav ul li ul#cats li ul {
 	float:left;
+	left: 0;
 	margin-right:10px;
 	padding:0;
 	position:relative;
@@ -451,6 +452,7 @@ body {
 
 #header #nav ul li ul#snacks li ul {
 	float:left;
+	left: 0;
 	padding:0;
 	position:relative;
 	text-align:left;
@@ -936,6 +938,15 @@ ul.categories li a:hover {
 	-moz-transition:all .25s ease-in-out
 }
 
+#snack_family {
+	background-image:url(../img/snacks/snack-family.jpg);
+	background-repeat:no-repeat;
+	height:252px;
+	padding:0;
+	text-align:center;
+	width:461px
+}
+
 #ingredient_dictionary {
 	background-image:url(../img/shared/ingredient-dictionary.jpg);
 	background-repeat:no-repeat;
@@ -1067,31 +1078,34 @@ ul.no li.last {
 }*/
 /* =Sidebar
 --------------------------------*/
-#sidebar_healthy_snacks {
-	background-image:url(../img/sidebar/sidebar-healthy-snacks.jpg);
-	background-repeat:no-repeat;
-	height:84px;
-	margin-bottom:20px;
-	padding-top:44px;
-	text-align:center;
-	width:279px
-}
-
 #sidebar_ingredient_dictionary {
 	background-image:url(../img/sidebar/sidebar-ingredient-dictionary.jpg);
 	background-repeat:no-repeat;
-	height:98px;
+	height:128px;
 	margin-bottom:20px;
-	padding-top:30px;
 	text-align:center;
 	width:279px
 }
 
 #sidebar_ingredient_dictionary a {
 	color:#fff;
+	display: block;
 	font-family:Georgia,sans-serif;
 	font-size:18px;
-	line-height:22px
+	height:98px;
+	line-height:22px;
+	padding-top:30px;
+	width:279px
+}
+
+#sidebar_ingredient_dictionary a span{
+	color:#fff;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:20px;
+	font-style:normal;
+	font-weight:900;
+	line-height:22px;
+	text-transform:uppercase
 }
 
 #sidebar_ingredient_dictionary a:hover,#sidebar_ingredient_dictionary a:hover span {
@@ -1104,9 +1118,8 @@ ul.no li.last {
 #sidebar_natural_cat_food {
 	background-image:url(../img/sidebar/sidebar-natural-cat-food.jpg);
 	background-repeat:no-repeat;
-	height:84px;
+	height:128px;
 	margin-bottom:20px;
-	padding-top:44px;
 	text-align:center;
 	width:279px
 }
@@ -1114,22 +1127,35 @@ ul.no li.last {
 #sidebar_natural_dog_food {
 	background-image:url(../img/sidebar/sidebar-natural-dog-food.jpg);
 	background-repeat:no-repeat;
-	height:84px;
+	height:128px;
 	margin-bottom:8px;
-	padding-top:44px;
 	text-align:center;
 	width:279px
 }
 
-#sidebar_healthy_snacks a,#sidebar_ingredient_dictionary a span,#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
+#sidebar_healthy_snacks {
+	background-image:url(../img/sidebar/sidebar-healthy-snacks.jpg);
+	background-repeat:no-repeat;
+	height:128px;
+	margin-bottom:20px;
+	text-align:center;
+	width:279px
+}
+
+#sidebar_healthy_snacks a,#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
 	color:#fff;
+	display: block;
 	font-family:brandon-grotesque,sans-serif;
 	font-size:20px;
 	font-style:normal;
 	font-weight:900;
+	height: 84px;
 	line-height:22px;
-	text-transform:uppercase
+	padding-top:44px;
+	text-transform:uppercase;
+	width: 279px;
 }
+
 
 #sidebar_healthy_snacks a:hover,#sidebar_natural_cat_food a:hover,#sidebar_natural_dog_food a:hover,#sidebar_healthy_snacks a:hover span,#sidebar_natural_cat_food a:hover span,#sidebar_natural_dog_food a:hover span {
 	color:#726659;
@@ -1386,6 +1412,10 @@ a.disabled {
 	width:9999em
 }
 
+#home_slider h3, #home_slider h5 a, #home_slider p {
+	color: #fff;
+}
+
 #home_slider_nav {
 	left:0;
 	position:absolute;
@@ -1406,8 +1436,8 @@ a.disabled {
 	background-image:url(../img/home/slide1.jpg);
 	background-repeat:no-repeat;
 	float:left;
-	height:487px;
-	padding:40px 355px 0 50px;
+	height:331px;
+	padding:196px 355px 0 50px;
 	width:535px
 }
 
@@ -1420,9 +1450,9 @@ a.disabled {
 	background-image:url(../img/home/slide2.jpg);
 	background-repeat:no-repeat;
 	float:left;
-	height:327px;
-	padding:200px 375px 0 50px;
-	width:515px;
+	height:331px;
+	padding:196px 355px 0 50px;
+	width:535px;
 	width:520px\0/;
 	*width:520px
 }
@@ -1436,8 +1466,8 @@ a.disabled {
 	background-image:url(../img/home/slide3.jpg);
 	background-repeat:no-repeat;
 	float:left;
-	height:487px;
-	padding:40px 375px 0 50px;
+	height:388px;
+	padding:139px 375px 0 50px;
 	width:515px;
 	width:520px\0/;
 	*width:520px
@@ -1451,9 +1481,9 @@ a.disabled {
 	background-image:url(../img/home/slide4.jpg);
 	background-repeat:no-repeat;
 	float:left;
-	height:487px;
-	padding:40px 375px 0 50px;
-	width:515px;
+	height:358px;
+	padding:169px 375px 0 54px;
+	width:511px;
 	width:520px\0/;
 	*width:520px
 }
@@ -1731,12 +1761,16 @@ a.disabled {
 }
 
 #content.snacks .banner #banner_image {
-	background-image:url(../img/snacks/snack-family-banner.jpg);
+	background-image:url(../img/snacks/snack-banner.jpg);
 	background-repeat:no-repeat;
 	height:320px;
 	margin-bottom:20px;
 	padding:207px 346px 0 122px;
 	width:515px
+}
+
+#content.snacks .banner #banner_image h3, #content.snacks .banner #banner_image h4 {
+	color: #fff;
 }
 
 #content.snacks h1 {
