@@ -1546,7 +1546,7 @@ a.disabled {
 /* =Content Dogs
 --------------------------------*/
 #content.dogs .banner #banner_image {
-	background-image:url(../img/dogs/slide1.jpg);
+	background-image:url(../img/dogs/dog-banner.jpg);
 	background-repeat:no-repeat;
 	height:353px;
 	padding:174px 346px 0 47px;
@@ -1643,7 +1643,7 @@ a.disabled {
 /* =Content Cats
 --------------------------------*/
 #content.cats .banner #banner_image {
-	background-image:url(../img/cats/slide1.jpg);
+	background-image:url(../img/cats/cat-banner.jpg);
 	background-repeat:no-repeat;
 	height:353px;
 	padding:174px 346px 0 47px;
@@ -1774,7 +1774,7 @@ a.disabled {
 }
 
 #content.snacks .banner #banner_image {
-	background-image:url(../img/snacks/slide1.jpg);
+	background-image:url(../img/snacks/snack-banner.jpg);
 	background-repeat:no-repeat;
 	height:353px;
 	margin-bottom:20px;
