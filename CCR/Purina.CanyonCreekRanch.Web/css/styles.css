@@ -840,8 +840,8 @@ ul.categories li a:hover {
 #holistic_box {
 	background-image:url(../img/shared/holistic.jpg);
 	background-repeat:no-repeat;
-	height:221px;
-	padding-top:40px;
+	height:171px;
+	padding:60px 0 0;
 	text-align:center;
 	width:461px
 }
@@ -857,7 +857,7 @@ ul.categories li a:hover {
 	font-style:italic;
 	font-weight:700;
 	line-height:29px;
-	padding:146px 185px 70px 165px;
+	padding:150px 183px 65px 181px;
 	text-align:left;
 	text-decoration:none;
 	text-transform:uppercase
@@ -873,14 +873,14 @@ ul.categories li a:hover {
 #natural_dog_food {
 	background-image:url(../img/shared/natural-dog-food.jpg);
 	background-repeat:no-repeat;
-	height:221px;
-	padding:20px 0 0;
+	height:181px;
+	padding:50px 0 0;
 	text-align:center;
 	width:459px
 }
 
 #natural_dog_food a {
-	padding:191px 183px 20px 184px
+	padding:155px 187px 60px 180px;
 }
 
 #natural_dog_food:hover span,#natural_dog_food:hover p,#natural_dog_food a:hover {
@@ -893,14 +893,14 @@ ul.categories li a:hover {
 #natural_cat_food {
 	background-image:url(../img/shared/natural-cat-food.jpg);
 	background-repeat:no-repeat;
-	height:221px;
-	padding:20px 0 0;
+	height:181px;
+	padding:50px 0 0;
 	text-align:center;
 	width:461px
 }
 
 #natural_cat_food a {
-	padding:191px 185px 20px 184px
+	padding:155px 185px 60px 183px;
 }
 
 #natural_cat_food:hover span,#natural_cat_food:hover p,#natural_cat_food a:hover {
@@ -913,8 +913,8 @@ ul.categories li a:hover {
 #snack_box {
 	background-image:url(../img/shared/snacks.jpg);
 	background-repeat:no-repeat;
-	height:211px;
-	padding-top:30px;
+	height:181px;
+	padding:50px 0 0;
 	text-align:center;
 	width:461px
 }
@@ -925,7 +925,7 @@ ul.categories li a:hover {
 	font-style:italic;
 	font-weight:700;
 	line-height:29px;
-	padding:146px 185px 70px 183px;
+	padding:155px 185px 60px 183px;
 	text-align:left;
 	text-decoration:none;
 	text-transform:uppercase
@@ -950,19 +950,21 @@ ul.categories li a:hover {
 #ingredient_dictionary {
 	background-image:url(../img/shared/ingredient-dictionary.jpg);
 	background-repeat:no-repeat;
-	height:83px;
-	padding-left:20px;
+	height:103px;
 	padding-right:185px;
-	padding-top:20px;
 	text-align:center;
-	width:266px
+	width:286px
 }
 
 #ingredient_dictionary a {
 	color:#fff;
+	display: block;
 	font-family:Georgia,sans-serif;
 	font-size:18px;
-	line-height:22px
+	height: 60px;
+	line-height:22px;
+	padding: 20px 165px 25px 27px;
+	width: 260px;
 }
 
 #ingredient_dictionary a span {
@@ -993,7 +995,7 @@ ul.categories li a:hover {
 }
 
 #cat_video {
-	background-image:url(../img/shared/cat-video.jpg);
+	background-image:url(../img/shared/cheryl-video.jpg);
 	background-repeat:no-repeat;
 	height:252px;
 	width:449px
@@ -1500,7 +1502,7 @@ a.disabled {
 	font-size:11px;
 	height:91px;
 	line-height:15px;
-	margin-right:1px;
+	margin-right:3px;
 	padding-left:15px;
 	padding-right:15px;
 	padding-top:2px;
@@ -1544,16 +1546,21 @@ a.disabled {
 /* =Content Dogs
 --------------------------------*/
 #content.dogs .banner #banner_image {
-	background-image:url(../img/dogs/dog-banner.jpg);
+	background-image:url(../img/dogs/slide1.jpg);
 	background-repeat:no-repeat;
-	height:320px;
-	padding:233px 324px 0 99px;
-	width:515px
+	height:353px;
+	padding:174px 346px 0 47px;
+	width:547px
 }
 
 #content.dogs .fullcol {
 	width:940px
 }
+
+#content.dogs .banner h3, #content.dogs .banner p {
+	color:#fff;
+	text-shadow: 1px 1px 1px #000;
+} 
 
 #content.dogs h1 {
 	font-size:14px;
@@ -1564,6 +1571,11 @@ a.disabled {
 #content.dogs h2 {
 	margin-bottom:0;
 	margin-top:250px
+}
+
+#content.dogs .banner h3, #content.dogs .banner p {
+	color#fff;
+	text-shadow: 1px 1px 1px #000;
 }
 
 #content.dogs .ingredients {
@@ -1631,19 +1643,20 @@ a.disabled {
 /* =Content Cats
 --------------------------------*/
 #content.cats .banner #banner_image {
-	background-image:url(../img/cats/cat-banner.jpg);
+	background-image:url(../img/cats/slide1.jpg);
 	background-repeat:no-repeat;
-	height:320px;
-	padding:224px 406px 0 53px;
-	width:515px
+	height:353px;
+	padding:174px 346px 0 47px;
+	width:547px
 }
 
 #content.cats .fullcol {
 	width:940px
 }
 
-#content.cats .banner #slide1 h3,#content.cats .banner #slide1 p {
-	color:#fff
+#content.cats .banner h3, #content.cats .banner p {
+	color:#fff;
+	text-shadow: 1px 1px 1px #000;
 }
 
 #content.cats h1 {
@@ -1761,17 +1774,19 @@ a.disabled {
 }
 
 #content.snacks .banner #banner_image {
-	background-image:url(../img/snacks/snack-banner.jpg);
+	background-image:url(../img/snacks/slide1.jpg);
 	background-repeat:no-repeat;
-	height:320px;
+	height:353px;
 	margin-bottom:20px;
-	padding:207px 346px 0 122px;
-	width:515px
+	padding:174px 346px 0 47px;
+	width:547px
 }
 
-#content.snacks .banner #banner_image h3, #content.snacks .banner #banner_image h4 {
-	color: #fff;
+#content.snacks .banner h3, #content.snacks .banner p {
+	color:#fff;
+	text-shadow: 1px 1px 1px #000;
 }
+
 
 #content.snacks h1 {
 	color:#58493A;
