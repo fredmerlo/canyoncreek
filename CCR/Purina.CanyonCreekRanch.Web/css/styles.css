@@ -1,6 +1,5 @@
-/************************************************************************
- * Site: Canyon Creek Ranch
- * Author: Mesh, Tim Shelburn
+* Site: Canyon Creek Ranch
+* Author: Mesh,Tim Shelburn
 *************************************************************************/
 /* =Typography
 --------------------------------*/
@@ -105,6 +104,7 @@ p {
 }
 
 /* =Structure
+
 --------------------------------*/
 body {
 	width:100%
@@ -160,6 +160,7 @@ body {
 }
 
 /* =Header
+
 --------------------------------*/
 #header {
 	background-image:url(../img/shared/header-sm.jpg);
@@ -208,7 +209,7 @@ body {
 }
 
 #header #nav ul {
-	left: 42px;
+	left:42px;
 	position:absolute;
 /*top:105px;*/
 	top:78px;
@@ -441,7 +442,7 @@ body {
 
 #header #nav ul li ul#dogs li ul,#header #nav ul li ul#cats li ul {
 	float:left;
-	left: 0;
+	left:0;
 	margin-right:10px;
 	padding:0;
 	position:relative;
@@ -452,7 +453,7 @@ body {
 
 #header #nav ul li ul#snacks li ul {
 	float:left;
-	left: 0;
+	left:0;
 	padding:0;
 	position:relative;
 	text-align:left;
@@ -723,11 +724,13 @@ body {
 }
 
 /* =Content
+
 --------------------------------*/
 #content {
 	height:100%;
 	margin-top:94px;
 /*margin-top:134px;
+
 	margin-top:4px;*/
 	_margin-top:0;
 	width:100%;
@@ -880,7 +883,7 @@ ul.categories li a:hover {
 }
 
 #natural_dog_food a {
-	padding:155px 187px 60px 180px;
+	padding:155px 187px 60px 180px
 }
 
 #natural_dog_food:hover span,#natural_dog_food:hover p,#natural_dog_food a:hover {
@@ -900,7 +903,7 @@ ul.categories li a:hover {
 }
 
 #natural_cat_food a {
-	padding:155px 185px 60px 183px;
+	padding:155px 185px 60px 183px
 }
 
 #natural_cat_food:hover span,#natural_cat_food:hover p,#natural_cat_food a:hover {
@@ -958,13 +961,13 @@ ul.categories li a:hover {
 
 #ingredient_dictionary a {
 	color:#fff;
-	display: block;
+	display:block;
 	font-family:Georgia,sans-serif;
 	font-size:18px;
-	height: 60px;
+	height:60px;
 	line-height:22px;
-	padding: 20px 165px 25px 27px;
-	width: 260px;
+	padding:20px 165px 25px 27px;
+	width:260px
 }
 
 #ingredient_dictionary a span {
@@ -1052,33 +1055,60 @@ ul.categories li a:hover {
 }
 
 /*ul.no {
+
 	background-color: #e8e2e0;
+
 	height: 9px;
+
 	margin-left: 243px;
+
 	padding: 18px;
+
 	width: 630px;
+
 }
+
 ul.no li {
+
 	border-right: 1px solid #c8be46;
+
 	color:#c8be46;
+
 	float: left;
+
 	font-family:brandon-grotesque,sans-serif;
+
 	font-size:14px;
+
 	font-style:normal;
+
 	font-weight:900;
+
 	line-height:14px;
+
 	padding-left:14px;
+
 	padding-right: 14px;
+
 	text-transform:uppercase
+
 }
+
 ul.no li.first {
+
 	padding-left: 0;
+
 }
+
 ul.no li.last {
+
 	border-right: none;
+
 	padding-right: 0;
+
 }*/
 /* =Sidebar
+
 --------------------------------*/
 #sidebar_ingredient_dictionary {
 	background-image:url(../img/sidebar/sidebar-ingredient-dictionary.jpg);
@@ -1091,7 +1121,7 @@ ul.no li.last {
 
 #sidebar_ingredient_dictionary a {
 	color:#fff;
-	display: block;
+	display:block;
 	font-family:Georgia,sans-serif;
 	font-size:18px;
 	height:98px;
@@ -1100,7 +1130,7 @@ ul.no li.last {
 	width:279px
 }
 
-#sidebar_ingredient_dictionary a span{
+#sidebar_ingredient_dictionary a span {
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
 	font-size:20px;
@@ -1146,18 +1176,17 @@ ul.no li.last {
 
 #sidebar_healthy_snacks a,#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
 	color:#fff;
-	display: block;
+	display:block;
 	font-family:brandon-grotesque,sans-serif;
 	font-size:20px;
 	font-style:normal;
 	font-weight:900;
-	height: 84px;
+	height:84px;
 	line-height:22px;
 	padding-top:44px;
 	text-transform:uppercase;
-	width: 279px;
+	width:279px
 }
-
 
 #sidebar_healthy_snacks a:hover,#sidebar_natural_cat_food a:hover,#sidebar_natural_dog_food a:hover,#sidebar_healthy_snacks a:hover span,#sidebar_natural_cat_food a:hover span,#sidebar_natural_dog_food a:hover span {
 	color:#726659;
@@ -1200,6 +1229,7 @@ ul.no li.last {
 }
 
 /* =Content Tabs
+
 --------------------------------*/
 ul.tabs {
 	margin-top:15px;
@@ -1266,6 +1296,7 @@ ul.tabs a.current,ul.tabs a.current:hover,ul.tabs li.current a {
 }
 
 /* =Main Scrollable Items
+
 --------------------------------*/
 .scrollable .items {
 	width:20000em;
@@ -1332,7 +1363,9 @@ a.disabled {
 }
 
 /*.scrollable a {
+
 	white-space: nowrap;
+
 }*/
 .scrollable a:hover {
 	color:#bfb2a3;
@@ -1342,6 +1375,7 @@ a.disabled {
 }
 
 /* =Shared Product Content
+
 --------------------------------*/
 #content.natural_cat .product_content,#content.natural_dog .product_content {
 /*height:622px;*/
@@ -1395,6 +1429,7 @@ a.disabled {
 }
 
 /* =Content Home
+
 --------------------------------*/
 #content.home .featured {
 	height:528px;
@@ -1414,8 +1449,8 @@ a.disabled {
 	width:9999em
 }
 
-#home_slider h3, #home_slider h5 a, #home_slider p {
-	color: #fff;
+#home_slider h3,#home_slider h5 a,#home_slider p {
+	color:#fff
 }
 
 #home_slider_nav {
@@ -1544,6 +1579,7 @@ a.disabled {
 }
 
 /* =Content Dogs
+
 --------------------------------*/
 #content.dogs .banner #banner_image {
 	background-image:url(../img/dogs/dog-banner.jpg);
@@ -1557,10 +1593,10 @@ a.disabled {
 	width:940px
 }
 
-#content.dogs .banner h3, #content.dogs .banner p {
+#content.dogs .banner h3,#content.dogs .banner p {
 	color:#fff;
-	text-shadow: 1px 1px 1px #000;
-} 
+	text-shadow:1px 1px 1px #000
+}
 
 #content.dogs h1 {
 	font-size:14px;
@@ -1573,9 +1609,8 @@ a.disabled {
 	margin-top:250px
 }
 
-#content.dogs .banner h3, #content.dogs .banner p {
-	color#fff;
-	text-shadow: 1px 1px 1px #000;
+#content.dogs .banner h3,#content.dogs .banner p {
+	text-shadow:1px 1px 1px #000
 }
 
 #content.dogs .ingredients {
@@ -1587,6 +1622,7 @@ a.disabled {
 }
 
 /* =Content Natural Dry Dog Food
+
 --------------------------------*/
 #content.natural_dog .banner {
 	height:622px;
@@ -1641,6 +1677,7 @@ a.disabled {
 }
 
 /* =Content Cats
+
 --------------------------------*/
 #content.cats .banner #banner_image {
 	background-image:url(../img/cats/cat-banner.jpg);
@@ -1654,9 +1691,9 @@ a.disabled {
 	width:940px
 }
 
-#content.cats .banner h3, #content.cats .banner p {
+#content.cats .banner h3,#content.cats .banner p {
 	color:#fff;
-	text-shadow: 1px 1px 1px #000;
+	text-shadow:1px 1px 1px #000
 }
 
 #content.cats h1 {
@@ -1679,6 +1716,7 @@ a.disabled {
 }
 
 /* =Content Natural Cat Food
+
 --------------------------------*/
 #content.natural_cat .banner {
 	height:622px;
@@ -1735,6 +1773,7 @@ a.disabled {
 }
 
 /* =Content Holistic Living
+
 --------------------------------*/
 #content.holistic .banner {
 	height:550px;
@@ -1767,6 +1806,7 @@ a.disabled {
 }
 
 /* =Content Snacks
+
 --------------------------------*/
 #content.snacks .banner {
 	height:550px;
@@ -1774,5056 +1814,289 @@ a.disabled {
 }
 
 #content.snacks .banner #banner_image {
-	background-image:url(../img/snacks/snack-banner.jpg);
-	background-repeat:no-repeat;
-	height:353px;
-	margin-bottom:20px;
-	padding:174px 346px 0 47px;
-	width:547px
-}
-
-#content.snacks .banner h3, #content.snacks .banner p {
-	color:#fff;
-	text-shadow: 1px 1px 1px #000;
-}
-
-
-#content.snacks h1 {
-	color:#58493A;
-	font-family:Georgia,sans-serif;
-	font-size:14px;
-	font-weight:400;
-	letter-spacing:normal;
-	line-height:18px;
-	margin-top:10px;
-	text-transform:none
-}
-
-#content.snacks h2 {
-	font-size:28px;
-	line-height:34px;
-	margin-bottom:0
-}
-
-#content.snacks h3 {
-	font-size:22px;
-	line-height:28px;
-	margin-bottom:5px
-}
-
-#content.snacks h4 {
-	color:#58493A;
-	font-size:15px;
-	line-height:24px;
-	margin-bottom:10px
-}
-
-#content.snacks h6 {
-	font-size:15px;
-	line-height:24px;
-	margin-bottom:10px;
-	margin-top:10px
-}
-
-#content.snacks hr.variety {
-	clear:none;
-	display:block;
-	margin-bottom:25px;
-	margin-left:0;
-	margin-top:25px;
-	width:675px
-}
-
-#content.snacks .ingredients {
-	margin:20px 0
-}
-
-ul.tabs_snack {
-	margin-top:15px;
-	position:relative;
-	padding:0
-}
-
-ul.tabs_snack li {
-	float:left;
-	list-style:none;
-	margin-right:1px;
-	position:relative
-}
-
-ul.tabs_snack li a.current,ul.tabs_snack li a:hover {
-	background-image:url(../img/shared/tab-active-snacks.jpg);
-	background-repeat:no-repeat;
-	color:#e7ece1;
-	height:49px;
-	margin-right:19px;
-	padding-bottom:12px;
-	padding-top:12px;
-	width:172px
-}
-
-ul.tabs_snack a {
-	background-image:url(../img/shared/tab.jpg);
-	background-repeat:no-repeat;
-	color:#58493a;
-	font-family:Georgia;
-	font-size:16px;
-	float:left;
-	height:25px;
-	line-height:23px;
-	margin-right:19px;
-	padding-bottom:12px;
-	padding-top:12px;
-	position:relative;
-	text-align:center;
-	text-decoration:none;
-	text-transform:uppercase;
-	width:172px
-}
-
-ul.tabs_snack li a.current.proteins,ul.tabs_snack li a.proteins:hover {
-	background-image:url(../img/shared/tab-active-snacks.jpg);
-	background-repeat:no-repeat;
-	color:#e7ece1;
-	height:63px;
-	margin-right:19px;
-	padding-bottom:4px;
-	padding-top:6px;
-	width:172px
-}
-
-ul.tabs_snack a.proteins {
-	background-image:url(../img/shared/tab.jpg);
-	background-repeat:no-repeat;
-	color:#58493a;
-	font-family:Georgia;
-	font-size:16px;
-	float:left;
-	height:31px;
-	line-height:18px;
-	margin-right:19px;
-	padding-bottom:12px;
-	padding-top:6px;
-	position:relative;
-	text-align:center;
-	text-decoration:none;
-	text-transform:uppercase;
-	width:172px
-}
-
-ul.tabs_snack a:active {
-	outline:none
-}
-
-ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a {
-	color:#e7ece1;
-	cursor:pointer
-}
-
-/* =Content Health & Nutrition
---------------------------------*/
-#content.health_and_nutrition .banner {
-	height:528px;
-	width:940px
-}
-
-#content.health_and_nutrition .banner #banner_image {
-	background-image:url(../img/health/health-banner.jpg);
-	background-repeat:no-repeat;
-	height:487px;
-	padding:40px 375px 0 50px;
-	width:515px;
-	width:520px\0/;
-	*width:520px
-}
-
-#content.health_and_nutrition .banner h3 {
-	font-size:30px
-}
-
-#content.health_and_nutrition h1 {
-	font-size:21px;
-	line-height:24px;
-	margin-bottom:10px;
-	margin-top:20px
-}
-
-#content.health_and_nutrition h2 {
-	font-size:21px;
-	margin-bottom:10px;
-	margin-top:20px
-}
-
-#content.health_and_nutrition h3,#content.health_and_nutrition h4 {
-	color:#726659;
-	font-size:13px
-}
-
-#content.health_and_nutrition h3 a:hover {
-	color:#bfb2a3;
-	transition:all .25s ease-in-out;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out
-}
-
-#content.health_and_nutrition ul.tabs {
-	margin-top:0;
-	width:650px
-}
-
-#content.health_and_nutrition ul.tabs li a {
-	margin-right:17px
-}
-
-#content.health_and_nutrition ul.tabs li a.current,#content.health_and_nutrition ul.tabs li a:hover {
-	background-image:url(../img/health/tab-active.jpg);
-	width:194px
-}
-
-#content.health_and_nutrition ul.tabs a {
-	background-image:url(../img/health/tab.jpg);
-	background-repeat:no-repeat;
-	width:194px
-}
-
-#content.health_and_nutrition .ingredients {
-	margin-bottom:20px;
-	margin-left:72px;
-	margin-top:20px
-}
-
-/* =Content Ingredient Dictionary
---------------------------------*/
-ul#ingredients {
-	background-image:url(../img/health/bg-ingredient-list.jpg);
-	background-repeat:repeat-y;
-	float:left;
-	height:470px;
-	overflow:hidden;
-	overflow-y:scroll;
-	width:123px
-}
-
-ul#ingredients li {
-	line-height:18px;
-	list-style:none;
-	margin-bottom:4px;
-	margin-top:4px;
-	width:123px
-}
-
-ul#ingredients li a.current {
-	background-color:#e8e2e0;
-	color:#726659
-}
-
-ul#ingredients a {
-	color:#726659;
-	cursor:pointer;
-	display:block;
-	font-family:Georgia,sans-serif;
-	font-size:15px;
-	padding-bottom:4px;
-	padding-left:8px;
-	padding-top:4px;
-	white-space:nowrap
-}
-
-ul#ingredients a:active {
-	background-color:#e8e2e0;
-	outline:none
-}
-
-.list .pane {
-	clear:both;
-	display:none
-}
-
-.list div {
-	display:block;
-	height:320px;
-	padding:0;
-	width:440px
-}
-
-.ingredient_dictionary {
-	float:right;
-	height:700px;
-	overflow:hidden;
-	width:440px
-}
-
-#content.health_and_nutrition .ingredient_dictionary h1 {
-	margin-top:0
-}
-
-/*#ingredient_list {
-	background-image:url(../img/health/bg-ingredient-list.jpg);
-	background-repeat:repeat-y;
-	display:block;
-	float:left;
-	height:470px;
-	margin-right:0px;
-	width:123px
-}
-
-#ingredient_list ul {
-	height:470px;
-	padding-top:5px;
-	overflow:hidden;
-	overflow-y:scroll;
-	width:123px
-}
-
-#ingredient_list ul li {
-	color:#726659;
-	cursor:pointer;
-	font-family:Georgia,sans-serif;
-	font-size:15px;
-	line-height:29px;
-	list-style:none;
-	padding-left:15px;
-	text-align:left;
-	text-decoration:none
-}
-
-#ingredient_list ul li:active {
-	background-color:#e8e2e0
-}*/
-/* =Content Our Story
---------------------------------*/
-#content.our_story .featured {
-	height:528px;
-	overflow:hidden;
-	position:relative;
-	width:940px
-}
-
-#content.our_story h2 {
-	margin-bottom:10px;
-	margin-top:20px
-}
-
-#content.our_story .leftcol625 a:hover {
-	color:#bfb2a3;
-	transition:all .25s ease-in-out;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out
-}
-
-#our_story_slider {
-	height:528px;
-	overflow:hidden;
-	position:absolute;
-	width:9999em
-}
-
-#our_story_slider_nav {
-	left:0;
-	position:absolute;
-	top:528px
-}
-
-#our_story_slider_nav a {
-	display:block;
-	float:left;
-	cursor:pointer
-}
-
-#our_story_slider_nav a.active {
-	cursor:default!important
-}
-
-.navi {
-	margin-top:2px;
-	width:950px
-}
-
-#our_story_slider .slide1 {
-	background-image:url(../img/story/cheryl-slide.jpg);
-	background-repeat:no-repeat;
-	float:left;
-	height:528px;
-	width:940px
-}
-
-#our_story_slider .slide2 {
-	background-image:url(../img/story/ellen-slide.jpg);
-	background-repeat:no-repeat;
-	float:left;
-	height:528px;
-	width:940px
-}
-
-#our_story_slider .slide3 {
-	background-image:url(../img/story/todd-slide.jpg);
-	background-repeat:no-repeat;
-	float:left;
-	height:528px;
-	width:940px
-}
-
-#our_story_slider .slide4 {
-	background-image:url(../img/story/carolyn-slide.jpg);
-	background-repeat:no-repeat;
-	float:left;
-	height:528px;
-	width:940px
-}
-
-#our_story_slider .slide5 {
-	background-image:url(../img/story/better-way-slide.jpg);
-	background-repeat:no-repeat;
-	float:left;
-	height:528px;
-	width:940px
-}
-
-#our_story_slider .slide6 {
-	background-image:url(../img/story/our-plants-slide.jpg);
-	background-repeat:no-repeat;
-	float:left;
-	height:528px;
-	width:940px
-}
-
-.our_story_tab {
-	background-image:url(../img/story/callout.png);
-	background-repeat:no-repeat;
-	color:#fff;
-	font-family:Georgia,sans-serif;
-	font-size:11px;
-	height:91px;
-	line-height:15px;
-	margin-right:1px;
-	padding-left:15px;
-	padding-right:15px;
-	padding-top:2px;
-	text-align:center;
-	width:126px
-}
-
-.our_story_tab:hover {
-	background-image:url(../img/story/callout-active.png);
-	background-repeat:no-repeat;
-	color:#fff;
-	height:93px;
-	margin-top:-11px;
-	padding-left:15px;
-	padding-right:15px;
-	padding-top:13px;
-	width:126px
-}
-
-.our_story_tab:active {
-	background-image:url(../img/story/callout-active.png);
-	background-repeat:no-repeat;
-	height:93px;
-	margin-top:-11px;
-	padding-left:15px;
-	padding-right:15px;
-	width:126px
-}
-
-.our_story_tab.active {
-	background-image:url(../img/story/callout-selected.png);
-	background-repeat:no-repeat;
-	height:93px;
-	margin-top:-11px;
-	padding-left:15px;
-	padding-right:15px;
-	padding-top:13px;
-	width:126px
-}
-
-/* =Content Our Story - FAQ
---------------------------------*/
-ul.faqs {
-	list-style:none
-}
-
-ul.faqs li {
-	border-bottom:1px solid #dbd7d2;
-	padding-bottom:10px
-}
-
-ul.faqs h2 {
-	background:url(../img/story/faq-arrow-open.png) top right no-repeat;
-	cursor:pointer;
-	padding-right:30px
-}
-
-ul.faqs h2.toggle {
-	background:url(../img/story/faq-arrow-closed.png) top right no-repeat
-}
-
-ul.faqs p {
-	display:none;
-	padding-bottom:10px;
-	padding-right:30px
-}
-
-/* =Content What's Happening
---------------------------------*/
-#content .articles h2,#content .articles p {
-	width:520px
-}
-
-#content .addthis_article {
-	margin-bottom:10px;
-	margin-left:400px;
-	margin-top:10px
-}
-
-#content h5 a:hover,#content .articles a:hover {
-	color:#bfb2a3;
-	transition:all .25s ease-in-out;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out
-}
-
-/* =Footer
---------------------------------*/
-#footer {
-	background-image:url(../img/shared/footer.jpg);
-	background-repeat:repeat-x;
-	clear:both;
-	height:423px;
-	padding-top:75px;
-	*padding-top:75px;
-	width:100%
-}
-
-#footer #accolades p {
-	font-style:italic;
-	font-size:16px;
-	line-height:26px;
-	list-style:none;
-	margin-top:5px
-}
-
-#footer h6 a:hover {
-	color:#fff;
-	transition:all .25s ease-in-out;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out
-}
-
-#footer ul#whats_happening li {
-	padding-bottom:7px;
-	text-transform:uppercase
-}
-
-#footer ul#whats_happening li a {
-	color:#58493a;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:15px;
-	font-style:italic;
-	font-weight:700;
-	line-height:17px;
-	text-decoration:none
-}
-
-#footer ul#whats_happening li a:hover {
-	color:#fff;
-	transition:all .25s ease-in-out;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out
-}
-
-#footer #newsletter {
-	background-color:#90af5e;
-	clear:both;
-	display:block;
-	height:67px;
-	padding:18px 38px;
-	margin-top:63px;
-	position:relative;
-	white-space:nowrap;
-	width:864px
-}
-
-#footer #newsletter p {
-	color:#fff;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:14px;
-	font-style:normal;
-	font-weight:900;
-	letter-spacing:.1em;
-	letter-spacing:normal\0/;
-	*letter-spacing:normal;
-	line-height:29px;
-	margin:0;
-	text-transform:uppercase
-}
-
-#footer #newsletter label {
-	display:inline-block;
-	*line-height:36px;
-	margin-right:8px;
-	*margin-top:-4px;
-	vertical-align:middle;
-	*vertical-align:top
-}
-
-#footer #newsletter input[type="text"] {
-	background-image:url(../img/shared/footer-textfield.jpg);
-	background-repeat:no-repeat;
-	border-bottom:1px solid #c7d4b3;
-	border-left:1px solid #707962;
-	border-right:none;
-	border-top:1px solid #707962;
-	color:#726659;
-	font-family:Georgia;
-	font-size:13px;
-	font-style:italic;
-	height:32px;
-	line-height:29px;
-	padding-left:16px;
-	width:375px
-}
-
-#footer #newsletter input[type="submit"] {
-	background-color:#517629;
-	border:1px solid #6b8d3f;
-	border-bottom:1px solid #6b8d3f;
-	border-left:1px solid #6b8d3f;
-	border-right:1px solid #6b8d3f;
-	border-top:none;
-	color:#fff;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:18px;
-	font-style:italic;
-	font-weight:700;
-	height:36px;
-	letter-spacing:.1em;
-	letter-spacing:normal\0/;
-	*letter-spacing:normal;
-	line-height:29px;
-	padding:5px 0;
-	padding:0\0/;
-	margin:0;
-	text-transform:uppercase;
-	vertical-align:top;
-	width:109px
-}
-
-#footer #newsletter input[type="submit"]:hover {
-	color:#90af5e;
-	transition:all .25s ease-in-out;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out
-}
-
-#footer #footer_nav {
-	margin-top:35px;
-	text-align:center;
-	width:100%
-}
-
-#footer #footer_nav ul {
-	float:none;
-	*margin-left:240px
-}
-
-#footer #footer_nav ul li {
-	border-right:1px #fff solid;
-	display:inline-block;
-	*float:left;
-	padding:0 9px;
-	text-transform:uppercase
-}
-
-#footer #footer_nav ul li.last {
-	border-right:none
-}
-
-#footer #footer_nav ul li a {
-	color:#eeeceb;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:13px;
-	font-style:normal;
-	font-weight:700;
-	line-height:13px;
-	text-decoration:none
-}
-
-#footer #footer_nav ul li a:hover {
-	color:#bfb2a3;
-	transition:all .25s ease-in-out;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out
-}
-
-#footer #legal p {
-	color:#fff;
-	float:left;
-	font-family:arial,sans-serif;
-	font-size:10px;
-	margin-top:20px;
-	text-align:center;
-	width:100%
-}
-
-/* =Classes
---------------------------------*/
-.align_left {
-	display:block;
-	text-align:left
-}
-
-.align_right {
-	text-align:right
-}
-
-.ie_nav_fix {
-	*left:15px;
-	*position:absolute
-}
-
-.ie_nav_fix_cat_dog {
-	*left:15px;
-	*position:absolute;
-	*top:73px
-}
-
-.clear {
-	clear:both
-}
-
-.float_left {
-	display:block;
-	float:left;
-	margin-bottom:10px;
-	margin-right:15px
-}
-
-.float_left_dry_dog {
-	display:block;
-	float:left;
-	margin-right:15px
-}
-
-.float_left_canned {
-	display:block;
-	float:left;
-	margin-right:15px
-}
-
-.float_left_dry_cat {
-	display:block;
-	float:left;
-	margin-right:15px
-}
-
-.float_left_snacks {
-	display:block;
-	float:left;
-	margin-bottom:700px;
-	margin-right:15px
-}
-
-.float_left_snack_variety {
-	display:block;
-	float:left;
-	margin-bottom:1850px;
-	margin-right:15px
-}
-
-.float_right {
-	display:block;
-	float:right;
-	margin-bottom:10px;
-	margin-left:10px
-}
-
-.intro {
-	width:930px
-}
-
-.large_brown_text,.large_brown_text a {
-	color:#726659;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:45px;
-	font-style:normal;
-	font-weight:900;
-	line-height:48px;
-	text-decoration:none;
-	text-transform:uppercase
-}
-
-.large_white_text {
-	color:#fff;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:45px;
-	font-style:normal;
-	font-weight:900;
-	letter-spacing:.1em;
-	line-height:48px;
-	text-transform:uppercase
-}
-
-.medium_brown_text {
-	color:#726659;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:21px;
-	font-style:normal;
-	font-weight:900;
-	letter-spacing:.1em;
-	line-height:24px;
-	margin-bottom:12px;
-	text-transform:uppercase
-}
-
-.medium_white_text {
-	color:#fff;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:33px;
-	font-style:normal;
-	font-weight:900;
-	line-height:29px;
-	text-transform:uppercase
-}
-
-.small_brown_text {
-	color:#726659;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:15px;
-	font-style:normal;
-	font-weight:700;
-	line-height:24px;
-	text-transform:uppercase
-}
-
-.tiny_brown_text {
-	color:#726659;
-	display:block;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:12px;
-	font-style:normal;
-	font-weight:700;
-	line-height:16px;
-	text-transform:uppercase
-}
-
-.small_white_text_box {
-	color:#fff;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:18px;
-	font-style:normal;
-	font-weight:900;
-	margin-bottom:4px;
-	text-transform:uppercase
-}
-
-.small_white_text {
-	color:#fff;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:15px;
-	font-style:normal;
-	font-weight:900;
-	text-transform:uppercase
-}
-
-.tiny_white_text {
-	color:#fff;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:12px;
-	font-style:normal;
-	font-weight:700;
-	line-height:26px;
-	text-transform:uppercase;
-	white-space:nowrap
-}
-
-.small_grey_text {
-	color:#eeeceb;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:13px;
-	font-style:normal;
-	font-weight:900;
-	line-height:24px;
-	text-transform:uppercase
-}
-
-.margin10 {
-	margin:10px 0
-}
-
-.margin20 {
-	margin:20px 0
-}
-
-.margin30 {
-	margin:30px 0
-}
-
-.marginbottom10 {
-	margin-bottom:10px
-}
-
-.marginbottom20 {
-	margin-bottom:20px
-}
-
-.marginbottom40 {
-	margin-bottom:40px
-}
-
-.marginright25 {
-	margin-right:25px
-}
-
-.margin40 {
-	margin:40px 0
-}
-
-.margin50 {
-	margin:50px 0
-}
-
-.margintop20 {
-	margin-top:20px
-}
-
-.margintop40 {
-	margin-top:40px
-}
-
-.margintop60 {
-	margin-top:60px
-}
-
-.margintop85 {
-	margin-top:85px
-}
-
-.paddingbottom10 {
-	padding-bottom:10px
-}
-
-.paddingtop10 {
-	padding-top:10px
-}
-
-.padding30 {
-	padding-top:30px/************************************************************************
-
- * Site: Canyon Creek Ranch
-
- * Author: Mesh, Tim Shelburn
-
-*************************************************************************/
-
-/* =Typography
-
---------------------------------*/
-
-h1,h2,h3,h4,h5,h6 {
-
-	display:block
-
-}
-
-
-
-h1 a,h2 a,h3 a,h5 a,h6 a {
-
-	color:#726659;
-
-	text-decoration:none
-
-}
-
-
-
-h1 {
-
-	color:#726659;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:21px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	letter-spacing:.1em;
-
-	line-height:24px;
-
-	margin-bottom:12px;
-
-	text-transform:uppercase
-
-}
-
-
-
-h2 {
-
-	color:#726659;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:14px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	letter-spacing:.1em;
-
-	line-height:22px;
-
-	margin-bottom:12px;
-
-	text-transform:uppercase
-
-}
-
-
-
-h3 {
-
-	color:#726659;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:30px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	line-height:42px;
-
-	margin-bottom:8px;
-
-	text-transform:uppercase
-
-}
-
-
-
-h4 {
-
-	color:#e7ece1;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:19px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	line-height:26px;
-
-	text-transform:uppercase
-
-}
-
-
-
-h5 {
-
-	color:#726659;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:14px;
-
-	font-style:italic;
-
-	font-weight:700;
-
-	letter-spacing:.1em;
-
-	line-height:22px;
-
-	text-transform:uppercase
-
-}
-
-
-
-h6 {
-
-	color:#726659;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:21px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	letter-spacing:.1em;
-
-	line-height:42px;
-
-	text-transform:uppercase
-
-}
-
-
-
-hr {
-
-	background-color:#dbd7d1;
-
-	border:0;
-
-	clear:both;
-
-	height:1px;
-
-	margin-bottom:22px;
-
-	margin-top:22px;
-
-	max-width:930px
-
-}
-
-
-
-a {
-
-	color:#58493a;
-
-	text-decoration:none
-
-}
-
-
-
-p {
-
-	color:#58493a;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:14px;
-
-	font-style:normal;
-
-	line-height:22px;
-
-	margin-bottom:10px
-
-}
-
-
-
-/* =Structure
-
---------------------------------*/
-
-body {
-
-	width:100%
-
-}
-
-
-
-#container {
-
-	background-color:#fefefe;
-
-	background-image:url(../img/shared/background.jpg);
-
-	background-position:bottom left;
-
-	background-repeat:repeat-x
-
-}
-
-
-
-.fullcol {
-
-	float:left;
-
-	position:relative;
-
-	width:980px
-
-}
-
-
-
-.leftcol {
-
-	float:left;
-
-	margin-right:20px;
-
-	overflow:visible;
-
-	padding-right:35px;
-
-	position:relative;
-
-	width:424px
-
-}
-
-
-
-.leftcol625 {
-
-	float:left;
-
-	margin-right:70px;
-
-	overflow:visible;
-
-	position:relative;
-
-	width:590px
-
-}
-
-
-
-.rightcol {
-
-	float:left;
-
-	position:relative;
-
-	width:461px
-
-}
-
-
-
-.sidebar {
-
-	float:left;
-
-	position:relative;
-
-	width:275px
-
-}
-
-
-
-.wrap {
-
-	height:100%;
-
-	margin:0 auto;
-
-	position:relative;
-
-	width:940px
-
-}
-
-
-
-/* =Header
-
---------------------------------*/
-
-#header {
-
-	background-image:url(../img/shared/header-sm.jpg);
-
-	background-repeat:repeat-x;
-
-	height:105px;
-
-/*height: 131px;*/
-
-	position:fixed;
-
-	top:0;
-
-	width:100%;
-
-	z-index:10
-
-}
-
-
-
-#header .logo {
-
-	left:0;
-
-	position:relative;
-
-/*top:35px*/
-
-	top:17px
-
-}
-
-
-
-#header ul#links {
-
-	float:right;
-
-	list-style:none;
-
-	position:relative;
-
-	text-align:right;
-
-/*top:30px;*/
-
-	top:27px;
-
-	*top:-15px
-
-}
-
-
-
-#header ul#links li a {
-
-	color:#726659;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:12px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	line-height:20px;
-
-	text-decoration:none;
-
-	text-transform:uppercase
-
-}
-
-
-
-#header ul#links li a:hover {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul {
-
-	left: 42px;
-
-	position:absolute;
-
-/*top:105px;*/
-
-	top:78px;
-
-	_z-index:999
-
-}
-
-
-
-#header #nav ul li {
-
-	float:left;
-
-	border-right:1px #999694 solid;
-
-	padding:0 14px;
-
-	text-transform:uppercase
-
-}
-
-
-
-#header #nav ul li a {
-
-	color:#eeeceb;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:13px;
-
-	font-style:normal;
-
-	font-weight:700;
-
-	letter-spacing:.1em;
-
-	*letter-spacing:normal;
-
-	line-height:19px;
-
-	padding:8px 0;
-
-	text-decoration:none
-
-}
-
-
-
-#header #nav ul li.home {
-
-	padding-left:0
-
-}
-
-
-
-#header #nav ul li.home a:hover,#header #nav ul li.home a.selected {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li.dogs a:hover {
-
-	color:#819ac1;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li.dogs a.selected {
-
-	color:#819ac1
-
-}
-
-
-
-#header #nav ul li.cats a:hover,#header #nav ul li.cats a.selected {
-
-	color:#ce7b72;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li.snacks a:hover,#header #nav ul li.snacks a.selected {
-
-	color:#90af5e;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li.health a:hover,#header #nav ul li.health a.selected {
-
-	color:#c69f47;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li.snacks {
-
-	border-right:0
-
-}
-
-
-
-#header #nav ul li.story a:hover,#header #nav ul li.story a.selected {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#dogs {
-
-	background-image:url(../img/shared/nav-dogs.png);
-
-	background-repeat:repeat-x;
-
-	height:338px;
-
-	left:-42px;
-
-	margin:0;
-
-	padding:35px 0 0 16px;
-
-	position:absolute;
-
-	top:25px;
-
-	width:924px
-
-}
-
-
-
-#header #nav ul li ul#dogs img.selected {
-
-	left:483px;
-
-	position:absolute;
-
-	top:0
-
-}
-
-
-
-#header #nav ul li ul#cats {
-
-	background-image:url(../img/shared/nav-cats.png);
-
-	background-repeat:repeat-x;
-
-	height:338px;
-
-	left:-42px;
-
-	margin:0;
-
-	padding:35px 0 0 16px;
-
-	position:absolute;
-
-	top:25px;
-
-	width:924px
-
-}
-
-
-
-#header #nav ul li ul#cats img.selected {
-
-	left:700px;
-
-	position:absolute;
-
-	top:0
-
-}
-
-
-
-#header #nav ul li ul#snacks {
-
-	background-image:url(../img/shared/nav-snacks.png);
-
-	background-repeat:repeat-x;
-
-	height:338px;
-
-	left:-42px;
-
-	margin:0;
-
-	padding:35px 0 0 16px;
-
-	position:absolute;
-
-	top:25px;
-
-	width:924px
-
-}
-
-
-
-#header #nav ul li ul#snacks li ul li a {
-
-	font-size:11px\0/;
-
-	*font-size:11px
-
-}
-
-
-
-#header #nav ul li ul#snacks li ul li a:hover {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#snacks img.selected {
-
-	left:850px;
-
-	position:absolute;
-
-	top:0
-
-}
-
-
-
-#header #nav ul li ul#health {
-
-	background-image:url(../img/shared/nav-health-nutrition.png);
-
-	background-repeat:repeat-x;
-
-	height:338px;
-
-	left:-42px;
-
-	margin:0;
-
-	padding:35px 0 0 16px;
-
-	position:absolute;
-
-	top:25px;
-
-	width:924px
-
-}
-
-
-
-#header #nav ul li ul#health img.selected {
-
-	left:280px;
-
-	position:absolute;
-
-	top:0
-
-}
-
-
-
-#header #nav ul li ul#story {
-
-	background-image:url(../img/shared/nav-our-story.png);
-
-	background-repeat:repeat-x;
-
-	height:338px;
-
-	left:-42px;
-
-	margin:0;
-
-	padding:35px 0 0 16px;
-
-	position:absolute;
-
-	top:25px;
-
-	width:924px
-
-}
-
-
-
-#header #nav ul li ul#story img.selected {
-
-	left:140px;
-
-	position:absolute;
-
-	top:0
-
-}
-
-
-
-#header #nav ul li.dogs:hover ul#dogs,#header #nav ul li.cats:hover ul#cats,#header #nav ul li.snacks:hover ul#snacks,#header #nav ul li.health:hover ul#health,#header #nav ul li.story:hover ul#story {
-
-	display:block
-
-}
-
-
-
-#header #nav ul li ul#dogs p,#header #nav ul li ul#cats p,#header #nav ul li ul#snacks p {
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:15px;
-
-	font-style:italic;
-
-	font-weight:400;
-
-	letter-spacing:.08em;
-
-	letter-spacing:normal\0/;
-
-	*letter-spacing:normal;
-
-	line-height:29px;
-
-	margin-left:-28px
-
-}
-
-
-
-#header #nav ul li ul#health p,#header #nav ul li ul#story p {
-
-	border:none;
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:15px;
-
-	font-style:italic;
-
-	font-weight:400;
-
-	letter-spacing:.08em;
-
-	letter-spacing:normal\0/;
-
-	*letter-spacing:normal;
-
-	line-height:20px;
-
-	width:184px
-
-}
-
-
-
-#header #nav ul li ul#health li a.nav_link,#header #nav ul li ul#story li a.nav_link {
-
-	border:none;
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:13px;
-
-	font-weight:700;
-
-	letter-spacing:normal;
-
-	line-height:20px;
-
-	z-index:10
-
-}
-
-
-
-#header #nav ul li ul#dogs li,#header #nav ul li ul#cats li,#header #nav ul li ul#snacks li,#header #nav ul li ul#health li,#header #nav ul li ul#story li {
-
-	border:none;
-
-	list-style:none;
-
-	text-transform:uppercase
-
-}
-
-
-
-#header #nav ul li ul#dogs li ul,#header #nav ul li ul#cats li ul {
-
-	float:left;
-
-	left: 0;
-
-	margin-right:10px;
-
-	padding:0;
-
-	position:relative;
-
-	text-align:left;
-
-	top:0;
-
-	width:330px
-
-}
-
-
-
-#header #nav ul li ul#snacks li ul {
-
-	float:left;
-
-	left: 0;
-
-	padding:0;
-
-	position:relative;
-
-	text-align:left;
-
-	top:0;
-
-	*top:40px;
-
-	width:173px;
-
-	width:170px\0/;
-
-	*width:168px
-
-}
-
-
-
-#header #nav ul li ul#health li ul,#header #nav ul li ul#story li ul {
-
-	left:15px;
-
-	padding:0;
-
-	position:absolute;
-
-	text-align:left;
-
-	top:40px;
-
-	width:173px
-
-}
-
-
-
-#header #nav ul li ul#health li ul#nav_last,#header #nav ul li ul#story li ul#nav_last {
-
-	left:710px;
-
-	padding:0;
-
-	position:absolute;
-
-	text-align:left;
-
-	top:40px;
-
-	width:173px
-
-}
-
-
-
-#header #nav ul li ul#dogs li ul li,#header #nav ul li ul#cats li ul li,#header #nav ul li ul#snacks li ul li {
-
-	float:none;
-
-	padding:0
-
-}
-
-
-
-#header #nav ul li ul#dogs li ul#nav_last,#header #nav ul li ul#cats li ul#nav_last {
-
-	margin-left:17px;
-
-	*margin-left:15px;
-
-	margin-top:-30px;
-
-	width:173px
-
-}
-
-
-
-#header #nav ul li ul#dogs li ul#nav_last img:hover,#header #nav ul li ul#cats li ul#nav_last img:hover,#header #nav ul li ul#snacks li ul#nav_last img:hover {
-
-	opacity:.7;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#snacks li ul#nav_last {
-
-	margin-left:15px;
-
-	margin-top:-30px;
-
-	width:173px
-
-}
-
-
-
-#header #nav ul li ul#dogs li,#header #nav ul li ul#cats li,#header #nav ul li ul#story li,#header #nav ul li ul#snacks li,#header #nav ul li ul#health li {
-
-	margin-bottom:4px
-
-}
-
-
-
-#header #nav ul li ul#dogs li a,#header #nav ul li ul#cats li a,#header #nav ul li ul#snacks li a {
-
-	border:none;
-
-	font-family:Georgia;
-
-	font-size:13px;
-
-	font-weight:400;
-
-	line-height:20px;
-
-	text-transform:none
-
-}
-
-
-
-#header #nav ul li ul#story li a,#header #nav ul li ul#health li a {
-
-	border:none;
-
-	font-family:Georgia;
-
-	font-size:13px;
-
-	font-weight:400;
-
-	line-height:20px;
-
-	text-transform:none
-
-}
-
-
-
-#header #nav ul li ul#dogs li a strong,#header #nav ul li ul#cats li a strong,#header #nav ul li ul#story li a strong,#header #nav ul li ul#snacks li a strong,#header #nav ul li ul#health li a strong {
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:14px;
-
-	font-style:italic;
-
-	font-weight:700;
-
-	line-height:20px;
-
-	text-decoration:none;
-
-	text-transform:uppercase
-
-}
-
-
-
-#header #nav ul li ul#dogs li a strong:hover,#header #nav ul li ul#cats li a strong:hover,#header #nav ul li ul#story li a strong:hover,#header #nav ul li ul#snacks li a strong:hover,#header #nav ul li ul#health li a strong:hover {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#dogs li a:hover,#header #nav ul li ul#cats li a:hover,#header #nav ul li ul#snacks li a:hover,#header #nav ul li ul#health li a:hover,#header #nav ul li ul#story li a:hover {
-
-	color:#58493a;
-
-	text-decoration:none;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#dogs li span.product_category,#header #nav ul li ul#cats li span.product_category,#header #nav ul li ul#snacks li span.product_category {
-
-	border:none;
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:15px;
-
-	font-style:normal;
-
-	font-weight:700;
-
-	line-height:30px;
-
-	text-transform:uppercase
-
-}
-
-
-
-#header #nav ul li ul#snacks li span.product_category_proteins {
-
-	border:none;
-
-	color:#fff;
-
-	display:block;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:15px;
-
-	font-style:normal;
-
-	font-weight:700;
-
-	line-height:15px;
-
-	padding-top:7px;
-
-	text-transform:uppercase
-
-}
-
-
-
-#header #nav ul li ul#story li span.faq_category {
-
-	border:none;
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:15px;
-
-	font-style:normal;
-
-	font-weight:700;
-
-	line-height:30px;
-
-	text-transform:uppercase
-
-}
-
-
-
-#header #nav ul li ul#dogs li.nav_gold_box a,#header #nav ul li ul#cats li.nav_gold_box a,#header #nav ul li ul#snacks li.nav_gold_box a {
-
-	background-color:#c69f47;
-
-	border:none;
-
-	color:#fff;
-
-	display:block;
-
-	font-family:Georgia;
-
-	font-size:15px;
-
-	font-style:italic;
-
-	font-weight:400;
-
-	height:76px;
-
-	line-height:18px;
-
-	margin-top:11px;
-
-	padding-top:10px;
-
-	text-align:center;
-
-	text-transform:none;
-
-	width:173px
-
-}
-
-
-
-#header #nav ul li ul#dogs li.nav_gold_box a:hover,#header #nav ul li ul#cats li.nav_gold_box a:hover,#header #nav ul li ul#snacks li.nav_gold_box a:hover,#header #nav ul li ul#health li.nav_gold_box a:hover {
-
-	color:#726659;
-
-	text-decoration:none;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#dogs li.nav_gold_box a:hover span,#header #nav ul li ul#cats li.nav_gold_box a:hover span,#header #nav ul li ul#snacks li.nav_gold_box a:hover span,#header #nav ul li ul#health li.nav_gold_box a:hover span {
-
-	color:#726659;
-
-	text-decoration:none;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#snacks li.nav_box {
-
-	display:block;
-
-	height:36px;
-
-	margin-bottom:11px;
-
-	padding:8px 2px;
-
-	text-align:center;
-
-	width:169px
-
-}
-
-
-
-#header #nav ul li ul#health li.nav_box,#header #nav ul li ul#story li.nav_box {
-
-	display:block;
-
-	height:36px;
-
-	margin-bottom:11px;
-
-	padding:8px;
-
-	text-align:center;
-
-	width:173px
-
-}
-
-
-
-#header #nav ul li ul#snacks li.nav_box a,#header #nav ul li ul#health li.nav_box a,#header #nav ul li ul#story li.nav_box a {
-
-	color:#fff;
-
-	font-family:Georgia;
-
-	font-size:15px;
-
-	font-style:italic;
-
-	font-weight:400;
-
-	letter-spacing:.08em;
-
-	letter-spacing:normal\0/;
-
-	*letter-spacing:normal;
-
-	line-height:18px;
-
-	text-transform:none
-
-}
-
-
-
-#header #nav ul li ul#snacks li.blue,#header #nav ul li ul#health li.blue,#header #nav ul li ul#story li.blue {
-
-	background-color:#819ac1;
-
-	border:none;
-
-	letter-spacing:.08em;
-
-	margin-bottom:15px;
-
-	margin-right:30px;
-
-	white-space:nowrap
-
-}
-
-
-
-#header #nav ul li ul#snacks li.blue a:hover,#header #nav ul li ul#health li.blue a:hover,#header #nav ul li ul#story li.blue a:hover {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#snacks li.blue a:hover span,#header #nav ul li ul#health li.blue a:hover span,#header #nav ul li ul#story li.blue a:hover span {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#health li.pink,#header #nav ul li ul#story li.pink {
-
-	background-color:#ce7b72;
-
-	border:none;
-
-	margin-bottom:15px;
-
-	margin-right:30px
-
-}
-
-
-
-#header #nav ul li ul#health li.pink a:hover,#header #nav ul li ul#story li.pink a:hover {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#health li.pink a:hover span,#header #nav ul li ul#story li.pink a:hover span {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#health li.yellow,#header #nav ul li ul#story li.yellow {
-
-	background-color:#c8be46;
-
-	border:none;
-
-	margin-right:30px
-
-}
-
-
-
-#header #nav ul li ul#health li.yellow a:hover,#header #nav ul li ul#story li.yellow a:hover {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#health li.yellow a:hover span,#header #nav ul li ul#story li.yellow a:hover span {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#header #nav ul li ul#dogs li.nav_box a:hover,#header #nav ul li ul#cats li.nav_box a:hover,#header #nav ul li ul#snacks li.nav_box a:hover,#header #nav ul li ul#health li.nav_box a:hover {
-
-	text-decoration:none
-
-}
-
-
-
-/* =Content
-
---------------------------------*/
-
-#content {
-
-	height:100%;
-
-	margin-top:94px;
-
-/*margin-top:134px;
-
-	margin-top:4px;*/
-
-	_margin-top:0;
-
-	width:100%;
-
-	_z-index:5
-
-}
-
-
-
-table {
-
-	color:#58493a;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:14px;
-
-	font-style:normal;
-
-	line-height:22px;
-
-	margin-bottom:10px
-
-}
-
-
-
-tr.on {
-
-	background-color:#e8e2e0
-
-}
-
-
-
-tr.on td {
-
-	padding-bottom:2px;
-
-	padding-left:7px;
-
-	padding-right:7px;
-
-	padding-top:2px
-
-}
-
-
-
-tr.off {
-
-	background-color:none
-
-}
-
-
-
-tr.off td {
-
-	padding-bottom:8px;
-
-	padding-left:7px;
-
-	padding-right:7px;
-
-	padding-top:8px
-
-}
-
-
-
-ul.list li {
-
-	color:#58493a;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:14px;
-
-	font-style:normal;
-
-	line-height:22px;
-
-	list-style:disc;
-
-	margin-bottom:10px;
-
-	margin-left:18px;
-
-	padding-left:5px
-
-}
-
-
-
-ul.product_list {
-
-	margin-bottom:20px;
-
-	white-space:normal
-
-}
-
-
-
-ul.product_list li {
-
-	color:#58493a;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:14px;
-
-	font-style:normal;
-
-	line-height:22px;
-
-	list-style:disc;
-
-	margin-bottom:10px;
-
-	margin-left:253px;
-
-	padding-left:5px;
-
-	width:620px
-
-}
-
-
-
-ul.categories li {
-
-	color:#726659;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:15px;
-
-	font-style:italic;
-
-	font-weight:700;
-
-	line-height:29px;
-
-	text-align:left;
-
-	text-decoration:none;
-
-	text-transform:uppercase
-
-}
-
-
-
-ul.categories li a:hover {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#clear_content {
-
-	clear:both;
-
-	float:left;
-
-	height:40px;
-
-	width:940px
-
-}
-
-
-
-.slideshow {
-
-	height:661px;
-
-	position:relative;
-
-	width:940px
-
-}
-
-
-
-.featured {
-
-	height:557px;
-
-	position:relative;
-
-	width:940px
-
-}
-
-
-
-.featured a:hover {
-
-	color:#bfb2a3
-
-}
-
-
-
-#holistic_box {
-
-	background-image:url(../img/shared/holistic.jpg);
-
-	background-repeat:no-repeat;
-
-	height:171px;
-
-	padding:60px 0 0;
-
-	text-align:center;
-
-	width:461px
-
-}
-
-
-
-#holistic_box p {
-
-	color:#fff
-
-}
-
-
-
-#holistic_box a {
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:15px;
-
-	font-style:italic;
-
-	font-weight:700;
-
-	line-height:29px;
-
-	padding:150px 183px 65px 181px;
-
-	text-align:left;
-
-	text-decoration:none;
-
-	text-transform:uppercase
-
-}
-
-
-
-#holistic_box:hover span,#holistic_box:hover p,#holistic_box a:hover {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#natural_dog_food {
-
-	background-image:url(../img/shared/natural-dog-food.jpg);
-
-	background-repeat:no-repeat;
-
-	height:181px;
-
-	padding:50px 0 0;
-
-	text-align:center;
-
-	width:459px
-
-}
-
-
-
-#natural_dog_food a {
-
-	padding:155px 187px 60px 180px;
-
-}
-
-
-
-#natural_dog_food:hover span,#natural_dog_food:hover p,#natural_dog_food a:hover {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#natural_cat_food {
-
-	background-image:url(../img/shared/natural-cat-food.jpg);
-
-	background-repeat:no-repeat;
-
-	height:181px;
-
-	padding:50px 0 0;
-
-	text-align:center;
-
-	width:461px
-
-}
-
-
-
-#natural_cat_food a {
-
-	padding:155px 185px 60px 183px;
-
-}
-
-
-
-#natural_cat_food:hover span,#natural_cat_food:hover p,#natural_cat_food a:hover {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#snack_box {
-
-	background-image:url(../img/shared/snacks.jpg);
-
-	background-repeat:no-repeat;
-
-	height:181px;
-
-	padding:50px 0 0;
-
-	text-align:center;
-
-	width:461px
-
-}
-
-
-
-#snack_box a {
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:15px;
-
-	font-style:italic;
-
-	font-weight:700;
-
-	line-height:29px;
-
-	padding:155px 185px 60px 183px;
-
-	text-align:left;
-
-	text-decoration:none;
-
-	text-transform:uppercase
-
-}
-
-
-
-#snack_box:hover span,#snack_box:hover p,#snack_box a:hover {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#snack_family {
-
-	background-image:url(../img/snacks/snack-family.jpg);
-
-	background-repeat:no-repeat;
-
-	height:252px;
-
-	padding:0;
-
-	text-align:center;
-
-	width:461px
-
-}
-
-
-
-#ingredient_dictionary {
-
-	background-image:url(../img/shared/ingredient-dictionary.jpg);
-
-	background-repeat:no-repeat;
-
-	height:103px;
-
-	padding-right:185px;
-
-	text-align:center;
-
-	width:286px
-
-}
-
-
-
-#ingredient_dictionary a {
-
-	color:#fff;
-
-	display: block;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:18px;
-
-	height: 60px;
-
-	line-height:22px;
-
-	padding: 20px 165px 25px 27px;
-
-	width: 260px;
-
-}
-
-
-
-#ingredient_dictionary a span {
-
-	font-size:20px;
-
-	line-height:24px
-
-}
-
-
-
-#ingredient_dictionary a:hover,#ingredient_dictionary a:hover span {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#natural_dog_food p,#natural_cat_food p,#snack_box p,#ingredient_dictionary p {
-
-	color:#fff
-
-}
-
-
-
-#natural_dog_food a,#natural_cat_food a,#snack_box a {
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:14px;
-
-	font-style:italic;
-
-	font-weight:700;
-
-	line-height:22px;
-
-	text-decoration:none;
-
-	text-transform:uppercase
-
-}
-
-
-
-#cat_video {
-
-	background-image:url(../img/shared/cheryl-video.jpg);
-
-	background-repeat:no-repeat;
-
-	height:252px;
-
-	width:449px
-
-}
-
-
-
-#large_promo {
-
-	background-image:url(../img/shared/save-now-promo.png);
-
-	background-repeat:no-repeat;
-
-	height:119px;
-
-	padding:84px 170px 0 0;
-
-	text-align:center;
-
-	white-space:nowrap;
-
-	width:290px
-
-}
-
-
-
-#large_promo p {
-
-	font-size:18px;
-
-	line-height:19px;
-
-	margin:0
-
-}
-
-
-
-#large_promo a {
-
-	padding:120px 200px 30px 30px
-
-}
-
-
-
-#large_promo span {
-
-	*display:block;
-
-	*margin-left:30px
-
-}
-
-
-
-#large_promo:hover span,#large_promo:hover p,#large_promo a:hover {
-
-	color:#fff;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#addthis {
-
-	clear:both;
-
-	height:41px;
-
-	width:940px
-
-}
-
-
-
-#addthis .addthis {
-
-	float:right;
-
-	margin-top:35px;
-
-	width:160px
-
-}
-
-
-
-#addthis .addthis a {
-
-	color:#605244;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:14px
-
-}
-
-
-
-/*ul.no {
-
-	background-color: #e8e2e0;
-
-	height: 9px;
-
-	margin-left: 243px;
-
-	padding: 18px;
-
-	width: 630px;
-
-}
-
-ul.no li {
-
-	border-right: 1px solid #c8be46;
-
-	color:#c8be46;
-
-	float: left;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:14px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	line-height:14px;
-
-	padding-left:14px;
-
-	padding-right: 14px;
-
-	text-transform:uppercase
-
-}
-
-ul.no li.first {
-
-	padding-left: 0;
-
-}
-
-ul.no li.last {
-
-	border-right: none;
-
-	padding-right: 0;
-
-}*/
-
-/* =Sidebar
-
---------------------------------*/
-
-#sidebar_ingredient_dictionary {
-
-	background-image:url(../img/sidebar/sidebar-ingredient-dictionary.jpg);
-
-	background-repeat:no-repeat;
-
-	height:128px;
-
-	margin-bottom:20px;
-
-	text-align:center;
-
-	width:279px
-
-}
-
-
-
-#sidebar_ingredient_dictionary a {
-
-	color:#fff;
-
-	display: block;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:18px;
-
-	height:98px;
-
-	line-height:22px;
-
-	padding-top:30px;
-
-	width:279px
-
-}
-
-
-
-#sidebar_ingredient_dictionary a span{
-
-	color:#fff;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:20px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	line-height:22px;
-
-	text-transform:uppercase
-
-}
-
-
-
-#sidebar_ingredient_dictionary a:hover,#sidebar_ingredient_dictionary a:hover span {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#sidebar_natural_cat_food {
-
-	background-image:url(../img/sidebar/sidebar-natural-cat-food.jpg);
-
-	background-repeat:no-repeat;
-
-	height:128px;
-
-	margin-bottom:20px;
-
-	text-align:center;
-
-	width:279px
-
-}
-
-
-
-#sidebar_natural_dog_food {
-
-	background-image:url(../img/sidebar/sidebar-natural-dog-food.jpg);
-
-	background-repeat:no-repeat;
-
-	height:128px;
-
-	margin-bottom:8px;
-
-	text-align:center;
-
-	width:279px
-
-}
-
-
-
-#sidebar_healthy_snacks {
-
-	background-image:url(../img/sidebar/sidebar-healthy-snacks.jpg);
-
-	background-repeat:no-repeat;
-
-	height:128px;
-
-	margin-bottom:20px;
-
-	text-align:center;
-
-	width:279px
-
-}
-
-
-
-#sidebar_healthy_snacks a,#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
-
-	color:#fff;
-
-	display: block;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:20px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	height: 84px;
-
-	line-height:22px;
-
-	padding-top:44px;
-
-	text-transform:uppercase;
-
-	width: 279px;
-
-}
-
-
-
-
-
-#sidebar_healthy_snacks a:hover,#sidebar_natural_cat_food a:hover,#sidebar_natural_dog_food a:hover,#sidebar_healthy_snacks a:hover span,#sidebar_natural_cat_food a:hover span,#sidebar_natural_dog_food a:hover span {
-
-	color:#726659;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#sidebar_promo {
-
-	background-image:url(../img/sidebar/sidebar-promo.png);
-
-	background-repeat:no-repeat;
-
-	height:120px;
-
-	padding-top:38px;
-
-	text-align:center;
-
-	width:279px
-
-}
-
-
-
-#sidebar_promo a {
-
-	color:#726659;
-
-	float:left;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:45px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	line-height:40px;
-
-	margin-left:22px;
-
-	text-decoration:none;
-
-	text-transform:uppercase
-
-}
-
-
-
-#sidebar_promo a:hover {
-
-	color:#fff;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-#sidebar_promo a span {
-
-	letter-spacing:3px
-
-}
-
-
-
-/* =Content Tabs
-
---------------------------------*/
-
-ul.tabs {
-
-	margin-top:15px;
-
-	position:relative;
-
-	padding:0
-
-}
-
-
-
-ul.tabs li {
-
-	float:left;
-
-	list-style:none;
-
-	margin:0;
-
-	position:relative
-
-}
-
-
-
-ul.tabs li a.current,ul.tabs li a:hover {
-
-	background-image:url(../img/shared/tab-active.jpg);
-
-	background-repeat:no-repeat;
-
-	color:#e7ece1;
-
-	height:49px;
-
-	margin-right:19px;
-
-	padding-bottom:12px;
-
-	padding-top:12px;
-
-	width:215px
-
-}
-
-
-
-ul.tabs a {
-
-	background-image:url(../img/shared/tab.jpg);
-
-	background-repeat:no-repeat;
-
-	color:#58493a;
-
-	font-family:Georgia;
-
-	font-size:16px;
-
-	float:left;
-
-	height:25px;
-
-	line-height:23px;
-
-	margin-right:19px;
-
-	padding-bottom:12px;
-
-	padding-top:12px;
-
-	position:relative;
-
-	text-align:center;
-
-	text-decoration:none;
-
-	text-transform:uppercase;
-
-	width:215px
-
-}
-
-
-
-ul.tabs a:active {
-
-	outline:none
-
-}
-
-
-
-ul.tabs a.current,ul.tabs a.current:hover,ul.tabs li.current a {
-
-	color:#e7ece1;
-
-	cursor:pointer
-
-}
-
-
-
-.panes .pane {
-
-	clear:both;
-
-	display:none
-
-}
-
-
-
-.panes div {
-
-	display:block;
-
-	height:320px;
-
-	padding-top:24px;
-
-	width:900px
-
-}
-
-
-
-/* =Main Scrollable Items
-
---------------------------------*/
-
-.scrollable .items {
-
-	width:20000em;
-
-	position:absolute
-
-}
-
-
-
-.scrollable {
-
-	float:left
-
-}
-
-
-
-.scrollable {
-
-	position:relative;
-
-	overflow:hidden;
-
-	width:863px;
-
-	height:320px
-
-}
-
-
-
-.items div {
-
-	float:left;
-
-	margin-left:25px;
-
-	margin-right:25px;
-
-	text-align:center;
-
-	width:850px
-
-}
-
-
-
-.items div ul li {
-
-	float:left;
-
-	margin-right:45px;
-
-	width:165px
-
-}
-
-
-
-a.browse {
-
-	background-image:url(../img/shared/product-arrows.png);
-
-	background-repeat:no-repeat;
-
-	clear:both;
-
-	cursor:pointer;
-
-	display:block;
-
-	float:left;
-
-	height:51px;
-
-	margin:100px 10px;
-
-	width:28px
-
-}
-
-
-
-a.snack_left,a.product_left {
-
-	margin-left:0
-
-}
-
-
-
-a.snack_left:hover,a.product_left:hover {
-
-	background-position:0 -100px
-
-}
-
-
-
-a.snack_right,a.product_right {
-
-	background-position:0 -51px;
-
-	clear:right;
-
-	margin-right:0
-
-}
-
-
-
-a.snack_right:hover,a.product_right:hover {
-
-	background-position:0 -152px
-
-}
-
-
-
-a.disabled {
-
-	visibility:visible!important
-
-}
-
-
-
-/*.scrollable a {
-
-	white-space: nowrap;
-
-}*/
-
-.scrollable a:hover {
-
-	color:#bfb2a3;
-
-	transition:all .25s ease-in-out;
-
-	-webkit-transition:all .25s ease-in-out;
-
-	-moz-transition:all .25s ease-in-out
-
-}
-
-
-
-/* =Shared Product Content
-
---------------------------------*/
-
-#content.natural_cat .product_content,#content.natural_dog .product_content {
-
-/*height:622px;*/
-
-	position:relative;
-
-	white-space:nowrap;
-
-	width:940px
-
-}
-
-
-
-#content.snacks .snack_content {
-
-	height:750px;
-
-	position:relative;
-
-	overflow:hidden;
-
-	width:940px
-
-}
-
-
-
-#content.snacks .snack_content_variety {
-
-	position:relative;
-
-	overflow:hidden;
-
-	width:940px
-
-}
-
-
-
-#content.home a.arrows,#content.natural_cat a.arrows,#content.natural_dog a.arrows,#content.snacks a.arrows,#content.our_story a.arrows {
-
-	background-image:url(../img/shared/slideshow-arrows.png);
-
-	background-repeat:no-repeat;
-
-	clear:both;
-
-	cursor:pointer;
-
-	display:block;
-
-	float:left;
-
-	height:74px;
-
-	position:absolute;
-
-	top:240px;
-
-	width:39px
-
-}
-
-
-
-#content.home a.left,#content.natural_cat a.left,#content.natural_dog a.left,#content.snacks a.left,#content.our_story a.left {
-
-	left:-50px
-
-}
-
-
-
-#content.home a.left:hover,#content.natural_cat a.left:hover,#content.natural_dog a.left:hover,#content.snacks a.left:hover,#content.our_story a.left:hover {
-
-	background-position:0 -146px
-
-}
-
-
-
-#content.home a.right,#content.natural_cat a.right,#content.natural_dog a.right,#content.snacks a.right,#content.our_story a.right {
-
-	background-position:0 -73px;
-
-	clear:right;
-
-	left:950px
-
-}
-
-
-
-#content.home a.right:hover,#content.natural_cat a.right:hover,#content.natural_dog a.right:hover,#content.snacks a.right:hover,#content.our_story a.right:hover {
-
-	background-position:0 -219px
-
-}
-
-
-
-/* =Content Home
-
---------------------------------*/
-
-#content.home .featured {
-
-	height:528px;
-
-	overflow:hidden;
-
-	position:relative;
-
-	width:940px
-
-}
-
-
-
-#content.home .ingredients {
-
-	margin-bottom:20px
-
-}
-
-
-
-#home_slider {
-
-	height:528px;
-
-	overflow:hidden;
-
-	position:absolute;
-
-	width:9999em
-
-}
-
-
-
-#home_slider h3, #home_slider h5 a, #home_slider p {
-
-	color: #fff;
-
-}
-
-
-
-#home_slider_nav {
-
-	left:0;
-
-	position:absolute;
-
-	top:528px
-
-}
-
-
-
-#home_slider_nav a {
-
-	display:block;
-
-	float:left;
-
-	cursor:pointer
-
-}
-
-
-
-#home_slider_nav a.active {
-
-	cursor:default!important
-
-}
-
-
-
-#home_slider .slide1 {
-
-	background-image:url(../img/home/slide1.jpg);
-
-	background-repeat:no-repeat;
-
-	float:left;
-
-	height:331px;
-
-	padding:196px 355px 0 50px;
-
-	width:535px
-
-}
-
-
-
-#home_slider .slide1 h5 a {
-
-	float:right;
-
-	margin-right:12px
-
-}
-
-
-
-#home_slider .slide2 {
-
-	background-image:url(../img/home/slide2.jpg);
-
-	background-repeat:no-repeat;
-
-	float:left;
-
-	height:331px;
-
-	padding:196px 355px 0 50px;
-
-	width:535px;
-
-	width:520px\0/;
-
-	*width:520px
-
-}
-
-
-
-#home_slider .slide2 h5 a {
-
-	float:right;
-
-	margin-right:25px
-
-}
-
-
-
-#home_slider .slide3 {
-
-	background-image:url(../img/home/slide3.jpg);
-
-	background-repeat:no-repeat;
-
-	float:left;
-
-	height:388px;
-
-	padding:139px 375px 0 50px;
-
-	width:515px;
-
-	width:520px\0/;
-
-	*width:520px
-
-}
-
-
-
-#home_slider .slide3 h5 a {
-
-	float:right
-
-}
-
-
-
-#home_slider .slide4 {
-
-	background-image:url(../img/home/slide4.jpg);
-
-	background-repeat:no-repeat;
-
-	float:left;
-
-	height:358px;
-
-	padding:169px 375px 0 54px;
-
-	width:511px;
-
-	width:520px\0/;
-
-	*width:520px
-
-}
-
-
-
-#home_slider .slide4 h5 a {
-
-	float:right
-
-}
-
-
-
-.home_tab {
-
-	background-image:url(../img/home/callout.png);
-
-	background-repeat:no-repeat;
-
-	color:#fff;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:11px;
-
-	height:91px;
-
-	line-height:15px;
-
-	margin-right:3px;
-
-	padding-left:15px;
-
-	padding-right:15px;
-
-	padding-top:2px;
-
-	text-align:center;
-
-	width:203px
-
-}
-
-
-
-.home_tab:hover {
-
-	background-image:url(../img/home/callout-active.png);
-
-	background-repeat:no-repeat;
-
-	color:#fff;
-
-	height:93px;
-
-	margin-top:-11px;
-
-	padding-left:15px;
-
-	padding-right:15px;
-
-	padding-top:13px;
-
-	width:203px
-
-}
-
-
-
-.home_tab:active {
-
-	background-image:url(../img/home/callout-active.png);
-
-	background-repeat:no-repeat;
-
-	height:93px;
-
-	margin-top:-11px;
-
-	padding-left:15px;
-
-	padding-right:15px;
-
-	width:203px
-
-}
-
-
-
-.home_tab.active {
-
-	background-image:url(../img/home/callout-selected.png);
-
-	background-repeat:no-repeat;
-
-	height:93px;
-
-	margin-top:-11px;
-
-	padding-left:15px;
-
-	padding-right:15px;
-
-	padding-top:13px;
-
-	width:203px
-
-}
-
-
-
-/* =Content Dogs
-
---------------------------------*/
-
-#content.dogs .banner #banner_image {
-
-	background-image:url(../img/dogs/dog-banner.jpg);
-
-	background-repeat:no-repeat;
-
-	height:353px;
-
-	padding:174px 346px 0 47px;
-
-	width:547px
-
-}
-
-
-
-#content.dogs .fullcol {
-
-	width:940px
-
-}
-
-
-
-#content.dogs .banner h3, #content.dogs .banner p {
-
-	color:#fff;
-
-	text-shadow: 1px 1px 1px #000;
-
-} 
-
-
-
-#content.dogs h1 {
-
-	font-size:14px;
-
-	margin-bottom:0;
-
-	margin-top:300px
-
-}
-
-
-
-#content.dogs h2 {
-
-	margin-bottom:0;
-
-	margin-top:250px
-
-}
-
-
-
-#content.dogs .banner h3, #content.dogs .banner p {
-
-	color#fff;
-
-	text-shadow: 1px 1px 1px #000;
-
-}
-
-
-
-#content.dogs .ingredients {
-
-	margin:20px 0
-
-}
-
-
-
-#content.dogs .scrollable {
-
-	height:500px
-
-}
-
-
-
-/* =Content Natural Dry Dog Food
-
---------------------------------*/
-
-#content.natural_dog .banner {
-
-	height:622px;
-
-	width:940px
-
-}
-
-
-
-#content.natural_dog h1 {
-
-	color:#58493A;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:14px;
-
-	font-weight:400;
-
-	letter-spacing:normal;
-
-	line-height:18px;
-
-	margin-top:10px;
-
-	text-transform:none
-
-}
-
-
-
-#content.natural_dog h2 {
-
-	font-size:28px;
-
-	line-height:34px;
-
-	margin-bottom:0
-
-}
-
-
-
-#content.natural_dog h6 {
-
-	line-height:28px;
-
-	margin-bottom:5px
-
-}
-
-
-
-#content.natural_dog .ingredients {
-
-	margin-bottom:20px
-
-}
-
-
-
-#content.natural_dog ul.tabs {
-
-	clear:both;
-
-	margin-top:8px;
-
-	margin-bottom:50px
-
-}
-
-
-
-#content.natural_dog ul.tabs li {
-
-	margin-right:20px;
-
-	width:220px
-
-}
-
-
-
-#content.natural_dog .leftcol {
-
-	clear:both;
-
-	float:none:
-
-}
-
-
-
-#content.natural_dog .satisfaction {
-
-	margin-left:131px;
-
-	margin-top:20px
-
-}
-
-
-
-/* =Content Cats
-
---------------------------------*/
-
-#content.cats .banner #banner_image {
-
-	background-image:url(../img/cats/cat-banner.jpg);
-
-	background-repeat:no-repeat;
-
-	height:353px;
-
-	padding:174px 346px 0 47px;
-
-	width:547px
-
-}
-
-
-
-#content.cats .fullcol {
-
-	width:940px
-
-}
-
-
-
-#content.cats .banner h3, #content.cats .banner p {
-
-	color:#fff;
-
-	text-shadow: 1px 1px 1px #000;
-
-}
-
-
-
-#content.cats h1 {
-
-	font-size:14px;
-
-	margin-bottom:0;
-
-	margin-top:330px
-
-}
-
-
-
-#content.cats h2 {
-
-	margin-bottom:0;
-
-	margin-top:250px
-
-}
-
-
-
-#content.cats .ingredients {
-
-	margin:20px 0
-
-}
-
-
-
-#content.cats .scrollable {
-
-	height:520px
-
-}
-
-
-
-/* =Content Natural Cat Food
-
---------------------------------*/
-
-#content.natural_cat .banner {
-
-	height:622px;
-
-	width:940px
-
-}
-
-
-
-#content.natural_cat h1 {
-
-	color:#58493A;
-
-	font-family:Georgia,sans-serif;
-
-	font-size:14px;
-
-	font-weight:400;
-
-	letter-spacing:normal;
-
-	line-height:18px;
-
-	margin-bottom:10px;
-
-	margin-top:10px;
-
-	text-transform:none
-
-}
-
-
-
-#content.natural_cat h2 {
-
-	font-size:28px;
-
-	line-height:34px;
-
-	margin-bottom:0
-
-}
-
-
-
-#content.natural_cat h6 {
-
-	line-height:28px;
-
-	margin-bottom:5px
-
-}
-
-
-
-#content.natural_cat .ingredients {
-
-	margin-bottom:20px;
-
-	margin-top:0
-
-}
-
-
-
-#content.natural_cat ul.tabs {
-
-	clear:both;
-
-	margin-top:8px;
-
-	margin-bottom:50px
-
-}
-
-
-
-#content.natural_cat ul.tabs li {
-
-	margin-right:20px;
-
-	width:220px
-
-}
-
-
-
-#content.natural_cat .leftcol {
-
-	clear:both;
-
-	float:none:
-
-}
-
-
-
-#content.natural_cat .satisfaction {
-
-	margin-left:131px;
-
-	margin-top:20px
-
-}
-
-
-
-/* =Content Holistic Living
-
---------------------------------*/
-
-#content.holistic .banner {
-
-	height:550px;
-
-	width:940px
-
-}
-
-
-
-#content.holistic .banner #banner_image {
-
-	background-image:url(../img/health/holistic-banner.jpg);
-
-	background-repeat:no-repeat;
-
-	height:320px;
-
-	margin-bottom:20px;
-
-	padding:207px 346px 0 122px;
-
-	width:515px
-
-}
-
-
-
-#content.holistic h3 {
-
-	color:#726659;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:14px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	letter-spacing:.1em;
-
-	line-height:22px;
-
-	margin-bottom:12px;
-
-	text-transform:uppercase
-
-}
-
-
-
-#content.holistic ul.tabs li a {
-
-	margin-right:26px
-
-}
-
-
-
-/* =Content Snacks
-
---------------------------------*/
-
-#content.snacks .banner {
-
-	height:550px;
-
-	width:940px
-
-}
-
-
-
-#content.snacks .banner #banner_image {
-
 	background-image:url(../img/snacks/slide1.jpg);
-
 	background-repeat:no-repeat;
-
 	height:353px;
-
 	margin-bottom:20px;
-
 	padding:174px 346px 0 47px;
-
 	width:547px
-
 }
 
-
-
-#content.snacks .banner h3, #content.snacks .banner p {
-
+#content.snacks .banner h3,#content.snacks .banner p {
 	color:#fff;
-
-	text-shadow: 1px 1px 1px #000;
-
+	text-shadow:1px 1px 1px #000
 }
-
-
-
-
 
 #content.snacks h1 {
-
 	color:#58493A;
-
 	font-family:Georgia,sans-serif;
-
 	font-size:14px;
-
 	font-weight:400;
-
 	letter-spacing:normal;
-
 	line-height:18px;
-
 	margin-top:10px;
-
 	text-transform:none
-
 }
-
-
 
 #content.snacks h2 {
-
 	font-size:28px;
-
 	line-height:34px;
-
 	margin-bottom:0
-
 }
-
-
 
 #content.snacks h3 {
-
 	font-size:22px;
-
 	line-height:28px;
-
 	margin-bottom:5px
-
 }
-
-
 
 #content.snacks h4 {
-
 	color:#58493A;
-
 	font-size:15px;
-
 	line-height:24px;
-
 	margin-bottom:10px
-
 }
-
-
 
 #content.snacks h6 {
-
 	font-size:15px;
-
 	line-height:24px;
-
 	margin-bottom:10px;
-
 	margin-top:10px
-
 }
-
-
 
 #content.snacks hr.variety {
-
 	clear:none;
-
 	display:block;
-
 	margin-bottom:25px;
-
 	margin-left:0;
-
 	margin-top:25px;
-
 	width:675px
-
 }
-
-
 
 #content.snacks .ingredients {
-
 	margin:20px 0
-
 }
-
-
 
 ul.tabs_snack {
-
 	margin-top:15px;
-
 	position:relative;
-
 	padding:0
-
 }
-
-
 
 ul.tabs_snack li {
-
 	float:left;
-
 	list-style:none;
-
 	margin-right:1px;
-
 	position:relative
-
 }
-
-
 
 ul.tabs_snack li a.current,ul.tabs_snack li a:hover {
-
 	background-image:url(../img/shared/tab-active-snacks.jpg);
-
 	background-repeat:no-repeat;
-
 	color:#e7ece1;
-
 	height:49px;
-
 	margin-right:19px;
-
 	padding-bottom:12px;
-
 	padding-top:12px;
-
 	width:172px
-
 }
-
-
 
 ul.tabs_snack a {
-
 	background-image:url(../img/shared/tab.jpg);
-
 	background-repeat:no-repeat;
-
 	color:#58493a;
-
 	font-family:Georgia;
-
 	font-size:16px;
-
 	float:left;
-
 	height:25px;
-
 	line-height:23px;
-
 	margin-right:19px;
-
 	padding-bottom:12px;
-
 	padding-top:12px;
-
 	position:relative;
-
 	text-align:center;
-
 	text-decoration:none;
-
 	text-transform:uppercase;
-
 	width:172px
-
 }
-
-
 
 ul.tabs_snack li a.current.proteins,ul.tabs_snack li a.proteins:hover {
-
 	background-image:url(../img/shared/tab-active-snacks.jpg);
-
 	background-repeat:no-repeat;
-
 	color:#e7ece1;
-
 	height:63px;
-
 	margin-right:19px;
-
 	padding-bottom:4px;
-
 	padding-top:6px;
-
 	width:172px
-
 }
-
-
 
 ul.tabs_snack a.proteins {
-
 	background-image:url(../img/shared/tab.jpg);
-
 	background-repeat:no-repeat;
-
 	color:#58493a;
-
 	font-family:Georgia;
-
 	font-size:16px;
-
 	float:left;
-
 	height:31px;
-
 	line-height:18px;
-
 	margin-right:19px;
-
 	padding-bottom:12px;
-
 	padding-top:6px;
-
 	position:relative;
-
 	text-align:center;
-
 	text-decoration:none;
-
 	text-transform:uppercase;
-
 	width:172px
-
 }
-
-
 
 ul.tabs_snack a:active {
-
 	outline:none
-
 }
-
-
 
 ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a {
-
 	color:#e7ece1;
-
 	cursor:pointer
-
 }
-
-
 
 /* =Content Health & Nutrition
 
 --------------------------------*/
-
 #content.health_and_nutrition .banner {
-
 	height:528px;
-
 	width:940px
-
 }
-
-
 
 #content.health_and_nutrition .banner #banner_image {
-
 	background-image:url(http://ccr.departika.com/img/health/health-banner.jpg);
-
 	background-repeat:no-repeat;
-
 	height:487px;
-
 	padding:40px 375px 0 50px;
-
 	width:515px;
-
 	width:520px\0/;
-
 	*width:520px
-
 }
-
-
 
 #content.health_and_nutrition .banner h3 {
-
 	font-size:30px
-
 }
-
-
 
 #content.health_and_nutrition h1 {
-
 	font-size:21px;
-
 	line-height:24px;
-
 	margin-bottom:10px;
-
 	margin-top:20px
-
 }
-
-
 
 #content.health_and_nutrition h2 {
-
 	font-size:21px;
-
 	margin-bottom:10px;
-
 	margin-top:20px
-
 }
-
-
 
 #content.health_and_nutrition h3,#content.health_and_nutrition h4 {
-
 	color:#726659;
-
 	font-size:13px
-
 }
-
-
 
 #content.health_and_nutrition h3 a:hover {
-
 	color:#bfb2a3;
-
 	transition:all .25s ease-in-out;
-
 	-webkit-transition:all .25s ease-in-out;
-
 	-moz-transition:all .25s ease-in-out
-
 }
-
-
 
 #content.health_and_nutrition ul.tabs {
-
 	margin-top:0;
-
 	width:650px
-
 }
-
-
 
 #content.health_and_nutrition ul.tabs li a {
-
 	margin-right:17px
-
 }
-
-
 
 #content.health_and_nutrition ul.tabs li a.current,#content.health_and_nutrition ul.tabs li a:hover {
-
 	background-image:url(../img/health/tab-active.jpg);
-
 	width:194px
-
 }
-
-
 
 #content.health_and_nutrition ul.tabs a {
-
 	background-image:url(../img/health/tab.jpg);
-
 	background-repeat:no-repeat;
-
 	width:194px
-
 }
-
-
 
 #content.health_and_nutrition .ingredients {
-
 	margin-bottom:20px;
-
 	margin-left:72px;
-
 	margin-top:20px
-
 }
-
-
 
 /* =Content Ingredient Dictionary
 
 --------------------------------*/
-
 ul#ingredients {
-
 	background-image:url(../img/health/bg-ingredient-list.jpg);
-
 	background-repeat:repeat-y;
-
 	float:left;
-
 	height:470px;
-
 	overflow:hidden;
-
 	overflow-y:scroll;
-
 	width:123px
-
 }
-
-
 
 ul#ingredients li {
-
 	line-height:18px;
-
 	list-style:none;
-
 	margin-bottom:4px;
-
 	margin-top:4px;
-
 	width:123px
-
 }
-
-
 
 ul#ingredients li a.current {
-
 	background-color:#e8e2e0;
-
 	color:#726659
-
 }
-
-
 
 ul#ingredients a {
-
 	color:#726659;
-
 	cursor:pointer;
-
 	display:block;
-
 	font-family:Georgia,sans-serif;
-
 	font-size:15px;
-
 	padding-bottom:4px;
-
 	padding-left:8px;
-
 	padding-top:4px;
-
 	white-space:nowrap
-
 }
-
-
 
 ul#ingredients a:active {
-
 	background-color:#e8e2e0;
-
 	outline:none
-
 }
-
-
 
 .list .pane {
-
 	clear:both;
-
 	display:none
-
 }
-
-
 
 .list div {
-
 	display:block;
-
 	height:320px;
-
 	padding:0;
-
 	width:440px
-
 }
-
-
 
 .ingredient_dictionary {
-
 	float:right;
-
 	height:700px;
-
 	overflow:hidden;
-
 	width:440px
-
 }
-
-
 
 #content.health_and_nutrition .ingredient_dictionary h1 {
-
 	margin-top:0
-
 }
-
-
 
 /*#ingredient_list {
 
@@ -6890,1266 +2163,640 @@ ul#ingredients a:active {
 	background-color:#e8e2e0
 
 }*/
-
 /* =Content Our Story
 
 --------------------------------*/
-
 #content.our_story .featured {
-
 	height:528px;
-
 	overflow:hidden;
-
 	position:relative;
-
 	width:940px
-
 }
-
-
 
 #content.our_story h2 {
-
 	margin-bottom:10px;
-
 	margin-top:20px
-
 }
-
-
 
 #content.our_story .leftcol625 a:hover {
-
 	color:#bfb2a3;
-
 	transition:all .25s ease-in-out;
-
 	-webkit-transition:all .25s ease-in-out;
-
 	-moz-transition:all .25s ease-in-out
-
 }
-
-
 
 #our_story_slider {
-
 	height:528px;
-
 	overflow:hidden;
-
 	position:absolute;
-
 	width:9999em
-
 }
-
-
 
 #our_story_slider_nav {
-
 	left:0;
-
 	position:absolute;
-
 	top:528px
-
 }
-
-
 
 #our_story_slider_nav a {
-
 	display:block;
-
 	float:left;
-
 	cursor:pointer
-
 }
-
-
 
 #our_story_slider_nav a.active {
-
 	cursor:default!important
-
 }
-
-
 
 .navi {
-
 	margin-top:2px;
-
 	width:950px
-
 }
-
-
 
 #our_story_slider .slide1 {
-
 	background-image:url(../img/story/cheryl-slide.jpg);
-
 	background-repeat:no-repeat;
-
 	float:left;
-
 	height:528px;
-
 	width:940px
-
 }
-
-
 
 #our_story_slider .slide2 {
-
 	background-image:url(../img/story/ellen-slide.jpg);
-
 	background-repeat:no-repeat;
-
 	float:left;
-
 	height:528px;
-
 	width:940px
-
 }
-
-
 
 #our_story_slider .slide3 {
-
 	background-image:url(../img/story/todd-slide.jpg);
-
 	background-repeat:no-repeat;
-
 	float:left;
-
 	height:528px;
-
 	width:940px
-
 }
-
-
 
 #our_story_slider .slide4 {
-
 	background-image:url(../img/story/carolyn-slide.jpg);
-
 	background-repeat:no-repeat;
-
 	float:left;
-
 	height:528px;
-
 	width:940px
-
 }
-
-
 
 #our_story_slider .slide5 {
-
 	background-image:url(../img/story/better-way-slide.jpg);
-
 	background-repeat:no-repeat;
-
 	float:left;
-
 	height:528px;
-
 	width:940px
-
 }
-
-
 
 #our_story_slider .slide6 {
-
 	background-image:url(../img/story/our-plants-slide.jpg);
-
 	background-repeat:no-repeat;
-
 	float:left;
-
 	height:528px;
-
 	width:940px
-
 }
-
-
 
 .our_story_tab {
-
 	background-image:url(../img/story/callout.png);
-
 	background-repeat:no-repeat;
-
 	color:#fff;
-
 	font-family:Georgia,sans-serif;
-
 	font-size:11px;
-
 	height:91px;
-
 	line-height:15px;
-
 	margin-right:1px;
-
 	padding-left:15px;
-
 	padding-right:15px;
-
 	padding-top:2px;
-
 	text-align:center;
-
 	width:126px
-
 }
-
-
 
 .our_story_tab:hover {
-
 	background-image:url(../img/story/callout-active.png);
-
 	background-repeat:no-repeat;
-
 	color:#fff;
-
 	height:93px;
-
 	margin-top:-11px;
-
 	padding-left:15px;
-
 	padding-right:15px;
-
 	padding-top:13px;
-
 	width:126px
-
 }
-
-
 
 .our_story_tab:active {
-
 	background-image:url(../img/story/callout-active.png);
-
 	background-repeat:no-repeat;
-
 	height:93px;
-
 	margin-top:-11px;
-
 	padding-left:15px;
-
 	padding-right:15px;
-
 	width:126px
-
 }
-
-
 
 .our_story_tab.active {
-
 	background-image:url(../img/story/callout-selected.png);
-
 	background-repeat:no-repeat;
-
 	height:93px;
-
 	margin-top:-11px;
-
 	padding-left:15px;
-
 	padding-right:15px;
-
 	padding-top:13px;
-
 	width:126px
-
 }
-
-
 
 /* =Content Our Story - FAQ
 
 --------------------------------*/
-
 ul.faqs {
-
 	list-style:none
-
 }
-
-
 
 ul.faqs li {
-
 	border-bottom:1px solid #dbd7d2;
-
 	padding-bottom:10px
-
 }
-
-
 
 ul.faqs h2 {
-
 	background:url(../img/story/faq-arrow-open.png) top right no-repeat;
-
 	cursor:pointer;
-
 	padding-right:30px
-
 }
-
-
 
 ul.faqs h2.toggle {
-
 	background:url(../img/story/faq-arrow-closed.png) top right no-repeat
-
 }
-
-
 
 ul.faqs p {
-
 	display:none;
-
 	padding-bottom:10px;
-
 	padding-right:30px
-
 }
-
-
 
 /* =Content What's Happening
 
 --------------------------------*/
-
 #content .articles h2,#content .articles p {
-
 	width:520px
-
 }
-
-
 
 #content .addthis_article {
-
 	margin-bottom:10px;
-
 	margin-left:400px;
-
 	margin-top:10px
-
 }
-
-
 
 #content h5 a:hover,#content .articles a:hover {
-
 	color:#bfb2a3;
-
 	transition:all .25s ease-in-out;
-
 	-webkit-transition:all .25s ease-in-out;
-
 	-moz-transition:all .25s ease-in-out
-
 }
-
-
 
 /* =Footer
 
 --------------------------------*/
-
 #footer {
-
 	background-image:url(../img/shared/footer.jpg);
-
 	background-repeat:repeat-x;
-
 	clear:both;
-
 	height:423px;
-
 	padding-top:75px;
-
 	*padding-top:75px;
-
 	width:100%
-
 }
-
-
 
 #footer #accolades p {
-
 	font-style:italic;
-
 	font-size:16px;
-
 	line-height:26px;
-
 	list-style:none;
-
 	margin-top:5px
-
 }
-
-
 
 #footer h6 a:hover {
-
 	color:#fff;
-
 	transition:all .25s ease-in-out;
-
 	-webkit-transition:all .25s ease-in-out;
-
 	-moz-transition:all .25s ease-in-out
-
 }
-
-
 
 #footer ul#whats_happening li {
-
 	padding-bottom:7px;
-
 	text-transform:uppercase
-
 }
-
-
 
 #footer ul#whats_happening li a {
-
 	color:#58493a;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:15px;
-
 	font-style:italic;
-
 	font-weight:700;
-
 	line-height:17px;
-
 	text-decoration:none
-
 }
-
-
 
 #footer ul#whats_happening li a:hover {
-
 	color:#fff;
-
 	transition:all .25s ease-in-out;
-
 	-webkit-transition:all .25s ease-in-out;
-
 	-moz-transition:all .25s ease-in-out
-
 }
-
-
 
 #footer #newsletter {
-
 	background-color:#90af5e;
-
 	clear:both;
-
 	display:block;
-
 	height:67px;
-
 	padding:18px 38px;
-
 	margin-top:63px;
-
 	position:relative;
-
 	white-space:nowrap;
-
 	width:864px
-
 }
-
-
 
 #footer #newsletter p {
-
 	color:#fff;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:14px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	letter-spacing:.1em;
-
 	letter-spacing:normal\0/;
-
 	*letter-spacing:normal;
-
 	line-height:29px;
-
 	margin:0;
-
 	text-transform:uppercase
-
 }
-
-
 
 #footer #newsletter label {
-
 	display:inline-block;
-
 	*line-height:36px;
-
 	margin-right:8px;
-
 	*margin-top:-4px;
-
 	vertical-align:middle;
-
 	*vertical-align:top
-
 }
-
-
 
 #footer #newsletter input[type="text"] {
-
 	background-image:url(../img/shared/footer-textfield.jpg);
-
 	background-repeat:no-repeat;
-
 	border-bottom:1px solid #c7d4b3;
-
 	border-left:1px solid #707962;
-
 	border-right:none;
-
 	border-top:1px solid #707962;
-
 	color:#726659;
-
 	font-family:Georgia;
-
 	font-size:13px;
-
 	font-style:italic;
-
 	height:32px;
-
 	line-height:29px;
-
 	padding-left:16px;
-
 	width:375px
-
 }
-
-
 
 #footer #newsletter input[type="submit"] {
-
 	background-color:#517629;
-
 	border:1px solid #6b8d3f;
-
 	border-bottom:1px solid #6b8d3f;
-
 	border-left:1px solid #6b8d3f;
-
 	border-right:1px solid #6b8d3f;
-
 	border-top:none;
-
 	color:#fff;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:18px;
-
 	font-style:italic;
-
 	font-weight:700;
-
 	height:36px;
-
 	letter-spacing:.1em;
-
 	letter-spacing:normal\0/;
-
 	*letter-spacing:normal;
-
 	line-height:29px;
-
 	padding:5px 0;
-
 	padding:0\0/;
-
 	margin:0;
-
 	text-transform:uppercase;
-
 	vertical-align:top;
-
 	width:109px
-
 }
-
-
 
 #footer #newsletter input[type="submit"]:hover {
-
 	color:#90af5e;
-
 	transition:all .25s ease-in-out;
-
 	-webkit-transition:all .25s ease-in-out;
-
 	-moz-transition:all .25s ease-in-out
-
 }
-
-
 
 #footer #footer_nav {
-
 	margin-top:35px;
-
 	text-align:center;
-
 	width:100%
-
 }
-
-
 
 #footer #footer_nav ul {
-
 	float:none;
-
 	*margin-left:240px
-
 }
-
-
 
 #footer #footer_nav ul li {
-
 	border-right:1px #fff solid;
-
 	display:inline-block;
-
 	*float:left;
-
 	padding:0 9px;
-
 	text-transform:uppercase
-
 }
-
-
 
 #footer #footer_nav ul li.last {
-
 	border-right:none
-
 }
-
-
 
 #footer #footer_nav ul li a {
-
 	color:#eeeceb;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:13px;
-
 	font-style:normal;
-
 	font-weight:700;
-
 	line-height:13px;
-
 	text-decoration:none
-
 }
-
-
 
 #footer #footer_nav ul li a:hover {
-
 	color:#bfb2a3;
-
 	transition:all .25s ease-in-out;
-
 	-webkit-transition:all .25s ease-in-out;
-
 	-moz-transition:all .25s ease-in-out
-
 }
-
-
 
 #footer #legal p {
-
 	color:#fff;
-
 	float:left;
-
 	font-family:arial,sans-serif;
-
 	font-size:10px;
-
 	margin-top:20px;
-
 	text-align:center;
-
 	width:100%
-
 }
-
-
 
 /* =Classes
 
 --------------------------------*/
-
 .align_left {
-
 	display:block;
-
 	text-align:left
-
 }
-
-
 
 .align_right {
-
 	text-align:right
-
 }
-
-
 
 .ie_nav_fix {
-
 	*left:15px;
-
 	*position:absolute
-
 }
-
-
 
 .ie_nav_fix_cat_dog {
-
 	*left:15px;
-
 	*position:absolute;
-
 	*top:73px
-
 }
-
-
 
 .clear {
-
 	clear:both
-
 }
-
-
 
 .float_left {
-
 	display:block;
-
 	float:left;
-
 	margin-bottom:10px;
-
 	margin-right:15px
-
 }
-
-
 
 .float_left_dry_dog {
-
 	display:block;
-
 	float:left;
-
 	margin-right:15px
-
 }
-
-
 
 .float_left_canned {
-
 	display:block;
-
 	float:left;
-
 	margin-right:15px
-
 }
-
-
 
 .float_left_dry_cat {
-
 	display:block;
-
 	float:left;
-
 	margin-right:15px
-
 }
-
-
 
 .float_left_snacks {
-
 	display:block;
-
 	float:left;
-
 	margin-bottom:700px;
-
 	margin-right:15px
-
 }
-
-
 
 .float_left_snack_variety {
-
 	display:block;
-
 	float:left;
-
 	margin-bottom:1850px;
-
 	margin-right:15px
-
 }
-
-
 
 .float_right {
-
 	display:block;
-
 	float:right;
-
 	margin-bottom:10px;
-
 	margin-left:10px
-
 }
-
-
 
 .intro {
-
 	width:930px
-
 }
-
-
 
 .large_brown_text,.large_brown_text a {
-
 	color:#726659;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:45px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	line-height:48px;
-
 	text-decoration:none;
-
 	text-transform:uppercase
-
 }
-
-
 
 .large_white_text {
-
 	color:#fff;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:32px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	letter-spacing:.1em;
-
 	line-height:48px;
-
 	text-transform:uppercase
-
 }
-
-
 
 .medium_brown_text {
-
 	color:#726659;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:21px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	letter-spacing:.1em;
-
 	line-height:24px;
-
 	margin-bottom:12px;
-
 	text-transform:uppercase
-
 }
-
-
 
 .medium_white_text {
-
 	color:#fff;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:33px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	line-height:29px;
-
 	text-transform:uppercase
-
 }
-
-
 
 .small_brown_text {
-
 	color:#726659;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:15px;
-
 	font-style:normal;
-
 	font-weight:700;
-
 	line-height:24px;
-
 	text-transform:uppercase
-
 }
-
-
 
 .tiny_brown_text {
-
 	color:#726659;
-
 	display:block;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:12px;
-
 	font-style:normal;
-
 	font-weight:700;
-
 	line-height:16px;
-
 	text-transform:uppercase
-
 }
-
-
 
 .small_white_text_box {
-
 	color:#fff;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:18px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	margin-bottom:4px;
-
 	text-transform:uppercase
-
 }
-
-
 
 .small_white_text {
-
 	color:#fff;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:15px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	text-transform:uppercase
-
 }
-
-
 
 .tiny_white_text {
-
 	color:#fff;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:12px;
-
 	font-style:normal;
-
 	font-weight:700;
-
 	line-height:26px;
-
 	text-transform:uppercase;
-
 	white-space:nowrap
-
 }
-
-
 
 .small_grey_text {
-
 	color:#eeeceb;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:13px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	line-height:24px;
-
 	text-transform:uppercase
-
 }
-
-
 
 .margin10 {
-
 	margin:10px 0
-
 }
-
-
 
 .margin20 {
-
 	margin:20px 0
-
 }
-
-
 
 .margin30 {
-
 	margin:30px 0
-
 }
-
-
 
 .marginbottom10 {
-
 	margin-bottom:10px
-
 }
-
-
 
 .marginbottom20 {
-
 	margin-bottom:20px
-
 }
-
-
 
 .marginbottom40 {
-
 	margin-bottom:40px
-
 }
-
-
 
 .marginright25 {
-
 	margin-right:25px
-
 }
-
-
 
 .margin40 {
-
 	margin:40px 0
-
 }
-
-
 
 .margin50 {
-
 	margin:50px 0
-
 }
-
-
 
 .margintop20 {
-
 	margin-top:20px
-
 }
-
-
 
 .margintop40 {
-
 	margin-top:40px
-
 }
-
-
 
 .margintop60 {
-
 	margin-top:60px
-
 }
-
-
 
 .margintop85 {
-
 	margin-top:85px
-
 }
-
-
 
 .paddingbottom10 {
-
 	padding-bottom:10px
-
 }
-
-
 
 .paddingtop10 {
-
 	padding-top:10px
-
 }
-
-
 
 .padding30 {
-
 	padding-top:30px
-
 }
-
-
 
 .tag_line {
-
 	line-height:18px;
-
 	margin-top:20px
-
 }
-
-
 
 .tag_line_snacks {
-
 	line-height:18px;
-
 	margin-bottom:20px;
-
 	margin-top:10px
-
-}
 }
 
 .tag_line {
