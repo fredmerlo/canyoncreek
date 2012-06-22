@@ -56,19 +56,20 @@
           <!-- Begin Category 3 -->
 
           <div class="pane">
-            <a class="prev browse left"></a>
             <div class="scrollable">
             @{Html.RenderAction("category", "category", new { url = "snacks-biscuits-more" });}
             </div>
-            <a class="next browse snack_right"></a>
           </div><!-- End Category 3 -->
           <!-- Begin Category 4 -->
 
           <div class="pane">
+          <a class="prev browse snack_left"></a>
             <div class="scrollable">
             @{Html.RenderAction("category", "category", new { url = "snacks-chews" });}
+            </div>
+             <a class="next browse snack_right"></a>
             </div><!-- End Category 4 -->
-          </div><!-- Begin Category 5 -->
+          <!-- Begin Category 5 -->
 
           <div class="pane">
             <div class="scrollable">
@@ -84,9 +85,10 @@
             <p>High quality ingredients you want with none that you don't, <br />so you can see a real difference in your dog.</p><a href="/natural-food-for-dogs">LEARN MORE &#187;</a>
           </div>
 
-            <h6 class="margintop40">What are pet owners saying?</h6>
 
-            <div id="cat_video" class="margin10"></div>
+            <div id="cat_video" class="margintop40">
+            <h6>What are pet owners saying?</h6>
+            <a href="/our-story"><img src= "../../img/shared/cheryl-video.jpg" /></a></div>
           </div><!-- End Left Column -->
           <!-- Begin Right Column -->
 
@@ -96,8 +98,8 @@
             <p>Made with only the highest quality protein for superior<br /> digestibility, that naturally tastes good.</p><a href="/natural-food-for-cats">LEARN MORE &#187;</a>
           </div>
 
-            <div id="snack_family" class="margintop85">
-              
+            <div id="snack_family" class="margintop75">
+              <p>You care about what you feed your dog, and that's why we're introducing a new look for our snacks. Our new packages will show everything right up front &#8212; from the recipe to the snacks themselves&#8212; so you can see what you're getting. Look for our delicious, wholesome snacks in new packages coming soon.</p>
             </div>
 
             <div id="large_promo" class="margintop85">

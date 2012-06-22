@@ -340,7 +340,8 @@ body {
 
 #header #nav ul li ul#snacks li ul li a {
 	font-size:11px\0/;
-	*font-size:11px
+	*font-size:11px;
+	line-height: 14px;
 }
 
 #header #nav ul li ul#snacks li ul li a:hover {
@@ -555,7 +556,7 @@ body {
 	-moz-transition:all .25s ease-in-out
 }
 
-#header #nav ul li ul#dogs li span.product_category,#header #nav ul li ul#cats li span.product_category,#header #nav ul li ul#snacks li span.product_category {
+#header #nav ul li ul#dogs li span.product_category,#header #nav ul li ul#cats li span.product_category {
 	border:none;
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
@@ -566,7 +567,18 @@ body {
 	text-transform:uppercase
 }
 
-#header #nav ul li ul#snacks li span.product_category_proteins {
+#header #nav ul li ul#snacks li span.product_category {
+	border:none;
+	color:#fff;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:15px;
+	font-style:normal;
+	font-weight:700;
+	line-height:15px;
+	margin-bottom: 5px;
+	text-transform:uppercase
+}
+/*#header #nav ul li ul#snacks li span.product_category_proteins {
 	border:none;
 	color:#fff;
 	display:block;
@@ -577,7 +589,7 @@ body {
 	line-height:15px;
 	padding-top:7px;
 	text-transform:uppercase
-}
+}*/
 
 #header #nav ul li ul#story li span.faq_category {
 	border:none;
@@ -944,10 +956,11 @@ ul.categories li a:hover {
 #snack_family {
 	background-image:url(../img/snacks/snack-family.jpg);
 	background-repeat:no-repeat;
-	height:252px;
-	padding:0;
+	background-position: top left;
+	height: 50px;
+	padding: 260px 10px 10px 10px;
 	text-align:center;
-	width:461px
+	width:441px
 }
 
 #ingredient_dictionary {
@@ -997,10 +1010,9 @@ ul.categories li a:hover {
 	text-transform:uppercase
 }
 
-#cat_video {
-	background-image:url(../img/shared/cheryl-video.jpg);
-	background-repeat:no-repeat;
+#dog_video, #cat_video {
 	height:252px;
+	margin-bottom: 65px;
 	width:449px
 }
 
@@ -1529,6 +1541,16 @@ a.disabled {
 	float:right
 }
 
+#home_slider .slide4 p a {
+    color: #fff;
+    text-decoration: underline;
+}
+#home_slider .slide4 p a:hover {
+    color: #58493A;
+    transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out
+}
 .home_tab {
 	background-image:url(../img/home/callout.png);
 	background-repeat:no-repeat;
@@ -1595,7 +1617,6 @@ a.disabled {
 
 #content.dogs .banner h3,#content.dogs .banner p {
 	color:#fff;
-	text-shadow:1px 1px 1px #000
 }
 
 #content.dogs h1 {
@@ -1609,8 +1630,14 @@ a.disabled {
 	margin-top:250px
 }
 
+#content.dogs h6 {
+	font-size:15px;
+	line-height:24px;
+	margin-bottom:10px;
+	margin-top:10px
+}
 #content.dogs .banner h3,#content.dogs .banner p {
-	text-shadow:1px 1px 1px #000
+	color:#fff;
 }
 
 #content.dogs .ingredients {
@@ -1693,7 +1720,6 @@ a.disabled {
 
 #content.cats .banner h3,#content.cats .banner p {
 	color:#fff;
-	text-shadow:1px 1px 1px #000
 }
 
 #content.cats h1 {
@@ -1707,6 +1733,12 @@ a.disabled {
 	margin-top:250px
 }
 
+#content.cats h6 {
+	font-size:15px;
+	line-height:24px;
+	margin-bottom:10px;
+	margin-top:10px
+}
 #content.cats .ingredients {
 	margin:20px 0
 }
@@ -1814,7 +1846,7 @@ a.disabled {
 }
 
 #content.snacks .banner #banner_image {
-	background-image:url(../img/snacks/slide1.jpg);
+	background-image:url(../img/snacks/snack-banner.jpg);
 	background-repeat:no-repeat;
 	height:353px;
 	margin-bottom:20px;
@@ -1824,7 +1856,7 @@ a.disabled {
 
 #content.snacks .banner h3,#content.snacks .banner p {
 	color:#fff;
-	text-shadow:1px 1px 1px #000
+
 }
 
 #content.snacks h1 {
@@ -1968,7 +2000,7 @@ ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a
 }
 
 #content.health_and_nutrition .banner #banner_image {
-	background-image:url(http://ccr.departika.com/img/health/health-banner.jpg);
+	background-image:url(../img/health/health-banner.jpg);
 	background-repeat:no-repeat;
 	height:487px;
 	padding:40px 375px 0 50px;
@@ -2772,6 +2804,9 @@ ul.faqs p {
 	margin-top:60px
 }
 
+.margintop75 {
+	margin-top:75px
+}
 .margintop85 {
 	margin-top:85px
 }
