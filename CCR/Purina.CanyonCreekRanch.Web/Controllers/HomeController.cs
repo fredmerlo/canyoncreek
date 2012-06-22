@@ -59,5 +59,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     [ActionName("our-story-faq-feeding")]
     public ActionResult OurStoryFaqFeeding() { return View("OurStoryFaqFeeding"); }
 
+    [ActionName("privacy-policy")]
+    public ActionResult PrivacyPolicy() { return View("PrivacyPolicy"); }
   }
 }
