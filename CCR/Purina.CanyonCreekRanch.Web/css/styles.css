@@ -556,7 +556,7 @@ body {
 	-moz-transition:all .25s ease-in-out
 }
 
-#header #nav ul li ul#dogs li span.product_category,#header #nav ul li ul#cats li span.product_category {
+#header #nav ul li ul#dogs li span.product_category a,#header #nav ul li ul#cats li span.product_category a {
 	border:none;
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
@@ -567,7 +567,7 @@ body {
 	text-transform:uppercase
 }
 
-#header #nav ul li ul#snacks li span.product_category {
+#header #nav ul li ul#snacks li span.product_category a {
 	border:none;
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
