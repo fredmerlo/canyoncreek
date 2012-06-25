@@ -5,13 +5,13 @@
   foreach (var category in Model) {
     var once = true;
                   <ul>
-                    <li><span class="product_category">@category.Title</span></li>
+                    <li><span class="product_category">@Html.ActionLink(category.Title, ((List<Product>)TempData[category.FriendlyUrl])[0].FriendlyUrl, "Product")</span></li>
 
     @foreach(var product in (IEnumerable<Product>)TempData[category.FriendlyUrl]) {
         if(category.Id != product.ProductCategory.Id && once) {
           once = false;
                     
-                    <li><span class="product_category">@product.ProductCategory.Title</span></li>
+                    <li><span class="product_category">@Html.ActionLink(product.ProductCategory.Title, product.FriendlyUrl, "Product")</span></li>
         }
                     <li>@Html.ActionLink(product.Title, product.FriendlyUrl, "Product")</li>
     }
