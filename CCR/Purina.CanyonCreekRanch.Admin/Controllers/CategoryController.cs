@@ -9,7 +9,7 @@ using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Controllers
 { 
-    [Authorize]
+    [Authorize(Roles = "CCRAdmin")]
     public class CategoryController : Controller
     {
         private CCRDb db = new CCRDb();
