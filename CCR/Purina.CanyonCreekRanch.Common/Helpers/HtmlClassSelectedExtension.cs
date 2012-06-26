@@ -23,11 +23,13 @@ namespace Purina.CanyonCreekRanch.Common.Helpers
             return new MvcHtmlString("class=\"selected\"");
         break;
         case "dogs":
-          if (htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("dog"))
+          if (htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("dog") &&
+              !htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("snack"))
             return new MvcHtmlString("class=\"selected\"");
         break;
         case "cats":
-          if (htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("cat"))
+          if (htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("cat") &&
+              !htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("snack"))
             return new MvcHtmlString("class=\"selected\"");
         break;
         case "snacks":
