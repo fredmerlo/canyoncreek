@@ -1,4 +1,6 @@
-﻿    <!-- Begin Header -->
+﻿@using Purina.CanyonCreekRanch.Common.Helpers
+    
+    <!-- Begin Header -->
 
     <div id="header">
       <!-- Begin Content Wrap -->
@@ -19,7 +21,7 @@
              <!-- Begin Story Navigation -->
 
             <li class="story">
-              <a href="/our-story">Our Story</a>
+              <a @Html.Selected("story") href="/our-story">Our Story</a>
 
               <ul id="story" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -53,7 +55,7 @@
             <!-- Begin Health Navigation -->
 
             <li class="health">
-              <a href="/health-and-nutrition">Health &amp; Nutrition</a> <!-- Begin Health Dropdown -->
+              <a @Html.Selected("health") href="/health-and-nutrition">Health &amp; Nutrition</a> <!-- Begin Health Dropdown -->
 
               <ul id="health" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -85,7 +87,7 @@
             <!-- Begin Dog Navigation -->
 
             <li class="dogs">
-              <a href="/natural-food-for-dogs">Natural Food For Dogs</a> <!-- Begin Dog Dropdown -->
+              <a @Html.Selected("dogs") href="/natural-food-for-dogs">Natural Food For Dogs</a> <!-- Begin Dog Dropdown -->
 
               <ul id="dogs" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -111,7 +113,7 @@
             <!-- Begin Cat Navigation -->
 
             <li class="cats">
-              <a href="/natural-food-for-cats">Natural Food For Cats</a> <!-- Begin Cat Dropdown -->
+              <a @Html.Selected("cats") href="/natural-food-for-cats">Natural Food For Cats</a> <!-- Begin Cat Dropdown -->
 
               <ul id="cats" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
@@ -137,7 +139,7 @@
             <!-- Begin Snacks Navigation -->
 
             <li class="snacks">
-              <a href="/snacks">Snacks</a> <!-- Begin Snacks Dropdown -->
+              <a @Html.Selected("snacks") href="/snacks">Snacks</a> <!-- Begin Snacks Dropdown -->
 
               <ul id="snacks" class="menu">
                 <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
