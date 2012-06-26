@@ -19,7 +19,8 @@ namespace Purina.CanyonCreekRanch.Common.Helpers
         break;
         case "health":
           if (htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("health") ||
-              htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("holistic"))
+              htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("holistic") ||
+              htmlHelper.ViewContext.HttpContext.Request.RawUrl.Contains("ingredient"))
             return new MvcHtmlString("class=\"selected\"");
         break;
         case "dogs":
