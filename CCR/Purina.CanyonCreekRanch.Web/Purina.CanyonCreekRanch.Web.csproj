@@ -430,7 +430,7 @@
     <Content Include="Views\Product\SnackDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\RetailerProgram.cshtml" />
+    <Content Include="Views\Shared\Companions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Guarantee.cshtml" />

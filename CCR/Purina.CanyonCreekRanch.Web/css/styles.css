@@ -888,8 +888,8 @@ ul.categories li a:hover {
 #natural_dog_food {
 	background-image:url(/img/shared/natural-dog-food.jpg);
 	background-repeat:no-repeat;
-	height:181px;
-	padding:50px 0 0;
+	height:186px;
+	padding:45px 0 0;
 	text-align:center;
 	width:459px
 }
@@ -908,8 +908,8 @@ ul.categories li a:hover {
 #natural_cat_food {
 	background-image:url(/img/shared/natural-cat-food.jpg);
 	background-repeat:no-repeat;
-	height:181px;
-	padding:50px 0 0;
+	height:186px;
+	padding:45px 0 0;
 	text-align:center;
 	width:461px
 }
@@ -1019,8 +1019,8 @@ ul.categories li a:hover {
 #large_promo {
 	background-image:url(/img/shared/save-now-promo.png);
 	background-repeat:no-repeat;
-	height:119px;
-	padding:84px 170px 0 0;
+	height:99px;
+	padding:104px 170px 0 0;
 	text-align:center;
 	white-space:nowrap;
 	width:290px
@@ -1033,7 +1033,7 @@ ul.categories li a:hover {
 }
 
 #large_promo a {
-	padding:120px 200px 30px 30px
+	padding:100px 200px 45px 30px
 }
 
 #large_promo span {
@@ -1186,7 +1186,7 @@ ul.no li.last {
 	width:279px
 }
 
-#sidebar_healthy_snacks a,#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
+#sidebar_healthy_snacks a {
 	color:#fff;
 	display:block;
 	font-family:brandon-grotesque,sans-serif;
@@ -1196,6 +1196,20 @@ ul.no li.last {
 	height:84px;
 	line-height:22px;
 	padding-top:44px;
+	text-transform:uppercase;
+	width:279px
+}
+
+#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
+	color:#fff;
+	display:block;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:20px;
+	font-style:normal;
+	font-weight:900;
+	height:94px;
+	line-height:22px;
+	padding-top:34px;
 	text-transform:uppercase;
 	width:279px
 }
@@ -1397,7 +1411,7 @@ a.disabled {
 }
 
 #content.snacks .snack_content {
-	height:750px;
+	height:770px;
 	position:relative;
 	overflow:hidden;
 	width:940px
@@ -1770,7 +1784,9 @@ a.disabled {
 #content.natural_cat h2 {
 	font-size:28px;
 	line-height:34px;
-	margin-bottom:0
+	margin-bottom:0;
+	white-space: normal;
+	word-wrap: break-word;
 }
 
 #content.natural_cat h6 {
@@ -1883,7 +1899,7 @@ a.disabled {
 }
 
 #content.snacks h4 {
-	color:#58493A;
+	color:#726659;
 	font-size:15px;
 	line-height:24px;
 	margin-bottom:10px
@@ -1994,6 +2010,10 @@ ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a
 /* =Content Health & Nutrition
 
 --------------------------------*/
+#content.health_and_nutrition .fullcol {
+	width:940px
+}
+
 #content.health_and_nutrition .banner {
 	height:528px;
 	width:940px
@@ -2068,13 +2088,14 @@ ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a
 
 --------------------------------*/
 ul#ingredients {
-	background-image:url(/img/health/bg-ingredient-list.jpg);
+	background-image:url(http://migratefiles.com/ccr/bg-ingredient-list.jpg);
 	background-repeat:repeat-y;
 	float:left;
-	height:470px;
+	height:400px;
 	overflow:hidden;
 	overflow-y:scroll;
-	width:123px
+	position: absolute;
+	width:210px
 }
 
 ul#ingredients li {
@@ -2082,7 +2103,7 @@ ul#ingredients li {
 	list-style:none;
 	margin-bottom:4px;
 	margin-top:4px;
-	width:123px
+	width:210px
 }
 
 ul#ingredients li a.current {
@@ -2115,16 +2136,18 @@ ul#ingredients a:active {
 .list div {
 	display:block;
 	height:320px;
+	margin-left: 55px;
 	padding:0;
-	width:440px
+	width:420px
 }
 
 .ingredient_dictionary {
 	float:right;
-	height:700px;
-	overflow:hidden;
-	width:440px
+	height:450px;
+	width:420px
 }
+
+
 
 #content.health_and_nutrition .ingredient_dictionary h1 {
 	margin-top:0
@@ -2623,7 +2646,7 @@ ul.faqs p {
 .float_left_dry_cat {
 	display:block;
 	float:left;
-	margin-right:15px
+	margin-right:15px;
 }
 
 .float_left_snacks {
@@ -2633,10 +2656,17 @@ ul.faqs p {
 	margin-right:15px
 }
 
-.float_left_snack_variety {
+.float_left_snack_trail_mix {
 	display:block;
 	float:left;
-	margin-bottom:1850px;
+	margin-bottom:1480px;
+	margin-right:15px
+}
+
+.float_left_snack_western_grill {
+	display:block;
+	float:left;
+	margin-bottom:1950px;
 	margin-right:15px
 }
 
