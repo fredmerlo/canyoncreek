@@ -47,17 +47,11 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
     public ActionResult Contact() { return View(); }
 
-    [ActionName("retailer-program")]
-    public ActionResult RetailerProgram() { return View("RetailerProgram"); }
+    [ActionName("companions")]
+    public ActionResult RetailerProgram() { return View("Companions"); }
 
     [ActionName("satisfaction-guarantee")]
     public ActionResult OurGuarantee() { return View("Guarantee"); }
-
-    [ActionName("our-story-faq-quality")]
-    public ActionResult OurStoryFaqQuality() { return View("OurStoryFaqQuality"); }
-
-    [ActionName("our-story-faq-feeding")]
-    public ActionResult OurStoryFaqFeeding() { return View("OurStoryFaqFeeding"); }
 
     [ActionName("privacy-policy")]
     public ActionResult PrivacyPolicy() { return View("PrivacyPolicy"); }
