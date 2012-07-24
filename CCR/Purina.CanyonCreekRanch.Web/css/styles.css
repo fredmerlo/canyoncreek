@@ -1,5 +1,5 @@
 * Site: Canyon Creek Ranch
-* Author: Mesh,Tim Shelburn
+* Author: Mesh, Tim Shelburn
 *************************************************************************/
 /* =Typography
 --------------------------------*/
@@ -107,7 +107,8 @@ p {
 
 --------------------------------*/
 body {
-	width:100%
+	width:100%;
+	-webkit-text-size-adjust:none;
 }
 
 #container {
@@ -290,6 +291,10 @@ body {
 	-moz-transition:all .25s ease-in-out
 }
 
+#header #nav ul ul {
+	display:none;
+}
+
 #header #nav ul li ul#dogs {
 	background-image:url(/img/shared/nav-dogs.png);
 	background-repeat:repeat-x;
@@ -338,10 +343,9 @@ body {
 	width:924px
 }
 
-#header #nav ul li ul#snacks li ul li a {
-	font-size:11px\0/;
-	*font-size:11px;
-	line-height: 14px;
+#header #nav ul li ul#dogs li ul li a, #header #nav ul li ul#cats li ul li a, #header #nav ul li ul#snacks li ul li a {
+    font-size: 11px;
+	line-height: 13px;
 }
 
 #header #nav ul li ul#snacks li ul li a:hover {
@@ -456,13 +460,14 @@ body {
 	float:left;
 	left:0;
 	padding:0;
+	margin-right: 5px;
 	position:relative;
 	text-align:left;
 	top:0;
 	*top:40px;
-	width:173px;
-	width:170px\0/;
-	*width:168px
+	width:165px;
+	width:163px\0/;
+	*width:160px
 }
 
 #header #nav ul li ul#health li ul,#header #nav ul li ul#story li ul {
@@ -742,7 +747,6 @@ body {
 	height:100%;
 	margin-top:94px;
 /*margin-top:134px;
-
 	margin-top:4px;*/
 	_margin-top:0;
 	width:100%;
@@ -831,6 +835,7 @@ ul.categories li a:hover {
 
 #clear_content {
 	clear:both;
+	display:block;
 	float:left;
 	height:40px;
 	width:940px
@@ -872,7 +877,7 @@ ul.categories li a:hover {
 	font-style:italic;
 	font-weight:700;
 	line-height:29px;
-	padding:150px 183px 65px 181px;
+	padding:150px 183px 65px 160px;
 	text-align:left;
 	text-decoration:none;
 	text-transform:uppercase
@@ -895,7 +900,7 @@ ul.categories li a:hover {
 }
 
 #natural_dog_food a {
-	padding:155px 187px 60px 180px
+	padding:155px 187px 60px 158px
 }
 
 #natural_dog_food:hover span,#natural_dog_food:hover p,#natural_dog_food a:hover {
@@ -915,7 +920,7 @@ ul.categories li a:hover {
 }
 
 #natural_cat_food a {
-	padding:155px 185px 60px 183px
+	padding:155px 185px 60px 158px
 }
 
 #natural_cat_food:hover span,#natural_cat_food:hover p,#natural_cat_food a:hover {
@@ -940,7 +945,7 @@ ul.categories li a:hover {
 	font-style:italic;
 	font-weight:700;
 	line-height:29px;
-	padding:155px 185px 60px 183px;
+	padding:155px 185px 60px 165px;
 	text-align:left;
 	text-decoration:none;
 	text-transform:uppercase
@@ -1410,6 +1415,11 @@ a.disabled {
 	width:940px
 }
 
+#content.natural_cat .product_content p, #content.natural_dog .product_content p {
+    *margin-left:235px;
+    width: 625px;
+}
+
 #content.snacks .snack_content {
 	height:770px;
 	position:relative;
@@ -1665,6 +1675,7 @@ a.disabled {
 /* =Content Natural Dry Dog Food
 
 --------------------------------*/
+
 #content.natural_dog .banner {
 	height:622px;
 	width:940px
@@ -1684,7 +1695,9 @@ a.disabled {
 #content.natural_dog h2 {
 	font-size:28px;
 	line-height:34px;
-	margin-bottom:0
+	margin-bottom:0;
+	white-space: normal;
+	word-wrap: break-word;
 }
 
 #content.natural_dog h6 {
@@ -1709,13 +1722,13 @@ a.disabled {
 
 #content.natural_dog .leftcol {
 	clear:both;
-	float:none:
 }
 
 #content.natural_dog .satisfaction {
 	margin-left:131px;
 	margin-top:20px
 }
+
 
 /* =Content Cats
 
@@ -1812,7 +1825,6 @@ a.disabled {
 
 #content.natural_cat .leftcol {
 	clear:both;
-	float:none:
 }
 
 #content.natural_cat .satisfaction {
@@ -1872,7 +1884,6 @@ a.disabled {
 
 #content.snacks .banner h3,#content.snacks .banner p {
 	color:#fff;
-
 }
 
 #content.snacks h1 {
@@ -2421,8 +2432,10 @@ ul.faqs p {
 	background-repeat:repeat-x;
 	clear:both;
 	height:423px;
+	*height:398px;
 	padding-top:75px;
-	*padding-top:75px;
+	*padding-top:100px;
+	*position: relative;
 	width:100%
 }
 
@@ -2537,7 +2550,8 @@ ul.faqs p {
 	margin:0;
 	text-transform:uppercase;
 	vertical-align:top;
-	width:109px
+	width:109px;
+	-webkit-appearance:none;
 }
 
 #footer #newsletter input[type="submit"]:hover {
