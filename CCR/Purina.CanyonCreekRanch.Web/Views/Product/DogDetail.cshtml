@@ -25,7 +25,7 @@
         @Html.ActionLink(" ", ((Product)TempData["previous"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows left" })
         <!-- End Product Left Navigation -->
         <div class="product_content">
-            <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_dry_dog" />
+            <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_dry_dog enlargable" />
             <h2>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
                 <h1>@Html.Raw(Model.TagLine)</h1>
                 <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/ingredients.png" class="ingredients" />
