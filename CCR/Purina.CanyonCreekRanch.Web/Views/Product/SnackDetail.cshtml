@@ -34,10 +34,22 @@
           } else {
             <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snacks" />
           }
+
+
           <h2>@Html.DisplayFor(model => model.Title)</h2>
           <h1>@Html.Raw(Model.TagLine)</h1>
 
           @Html.Raw(Model.Description)
+
+          @if (Model.GuaranteeTable.Length > 0) {
+            <h6>GUARANTEED ANALYSIS:</h6>
+            @Html.Raw(Model.GuaranteeTable)
+           }
+	
+          @if (Model.Ingredients.Length > 0) {
+           <h6>Ingredients:</h6>
+           @Html.Raw(Model.Ingredients)
+          }
 
           <h6>DAILY MAXIMUM NUMBER OF PIECE(S) BASED ON YOUR DOG'S WEIGHT</h6>
 
