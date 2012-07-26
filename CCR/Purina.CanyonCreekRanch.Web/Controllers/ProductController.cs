@@ -45,10 +45,14 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
                 break;
         }
       
-
-      TempData.Add("previous", products[index == 0 ? products.Count - 1 : index - 1]);
-      TempData.Add("next", products[index + 1 == products.Count ? 0 : index + 1]);
-      TempData.Add("coupon", "http://bricks.coupons.com/enable.asp?o=" + code + "&c=PR&p=" + pin + "&cpt=" + EncodeCPT(pin, code, "rke184ulgt","2rdAinvOmFoVXBa58sp1EZkSucftCg6eqxWlPKRNGzw7YQHJ4Db9UIyM3jTLh"));
+      if ( !TempData.ContainsKey("previous"))
+        TempData.Add("previous", products[index == 0 ? products.Count - 1 : index - 1]);
+      
+      if (!TempData.ContainsKey("next"))
+        TempData.Add("next", products[index + 1 == products.Count ? 0 : index + 1]);
+      
+      if (!TempData.ContainsKey("coupon"))
+        TempData.Add("coupon", "http://bricks.coupons.com/enable.asp?o=" + code + "&c=PR&p=" + pin + "&cpt=" + EncodeCPT(pin, code, "rke184ulgt","2rdAinvOmFoVXBa58sp1EZkSucftCg6eqxWlPKRNGzw7YQHJ4Db9UIyM3jTLh"));
 
       return View(detailType, product);
     }

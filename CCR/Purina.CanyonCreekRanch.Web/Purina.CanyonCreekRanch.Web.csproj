@@ -294,6 +294,7 @@
     <Content Include="img\shared\carrots.jpg" />
     <Content Include="img\shared\cheryl-video.jpg" />
     <Content Include="img\shared\chicken.jpg" />
+    <Content Include="img\shared\close.png" />
     <Content Include="img\shared\cows.jpg" />
     <Content Include="img\shared\eggs.jpg" />
     <Content Include="img\shared\eggs2.jpg" />

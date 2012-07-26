@@ -26,9 +26,14 @@
         @Html.ActionLink(" ", ((Product)TempData["previous"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows left" })
         <!-- End Product Left Navigation -->
 
-        <div class="snack_content">
-          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snacks" />
-
+        <div class="@(Model.ResourcePrefix == "trail-mix-for-dogs" || Model.ResourcePrefix == "western-grill" ? "snack_content_variety" : "snack_content")">
+        @if (Model.ResourcePrefix == "trail-mix-for-dogs") {
+          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snack_trail_mix" />
+          } else if (Model.ResourcePrefix == "western-grill") {
+           <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snack_western_grill" />
+          } else {
+            <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snacks" />
+          }
           <h2>@Html.DisplayFor(model => model.Title)</h2>
           <h1>@Html.Raw(Model.TagLine)</h1>
 
