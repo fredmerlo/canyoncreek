@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -55,5 +57,38 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
     [ActionName("privacy-policy")]
     public ActionResult PrivacyPolicy() { return View("PrivacyPolicy"); }
+
+    [ActionName("register-email")]
+    public void Register(string email)
+    {
+        if (string.IsNullOrEmpty(email) || email.Equals("Enter your email address"))
+        {
+            Response.Redirect(Request.UrlReferrer.AbsoluteUri);
+            return;
+        }
+
+        HttpWebRequest request = (HttpWebRequest) WebRequest.Create("https://ansira.purina.com/et-api/et_caller.php");
+
+        request.AllowAutoRedirect = false;
+        request.Method = "POST";
+
+        string id = "canUser1";
+        string pass = "canPass1";
+
+        string postData = "client_id=" + id + "&client_sec=" + pass + "&send_mail=" + email;
+        string urlEncodedPostData = HttpUtility.UrlEncode(postData);
+
+        byte[] data = System.Text.Encoding.ASCII.GetBytes(urlEncodedPostData);
+
+        request.ContentType = "application/x-www-form-urlencoded";
+        request.ContentLength = data.Length;
+        Stream response = request.GetRequestStream();
+        response.Write(data, 0, data.Length);
+        response.Close();
+
+        HttpWebResponse res = (HttpWebResponse) request.GetResponse();
+
+        Response.Redirect(Request.UrlReferrer.AbsoluteUri);
+    }
   }
 }

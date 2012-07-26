@@ -1,4 +1,5 @@
 ﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
+@using System.Web.UI.WebControls
 @using Purina.CanyonCreekRanch.Common.Entities
 
 @section Meta {
@@ -126,8 +127,8 @@
         <!-- Begin Right Column -->
 
         <div class="rightcol">
-          <div id="large_promo">
-            <span class="large_brown_text"><a href="#">TRY &amp; SAVE</a></span>
+        <div id="large_promo">
+            <span class="large_brown_text"><a href="@((string)TempData["coupon"])">TRY &amp; SAVE</a></span>
           </div>
         </div><!-- End Right Column -->
         <!-- Begin Clear Content -->
