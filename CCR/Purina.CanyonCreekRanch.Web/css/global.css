@@ -17,9 +17,12 @@ body {
 }
 
 ol,ul {
-	list-style:none
+	list-style:none;
 }
 
+li {
+    *vertical-align:middle;
+}
 blockquote,q {
 	quotes:none
 }
