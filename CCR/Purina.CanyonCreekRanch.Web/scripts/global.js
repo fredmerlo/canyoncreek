@@ -54,26 +54,8 @@ $(document).ready(function() {
             animation:   {opacity:'show',height:'show'}, 
             speed:       'slow',                        
             autoArrows:  false,      
-            dropShadows: false                         
+            dropShadows: false                          
         }); 
-        $('.enlargable').click(function() {
-          var markup = "";
-          var path = $(this).attr('src').split('/')
-          path.pop();
-          path.push('product-lg.png');
-          //console.log(path.join('/'));
-          markup += '<div id="overlay">';
-          markup += '<div id="lightbox">';
-          markup += '<img class="close" src="/img/shared/close.png" />';
-          markup += '<img class="product_lg" src="' + path.join('/')  + '" />';
-          markup += '</div></div>';
-          $('body').append(markup);
-        });
-
-        $('#overlay').live('click', function() {
-          //console.log('clicked');
-          $('#overlay').remove();
-        })
 }); 
 
 

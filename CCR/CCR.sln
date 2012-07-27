@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purina.CanyonCreekRanch.Common", "Purina.CanyonCreekRanch.Common\Purina.CanyonCreekRanch.Common.csproj", "{47921B65-D9AA-47C8-BD29-7445AB0D77A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purina.CanyonCreekRanch.Web", "Purina.CanyonCreekRanch.Web\Purina.CanyonCreekRanch.Web.csproj", "{9041F5C0-9CED-4EE9-998D-70ADFC6F4B5A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purina.CanyonCreekRanch.Admin", "Purina.CanyonCreekRanch.Admin\Purina.CanyonCreekRanch.Admin.csproj", "{389AA9BA-DB6C-41D3-B230-3C879735D4CC}"
 EndProject
 Global
@@ -17,10 +15,6 @@ Global
 		{47921B65-D9AA-47C8-BD29-7445AB0D77A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47921B65-D9AA-47C8-BD29-7445AB0D77A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47921B65-D9AA-47C8-BD29-7445AB0D77A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9041F5C0-9CED-4EE9-998D-70ADFC6F4B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9041F5C0-9CED-4EE9-998D-70ADFC6F4B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9041F5C0-9CED-4EE9-998D-70ADFC6F4B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9041F5C0-9CED-4EE9-998D-70ADFC6F4B5A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{389AA9BA-DB6C-41D3-B230-3C879735D4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{389AA9BA-DB6C-41D3-B230-3C879735D4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{389AA9BA-DB6C-41D3-B230-3C879735D4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU

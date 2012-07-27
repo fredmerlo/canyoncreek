@@ -10,8 +10,7 @@ using Purina.CanyonCreekRanch.Admin.Models;
 using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Controllers
-{
-    [Authorize(Roles = "CCRAdmin")]
+{ 
     public class ProductController : Controller
     {
         private CCRDb db = new CCRDb();

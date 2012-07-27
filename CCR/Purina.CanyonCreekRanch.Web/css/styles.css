@@ -1,5 +1,6 @@
-* Site: Canyon Creek Ranch
-* Author: Mesh, Tim Shelburn
+/************************************************************************
+ * Site: Canyon Creek Ranch
+ * Author: Mesh, Tim Shelburn
 *************************************************************************/
 /* =Typography
 --------------------------------*/
@@ -104,16 +105,14 @@ p {
 }
 
 /* =Structure
-
 --------------------------------*/
 body {
-	width:100%;
-	-webkit-text-size-adjust:none;
+	width:100%
 }
 
 #container {
 	background-color:#fefefe;
-	background-image:url(/img/shared/background.jpg);
+	background-image:url(../img/shared/background.jpg);
 	background-position:bottom left;
 	background-repeat:repeat-x
 }
@@ -161,10 +160,9 @@ body {
 }
 
 /* =Header
-
 --------------------------------*/
 #header {
-	background-image:url(/img/shared/header-sm.jpg);
+	background-image:url(../img/shared/header-sm.jpg);
 	background-repeat:repeat-x;
 	height:105px;
 /*height: 131px;*/
@@ -210,7 +208,7 @@ body {
 }
 
 #header #nav ul {
-	left:42px;
+	left: 42px;
 	position:absolute;
 /*top:105px;*/
 	top:78px;
@@ -291,12 +289,8 @@ body {
 	-moz-transition:all .25s ease-in-out
 }
 
-#header #nav ul ul {
-	display:none;
-}
-
 #header #nav ul li ul#dogs {
-	background-image:url(/img/shared/nav-dogs.png);
+	background-image:url(../img/shared/nav-dogs.png);
 	background-repeat:repeat-x;
 	height:338px;
 	left:-42px;
@@ -314,7 +308,7 @@ body {
 }
 
 #header #nav ul li ul#cats {
-	background-image:url(/img/shared/nav-cats.png);
+	background-image:url(../img/shared/nav-cats.png);
 	background-repeat:repeat-x;
 	height:338px;
 	left:-42px;
@@ -332,7 +326,7 @@ body {
 }
 
 #header #nav ul li ul#snacks {
-	background-image:url(/img/shared/nav-snacks.png);
+	background-image:url(../img/shared/nav-snacks.png);
 	background-repeat:repeat-x;
 	height:338px;
 	left:-42px;
@@ -343,9 +337,9 @@ body {
 	width:924px
 }
 
-#header #nav ul li ul#dogs li ul li a, #header #nav ul li ul#cats li ul li a, #header #nav ul li ul#snacks li ul li a {
-    font-size: 11px;
-	line-height: 13px;
+#header #nav ul li ul#snacks li ul li a {
+	font-size:11px\0/;
+	*font-size:11px
 }
 
 #header #nav ul li ul#snacks li ul li a:hover {
@@ -362,7 +356,7 @@ body {
 }
 
 #header #nav ul li ul#health {
-	background-image:url(/img/shared/nav-health-nutrition.png);
+	background-image:url(../img/shared/nav-health-nutrition.png);
 	background-repeat:repeat-x;
 	height:338px;
 	left:-42px;
@@ -380,7 +374,7 @@ body {
 }
 
 #header #nav ul li ul#story {
-	background-image:url(/img/shared/nav-our-story.png);
+	background-image:url(../img/shared/nav-our-story.png);
 	background-repeat:repeat-x;
 	height:338px;
 	left:-42px;
@@ -447,7 +441,7 @@ body {
 
 #header #nav ul li ul#dogs li ul,#header #nav ul li ul#cats li ul {
 	float:left;
-	left:0;
+	left: 0;
 	margin-right:10px;
 	padding:0;
 	position:relative;
@@ -458,16 +452,15 @@ body {
 
 #header #nav ul li ul#snacks li ul {
 	float:left;
-	left:0;
+	left: 0;
 	padding:0;
-	margin-right: 5px;
 	position:relative;
 	text-align:left;
 	top:0;
 	*top:40px;
-	width:165px;
-	width:163px\0/;
-	*width:160px
+	width:173px;
+	width:170px\0/;
+	*width:168px
 }
 
 #header #nav ul li ul#health li ul,#header #nav ul li ul#story li ul {
@@ -561,7 +554,7 @@ body {
 	-moz-transition:all .25s ease-in-out
 }
 
-#header #nav ul li ul#dogs li span.product_category a,#header #nav ul li ul#cats li span.product_category a {
+#header #nav ul li ul#dogs li span.product_category,#header #nav ul li ul#cats li span.product_category,#header #nav ul li ul#snacks li span.product_category {
 	border:none;
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
@@ -572,18 +565,7 @@ body {
 	text-transform:uppercase
 }
 
-#header #nav ul li ul#snacks li span.product_category a {
-	border:none;
-	color:#fff;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:15px;
-	font-style:normal;
-	font-weight:700;
-	line-height:15px;
-	margin-bottom: 5px;
-	text-transform:uppercase
-}
-/*#header #nav ul li ul#snacks li span.product_category_proteins {
+#header #nav ul li ul#snacks li span.product_category_proteins {
 	border:none;
 	color:#fff;
 	display:block;
@@ -594,7 +576,7 @@ body {
 	line-height:15px;
 	padding-top:7px;
 	text-transform:uppercase
-}*/
+}
 
 #header #nav ul li ul#story li span.faq_category {
 	border:none;
@@ -741,7 +723,6 @@ body {
 }
 
 /* =Content
-
 --------------------------------*/
 #content {
 	height:100%;
@@ -835,7 +816,6 @@ ul.categories li a:hover {
 
 #clear_content {
 	clear:both;
-	display:block;
 	float:left;
 	height:40px;
 	width:940px
@@ -858,7 +838,7 @@ ul.categories li a:hover {
 }
 
 #holistic_box {
-	background-image:url(/img/shared/holistic.jpg);
+	background-image:url(../img/shared/holistic.jpg);
 	background-repeat:no-repeat;
 	height:171px;
 	padding:60px 0 0;
@@ -877,7 +857,7 @@ ul.categories li a:hover {
 	font-style:italic;
 	font-weight:700;
 	line-height:29px;
-	padding:150px 183px 65px 160px;
+	padding:150px 183px 65px 181px;
 	text-align:left;
 	text-decoration:none;
 	text-transform:uppercase
@@ -891,16 +871,16 @@ ul.categories li a:hover {
 }
 
 #natural_dog_food {
-	background-image:url(/img/shared/natural-dog-food.jpg);
+	background-image:url(../img/shared/natural-dog-food.jpg);
 	background-repeat:no-repeat;
-	height:186px;
-	padding:45px 0 0;
+	height:181px;
+	padding:50px 0 0;
 	text-align:center;
 	width:459px
 }
 
 #natural_dog_food a {
-	padding:155px 187px 60px 158px
+	padding:155px 187px 60px 180px;
 }
 
 #natural_dog_food:hover span,#natural_dog_food:hover p,#natural_dog_food a:hover {
@@ -911,16 +891,16 @@ ul.categories li a:hover {
 }
 
 #natural_cat_food {
-	background-image:url(/img/shared/natural-cat-food.jpg);
+	background-image:url(../img/shared/natural-cat-food.jpg);
 	background-repeat:no-repeat;
-	height:186px;
-	padding:45px 0 0;
+	height:181px;
+	padding:50px 0 0;
 	text-align:center;
 	width:461px
 }
 
 #natural_cat_food a {
-	padding:155px 185px 60px 158px
+	padding:155px 185px 60px 183px;
 }
 
 #natural_cat_food:hover span,#natural_cat_food:hover p,#natural_cat_food a:hover {
@@ -931,7 +911,7 @@ ul.categories li a:hover {
 }
 
 #snack_box {
-	background-image:url(/img/shared/snacks.jpg);
+	background-image:url(../img/shared/snacks.jpg);
 	background-repeat:no-repeat;
 	height:181px;
 	padding:50px 0 0;
@@ -945,7 +925,7 @@ ul.categories li a:hover {
 	font-style:italic;
 	font-weight:700;
 	line-height:29px;
-	padding:155px 185px 60px 165px;
+	padding:155px 185px 60px 183px;
 	text-align:left;
 	text-decoration:none;
 	text-transform:uppercase
@@ -959,17 +939,16 @@ ul.categories li a:hover {
 }
 
 #snack_family {
-	background-image:url(/img/snacks/snack-family.jpg);
+	background-image:url(../img/snacks/snack-family.jpg);
 	background-repeat:no-repeat;
-	background-position: top left;
-	height: 50px;
-	padding: 260px 10px 10px 10px;
+	height:252px;
+	padding:0;
 	text-align:center;
-	width:441px
+	width:461px
 }
 
 #ingredient_dictionary {
-	background-image:url(/img/shared/ingredient-dictionary.jpg);
+	background-image:url(../img/shared/ingredient-dictionary.jpg);
 	background-repeat:no-repeat;
 	height:103px;
 	padding-right:185px;
@@ -979,13 +958,13 @@ ul.categories li a:hover {
 
 #ingredient_dictionary a {
 	color:#fff;
-	display:block;
+	display: block;
 	font-family:Georgia,sans-serif;
 	font-size:18px;
-	height:60px;
+	height: 60px;
 	line-height:22px;
-	padding:20px 165px 25px 27px;
-	width:260px
+	padding: 20px 165px 25px 27px;
+	width: 260px;
 }
 
 #ingredient_dictionary a span {
@@ -1015,17 +994,18 @@ ul.categories li a:hover {
 	text-transform:uppercase
 }
 
-#dog_video, #cat_video {
+#cat_video {
+	background-image:url(../img/shared/cheryl-video.jpg);
+	background-repeat:no-repeat;
 	height:252px;
-	margin-bottom: 65px;
 	width:449px
 }
 
 #large_promo {
-	background-image:url(/img/shared/save-now-promo.png);
+	background-image:url(../img/shared/save-now-promo.png);
 	background-repeat:no-repeat;
-	height:99px;
-	padding:104px 170px 0 0;
+	height:119px;
+	padding:84px 170px 0 0;
 	text-align:center;
 	white-space:nowrap;
 	width:290px
@@ -1038,7 +1018,7 @@ ul.categories li a:hover {
 }
 
 #large_promo a {
-	padding:100px 200px 45px 30px
+	padding:120px 200px 30px 30px
 }
 
 #large_promo span {
@@ -1072,63 +1052,36 @@ ul.categories li a:hover {
 }
 
 /*ul.no {
-
 	background-color: #e8e2e0;
-
 	height: 9px;
-
 	margin-left: 243px;
-
 	padding: 18px;
-
 	width: 630px;
-
 }
-
 ul.no li {
-
 	border-right: 1px solid #c8be46;
-
 	color:#c8be46;
-
 	float: left;
-
 	font-family:brandon-grotesque,sans-serif;
-
 	font-size:14px;
-
 	font-style:normal;
-
 	font-weight:900;
-
 	line-height:14px;
-
 	padding-left:14px;
-
 	padding-right: 14px;
-
 	text-transform:uppercase
-
 }
-
 ul.no li.first {
-
 	padding-left: 0;
-
 }
-
 ul.no li.last {
-
 	border-right: none;
-
 	padding-right: 0;
-
 }*/
 /* =Sidebar
-
 --------------------------------*/
 #sidebar_ingredient_dictionary {
-	background-image:url(/img/sidebar/sidebar-ingredient-dictionary.jpg);
+	background-image:url(../img/sidebar/sidebar-ingredient-dictionary.jpg);
 	background-repeat:no-repeat;
 	height:128px;
 	margin-bottom:20px;
@@ -1138,7 +1091,7 @@ ul.no li.last {
 
 #sidebar_ingredient_dictionary a {
 	color:#fff;
-	display:block;
+	display: block;
 	font-family:Georgia,sans-serif;
 	font-size:18px;
 	height:98px;
@@ -1147,7 +1100,7 @@ ul.no li.last {
 	width:279px
 }
 
-#sidebar_ingredient_dictionary a span {
+#sidebar_ingredient_dictionary a span{
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
 	font-size:20px;
@@ -1165,7 +1118,7 @@ ul.no li.last {
 }
 
 #sidebar_natural_cat_food {
-	background-image:url(/img/sidebar/sidebar-natural-cat-food.jpg);
+	background-image:url(../img/sidebar/sidebar-natural-cat-food.jpg);
 	background-repeat:no-repeat;
 	height:128px;
 	margin-bottom:20px;
@@ -1174,7 +1127,7 @@ ul.no li.last {
 }
 
 #sidebar_natural_dog_food {
-	background-image:url(/img/sidebar/sidebar-natural-dog-food.jpg);
+	background-image:url(../img/sidebar/sidebar-natural-dog-food.jpg);
 	background-repeat:no-repeat;
 	height:128px;
 	margin-bottom:8px;
@@ -1183,7 +1136,7 @@ ul.no li.last {
 }
 
 #sidebar_healthy_snacks {
-	background-image:url(/img/sidebar/sidebar-healthy-snacks.jpg);
+	background-image:url(../img/sidebar/sidebar-healthy-snacks.jpg);
 	background-repeat:no-repeat;
 	height:128px;
 	margin-bottom:20px;
@@ -1191,33 +1144,20 @@ ul.no li.last {
 	width:279px
 }
 
-#sidebar_healthy_snacks a {
+#sidebar_healthy_snacks a,#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
 	color:#fff;
-	display:block;
+	display: block;
 	font-family:brandon-grotesque,sans-serif;
 	font-size:20px;
 	font-style:normal;
 	font-weight:900;
-	height:84px;
+	height: 84px;
 	line-height:22px;
 	padding-top:44px;
 	text-transform:uppercase;
-	width:279px
+	width: 279px;
 }
 
-#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
-	color:#fff;
-	display:block;
-	font-family:brandon-grotesque,sans-serif;
-	font-size:20px;
-	font-style:normal;
-	font-weight:900;
-	height:94px;
-	line-height:22px;
-	padding-top:34px;
-	text-transform:uppercase;
-	width:279px
-}
 
 #sidebar_healthy_snacks a:hover,#sidebar_natural_cat_food a:hover,#sidebar_natural_dog_food a:hover,#sidebar_healthy_snacks a:hover span,#sidebar_natural_cat_food a:hover span,#sidebar_natural_dog_food a:hover span {
 	color:#726659;
@@ -1227,7 +1167,7 @@ ul.no li.last {
 }
 
 #sidebar_promo {
-	background-image:url(/img/sidebar/sidebar-promo.png);
+	background-image:url(../img/sidebar/sidebar-promo.png);
 	background-repeat:no-repeat;
 	height:120px;
 	padding-top:38px;
@@ -1260,7 +1200,6 @@ ul.no li.last {
 }
 
 /* =Content Tabs
-
 --------------------------------*/
 ul.tabs {
 	margin-top:15px;
@@ -1276,7 +1215,7 @@ ul.tabs li {
 }
 
 ul.tabs li a.current,ul.tabs li a:hover {
-	background-image:url(/img/shared/tab-active.jpg);
+	background-image:url(../img/shared/tab-active.jpg);
 	background-repeat:no-repeat;
 	color:#e7ece1;
 	height:49px;
@@ -1287,7 +1226,7 @@ ul.tabs li a.current,ul.tabs li a:hover {
 }
 
 ul.tabs a {
-	background-image:url(/img/shared/tab.jpg);
+	background-image:url(../img/shared/tab.jpg);
 	background-repeat:no-repeat;
 	color:#58493a;
 	font-family:Georgia;
@@ -1327,7 +1266,6 @@ ul.tabs a.current,ul.tabs a.current:hover,ul.tabs li.current a {
 }
 
 /* =Main Scrollable Items
-
 --------------------------------*/
 .scrollable .items {
 	width:20000em;
@@ -1360,7 +1298,7 @@ ul.tabs a.current,ul.tabs a.current:hover,ul.tabs li.current a {
 }
 
 a.browse {
-	background-image:url(/img/shared/product-arrows.png);
+	background-image:url(../img/shared/product-arrows.png);
 	background-repeat:no-repeat;
 	clear:both;
 	cursor:pointer;
@@ -1394,9 +1332,7 @@ a.disabled {
 }
 
 /*.scrollable a {
-
 	white-space: nowrap;
-
 }*/
 .scrollable a:hover {
 	color:#bfb2a3;
@@ -1406,7 +1342,6 @@ a.disabled {
 }
 
 /* =Shared Product Content
-
 --------------------------------*/
 #content.natural_cat .product_content,#content.natural_dog .product_content {
 /*height:622px;*/
@@ -1415,13 +1350,8 @@ a.disabled {
 	width:940px
 }
 
-#content.natural_cat .product_content p, #content.natural_dog .product_content p {
-    *margin-left:235px;
-    width: 625px;
-}
-
 #content.snacks .snack_content {
-	height:770px;
+	height:750px;
 	position:relative;
 	overflow:hidden;
 	width:940px
@@ -1434,7 +1364,7 @@ a.disabled {
 }
 
 #content.home a.arrows,#content.natural_cat a.arrows,#content.natural_dog a.arrows,#content.snacks a.arrows,#content.our_story a.arrows {
-	background-image:url(/img/shared/slideshow-arrows.png);
+	background-image:url(../img/shared/slideshow-arrows.png);
 	background-repeat:no-repeat;
 	clear:both;
 	cursor:pointer;
@@ -1465,7 +1395,6 @@ a.disabled {
 }
 
 /* =Content Home
-
 --------------------------------*/
 #content.home .featured {
 	height:528px;
@@ -1485,8 +1414,8 @@ a.disabled {
 	width:9999em
 }
 
-#home_slider h3,#home_slider h5 a,#home_slider p {
-	color:#fff
+#home_slider h3, #home_slider h5 a, #home_slider p {
+	color: #fff;
 }
 
 #home_slider_nav {
@@ -1506,7 +1435,7 @@ a.disabled {
 }
 
 #home_slider .slide1 {
-	background-image:url(/img/home/slide1.jpg);
+	background-image:url(../img/home/slide1.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:331px;
@@ -1520,7 +1449,7 @@ a.disabled {
 }
 
 #home_slider .slide2 {
-	background-image:url(/img/home/slide2.jpg);
+	background-image:url(../img/home/slide2.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:331px;
@@ -1536,7 +1465,7 @@ a.disabled {
 }
 
 #home_slider .slide3 {
-	background-image:url(/img/home/slide3.jpg);
+	background-image:url(../img/home/slide3.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:388px;
@@ -1551,7 +1480,7 @@ a.disabled {
 }
 
 #home_slider .slide4 {
-	background-image:url(/img/home/slide4.jpg);
+	background-image:url(../img/home/slide4.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:358px;
@@ -1565,18 +1494,8 @@ a.disabled {
 	float:right
 }
 
-#home_slider .slide4 p a {
-    color: #fff;
-    text-decoration: underline;
-}
-#home_slider .slide4 p a:hover {
-    color: #58493A;
-    transition:all .25s ease-in-out;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out
-}
 .home_tab {
-	background-image:url(/img/home/callout.png);
+	background-image:url(../img/home/callout.png);
 	background-repeat:no-repeat;
 	color:#fff;
 	font-family:Georgia,sans-serif;
@@ -1592,7 +1511,7 @@ a.disabled {
 }
 
 .home_tab:hover {
-	background-image:url(/img/home/callout-active.png);
+	background-image:url(../img/home/callout-active.png);
 	background-repeat:no-repeat;
 	color:#fff;
 	height:93px;
@@ -1604,7 +1523,7 @@ a.disabled {
 }
 
 .home_tab:active {
-	background-image:url(/img/home/callout-active.png);
+	background-image:url(../img/home/callout-active.png);
 	background-repeat:no-repeat;
 	height:93px;
 	margin-top:-11px;
@@ -1614,7 +1533,7 @@ a.disabled {
 }
 
 .home_tab.active {
-	background-image:url(/img/home/callout-selected.png);
+	background-image:url(../img/home/callout-selected.png);
 	background-repeat:no-repeat;
 	height:93px;
 	margin-top:-11px;
@@ -1625,10 +1544,9 @@ a.disabled {
 }
 
 /* =Content Dogs
-
 --------------------------------*/
 #content.dogs .banner #banner_image {
-	background-image:url(/img/dogs/dog-banner.jpg);
+	background-image:url(../img/dogs/dog-banner.jpg);
 	background-repeat:no-repeat;
 	height:353px;
 	padding:174px 346px 0 47px;
@@ -1639,9 +1557,10 @@ a.disabled {
 	width:940px
 }
 
-#content.dogs .banner h3,#content.dogs .banner p {
+#content.dogs .banner h3, #content.dogs .banner p {
 	color:#fff;
-}
+	text-shadow: 1px 1px 1px #000;
+} 
 
 #content.dogs h1 {
 	font-size:14px;
@@ -1654,14 +1573,9 @@ a.disabled {
 	margin-top:250px
 }
 
-#content.dogs h6 {
-	font-size:15px;
-	line-height:24px;
-	margin-bottom:10px;
-	margin-top:10px
-}
-#content.dogs .banner h3,#content.dogs .banner p {
-	color:#fff;
+#content.dogs .banner h3, #content.dogs .banner p {
+	color#fff;
+	text-shadow: 1px 1px 1px #000;
 }
 
 #content.dogs .ingredients {
@@ -1673,9 +1587,7 @@ a.disabled {
 }
 
 /* =Content Natural Dry Dog Food
-
 --------------------------------*/
-
 #content.natural_dog .banner {
 	height:622px;
 	width:940px
@@ -1695,9 +1607,7 @@ a.disabled {
 #content.natural_dog h2 {
 	font-size:28px;
 	line-height:34px;
-	margin-bottom:0;
-	white-space: normal;
-	word-wrap: break-word;
+	margin-bottom:0
 }
 
 #content.natural_dog h6 {
@@ -1722,6 +1632,7 @@ a.disabled {
 
 #content.natural_dog .leftcol {
 	clear:both;
+	float:none:
 }
 
 #content.natural_dog .satisfaction {
@@ -1729,12 +1640,10 @@ a.disabled {
 	margin-top:20px
 }
 
-
 /* =Content Cats
-
 --------------------------------*/
 #content.cats .banner #banner_image {
-	background-image:url(/img/cats/cat-banner.jpg);
+	background-image:url(../img/cats/cat-banner.jpg);
 	background-repeat:no-repeat;
 	height:353px;
 	padding:174px 346px 0 47px;
@@ -1745,8 +1654,9 @@ a.disabled {
 	width:940px
 }
 
-#content.cats .banner h3,#content.cats .banner p {
+#content.cats .banner h3, #content.cats .banner p {
 	color:#fff;
+	text-shadow: 1px 1px 1px #000;
 }
 
 #content.cats h1 {
@@ -1760,12 +1670,6 @@ a.disabled {
 	margin-top:250px
 }
 
-#content.cats h6 {
-	font-size:15px;
-	line-height:24px;
-	margin-bottom:10px;
-	margin-top:10px
-}
 #content.cats .ingredients {
 	margin:20px 0
 }
@@ -1775,7 +1679,6 @@ a.disabled {
 }
 
 /* =Content Natural Cat Food
-
 --------------------------------*/
 #content.natural_cat .banner {
 	height:622px;
@@ -1797,9 +1700,7 @@ a.disabled {
 #content.natural_cat h2 {
 	font-size:28px;
 	line-height:34px;
-	margin-bottom:0;
-	white-space: normal;
-	word-wrap: break-word;
+	margin-bottom:0
 }
 
 #content.natural_cat h6 {
@@ -1825,6 +1726,7 @@ a.disabled {
 
 #content.natural_cat .leftcol {
 	clear:both;
+	float:none:
 }
 
 #content.natural_cat .satisfaction {
@@ -1833,7 +1735,6 @@ a.disabled {
 }
 
 /* =Content Holistic Living
-
 --------------------------------*/
 #content.holistic .banner {
 	height:550px;
@@ -1841,7 +1742,7 @@ a.disabled {
 }
 
 #content.holistic .banner #banner_image {
-	background-image:url(/img/health/holistic-banner.jpg);
+	background-image:url(../img/health/holistic-banner.jpg);
 	background-repeat:no-repeat;
 	height:320px;
 	margin-bottom:20px;
@@ -1866,7 +1767,6 @@ a.disabled {
 }
 
 /* =Content Snacks
-
 --------------------------------*/
 #content.snacks .banner {
 	height:550px;
@@ -1874,7 +1774,7 @@ a.disabled {
 }
 
 #content.snacks .banner #banner_image {
-	background-image:url(/img/snacks/snack-banner.jpg);
+	background-image:url(../img/snacks/snack-banner.jpg);
 	background-repeat:no-repeat;
 	height:353px;
 	margin-bottom:20px;
@@ -1882,9 +1782,11 @@ a.disabled {
 	width:547px
 }
 
-#content.snacks .banner h3,#content.snacks .banner p {
+#content.snacks .banner h3, #content.snacks .banner p {
 	color:#fff;
+	text-shadow: 1px 1px 1px #000;
 }
+
 
 #content.snacks h1 {
 	color:#58493A;
@@ -1910,7 +1812,7 @@ a.disabled {
 }
 
 #content.snacks h4 {
-	color:#726659;
+	color:#58493A;
 	font-size:15px;
 	line-height:24px;
 	margin-bottom:10px
@@ -1950,7 +1852,7 @@ ul.tabs_snack li {
 }
 
 ul.tabs_snack li a.current,ul.tabs_snack li a:hover {
-	background-image:url(/img/shared/tab-active-snacks.jpg);
+	background-image:url(../img/shared/tab-active-snacks.jpg);
 	background-repeat:no-repeat;
 	color:#e7ece1;
 	height:49px;
@@ -1961,7 +1863,7 @@ ul.tabs_snack li a.current,ul.tabs_snack li a:hover {
 }
 
 ul.tabs_snack a {
-	background-image:url(/img/shared/tab.jpg);
+	background-image:url(../img/shared/tab.jpg);
 	background-repeat:no-repeat;
 	color:#58493a;
 	font-family:Georgia;
@@ -1980,7 +1882,7 @@ ul.tabs_snack a {
 }
 
 ul.tabs_snack li a.current.proteins,ul.tabs_snack li a.proteins:hover {
-	background-image:url(/img/shared/tab-active-snacks.jpg);
+	background-image:url(../img/shared/tab-active-snacks.jpg);
 	background-repeat:no-repeat;
 	color:#e7ece1;
 	height:63px;
@@ -1991,7 +1893,7 @@ ul.tabs_snack li a.current.proteins,ul.tabs_snack li a.proteins:hover {
 }
 
 ul.tabs_snack a.proteins {
-	background-image:url(/img/shared/tab.jpg);
+	background-image:url(../img/shared/tab.jpg);
 	background-repeat:no-repeat;
 	color:#58493a;
 	font-family:Georgia;
@@ -2019,19 +1921,14 @@ ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a
 }
 
 /* =Content Health & Nutrition
-
 --------------------------------*/
-#content.health_and_nutrition .fullcol {
-	width:940px
-}
-
 #content.health_and_nutrition .banner {
 	height:528px;
 	width:940px
 }
 
 #content.health_and_nutrition .banner #banner_image {
-	background-image:url(/img/health/health-banner.jpg);
+	background-image:url(../img/health/health-banner.jpg);
 	background-repeat:no-repeat;
 	height:487px;
 	padding:40px 375px 0 50px;
@@ -2079,12 +1976,12 @@ ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a
 }
 
 #content.health_and_nutrition ul.tabs li a.current,#content.health_and_nutrition ul.tabs li a:hover {
-	background-image:url(/img/health/tab-active.jpg);
+	background-image:url(../img/health/tab-active.jpg);
 	width:194px
 }
 
 #content.health_and_nutrition ul.tabs a {
-	background-image:url(/img/health/tab.jpg);
+	background-image:url(../img/health/tab.jpg);
 	background-repeat:no-repeat;
 	width:194px
 }
@@ -2096,17 +1993,15 @@ ul.tabs_snack a.current,ul.tabs_snack a.current:hover,ul.tabs_snack li.current a
 }
 
 /* =Content Ingredient Dictionary
-
 --------------------------------*/
 ul#ingredients {
-	background-image:url(http://migratefiles.com/ccr/bg-ingredient-list.jpg);
+	background-image:url(../img/health/bg-ingredient-list.jpg);
 	background-repeat:repeat-y;
 	float:left;
-	height:400px;
+	height:470px;
 	overflow:hidden;
 	overflow-y:scroll;
-	position: absolute;
-	width:210px
+	width:123px
 }
 
 ul#ingredients li {
@@ -2114,7 +2009,7 @@ ul#ingredients li {
 	list-style:none;
 	margin-bottom:4px;
 	margin-top:4px;
-	width:210px
+	width:123px
 }
 
 ul#ingredients li a.current {
@@ -2147,90 +2042,55 @@ ul#ingredients a:active {
 .list div {
 	display:block;
 	height:320px;
-	margin-left: 55px;
 	padding:0;
-	width:420px
+	width:440px
 }
 
 .ingredient_dictionary {
 	float:right;
-	height:450px;
-	width:420px
+	height:700px;
+	overflow:hidden;
+	width:440px
 }
-
-
 
 #content.health_and_nutrition .ingredient_dictionary h1 {
 	margin-top:0
 }
 
 /*#ingredient_list {
-
-	background-image:url(/img/health/bg-ingredient-list.jpg);
-
+	background-image:url(../img/health/bg-ingredient-list.jpg);
 	background-repeat:repeat-y;
-
 	display:block;
-
 	float:left;
-
 	height:470px;
-
 	margin-right:0px;
-
 	width:123px
-
 }
-
-
 
 #ingredient_list ul {
-
 	height:470px;
-
 	padding-top:5px;
-
 	overflow:hidden;
-
 	overflow-y:scroll;
-
 	width:123px
-
 }
-
-
 
 #ingredient_list ul li {
-
 	color:#726659;
-
 	cursor:pointer;
-
 	font-family:Georgia,sans-serif;
-
 	font-size:15px;
-
 	line-height:29px;
-
 	list-style:none;
-
 	padding-left:15px;
-
 	text-align:left;
-
 	text-decoration:none
-
 }
 
-
-
 #ingredient_list ul li:active {
-
 	background-color:#e8e2e0
-
 }*/
 /* =Content Our Story
-
 --------------------------------*/
 #content.our_story .featured {
 	height:528px;
@@ -2280,7 +2140,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide1 {
-	background-image:url(/img/story/cheryl-slide.jpg);
+	background-image:url(../img/story/cheryl-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2288,7 +2148,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide2 {
-	background-image:url(/img/story/ellen-slide.jpg);
+	background-image:url(../img/story/ellen-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2296,7 +2156,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide3 {
-	background-image:url(/img/story/todd-slide.jpg);
+	background-image:url(../img/story/todd-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2304,7 +2164,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide4 {
-	background-image:url(/img/story/carolyn-slide.jpg);
+	background-image:url(../img/story/carolyn-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2312,7 +2172,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide5 {
-	background-image:url(/img/story/better-way-slide.jpg);
+	background-image:url(../img/story/better-way-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2320,7 +2180,7 @@ ul#ingredients a:active {
 }
 
 #our_story_slider .slide6 {
-	background-image:url(/img/story/our-plants-slide.jpg);
+	background-image:url(../img/story/our-plants-slide.jpg);
 	background-repeat:no-repeat;
 	float:left;
 	height:528px;
@@ -2328,7 +2188,7 @@ ul#ingredients a:active {
 }
 
 .our_story_tab {
-	background-image:url(/img/story/callout.png);
+	background-image:url(../img/story/callout.png);
 	background-repeat:no-repeat;
 	color:#fff;
 	font-family:Georgia,sans-serif;
@@ -2344,7 +2204,7 @@ ul#ingredients a:active {
 }
 
 .our_story_tab:hover {
-	background-image:url(/img/story/callout-active.png);
+	background-image:url(../img/story/callout-active.png);
 	background-repeat:no-repeat;
 	color:#fff;
 	height:93px;
@@ -2356,7 +2216,7 @@ ul#ingredients a:active {
 }
 
 .our_story_tab:active {
-	background-image:url(/img/story/callout-active.png);
+	background-image:url(../img/story/callout-active.png);
 	background-repeat:no-repeat;
 	height:93px;
 	margin-top:-11px;
@@ -2366,7 +2226,7 @@ ul#ingredients a:active {
 }
 
 .our_story_tab.active {
-	background-image:url(/img/story/callout-selected.png);
+	background-image:url(../img/story/callout-selected.png);
 	background-repeat:no-repeat;
 	height:93px;
 	margin-top:-11px;
@@ -2377,7 +2237,6 @@ ul#ingredients a:active {
 }
 
 /* =Content Our Story - FAQ
-
 --------------------------------*/
 ul.faqs {
 	list-style:none
@@ -2389,13 +2248,13 @@ ul.faqs li {
 }
 
 ul.faqs h2 {
-	background:url(/img/story/faq-arrow-open.png) top right no-repeat;
+	background:url(../img/story/faq-arrow-open.png) top right no-repeat;
 	cursor:pointer;
 	padding-right:30px
 }
 
 ul.faqs h2.toggle {
-	background:url(/img/story/faq-arrow-closed.png) top right no-repeat
+	background:url(../img/story/faq-arrow-closed.png) top right no-repeat
 }
 
 ul.faqs p {
@@ -2405,7 +2264,6 @@ ul.faqs p {
 }
 
 /* =Content What's Happening
-
 --------------------------------*/
 #content .articles h2,#content .articles p {
 	width:520px
@@ -2425,17 +2283,14 @@ ul.faqs p {
 }
 
 /* =Footer
-
 --------------------------------*/
 #footer {
-	background-image:url(/img/shared/footer.jpg);
+	background-image:url(../img/shared/footer.jpg);
 	background-repeat:repeat-x;
 	clear:both;
 	height:423px;
-	*height:398px;
 	padding-top:75px;
-	*padding-top:100px;
-	*position: relative;
+	*padding-top:75px;
 	width:100%
 }
 
@@ -2512,7 +2367,7 @@ ul.faqs p {
 }
 
 #footer #newsletter input[type="text"] {
-	background-image:url(/img/shared/footer-textfield.jpg);
+	background-image:url(../img/shared/footer-textfield.jpg);
 	background-repeat:no-repeat;
 	border-bottom:1px solid #c7d4b3;
 	border-left:1px solid #707962;
@@ -2550,8 +2405,7 @@ ul.faqs p {
 	margin:0;
 	text-transform:uppercase;
 	vertical-align:top;
-	width:109px;
-	-webkit-appearance:none;
+	width:109px
 }
 
 #footer #newsletter input[type="submit"]:hover {
@@ -2612,7 +2466,6 @@ ul.faqs p {
 }
 
 /* =Classes
-
 --------------------------------*/
 .align_left {
 	display:block;
@@ -2660,7 +2513,7 @@ ul.faqs p {
 .float_left_dry_cat {
 	display:block;
 	float:left;
-	margin-right:15px;
+	margin-right:15px
 }
 
 .float_left_snacks {
@@ -2670,17 +2523,10 @@ ul.faqs p {
 	margin-right:15px
 }
 
-.float_left_snack_trail_mix {
+.float_left_snack_variety {
 	display:block;
 	float:left;
-	margin-bottom:1530px;
-	margin-right:15px
-}
-
-.float_left_snack_western_grill {
-	display:block;
-	float:left;
-	margin-bottom:2100px;
+	margin-bottom:1850px;
 	margin-right:15px
 }
 
@@ -2709,7 +2555,7 @@ ul.faqs p {
 .large_white_text {
 	color:#fff;
 	font-family:brandon-grotesque,sans-serif;
-	font-size:32px;
+	font-size:45px;
 	font-style:normal;
 	font-weight:900;
 	letter-spacing:.1em;
@@ -2848,9 +2694,6 @@ ul.faqs p {
 	margin-top:60px
 }
 
-.margintop75 {
-	margin-top:75px
-}
 .margintop85 {
 	margin-top:85px
 }
@@ -2876,58 +2719,4 @@ ul.faqs p {
 	line-height:18px;
 	margin-bottom:20px;
 	margin-top:10px
-}
-
-.tag_line {
-	line-height:18px;
-	margin-top:20px
-}
-
-.tag_line_snacks {
-	line-height:18px;
-	margin-bottom:20px;
-	margin-top:10px
-}
-
-/* lightbox stuff */
-.enlargable 
-{
-  cursor: hand;
-  cursor: pointer;
-}
-
-#overlay 
-{
-  position:fixed; /* keeps the lightbox window in the current viewport */
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:url(/img/shared/overlay.png) repeat;
-  text-align:center;
-  padding-top: 200px;
-}
-
-#lightbox 
-{
-  margin:0 auto;
-  background-color: #fff;
-  width: 500px;
-  box-shadow:0 0 25px #111;
-  -webkit-box-shadow:0 0 25px #111;
-  -moz-box-shadow:0 0 25px #111;
-  position: relative;
-}
-
-#lightbox img.close 
-{
-  position: absolute;
-  top: -5px;
-  right: -5px;
-}
-
-#lightbox img.product_lg {
-    max-width:480px;
-    max-height: 480px
-    
 }

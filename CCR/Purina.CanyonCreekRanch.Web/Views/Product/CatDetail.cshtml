@@ -1,5 +1,4 @@
 ﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
-@using System.Web.UI.WebControls
 @using Purina.CanyonCreekRanch.Common.Entities
 
 @section Meta {
@@ -26,7 +25,7 @@
         <!-- End Product Left Navigation -->
 
         <div class="product_content">
-          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_dry_cat enlargable" />
+          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_dry_cat" />
 
           <h2>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
 
@@ -81,18 +80,33 @@
           <!-- Begin Recognizably Real Content -->
 
           <div class="pane">
+            <!-- Begin Left Column -->
 
+            <div class="leftcol">
               @Html.Raw(Model.Recognizably)
+            </div><!-- End Left Column -->
+            <!-- Begin Right Column -->
 
+            <div class="rightcol"><img src="/img/shared/potatoes.jpg" /> <img src="/img/shared/eggs.jpg" /></div><!-- End Right Column -->
           </div><!-- End Recognizably Real Content -->
           <!-- Begin Our Guarantee Content -->
 
           <div class="pane">
+            <!-- Begin Left Column -->
 
+            <div class="leftcol">
+              <h6>GUARANTEED ANALYSIS</h6>
 
               @Html.Raw(Model.GuaranteeTable)
+            </div><!-- End Left Column -->
+            <!-- Begin Right Column -->
 
+            <div class="rightcol">
+            <h6>Our Better Way Guarantee</h6>
 
+            <p>If this food has not met your expectations, we will refund the amount of your purchase. Just send us the "Best Buy" date box and UPC from the bag with your original store receipt (with the price circled), your name, address and reason for return within 60 days of purchase.</p>
+            <h5><a href="/satisfaction-guarantee">LEARN MORE &#187;</a></h5>
+           <img src="/img/shared/satisfaction-guarantee.png" class="satisfaction" /></div><!-- End Right Column -->
           </div><!-- End Our Guarantee Content -->
           <!-- Begin Feeding Guideline Content -->
 
@@ -127,8 +141,9 @@
         <!-- Begin Right Column -->
 
         <div class="rightcol">
-        <div id="large_promo">
-            <span class="large_brown_text"><a href="@((string)TempData["coupon"])">TRY &amp; SAVE</a></span>
+          <div id="large_promo">
+            <p>Make the switch<br />
+            to a better pet food</p><span class="large_brown_text"><a href="#">TRY &amp; SAVE</a></span>
           </div>
         </div><!-- End Right Column -->
         <!-- Begin Clear Content -->

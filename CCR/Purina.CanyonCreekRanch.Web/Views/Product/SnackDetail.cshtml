@@ -26,30 +26,20 @@
         @Html.ActionLink(" ", ((Product)TempData["previous"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows left" })
         <!-- End Product Left Navigation -->
 
-        <div class="@(Model.ResourcePrefix == "trail-mix-for-dogs" || Model.ResourcePrefix == "western-grill" ? "snack_content_variety" : "snack_content")">
-        @if (Model.ResourcePrefix == "trail-mix-for-dogs") {
-          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snack_trail_mix" />
-          } else if (Model.ResourcePrefix == "western-grill") {
-           <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snack_western_grill" />
-          } else {
-            <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snacks" />
-          }
-
+        <div class="snack_content">
+          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_snacks" />
 
           <h2>@Html.DisplayFor(model => model.Title)</h2>
           <h1>@Html.Raw(Model.TagLine)</h1>
 
           @Html.Raw(Model.Description)
 
-          @if (Model.GuaranteeTable.Length > 0) {
-            <h6>GUARANTEED ANALYSIS:</h6>
-            @Html.Raw(Model.GuaranteeTable)
-           }
-	
-          @if (Model.Ingredients.Length > 0) {
-           <h6>Ingredients:</h6>
-           @Html.Raw(Model.Ingredients)
-          }
+          <h6>GURANTEED ANALYSIS:</h6>
+          @Html.Raw(Model.GuaranteeTable)
+
+          <h6>Ingredients:</h6>
+
+          @Html.Raw(Model.Ingredients)
 
           <h6>DAILY MAXIMUM NUMBER OF PIECE(S) BASED ON YOUR DOG'S WEIGHT</h6>
 
@@ -66,7 +56,6 @@
         <div class="leftcol">
           <div id="natural_dog_food">
             <span class="large_white_text">NATURAL DOG FOOD</span><br />
-            <span class="small_white_text_box">with vitamins and minerals</span>
             <p>High quality ingredients you want with none that you don't, <br />so you can see a real difference in your dog.</p><a href="/natural-food-for-dogs">LEARN MORE &#187;</a>
           </div>
         </div><!-- End Left Column -->
@@ -74,7 +63,8 @@
 
         <div class="rightcol">
           <div id="large_promo">
-            <span class="large_brown_text"><a href="@((string)TempData["coupon"])">TRY &amp; SAVE</a></span>
+            <p>Make the switch<br />
+            to a better pet food</p><span class="large_brown_text"><a href="#">TRY &amp; SAVE</a></span>
           </div>
         </div><!-- End Right Column -->
         <!-- Begin Clear Content -->

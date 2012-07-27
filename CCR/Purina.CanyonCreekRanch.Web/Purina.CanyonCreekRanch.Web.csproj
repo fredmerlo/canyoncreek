@@ -134,103 +134,72 @@
     <Content Include="img\home\slide4.jpg" />
     <Content Include="img\news\news-image.jpg" />
     <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-adults\breakdown.png" />
-    <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-adults\ingredients.png" />
-    <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-adults\product-lg.png" />
     <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-adults\product-sm.png" />
     <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-adults\product.png" />
     <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-kittens\breakdown.png" />
-    <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-kittens\ingredients.png" />
-    <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-kittens\product-lg.png" />
     <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-kittens\product-sm.png" />
     <Content Include="img\products\cat-canned\chicken-brown-rice-recipe-for-kittens\product.png" />
     <Content Include="img\products\cat-canned\cod-shrimp-recipe\breakdown.png" />
-    <Content Include="img\products\cat-canned\cod-shrimp-recipe\ingredients.png" />
-    <Content Include="img\products\cat-canned\cod-shrimp-recipe\product-lg.png" />
     <Content Include="img\products\cat-canned\cod-shrimp-recipe\product-sm.png" />
     <Content Include="img\products\cat-canned\cod-shrimp-recipe\product.png" />
     <Content Include="img\products\cat-canned\salmon-brown-rice-recipe\breakdown.png" />
-    <Content Include="img\products\cat-canned\salmon-brown-rice-recipe\ingredients.png" />
-    <Content Include="img\products\cat-canned\salmon-brown-rice-recipe\product-lg.png" />
     <Content Include="img\products\cat-canned\salmon-brown-rice-recipe\product-sm.png" />
     <Content Include="img\products\cat-canned\salmon-brown-rice-recipe\product.png" />
     <Content Include="img\products\cat-canned\trout-catfish-recipe\breakdown.png" />
-    <Content Include="img\products\cat-canned\trout-catfish-recipe\ingredients.png" />
-    <Content Include="img\products\cat-canned\trout-catfish-recipe\product-lg.png" />
     <Content Include="img\products\cat-canned\trout-catfish-recipe\product-sm.png" />
     <Content Include="img\products\cat-canned\trout-catfish-recipe\product.png" />
     <Content Include="img\products\cat-canned\turkey-wild-rice-recipe\breakdown.png" />
-    <Content Include="img\products\cat-canned\turkey-wild-rice-recipe\ingredients.png" />
-    <Content Include="img\products\cat-canned\turkey-wild-rice-recipe\product-lg.png" />
     <Content Include="img\products\cat-canned\turkey-wild-rice-recipe\product-sm.png" />
     <Content Include="img\products\cat-canned\turkey-wild-rice-recipe\product.png" />
     <Content Include="img\products\cat-dry\chicken-brown-rice-for-kittens\breakdown.png" />
     <Content Include="img\products\cat-dry\chicken-brown-rice-for-kittens\ingredients.png" />
-    <Content Include="img\products\cat-dry\chicken-brown-rice-for-kittens\product-lg.png" />
     <Content Include="img\products\cat-dry\chicken-brown-rice-for-kittens\product-sm.png" />
     <Content Include="img\products\cat-dry\chicken-brown-rice-for-kittens\product.png" />
     <Content Include="img\products\cat-dry\chicken-brown-rice-mix-for-adults\breakdown.png" />
     <Content Include="img\products\cat-dry\chicken-brown-rice-mix-for-adults\ingredients.png" />
-    <Content Include="img\products\cat-dry\chicken-brown-rice-mix-for-adults\product-lg.png" />
     <Content Include="img\products\cat-dry\chicken-brown-rice-mix-for-adults\product-sm.png" />
     <Content Include="img\products\cat-dry\chicken-brown-rice-mix-for-adults\product.png" />
     <Content Include="img\products\cat-dry\salmon-brown-rice-mix\breakdown.png" />
     <Content Include="img\products\cat-dry\salmon-brown-rice-mix\ingredients.png" />
-    <Content Include="img\products\cat-dry\salmon-brown-rice-mix\product-lg.png" />
     <Content Include="img\products\cat-dry\salmon-brown-rice-mix\product-sm.png" />
     <Content Include="img\products\cat-dry\salmon-brown-rice-mix\product.png" />
     <Content Include="img\products\dog-canned\beef-brown-rice-recipe\breakdown.png" />
-    <Content Include="img\products\dog-canned\beef-brown-rice-recipe\ingredients.png" />
-    <Content Include="img\products\dog-canned\beef-brown-rice-recipe\product-lg.png" />
     <Content Include="img\products\dog-canned\beef-brown-rice-recipe\product-sm.png" />
     <Content Include="img\products\dog-canned\beef-brown-rice-recipe\product.png" />
     <Content Include="img\products\dog-canned\chicken-brown-rice-recipe\breakdown.png" />
-    <Content Include="img\products\dog-canned\chicken-brown-rice-recipe\ingredients.png" />
-    <Content Include="img\products\dog-canned\chicken-brown-rice-recipe\product-lg.png" />
     <Content Include="img\products\dog-canned\chicken-brown-rice-recipe\product-sm.png" />
     <Content Include="img\products\dog-canned\chicken-brown-rice-recipe\product.png" />
     <Content Include="img\products\dog-canned\salmon-brown-rice-recipe\breakdown.png" />
-    <Content Include="img\products\dog-canned\salmon-brown-rice-recipe\ingredients.png" />
-    <Content Include="img\products\dog-canned\salmon-brown-rice-recipe\product-lg.png" />
     <Content Include="img\products\dog-canned\salmon-brown-rice-recipe\product-sm.png" />
     <Content Include="img\products\dog-canned\salmon-brown-rice-recipe\product.png" />
     <Content Include="img\products\dog-canned\turkey-barley-for-adults\breakdown.png" />
-    <Content Include="img\products\dog-canned\turkey-barley-for-adults\ingredients.png" />
-    <Content Include="img\products\dog-canned\turkey-barley-for-adults\product-lg.png" />
     <Content Include="img\products\dog-canned\turkey-barley-for-adults\product-sm.png" />
     <Content Include="img\products\dog-canned\turkey-barley-for-adults\product.png" />
     <Content Include="img\products\dog-canned\turkey-barley-recipe-for-puppies\breakdown.png" />
-    <Content Include="img\products\dog-canned\turkey-barley-recipe-for-puppies\ingredients.png" />
-    <Content Include="img\products\dog-canned\turkey-barley-recipe-for-puppies\product-lg.png" />
     <Content Include="img\products\dog-canned\turkey-barley-recipe-for-puppies\product-sm.png" />
     <Content Include="img\products\dog-canned\turkey-barley-recipe-for-puppies\product.png" />
     <Content Include="img\products\dog-dry\beef-barley-mix\breakdown.png" />
     <Content Include="img\products\dog-dry\beef-barley-mix\ingredients.png" />
-    <Content Include="img\products\dog-dry\beef-barley-mix\product-lg.png" />
     <Content Include="img\products\dog-dry\beef-barley-mix\product-sm.png" />
     <Content Include="img\products\dog-dry\beef-barley-mix\product.png" />
     <Content Include="img\products\dog-dry\chicken-brown-rice-mix\breakdown.png" />
     <Content Include="img\products\dog-dry\chicken-brown-rice-mix\ingredients.png" />
-    <Content Include="img\products\dog-dry\chicken-brown-rice-mix\product-lg.png" />
     <Content Include="img\products\dog-dry\chicken-brown-rice-mix\product-sm.png" />
     <Content Include="img\products\dog-dry\chicken-brown-rice-mix\product.png" />
     <Content Include="img\products\dog-dry\salmon-brown-rice-mix\breakdown.png" />
     <Content Include="img\products\dog-dry\salmon-brown-rice-mix\ingredients.png" />
-    <Content Include="img\products\dog-dry\salmon-brown-rice-mix\product-lg.png" />
     <Content Include="img\products\dog-dry\salmon-brown-rice-mix\product-sm.png" />
     <Content Include="img\products\dog-dry\salmon-brown-rice-mix\product.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults-7\breakdown.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults-7\ingredients.png" />
-    <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults-7\product-lg.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults-7\product-sm.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults-7\product.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults\breakdown.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults\ingredients.png" />
-    <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults\product-lg.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults\product-sm.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-adults\product.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-puppies\breakdown.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-puppies\ingredients.png" />
-    <Content Include="img\products\dog-dry\turkey-barley-mix-for-puppies\product-lg.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-puppies\product-sm.png" />
     <Content Include="img\products\dog-dry\turkey-barley-mix-for-puppies\product.png" />
     <Content Include="img\products\snacks\big-blast-pork-skin-twists\product-sm.png" />
@@ -291,10 +260,8 @@
     <Content Include="img\shared\blank.gif" />
     <Content Include="img\shared\buttons.png" />
     <Content Include="img\shared\carrot.jpg" />
-    <Content Include="img\shared\carrots.jpg" />
     <Content Include="img\shared\cheryl-video.jpg" />
     <Content Include="img\shared\chicken.jpg" />
-    <Content Include="img\shared\close.png" />
     <Content Include="img\shared\cows.jpg" />
     <Content Include="img\shared\eggs.jpg" />
     <Content Include="img\shared\eggs2.jpg" />
@@ -319,9 +286,7 @@
     <Content Include="img\shared\nav-snacks.png" />
     <Content Include="img\shared\nav-video-dog.jpg" />
     <Content Include="img\shared\nav-video.jpg" />
-    <Content Include="img\shared\overlay.png" />
     <Content Include="img\shared\peas-and-carrots.png" />
-    <Content Include="img\shared\peas.jpg" />
     <Content Include="img\shared\play-button.png" />
     <Content Include="img\shared\potatoes.jpg" />
     <Content Include="img\shared\product-arrows.png" />
@@ -331,12 +296,9 @@
     <Content Include="img\shared\seafood.jpg" />
     <Content Include="img\shared\slideshow-arrows.png" />
     <Content Include="img\shared\snacks.jpg" />
-    <Content Include="img\shared\spinach.jpg" />
     <Content Include="img\shared\tab-active-snacks.jpg" />
     <Content Include="img\shared\tab-active.jpg" />
     <Content Include="img\shared\tab.jpg" />
-    <Content Include="img\shared\todd-video.png" />
-    <Content Include="img\shared\turkeys.jpg" />
     <Content Include="img\shared\zucchini.jpg" />
     <Content Include="img\shared\zucchini.png" />
     <Content Include="img\shared\zucchini2.jpg" />
@@ -455,19 +417,13 @@
     <Content Include="Views\Product\SnackDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Companions.cshtml" />
+    <Content Include="Views\Shared\RetailerProgram.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Guarantee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Category\Category.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\PrivacyPolicy.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\Quotes.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
