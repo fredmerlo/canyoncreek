@@ -12,7 +12,25 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 {
   public class HomeController : Controller
   {
-    public ActionResult Index() { return View(); }
+    private void SetCouponData()
+    {
+        if (Session["guid"] == null)
+            Session.Add("guid", Guid.NewGuid().ToString());
+
+        var pin = ((string)Session["guid"]);
+        var code = 102270;
+
+        if (!TempData.ContainsKey("coupon"))
+            TempData.Add("coupon",
+                        "http://bricks.coupons.com/enable.asp?o=" + code + "&c=PR&p=" + pin + "&cpt=" +
+                        CouponEncode.EncodeCPT(pin, code));
+    }
+
+    public ActionResult Index()
+    {
+        SetCouponData();
+        return View();
+    }
 
     [ActionName("natural-food-for-cats")]
     public ActionResult NaturalFoodForCats() { return new TransferResult(new { controller = "Category", action = "Info", type = "cat" }); }
@@ -24,7 +42,11 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     public ActionResult Snacks() { return new TransferResult(new { controller = "Category", action = "Info", type = "snack" }); }
 
     [ActionName("holistic-living")]
-    public ActionResult HolisticLiving() { return View("HolisticLiving"); }
+    public ActionResult HolisticLiving()
+    {
+        SetCouponData();
+        return View("HolisticLiving");
+    }
 
     [ActionName("ingredient-dictionary")]
     public ActionResult IngredientDictionary() { return View("IngredientDictionary"); }
@@ -36,7 +58,11 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     public ActionResult OurStoryFaq() { return View("OurStoryFaq"); }
 
     [ActionName("health-and-nutrition")]
-    public ActionResult HealthAndNutrition() { return View("HealthAndNutrition"); }
+    public ActionResult HealthAndNutrition()
+    {
+        SetCouponData();
+        return View("HealthAndNutrition");
+    }
 
     [ActionName("find-a-retailer")]
     public ActionResult FindRetailser() { return View("FindRetailer"); }

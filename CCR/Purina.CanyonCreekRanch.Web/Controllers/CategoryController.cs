@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 using Purina.CanyonCreekRanch.Common.Entities;
+using Purina.CanyonCreekRanch.Common.Helpers;
 
 namespace Purina.CanyonCreekRanch.Web.Controllers
 {
@@ -42,11 +43,31 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     {
       try
       {
+        if (Session["guid"] == null)
+            Session.Add("guid", Guid.NewGuid().ToString());
+
         var classType = (int)Enum.GetValues(typeof(Category.Classifier))
            .Cast<Category.Classifier>().
            First(e => e.ToString().ToLower().Equals(type));
 
         var detailType = Enum.GetName(typeof(Category.Classifier), classType) + "Info";
+
+        var pin = ((string)Session["guid"]);
+        var code = 1;
+
+        switch (classType)
+        {
+            case 1:
+                code = 102276;
+                break;
+            default:
+                code = 102270;
+                break;
+        }
+
+        if (!TempData.ContainsKey("coupon"))
+            TempData.Add("coupon", "http://bricks.coupons.com/enable.asp?o=" + code + "&c=PR&p=" + pin + "&cpt=" + CouponEncode.EncodeCPT(pin, code));
+
 
         return View(detailType);
       }
