@@ -51,9 +51,11 @@
            @Html.Raw(Model.Ingredients)
           }
 
+          
+          @if (Model.FeedTable.Length > 0 {
           <h6>DAILY MAXIMUM NUMBER OF PIECE(S) BASED ON YOUR DOG'S WEIGHT</h6>
-
           @Html.Raw(Model.FeedTable)
+          }
 
           
         </div><!-- End Snack -->
