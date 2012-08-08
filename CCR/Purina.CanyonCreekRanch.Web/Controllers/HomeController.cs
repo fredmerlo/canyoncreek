@@ -100,8 +100,10 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
         string id = "canUser1";
         string pass = "canPass1";
+        string call = "dataext";
+        
+        string postData = "client_id=" + id + "&client_sec=" + pass + "&call=" + call + "&send_mail=" + email;
 
-        string postData = "client_id=" + id + "&client_sec=" + pass + "&send_mail=" + email;
         string urlEncodedPostData = HttpUtility.UrlEncode(postData);
 
         byte[] data = System.Text.Encoding.ASCII.GetBytes(urlEncodedPostData);

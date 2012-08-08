@@ -41,18 +41,18 @@
 
           @Html.Raw(Model.Description)
 
-          @if (Model.GuaranteeTable.Length > 0) {
+          @if (Model.GuaranteeTable != null && Model.GuaranteeTable.Length > 0) {
             <h6>GUARANTEED ANALYSIS:</h6>
             @Html.Raw(Model.GuaranteeTable)
            }
 	
-          @if (Model.Ingredients.Length > 0) {
+          @if (Model.Ingredients != null && Model.Ingredients.Length > 0) {
            <h6>Ingredients:</h6>
            @Html.Raw(Model.Ingredients)
           }
 
           
-          @if (Model.FeedTable.Length > 0 {
+          @if (Model.FeedTable != null && Model.FeedTable.Length > 0) {
           <h6>DAILY MAXIMUM NUMBER OF PIECE(S) BASED ON YOUR DOG'S WEIGHT</h6>
           @Html.Raw(Model.FeedTable)
           }

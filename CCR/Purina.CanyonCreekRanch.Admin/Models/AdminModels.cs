@@ -42,7 +42,6 @@ namespace Purina.CanyonCreekRanch.Admin.Models
     [DataType(DataType.MultilineText)]
     public string Description { get; set; }
     [AllowHtml]
-    [Required]
     [DataType(DataType.MultilineText)]
     public string Recognizably { get; set; }
     public int Id { get; set; }
