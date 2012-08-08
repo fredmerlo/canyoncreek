@@ -797,7 +797,7 @@ ul.list li {
 }
 
 ul.product_list {
-	margin-bottom:20px;
+	margin-bottom:30px;
 	white-space:normal
 }
 
@@ -2648,13 +2648,15 @@ ul.faqs p {
 .float_left_dry_dog {
 	display:block;
 	float:left;
-	margin-right:15px
+	margin-right:15px;
+	margin-bottom:15px;
 }
 
-.float_left_canned {
+.float_left_canned_dog {
 	display:block;
 	float:left;
-	margin-right:15px
+	margin-right:15px;
+	margin-bottom: 15px;
 }
 
 .float_left_dry_cat {

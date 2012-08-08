@@ -37,7 +37,11 @@
 
 
           <h2>@Html.DisplayFor(model => model.Title)</h2>
+          @if (Model.SubTitle != null && Model.SubTitle.Length > 0 ) {
+          <span class="small_brown_text">@Html.Raw(Model.SubTitle)</span>
+          }
           <h1>@Html.Raw(Model.TagLine)</h1>
+          
 
           @Html.Raw(Model.Description)
 
