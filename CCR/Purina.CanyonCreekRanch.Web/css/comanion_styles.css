@@ -1,0 +1,225 @@
+/************************************************************************
+ * Site: Canyon Creek Ranch Splash Page
+ * Author: Mesh, Tim Shelburn
+*************************************************************************/
+/* =Typography
+--------------------------------*/
+h1,h2 {
+    display:block
+}
+
+h1 a,h2 a {
+    color:#726659;
+    text-decoration:none
+}
+
+h1 {
+    color:#fff;
+    font-family:brandon-grotesque,sans-serif;
+    font-size:27px;
+    font-style:normal;
+    font-weight:900;
+    line-height:42px;
+    text-transform:uppercase
+}
+
+h2 {
+    color:#726659;
+    font-family:brandon-grotesque,sans-serif;
+    font-size:22px;
+    font-style:normal;
+    font-weight:900;
+    letter-spacing:.1em;
+    line-height:22px;
+    margin:12px 0;
+    text-transform:uppercase
+}
+
+p {
+    color:#726659;
+    font-family:Georgia,sans-serif;
+    font-size:14px;
+    font-style:normal;
+    line-height:22px;
+    margin-bottom:10px
+}
+
+a {
+    color:#58493a;
+    text-decoration:none
+}
+
+sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    top:-.5em
+}
+
+/* =Structure
+--------------------------------*/
+body {
+    background-color:#eeece0;
+    width:100%
+}
+
+#container {
+/*background-image:url(../img/shared/background.jpg);
+    background-position:bottom left;
+    background-repeat:repeat-x*/
+}
+
+.wrap {
+    height:100%;
+    margin:0 auto;
+    position:relative;
+    width:940px
+}
+
+/* =Header
+--------------------------------*/
+#header {
+    background-image:url(../img/shared/header-sm.jpg);
+    background-repeat:repeat-x;
+    height:105px;
+    position:relative;
+    top:0;
+    width:100%;
+    z-index:10
+}
+
+#header .logo {
+    left:0;
+    position:relative;
+    top:17px
+}
+
+/* =Content
+--------------------------------*/
+#content {
+    height:100%;
+    width:100%
+}
+
+#content.home {
+    height: 250px;
+    width:100%
+}
+
+#content.contact {
+    height:1350px;
+    width:100%
+}
+
+#content.privacy {
+    height:2100px;
+    width:100%
+}
+
+#content.terms {
+    height:3950px;
+    width:100%
+}
+
+#content.companions {
+    height: 1300px;
+    width:100%
+}
+
+.fullcol {
+    width:940px
+}
+
+
+
+#content.home .featured {
+    height:528px;
+    overflow:hidden;
+    position:relative;
+    width:940px
+}
+
+#content.home p {
+    color:#fff;
+    font-family:Georgia,sans-serif;
+    font-size:14px;
+    font-style:normal;
+    line-height:22px;
+    margin-bottom:10px
+}
+
+#home_slider {
+    height:528px;
+    overflow:hidden;
+    position:absolute;
+    width:9999em
+}
+
+#home_slider .slide1 {
+    background-image:url(../img/companion/home/home-banner.jpg);
+    background-repeat:no-repeat;
+    float:left;
+    height:316px;
+    padding:211px 382px 0 58px;
+    width:500px
+}
+
+#content.companions .iframe {
+    background-color:#ccc;
+    height:528px;
+    overflow:hidden;
+    position:relative;
+    width:940px
+}
+
+/* =Footer
+--------------------------------*/
+#footer {
+    background-color: #716557;
+    background-image:url(../img/companion/shared/footer.jpg);
+    background-repeat:repeat-x;
+    clear:both;
+    height:423px;
+    padding-top:75px;
+    width:100%
+}
+
+#footer #footer_nav {
+    margin-top:225px;
+    text-align:center;
+    width:100%
+}
+
+#footer #footer_nav ul {
+    float:none;
+    *margin-left:35%
+}
+
+#footer #footer_nav ul li {
+    border-right:1px #fff solid;
+    display:inline-block;
+    *float:left;
+    padding:0 9px;
+    text-transform:uppercase
+}
+
+#footer #footer_nav ul li.last {
+    border-right:none
+}
+
+#footer #footer_nav ul li a {
+    color:#eeeceb;
+    font-family:brandon-grotesque,sans-serif;
+    font-size:13px;
+    font-style:normal;
+    font-weight:700;
+    line-height:13px;
+    text-decoration:none
+}
+
+#footer #footer_nav ul li a:hover {
+    color:#bfb2a3;
+    transition:all .25s ease-in-out;
+    -webkit-transition:all .25s ease-in-out;
+    -moz-transition:all .25s ease-in-out
+}

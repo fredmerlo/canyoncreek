@@ -4,3 +4,4 @@ obj/
 *.csproj.user
 .DS*
 _ReSharper*/
+._*

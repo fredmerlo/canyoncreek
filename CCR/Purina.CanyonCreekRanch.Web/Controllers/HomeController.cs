@@ -65,7 +65,11 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     }
 
     [ActionName("find-a-retailer")]
-    public ActionResult FindRetailser() { return View("FindRetailer"); }
+    public ActionResult FindRetailer() 
+    { 
+      SetCouponData();
+      return View("FindRetailer"); 
+    }
 
     [ActionName("site-map")]
     public ActionResult SiteMap() { return View("SiteMap"); }

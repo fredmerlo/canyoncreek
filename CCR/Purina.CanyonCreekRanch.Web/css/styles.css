@@ -1,4 +1,4 @@
-* Site: Canyon Creek Ranch
+/* Site: Canyon Creek Ranch
 * Author: Mesh, Tim Shelburn
 *************************************************************************/
 /* =Typography
@@ -656,7 +656,7 @@ body {
 	margin-bottom:11px;
 	padding:8px;
 	text-align:center;
-	width:173px
+	width:180px;
 }
 
 #header #nav ul li ul#snacks li.nav_box a,#header #nav ul li ul#health li.nav_box a,#header #nav ul li ul#story li.nav_box a {
