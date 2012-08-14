@@ -1,5 +1,5 @@
 /* Site: Canyon Creek Ranch
-* Author: Mesh, Tim Shelburn
+* Author: Tim Shelburn
 *************************************************************************/
 /* =Typography
 --------------------------------*/
@@ -109,13 +109,23 @@ p {
 body {
 	width:100%;
 	-webkit-text-size-adjust:none;
+	-webkit-background-size: 2000px 1400px; 
 }
 
 #container {
 	background-color:#fefefe;
 	background-image:url(/img/shared/background.jpg);
 	background-position:bottom left;
-	background-repeat:repeat-x
+	background-repeat:repeat-x;
+	
+}
+@media screen and (max-device-width: 1024px) {
+    #container {
+	    background-color:#fefefe;
+	    background-image:url(/img/shared/background.jpg);
+	    background-position:bottom left;
+	    background-repeat:repeat-x;
+    }
 }
 
 .fullcol {
@@ -221,7 +231,8 @@ body {
 	float:left;
 	border-right:1px #999694 solid;
 	padding:0 14px;
-	text-transform:uppercase
+	*padding-bottom:8px;
+	text-transform:uppercase;
 }
 
 #header #nav ul li a {
@@ -231,10 +242,10 @@ body {
 	font-style:normal;
 	font-weight:700;
 	letter-spacing:.1em;
-	*letter-spacing:normal;
+	*letter-spacing:.01em;
 	line-height:19px;
 	padding:8px 0;
-	text-decoration:none
+	text-decoration:none;
 }
 
 #header #nav ul li.home {
@@ -344,7 +355,7 @@ body {
 }
 
 #header #nav ul li ul#dogs li ul li a, #header #nav ul li ul#cats li ul li a, #header #nav ul li ul#snacks li ul li a {
-    font-size: 11px;
+  font-size: 11px;
 	line-height: 13px;
 }
 
@@ -523,6 +534,7 @@ body {
 	font-size:13px;
 	font-weight:400;
 	line-height:20px;
+	*line-height:14px;
 	text-transform:none
 }
 
@@ -532,6 +544,7 @@ body {
 	font-size:13px;
 	font-weight:400;
 	line-height:20px;
+	*line-height:14px;
 	text-transform:none
 }
 
@@ -1562,7 +1575,7 @@ a.disabled {
 }
 
 #home_slider .slide4 h5 a {
-	float:right
+	float:right;
 }
 
 #home_slider .slide4 p a {
@@ -1876,9 +1889,9 @@ a.disabled {
 #content.snacks .banner #banner_image {
 	background-image:url(/img/snacks/snack-banner.jpg);
 	background-repeat:no-repeat;
-	height:353px;
+	height:373px;
 	margin-bottom:20px;
-	padding:174px 346px 0 47px;
+	padding:154px 346px 0 47px;
 	width:547px
 }
 
@@ -1904,8 +1917,8 @@ a.disabled {
 }
 
 #content.snacks h3 {
-	font-size:22px;
-	line-height:28px;
+	font-size:30px;
+	line-height:42px;
 	margin-bottom:5px
 }
 

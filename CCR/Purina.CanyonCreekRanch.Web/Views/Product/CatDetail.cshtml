@@ -1,138 +1,133 @@
 ﻿@model Purina.CanyonCreekRanch.Common.Entities.Product
 @using System.Web.UI.WebControls
 @using Purina.CanyonCreekRanch.Common.Entities
-
 @section Meta {
   @Html.Raw(Model.Meta)
 }
-    <!-- Begin Content -->
-
-    <div id="content" class="natural_cat">
-      <!-- Begin Content Wrap -->
-
-      <div class="wrap">
-        <!-- Begin AddThis Button -->
-
-        <div id="addthis">
-          <div class="addthis_toolbox addthis_default_style addthis">
-            <a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4f7b288c1af4d69b" class="addthis_button_compact">Share</a> <span class="addthis_separator">|</span> <a class="addthis_button_preferred_1"></a> <a class="addthis_button_preferred_2"></a> <a class="addthis_button_preferred_3"></a> <a class="addthis_button_preferred_4"></a>
-          </div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f7b288c1af4d69b">
-</script>
-        </div><!-- End AddThis Button -->
-        <hr />
-        <!-- Begin Product -->
-        <!-- Begin Product Left Navigation -->
-        @Html.ActionLink(" ", ((Product)TempData["previous"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows left" })
-        <!-- End Product Left Navigation -->
-
-        <div class="product_content">
-          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_dry_cat enlargable" />
-
-          <h2>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
-
-          <h1>@Html.Raw(Model.TagLine)</h1>
-
-          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/ingredients.png" class="ingredients" />
-          @Html.Raw(Model.Description)
-          <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/breakdown.png" class="nutritionals" />
-
-        </div><!-- End Product -->
-
-        <!-- Begin Product Right Navigation -->
-        @Html.ActionLink(" ", ((Product)TempData["next"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows right" })
-        <!-- End Product Right Navigation -->
-        <hr />
-        <!-- Begin Full Width Column -->
-
-        <div class="fullcol marginbottom20">
-          <!-- Begin Product Tabs -->
-
-          <ul class="tabs">
-            <li><a href="#tab1">Our Ingredients</a></li>
-
-            <li><a href="#tab2">Recognizably Real</a></li>
-
-            <li><a href="#tab3">Our Guarantee</a></li>
-
-            <li class="last"><a href="#tab4">Feeding Guidelines</a></li>
-          </ul><!-- End Product Tabs -->
-          <!-- Begin Our Ingredients Content -->
-
-          <div class="pane">
-            <!-- Begin Left Column -->
-
-            <div class="leftcol">
-              <span class="small_brown_text">Ingredients:</span>
-
-              <p>@Html.Raw(Model.Ingredients)</p>
-
-              <div id="ingredient_dictionary">
-                <a href="/ingredient-dictionary">Explore Healthy Benefits<br />
-                with our<br />
-                <span class="small_white_text">INGREDIENTS DICTIONARY</span></a>
-              </div>
-            </div><!-- End Left Column -->
-            <!-- Begin Right Column -->
-
-            <div class="rightcol">
-              @Html.Raw(Model.Nutrition)
-            </div><!-- End Right Column -->
-          </div><!-- End Our Ingredients Content -->
-          <!-- Begin Recognizably Real Content -->
-
-          <div class="pane">
-
-              @Html.Raw(Model.Recognizably)
-
-          </div><!-- End Recognizably Real Content -->
-          <!-- Begin Our Guarantee Content -->
-
-          <div class="pane">
-
-
-              @Html.Raw(Model.GuaranteeTable)
-
-
-          </div><!-- End Our Guarantee Content -->
-          <!-- Begin Feeding Guideline Content -->
-
-          <div class="pane">
-            <!-- Begin Left Column -->
-
-            <div class="leftcol">
-              <h6>RECOMMENDED DAILY FEEDING AMOUNTS:</h6>
-
-              @Html.Raw(Model.FeedTable)
-            </div><!-- End Left Column -->
-            <!-- Begin Left Column -->
-
-            <div class="rightcol">
-              <h6>Making the Switch</h6>
-
-              <p>Although you'll be anxious to see the difference Canyon Creek Ranch can make in your cat, please allow 7-10 days to ease the transition from your cat's current food. This will help avoid stomach upset. Each day, simply feed a little less of the previous food and a little more Canyon Creek Ranch until you're feeding Canyon Creek Ranch exclusively.</p>
-            </div><!-- End Right Column -->
-          </div><!-- End Feeding Guideline Content -->
-          <!-- End Product Tab Content -->
-        </div><!-- End Full Width Column -->
-        <hr class="margin40" />
+<!-- Begin Content -->
+<div id="content" class="natural_cat">
+  <!-- Begin Content Wrap -->
+  <div class="wrap">
+    <!-- Begin AddThis Button -->
+    <div id="addthis">
+      <div class="addthis_toolbox addthis_default_style addthis">
+        <a href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4f7b288c1af4d69b"
+          class="addthis_button_compact">Share</a> <span class="addthis_separator">|</span>
+        <a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2">
+        </a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4">
+        </a>
+      </div>
+      <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f7b288c1af4d69b">
+      </script>
+    </div>
+    <!-- End AddThis Button -->
+    <hr />
+    <!-- Begin Product -->
+    <!-- Begin Product Left Navigation -->
+    @Html.ActionLink(" ", ((Product)TempData["previous"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows left" })
+    <!-- End Product Left Navigation -->
+    <div class="product_content">
+      <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/product.png " class="float_left_dry_cat enlargable" />
+      <h2>@Html.DisplayFor(model => model.Title)</h1><span class="small_brown_text">@Html.DisplayFor(model => model.SubTitle)</span>
+        <h1>@Html.Raw(Model.TagLine)</h1>
+        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/ingredients.png" class="ingredients" />
+        @Html.Raw(Model.Description)
+        <img src="/img/products/@Model.ResourcePath/@Model.ResourcePrefix/breakdown.png" class="nutritionals" />
+    </div>
+    <!-- End Product -->
+    <!-- Begin Product Right Navigation -->
+    @Html.ActionLink(" ", ((Product)TempData["next"]).FriendlyUrl, new { controller = "Product" }, new { @class = "arrows right" })
+    <!-- End Product Right Navigation -->
+    <hr />
+    <!-- Begin Full Width Column -->
+    <div class="fullcol marginbottom20">
+      <!-- Begin Product Tabs -->
+      <ul class="tabs">
+        <li><a href="#tab1">Our Ingredients</a></li>
+        <li><a href="#tab2">Recognizably Real</a></li>
+        <li><a href="#tab3">Our Guarantee</a></li>
+        <li class="last"><a href="#tab4">Feeding Guidelines</a></li>
+      </ul>
+      <!-- End Product Tabs -->
+      <!-- Begin Our Ingredients Content -->
+      <div class="pane">
         <!-- Begin Left Column -->
-
         <div class="leftcol">
-          <div id="holistic_box">
-            <span class="large_white_text">FIND A BETTER WAY</span>
-
-            <p>Discover the guideposts of holistic living with your pet.</p><a href="/holistic-living">LEARN MORE &#187;</a>
+          <span class="small_brown_text">Ingredients:</span>
+          <p>@Html.Raw(Model.Ingredients)</p>
+          <div id="ingredient_dictionary">
+            <a href="/ingredient-dictionary">Explore Healthy Benefits<br />
+              with our<br />
+              <span class="small_white_text">INGREDIENTS DICTIONARY</span></a>
           </div>
-        </div><!-- End Left Column -->
+        </div>
+        <!-- End Left Column -->
         <!-- Begin Right Column -->
-
         <div class="rightcol">
-        <div id="large_promo">
-            <span class="large_brown_text"><a href="@((string)TempData["coupon"])">TRY &amp; SAVE</a></span>
-          </div>
-        </div><!-- End Right Column -->
-        <!-- Begin Clear Content -->
-
-        <div id="clear_content"></div><!-- End Clear Content -->
-      </div><!-- End Content -->
-    </div><!-- End Content Wrap -->
+          @Html.Raw(Model.Nutrition)
+        </div>
+        <!-- End Right Column -->
+      </div>
+      <!-- End Our Ingredients Content -->
+      <!-- Begin Recognizably Real Content -->
+      <div class="pane">
+        @Html.Raw(Model.Recognizably)
+      </div>
+      <!-- End Recognizably Real Content -->
+      <!-- Begin Our Guarantee Content -->
+      <div class="pane">
+        @Html.Raw(Model.GuaranteeTable)
+      </div>
+      <!-- End Our Guarantee Content -->
+      <!-- Begin Feeding Guideline Content -->
+      <div class="pane">
+        <!-- Begin Left Column -->
+        <div class="leftcol">
+          <h6>
+            RECOMMENDED DAILY FEEDING AMOUNTS:</h6>
+          @Html.Raw(Model.FeedTable)
+        </div>
+        <!-- End Left Column -->
+        <!-- Begin Left Column -->
+        <div class="rightcol">
+          <h6>
+            Making the Switch</h6>
+          <p>
+            Although you'll be anxious to see the difference Canyon Creek Ranch can make in
+            your cat, please allow 7-10 days to ease the transition from your cat's current
+            food. This will help avoid stomach upset. Each day, simply feed a little less of
+            the previous food and a little more Canyon Creek Ranch until you're feeding Canyon
+            Creek Ranch exclusively.</p>
+        </div>
+        <!-- End Right Column -->
+      </div>
+      <!-- End Feeding Guideline Content -->
+      <!-- End Product Tab Content -->
+    </div>
+    <!-- End Full Width Column -->
+    <hr class="margin40" />
+    <!-- Begin Left Column -->
+    <div class="leftcol">
+      <div id="holistic_box">
+        <span class="large_white_text">FIND A BETTER WAY</span>
+        <p>
+          Discover the guideposts of holistic living with your pet.</p>
+        <a href="/holistic-living">LEARN MORE &#187;</a>
+      </div>
+    </div>
+    <!-- End Left Column -->
+    <!-- Begin Right Column -->
+    <div class="rightcol">
+      <div id="large_promo">
+        <span class="large_brown_text"><a href="@((string)TempData["coupon"])">TRY &amp; SAVE</a></span>
+      </div>
+    </div>
+    <!-- End Right Column -->
+    <!-- Begin Clear Content -->
+    <div id="clear_content">
+    </div>
+    <!-- End Clear Content -->
+  </div>
+  <!-- End Content -->
+</div>
+<!-- End Content Wrap -->

@@ -1,83 +1,121 @@
-﻿    <!-- Begin Content -->
-
-    <div id="content" class="cats">
-      <!-- Begin Content Wrap -->
-
-      <div class="wrap">
-        <!-- Begin Banner -->
-
-        <div class="banner">
-          <!-- Begin Banner Image -->
-
-          <div id="banner_image">
-            <h3>Trusting their instincts</h3>
-
-            <p>Cats are amazing companions, inspiring us with their independent spirit, their gracefulness, and that intriguing way about them. Our natural cat food with essential vitamins and minerals help support the fascinating journey we take with our cats with healthy, real ingredients.</p>
-
-            <p>Everyone at Canyon Creek Ranch is proud to share this natural cat food and to be part of a community of people who are always in search of a better way for their cats.</p>
-          </div><!-- End Banner Image -->
-        </div><!-- End Banner -->
-        <!-- Begin Full Width Column -->
-
-        <div class="fullcol">
-          <ul class="tabs">
-            <li><a href="/#tab1">Dry Food</a></li>
-
-            <li><a href="/#tab2">Canned Food</a></li>
-          </ul>
-
-          <div class="pane">
-            <!--a class="prev browse product_left"></a-->
-
-            <div class="scrollable" style="margin-left: 35px;">
-            @{Html.RenderAction("category", "category", new { url = "dry-cat-food" });}
-              <h1>NATURAL DRY CAT FOOD</h1><span class="tiny_brown_text marginbottom10">PLUS VITAMINS AND MINERALS</span>
-
-              <p>Each savory mix provides healthy protein sources such as chicken or salmon as the #1 ingredient. Plus, each of our natural dry cat foods offer recognizably real ingredients like diced zucchini and potatoes. We offer simple, real ingredients for 100% complete and balanced nutrition for each life stage.</p>
-
-              <p>Our dry recipes are formulated without corn, wheat, or soy, and no artificial colors, flavors, or preservatives are added.</p>
-            </div><!--a class="next browse product_right"></a-->
-          </div>
-
-          <div class="pane">
-            <a class="prev browse product_left"></a>
-            <div class="scrollable" style="height: 450px;">
-            @{Html.RenderAction("category", "category", new { url = "canned-cat-food" });}
-
-              <h2>NATURAL CANNED CAT FOOD</h2><span class="tiny_brown_text marginbottom10">PLUS VITAMINS AND MINERALS</span>
-
-              <p>Each savory recipe provides healthy sources of protein such as real salmon, chicken, turkey, trout or cod as the #1 ingredient. All of our natural canned cat foods are accented with real fruits and vegetables like spinach, sweet potatoes, and blueberry pomace. We offer simple, real ingredients for 100% complete and balanced nutrition for growth and maintenance of adult cats and growing kittens.</p>
-
-              <p>Our canned recipes are formulated without corn, wheat, or soy, and no artificial colors, flavors, or preservatives are added.</p>
-            </div><a class="next browse product_right"></a>
-          </div><!-- End Full Width Column -->
-          <!-- Begin Left Column -->
-
-          <div class="leftcol">
-            <div id="holistic_box">
-            <span class="large_white_text">FIND A BETTER WAY</span>
-
-            <p>Discover the guideposts of holistic living with your pet.</p><a href="/holistic-living">LEARN MORE &#187;</a>
-          </div>
-
-
-            <div id="cat_video" class="margintop40">
-            <h6>What are pet owners saying?</h6>
-            <a href="/our-story"><img src= "../../img/shared/todd-video.png" /></a></div>
-          </div><!-- End Left Column -->
-          <!-- Begin Right Column -->
-
-          <div class="rightcol">
-            <div id="natural_dog_food">
-            <span class="large_white_text">NATURAL DOG FOOD</span><br />
-            <span class="small_white_text_box">plus vitamins and minerals</span>
-            <p>High quality ingredients you want with none that you don't, <br />so you can see a real difference in your dog.</p><a href="/natural-food-for-dogs">LEARN MORE &#187;</a>
-          </div>
-
-            <div id="large_promo" class="margintop85">
-              <span class="large_brown_text"><a href="@((string)TempData["coupon"])">TRY &amp; SAVE</a></span>
-            </div>
-          </div><!-- End Right Column -->
-        </div><!-- End Full Width Column -->
-      </div><!-- End Content -->
-    </div><!-- End Content Wrap -->
+﻿<!--
+Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: CCR Natural Food For Cats Page
+URL of the webpage where the tag is expected to be placed: http://www.canyoncreekranch.com/natural-food-for-cats
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 07/31/2012
+-->
+<script type="text/javascript">
+  var axel = Math.random() + "";
+  var a = axel * 10000000000000;
+  document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2649772;type=canyo518;cat=ccrna413;ord=1;num=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+  <iframe src="http://fls.doubleclick.net/activityi;src=2649772;type=canyo518;cat=ccrna413;ord=1;num=1?"
+    width="1" height="1" frameborder="0" style="display: none"></iframe>
+</noscript>
+<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+<!-- Begin Content -->
+<div id="content" class="cats">
+  <!-- Begin Content Wrap -->
+  <div class="wrap">
+    <!-- Begin Banner -->
+    <div class="banner">
+      <!-- Begin Banner Image -->
+      <div id="banner_image">
+        <h3>
+          Trusting their instincts</h3>
+        <p>
+          Cats are amazing companions, inspiring us with their independent spirit, their gracefulness,
+          and that intriguing way about them. Our natural cat food with essential vitamins
+          and minerals help support the fascinating journey we take with our cats with healthy,
+          real ingredients.</p>
+        <p>
+          Everyone at Canyon Creek Ranch is proud to share this natural cat food and to be
+          part of a community of people who are always in search of a better way for their
+          cats.</p>
+      </div>
+      <!-- End Banner Image -->
+    </div>
+    <!-- End Banner -->
+    <!-- Begin Full Width Column -->
+    <div class="fullcol">
+      <ul class="tabs">
+        <li><a href="/#tab1">Dry Food</a></li>
+        <li><a href="/#tab2">Canned Food</a></li>
+      </ul>
+      <div class="pane">
+        <!--a class="prev browse product_left"></a-->
+        <div class="scrollable" style="margin-left: 35px;">
+          @{Html.RenderAction("category", "category", new { url = "dry-cat-food" });}
+          <h1>
+            NATURAL DRY CAT FOOD</h1>
+          <span class="tiny_brown_text marginbottom10">PLUS VITAMINS AND MINERALS</span>
+          <p>
+            Each savory mix provides healthy protein sources such as chicken or salmon as the
+            #1 ingredient. Plus, each of our natural dry cat foods offer recognizably real ingredients
+            like diced zucchini and potatoes. We offer simple, real ingredients for 100% complete
+            and balanced nutrition for each life stage.</p>
+          <p>
+            Our dry recipes are formulated without corn, wheat, or soy, and no artificial colors,
+            flavors, or preservatives are added.</p>
+        </div>
+        <!--a class="next browse product_right"></a-->
+      </div>
+      <div class="pane">
+        <a class="prev browse product_left"></a>
+        <div class="scrollable" style="height: 450px;">
+          @{Html.RenderAction("category", "category", new { url = "canned-cat-food" });}
+          <h2>
+            NATURAL CANNED CAT FOOD</h2>
+          <span class="tiny_brown_text marginbottom10">PLUS VITAMINS AND MINERALS</span>
+          <p>
+            Each savory recipe provides healthy sources of protein such as real salmon, chicken,
+            turkey, trout or cod as the #1 ingredient. All of our natural canned cat foods are
+            accented with real fruits and vegetables like spinach, sweet potatoes, and blueberry
+            pomace. We offer simple, real ingredients for 100% complete and balanced nutrition
+            for growth and maintenance of adult cats and growing kittens.</p>
+          <p>
+            Our canned recipes are formulated without corn, wheat, or soy, and no artificial
+            colors, flavors, or preservatives are added.</p>
+        </div>
+        <a class="next browse product_right"></a>
+      </div>
+      <!-- End Full Width Column -->
+      <!-- Begin Left Column -->
+      <div class="leftcol">
+        <div id="holistic_box">
+          <span class="large_white_text">FIND A BETTER WAY</span>
+          <p>
+            Discover the guideposts of holistic living with your pet.</p>
+          <a href="/holistic-living">LEARN MORE &#187;</a>
+        </div>
+        <div id="cat_video" class="margintop40">
+          <h6>
+            What are pet owners saying?</h6>
+          <a href="/our-story">
+            <img src="../../img/shared/todd-video.png" /></a></div>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div class="rightcol">
+        <div id="natural_dog_food">
+          <span class="large_white_text">NATURAL DOG FOOD</span><br />
+          <span class="small_white_text_box">plus vitamins and minerals</span>
+          <p>
+            High quality ingredients you want with none that you don't,
+            <br />
+            so you can see a real difference in your dog.</p>
+          <a href="/natural-food-for-dogs">LEARN MORE &#187;</a>
+        </div>
+        <div id="large_promo" class="margintop85">
+          <span class="large_brown_text"><a href="@((string)TempData["coupon"])">TRY &amp; SAVE</a></span>
+        </div>
+      </div>
+      <!-- End Right Column -->
+    </div>
+    <!-- End Full Width Column -->
+  </div>
+  <!-- End Content -->
+</div>
+<!-- End Content Wrap -->
