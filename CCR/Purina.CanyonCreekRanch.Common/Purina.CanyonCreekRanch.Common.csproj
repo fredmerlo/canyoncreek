@@ -54,6 +54,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\CCRDb.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Filters\RedirFilters.cs" />
     <Compile Include="Helpers\CouponEncode.cs" />
     <Compile Include="Helpers\HtmlClassSelectedExtension.cs" />
     <Compile Include="Helpers\HtmlDropDownExtension.cs" />

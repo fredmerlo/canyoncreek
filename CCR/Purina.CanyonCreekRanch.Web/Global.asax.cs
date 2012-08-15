@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 
 using Purina.CanyonCreekRanch.Common.Helpers;
+using Purina.CanyonCreekRanch.Common.Filters;
 
 namespace Purina.CanyonCreekRanch.Web
 {
@@ -17,6 +18,7 @@ namespace Purina.CanyonCreekRanch.Web
     public static void RegisterGlobalFilters(GlobalFilterCollection filters)
     {
       filters.Add(new HandleErrorAttribute());
+      filters.Add(new RedirFilters());
     }
 
     public static void RegisterRoutes(RouteCollection routes)
