@@ -120,6 +120,9 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
 
         HttpWebResponse res = (HttpWebResponse) request.GetResponse();
 
+        StreamReader body = new StreamReader(res.GetResponseStream());
+        string str = body.ReadToEnd();
+        
         Response.Redirect(Request.UrlReferrer.AbsoluteUri);
     }
   }
