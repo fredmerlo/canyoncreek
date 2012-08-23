@@ -10,9 +10,9 @@ namespace Purina.CanyonCreekRanch.Common.Filters
   {
     public override void OnActionExecuting(ActionExecutingContext filterContext)
     {
-      //if (filterContext.HttpContext.Request.Browser.IsMobileDevice) {
-      //  filterContext.HttpContext.Response.Redirect("http://m.canyoncreekranch.com/");
-      //}
+      if (filterContext.HttpContext.Request.Browser.IsMobileDevice) {
+        filterContext.HttpContext.Response.Redirect("http://m.canyoncreekranch.com/");
+      }
 
       //if (filterContext.HttpContext.Request.Url.Host.Contains("canyoncreektreats.com")) {
       //  filterContext.HttpContext.Response.Redirect("http://canyoncreekranch.com/");
