@@ -97,7 +97,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
             return;
         }
 
-        HttpWebRequest request = (HttpWebRequest) WebRequest.Create("https://ansira.purina.com/et-api/et_caller.php");
+        HttpWebRequest request = (HttpWebRequest) WebRequest.Create("https://ansira.purina.com/et-api/et_caller/");
 
         request.AllowAutoRedirect = false;
         request.Method = "POST";
