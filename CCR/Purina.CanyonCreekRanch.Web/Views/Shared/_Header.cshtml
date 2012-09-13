@@ -1,170 +1,169 @@
 ﻿@using Purina.CanyonCreekRanch.Common.Helpers
-    
-    <!-- Begin Header -->
-
-    <div id="header">
-      <!-- Begin Content Wrap -->
-
-      <div class="wrap">
-        <a href="/"><img src="/img/shared/logo.png" height="39" width="490" class="logo" /></a> <!-- Begin Header Links -->
-
-        <ul id="links">
-          <li><a href="/find-a-retailer">Find our food &#187;</a></li>
-        </ul><!-- End Header Links -->
-
-        <div id="nav">
-          <!-- Begin Main Navigation -->
-
-          <ul>
-            <li class="home"><a href="/">Home</a></li>
-            
-             <!-- Begin Story Navigation -->
-
-            <li class="story">
-              <a @Html.Selected("story") href="/our-story">Our Story</a>
-
-              <ul id="story" class="menu">
-                <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
-
+<!-- Begin Header -->
+<div id="header">
+  <!-- Begin Content Wrap -->
+  <div class="wrap">
+    <a href="/">
+      <img src="/img/shared/logo.png" height="39" width="490" class="logo" /></a>
+    <!-- Begin Header Links -->
+    <ul id="links">
+      <li><a href="/find-a-retailer">Find our food &#187;</a></li>
+    </ul>
+    <!-- End Header Links -->
+    <div id="nav">
+      <!-- Begin Main Navigation -->
+      <ul>
+        <li class="home"><a href="/">Home</a></li>
+        <!-- Begin Story Navigation -->
+        <li class="story"><a @Html.Selected("story") href="/our-story">Our Story</a>
+          <ul id="story" class="menu">
+            <li>
+              <img src="/img/shared/nav-selected.png" class="selected" /></li>
+            <li>
+              <ul>
                 <li>
-                  <ul>
-                    <li>
-                      <p><a href="/our-story"><strong>OUR STORY &#187;</strong></a></p>
-
-                      <p><a href="/our-story-faq"><span class="faq_category">FAQ</span></a></p><a href="/our-story-faq">Frequently Asked Questions</a><br />
-                    </li>
-                  </ul>
+                  <p>
+                    <a href="/our-story"><strong>OUR STORY &#187;</strong></a></p>
+                  <p>
+                    <a href="/our-story-faq"><span class="faq_category">FAQ</span></a></p>
+                    <p>
+                    <a href="/our-story-faq">Frequently Asked Questions</a></p>
+                  <p>
+                    <a href="/our-story-chicken-jerky-faq">Chicken Jerky FAQ</a></p>
                 </li>
-
+              </ul>
+            </li>
+            <li>
+              <ul id="nav_last">
+                <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
+                  <span class="small_white_text">NATURAL DOG FOOD</span><br />
+                  <span class="nav_tiny_white_text">plus vitamins and minerals</span></a></li>
+                <li class="nav_box pink"><a href="/natural-food-for-cats">Learn About<br />
+                  <span class="small_white_text">NATURAL CAT FOOD</span><br />
+                  <span class="nav_tiny_white_text">plus vitamins and minerals</span></a></li>
+                <li class="nav_box yellow"><a href="/snacks">Learn About<br />
+                  <span class="small_white_text">WHOLESOME SNACKS</span></a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- End Story Dropdown -->
+        </li>
+        <!-- End Story Navigation -->
+        <!-- Begin Health Navigation -->
+        <li class="health"><a @Html.Selected("health") href="/health-and-nutrition">Health
+          &amp; Nutrition</a>
+          <!-- Begin Health Dropdown -->
+          <ul id="health" class="menu">
+            <li>
+              <img src="/img/shared/nav-selected.png" class="selected" /></li>
+            <li>
+              <ul>
                 <li>
-                  <ul id="nav_last">
-                    <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
-                    <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
-
-                    <li class="nav_box pink"><a href="/natural-food-for-cats">Learn About<br />
-                    <span class="small_white_text">NATURAL CAT FOOD</span></a></li>
-
-                    <li class="nav_box yellow"><a href="/snacks">Learn About<br />
-                    <span class="small_white_text">WHOLESOME SNACKS</span></a></li>
-                  </ul>
-                </li>
-              </ul><!-- End Story Dropdown -->
-            </li><!-- End Story Navigation -->
-
-            <!-- Begin Health Navigation -->
-
-            <li class="health">
-              <a @Html.Selected("health") href="/health-and-nutrition">Health &amp; Nutrition</a> <!-- Begin Health Dropdown -->
-
-              <ul id="health" class="menu">
-                <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
-
-                <li>
-                  <ul>
-                    <li>
-                      <p><a href="/health-and-nutrition"><strong>HEALTH &amp; NUTRITION &#187;</strong></a></p><a href="/ingredient-dictionary">Ingredient Dictionary</a><br />
-                      <a href="/holistic-living">Holistic Living</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li>
-                  <ul id="nav_last">
-                    <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
-                    <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
-
-                    <li class="nav_box pink"><a href="/natural-food-for-cats">Learn About<br />
-                    <span class="small_white_text">NATURAL CAT FOOD</span></a></li>
-
-                    <li class="nav_box yellow"><a href="/snacks">Learn About<br />
-                    <span class="small_white_text">WHOLESOME SNACKS</span></a></li>
-                  </ul>
-                </li>
-              </ul><!-- End Health Dropdown -->
-            </li><!-- End Health Navigation -->
-            
-            <!-- Begin Dog Navigation -->
-
-            <li class="dogs">
-              <a @Html.Selected("dogs") href="/natural-food-for-dogs">Natural Food For Dogs</a> <!-- Begin Dog Dropdown -->
-
-              <ul id="dogs" class="menu">
-                <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
-
-                <li>
-                  <p><a href="/natural-food-for-dogs"><strong>NATURAL DOG FOOD &#187;</strong></a></p>
-                </li>
-
-                <li class="ie_nav_fix_cat_dog">
-                   @{Html.RenderAction("Type", "Category", new { type = "dog" });}
-
-                  <ul id="nav_last">
-                    <li><a href="/our-story"><img src="/img/shared/nav-video-dog.jpg" /></a></li>
-
-                    <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
-                    <span class="small_white_text">HEALTH &amp;<br />
+                  <p>
+                    <a href="/health-and-nutrition"><strong>HEALTH &amp; NUTRITION &#187;</strong></a></p>
+                  <a href="/ingredient-dictionary">Ingredient Dictionary</a><br />
+                  <a href="/holistic-living">Holistic Living</a> </li>
+              </ul>
+            </li>
+            <li>
+              <ul id="nav_last">
+                <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
+                  <span class="small_white_text">NATURAL DOG FOOD</span><br />
+                  <span class="nav_tiny_white_text">plus vitamins and minerals</span></a></li>
+                <li class="nav_box pink"><a href="/natural-food-for-cats">Learn About<br />
+                  <span class="small_white_text">NATURAL CAT FOOD</span><br />
+                  <span class="nav_tiny_white_text">plus vitamins and minerals</span></a></li>
+                <li class="nav_box yellow"><a href="/snacks">Learn About<br />
+                  <span class="small_white_text">WHOLESOME SNACKS</span></a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- End Health Dropdown -->
+        </li>
+        <!-- End Health Navigation -->
+        <!-- Begin Dog Navigation -->
+        <li class="dogs"><a @Html.Selected("dogs") href="/natural-food-for-dogs">Natural Food
+          For Dogs</a>
+          <!-- Begin Dog Dropdown -->
+          <ul id="dogs" class="menu">
+            <li>
+              <img src="/img/shared/nav-selected.png" class="selected" /></li>
+            <li>
+              <p>
+                <a href="/natural-food-for-dogs"><strong>NATURAL DOG FOOD &#187;</strong></a></p>
+            </li>
+            <li class="ie_nav_fix_cat_dog">
+              @{Html.RenderAction("Type", "Category", new { type = "dog" });}
+              <ul id="nav_last">
+                <li><a href="/our-story">
+                  <img src="/img/shared/nav-video-dog.jpg" /></a></li>
+                <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
+                  <span class="small_white_text">HEALTH &amp;<br />
                     NUTRITION</span><br />
-                    Benefits</a></li>
-                  </ul>
-                </li>
-              </ul><!-- End Dog Dropdown -->
-            </li><!-- End Dog Navigation -->
-            <!-- Begin Cat Navigation -->
-
-            <li class="cats">
-              <a @Html.Selected("cats") href="/natural-food-for-cats">Natural Food For Cats</a> <!-- Begin Cat Dropdown -->
-
-              <ul id="cats" class="menu">
-                <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
-
-                <li>
-                  <p><a href="/natural-food-for-cats"><strong>NATURAL CAT FOOD &#187;</strong></a></p>
-                </li>
-
-                <li class="ie_nav_fix_cat_dog">
-                  @{Html.RenderAction("Type", "Category", new { type = "cat" });}
-
-                  <ul id="nav_last">
-                    <li><a href="/our-story"><img src="/img/shared/nav-video.jpg" /></a></li>
-
-                    <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
-                    <span class="small_white_text">HEALTH &amp;<br />
+                  Benefits</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- End Dog Dropdown -->
+        </li>
+        <!-- End Dog Navigation -->
+        <!-- Begin Cat Navigation -->
+        <li class="cats"><a @Html.Selected("cats") href="/natural-food-for-cats">Natural Food
+          For Cats</a>
+          <!-- Begin Cat Dropdown -->
+          <ul id="cats" class="menu">
+            <li>
+              <img src="/img/shared/nav-selected.png" class="selected" /></li>
+            <li>
+              <p>
+                <a href="/natural-food-for-cats"><strong>NATURAL CAT FOOD &#187;</strong></a></p>
+            </li>
+            <li class="ie_nav_fix_cat_dog">
+              @{Html.RenderAction("Type", "Category", new { type = "cat" });}
+              <ul id="nav_last">
+                <li><a href="/our-story">
+                  <img src="/img/shared/nav-video.jpg" /></a></li>
+                <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
+                  <span class="small_white_text">HEALTH &amp;<br />
                     NUTRITION</span><br />
-                    Benefits</a></li>
-                  </ul>
-                </li>
-              </ul><!-- End Cat Dropdown -->
-            </li><!-- End Cat Navigation -->
-            <!-- Begin Snacks Navigation -->
-
-            <li class="snacks">
-              <a @Html.Selected("snacks") href="/snacks">Snacks</a> <!-- Begin Snacks Dropdown -->
-
-              <ul id="snacks" class="menu">
-                <li><img src="/img/shared/nav-selected.png" class="selected" /></li>
-
-                <li>
-                  <p><a href="/snacks"><strong>WHOLESOME SNACKS &#187;</strong></a></p>
-                </li>
-
-                <li class="ie_nav_fix">
-                  @{Html.RenderAction("Type", "Category", new { type = "snack" });}
-
-                  <ul id="nav_last">
-                    <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
-                    <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
-
-                    <li><a href="/our-story"><img src="/img/shared/nav-video.jpg" /></a></li>
-
-                    <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
-                    <span class="small_white_text">HEALTH &amp;<br />
+                  Benefits</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- End Cat Dropdown -->
+        </li>
+        <!-- End Cat Navigation -->
+        <!-- Begin Snacks Navigation -->
+        <li class="snacks"><a @Html.Selected("snacks") href="/snacks">Snacks</a>
+          <!-- Begin Snacks Dropdown -->
+          <ul id="snacks" class="menu">
+            <li>
+              <img src="/img/shared/nav-selected.png" class="selected" /></li>
+            <li>
+              <p>
+                <a href="/snacks"><strong>WHOLESOME SNACKS &#187;</strong></a></p>
+            </li>
+            <li class="ie_nav_fix">
+              @{Html.RenderAction("Type", "Category", new { type = "snack" });}
+              <ul id="nav_last">
+                <li class="nav_box blue"><a href="/natural-food-for-dogs">Learn About<br />
+                  <span class="small_white_text">NATURAL DOG FOOD</span></a></li>
+                <li><a href="/our-story">
+                  <img src="/img/shared/nav-video.jpg" /></a></li>
+                <li class="nav_gold_box"><a href="/health-and-nutrition">Explore<br />
+                  <span class="small_white_text">HEALTH &amp;<br />
                     NUTRITION</span><br />
-                    Benefits</a></li>
-                  </ul>
-                </li>
-              </ul><!-- End Snacks Dropdown -->
-            </li><!-- End Snacks Navigation -->
-          </ul><!-- End Main Navigation -->
-        </div>
-      </div><!-- End Content Wrap -->
-    </div><!-- End Header -->
+                  Benefits</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- End Snacks Dropdown -->
+        </li>
+        <!-- End Snacks Navigation -->
+      </ul>
+      <!-- End Main Navigation -->
+    </div>
+  </div>
+  <!-- End Content Wrap -->
+</div>
+<!-- End Header -->

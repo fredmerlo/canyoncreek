@@ -57,6 +57,9 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     [ActionName("our-story-faq")]
     public ActionResult OurStoryFaq() { return View("OurStoryFaq"); }
 
+    [ActionName("our-story-chicken-jerky-faq")]
+    public ActionResult OurStoryChickenJerkyFAQ() { return View("OurStoryChickenJerkyFAQ"); }
+
     [ActionName("health-and-nutrition")]
     public ActionResult HealthAndNutrition()
     {

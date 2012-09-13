@@ -355,7 +355,8 @@ body {
 }
 
 #header #nav ul li ul#dogs li ul li a, #header #nav ul li ul#cats li ul li a, #header #nav ul li ul#snacks li ul li a {
-  font-size: 11px;
+  font-size: 13px;
+  font-size: 12px\0/;
 	line-height: 13px;
 }
 
@@ -496,7 +497,7 @@ body {
 	position:absolute;
 	text-align:left;
 	top:40px;
-	width:173px
+	width:196px
 }
 
 #header #nav ul li ul#dogs li ul li,#header #nav ul li ul#cats li ul li,#header #nav ul li ul#snacks li ul li {
@@ -665,8 +666,15 @@ body {
 
 #header #nav ul li ul#health li.nav_box,#header #nav ul li ul#story li.nav_box {
 	display:block;
-	height:36px;
-	margin-bottom:11px;
+	height:48px;
+	padding:5px 8px 12px 8px;
+	text-align:center;
+	width:180px;
+}
+
+#header #nav ul li ul#health li.nav_box.yellow,#header #nav ul li ul#story li.nav_box.yellow {
+	display:block;
+	height:38px;
 	padding:8px;
 	text-align:center;
 	width:180px;
@@ -1084,59 +1092,6 @@ ul.categories li a:hover {
 	font-size:14px
 }
 
-/*ul.no {
-
-	background-color: #e8e2e0;
-
-	height: 9px;
-
-	margin-left: 243px;
-
-	padding: 18px;
-
-	width: 630px;
-
-}
-
-ul.no li {
-
-	border-right: 1px solid #c8be46;
-
-	color:#c8be46;
-
-	float: left;
-
-	font-family:brandon-grotesque,sans-serif;
-
-	font-size:14px;
-
-	font-style:normal;
-
-	font-weight:900;
-
-	line-height:14px;
-
-	padding-left:14px;
-
-	padding-right: 14px;
-
-	text-transform:uppercase
-
-}
-
-ul.no li.first {
-
-	padding-left: 0;
-
-}
-
-ul.no li.last {
-
-	border-right: none;
-
-	padding-right: 0;
-
-}*/
 /* =Sidebar
 
 --------------------------------*/
@@ -1190,13 +1145,22 @@ ul.no li.last {
 	background-image:url(/img/sidebar/sidebar-natural-dog-food.jpg);
 	background-repeat:no-repeat;
 	height:128px;
-	margin-bottom:8px;
+	margin-bottom:20px;
 	text-align:center;
 	width:279px
 }
 
 #sidebar_healthy_snacks {
 	background-image:url(/img/sidebar/sidebar-healthy-snacks.jpg);
+	background-repeat:no-repeat;
+	height:128px;
+	margin-bottom:20px;
+	text-align:center;
+	width:279px
+}
+
+#sidebar_chicken_jerky_faq {
+	background-image:url(/img/sidebar/sidebar-chicken-jerky.jpg);
 	background-repeat:no-repeat;
 	height:128px;
 	margin-bottom:20px;
@@ -1218,7 +1182,7 @@ ul.no li.last {
 	width:279px
 }
 
-#sidebar_natural_cat_food a,#sidebar_natural_dog_food a {
+#sidebar_natural_cat_food a, #sidebar_natural_dog_food a, #sidebar_chicken_jerky_faq a {
 	color:#fff;
 	display:block;
 	font-family:brandon-grotesque,sans-serif;
@@ -1232,7 +1196,14 @@ ul.no li.last {
 	width:279px
 }
 
-#sidebar_healthy_snacks a:hover,#sidebar_natural_cat_food a:hover,#sidebar_natural_dog_food a:hover,#sidebar_healthy_snacks a:hover span,#sidebar_natural_cat_food a:hover span,#sidebar_natural_dog_food a:hover span {
+#sidebar_healthy_snacks a:hover,
+#sidebar_natural_cat_food a:hover,
+#sidebar_natural_dog_food a:hover,
+#sidebar_chicken_jerky_faq a:hover,
+#sidebar_healthy_snacks a:hover span,
+#sidebar_natural_cat_food a:hover span,
+#sidebar_natural_dog_food a:hover span, 
+#sidebar_chicken_jerky_faq a:hover span {
 	color:#726659;
 	transition:all .25s ease-in-out;
 	-webkit-transition:all .25s ease-in-out;
@@ -1899,6 +1870,11 @@ a.disabled {
 	color:#fff;
 }
 
+#content.snacks img.burst {
+  left: 645px;
+  position: absolute;
+  top: 65px;
+}
 #content.snacks h1 {
 	color:#58493A;
 	font-family:Georgia,sans-serif;
@@ -2801,6 +2777,16 @@ ul.faqs p {
 	font-style:normal;
 	font-weight:700;
 	line-height:26px;
+	text-transform:uppercase;
+	white-space:nowrap
+}
+
+.nav_tiny_white_text {
+	color:#fff;
+	font-family:brandon-grotesque,sans-serif;
+	font-size:9px;
+	font-style:normal;
+	font-weight:700;
 	text-transform:uppercase;
 	white-space:nowrap
 }
