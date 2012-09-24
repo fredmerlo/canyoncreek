@@ -83,7 +83,7 @@ namespace Purina.CanyonCreekRanch.Web.Controllers
     public ActionResult Contact() { return View(); }
 
     [ActionName("companions")]
-    public ActionResult RetailerProgram() { return View("Companions"); }
+    public ActionResult Companions() { return View("Companions"); }
 
     [ActionName("satisfaction-guarantee")]
     public ActionResult OurGuarantee() { return View("Guarantee"); }

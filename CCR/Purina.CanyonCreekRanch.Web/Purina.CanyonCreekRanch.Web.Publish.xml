@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="C:\work\ccr_deploy091312" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="canyoncreekranch.com" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+  <publishProfile publishUrl="C:\work\ccr_deploy091912" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="canyoncreekranch.com" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="img/sidebar/sidebar-natural-dog-food.jpg" publishTime="04/12/2012 11:40:42" />
     <file relUrl="img/shared/footer.jpg" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="css/styles.css" publishTime="09/13/2012 15:27:24" />
+    <file relUrl="css/styles.css" publishTime="09/14/2012 10:05:32" />
     <file relUrl="Views/Category/Category.cshtml" publishTime="08/08/2012 16:07:02" />
     <file relUrl="img/products/snacks/poppers/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/cat-canned/salmon-brown-rice-recipe/breakdown.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="img/shared/blank.gif" publishTime="08/08/2012 16:07:05" />
+    <file relUrl="img/products/dog-dry/salmon-brown-rice-mix/product-lg.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="Views/Shared/_LogOnPartial.cshtml" publishTime="03/25/2012 22:21:21" />
-    <file relUrl="bin/Purina.CanyonCreekRanch.Web.pdb" publishTime="09/13/2012 15:52:12" />
     <file relUrl="img/products/cat-canned/turkey-wild-rice-recipe/product-lg.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/products/dog-dry/turkey-barley-mix-for-adults/product-sm.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/story/cheryl-slide.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/health/health-banner.jpg" publishTime="08/09/2012 11:49:53" />
-    <file relUrl="Views/Web.config" publishTime="09/13/2012 16:20:28" />
+    <file relUrl="Views/Web.config" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/shared/cheryl-video.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/snacks/western-chicken-chips/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/snacks/homestyle-ham/product-sm.png" publishTime="08/08/2012 16:07:05" />
@@ -22,7 +22,6 @@
     <file relUrl="img/products/dog-dry/turkey-barley-mix-for-adults-7/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/story/faq-arrow-open.png" publishTime="04/12/2012 11:40:47" />
     <file relUrl="img/products/snacks/yam-good-with-duck/product.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="img/story/radura.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/shared/potatoes.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="Views/Shared/_Footer.cshtml" publishTime="08/09/2012 13:49:49" />
     <file relUrl="img/home/slide2.jpg" publishTime="08/09/2012 11:49:54" />
@@ -30,7 +29,6 @@
     <file relUrl="img/products/dog-canned/turkey-barley-for-adults/product-lg.png" publishTime="08/09/2012 11:49:55" />
     <file relUrl="img/products/dog-dry/turkey-barley-mix-for-puppies/product-lg.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/shared/eggs.jpg" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="companion.html" publishTime="08/09/2012 13:49:49" />
     <file relUrl="img/snacks/snack-banner.jpg" publishTime="08/09/2012 13:49:49" />
     <file relUrl="img/home/callout-active.png" publishTime="04/12/2012 11:40:19" />
     <file relUrl="img/products/snacks/western-grill/product.png" publishTime="08/08/2012 16:07:05" />
@@ -39,6 +37,7 @@
     <file relUrl="img/products/cat-canned/trout-catfish-recipe/product-lg.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/products/snacks/rawhide-wheels/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/health/holistic-banner.jpg" publishTime="08/08/2012 16:07:02" />
+    <file relUrl="bin/EntityFramework.xml" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/cat-canned/chicken-brown-rice-recipe-for-adults/product-lg.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="Scripts/jquery.js" publishTime="04/16/2012 19:31:18" />
     <file relUrl="img/products/cat-canned/salmon-brown-rice-recipe/ingredients.png" publishTime="08/09/2012 11:49:54" />
@@ -48,7 +47,6 @@
     <file relUrl="img/shared/ingredient-dictionary.jpg" publishTime="04/12/2012 11:40:28" />
     <file relUrl="img/products/cat-dry/chicken-brown-rice-mix-for-adults/breakdown.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/products/snacks/chicken-tenders/product-sm.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="img/products/dog-canned/chicken-brown-rice-recipe/ingredients.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/dogs/turkey-barley-canned-dog-formula.png" publishTime="08/08/2012 16:07:02" />
     <file relUrl="img/products/cat-canned/turkey-wild-rice-recipe/product.png" publishTime="05/01/2012 23:03:02" />
     <file relUrl="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" publishTime="03/25/2012 22:21:21" />
@@ -70,15 +68,13 @@
     <file relUrl="img/products/cat-dry/chicken-brown-rice-for-kittens/breakdown.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/shared/product-arrows.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/cat-dry/salmon-brown-rice-mix/ingredients.png" publishTime="08/08/2012 16:07:03" />
-    <file relUrl="Views/Shared/Companions.cshtml" publishTime="09/13/2012 13:43:36" />
     <file relUrl="img/products/dog-canned/salmon-brown-rice-recipe/product-lg.png" publishTime="08/09/2012 11:49:55" />
     <file relUrl="img/products/snacks/rawhide-wheels/product-sm.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="img/shared/nav-cats.png" publishTime="04/12/2012 11:40:31" />
     <file relUrl="img/products/cat-canned/turkey-wild-rice-recipe/ingredients.png" publishTime="08/09/2012 11:49:54" />
+    <file relUrl="img/products/snacks/wrapovers-bananas/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="Views/Shared/ThankYou.cshtml" publishTime="08/21/2012 14:41:26" />
     <file relUrl="img/products/dog-dry/beef-barley-mix/product-sm.png" publishTime="08/08/2012 16:07:04" />
     <file relUrl="img/dogs/chicken-brown-rice-nutritionals.png" publishTime="04/12/2012 11:40:11" />
-    <file relUrl="Views/Shared/FindRetailer.cshtml" publishTime="08/21/2012 14:40:12" />
     <file relUrl="img/products/dog-canned/salmon-brown-rice-recipe/breakdown.png" publishTime="08/08/2012 16:07:04" />
     <file relUrl="img/home/callout.png" publishTime="04/12/2012 11:40:20" />
     <file relUrl="img/story/todd-slide.jpg" publishTime="08/08/2012 16:07:05" />
@@ -106,7 +102,7 @@
     <file relUrl="img/products/dog-dry/salmon-brown-rice-mix/product.png" publishTime="05/01/2012 23:20:20" />
     <file relUrl="img/products/dog-dry/beef-barley-mix/breakdown.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/products/snacks/wrapovers-apples/product.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="Views/Shared/Error.cshtml" publishTime="03/25/2012 22:21:21" />
+    <file relUrl="Views/Shared/FindRetailer.cshtml" publishTime="09/18/2012 15:40:55" />
     <file relUrl="img/shared/holistic.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/cat-canned/chicken-brown-rice-recipe-for-kittens/product-sm.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="img/products/snacks/big-blast-wrapped-with-duck/product-sm.png" publishTime="08/08/2012 16:07:05" />
@@ -114,6 +110,7 @@
     <file relUrl="img/products/snacks/big-blast-pork-skin-twists/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/health/tab-active.jpg" publishTime="04/12/2012 11:40:18" />
     <file relUrl="Scripts/plugins.js" publishTime="08/08/2012 16:07:05" />
+    <file relUrl="img/shared/peas-and-carrots.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/cats/chicken-brown-rice-nutritionals.png" publishTime="04/12/2012 11:40:07" />
     <file relUrl="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/cat-canned/trout-catfish-recipe/product.png" publishTime="05/01/2012 23:02:30" />
@@ -151,7 +148,7 @@
     <file relUrl="img/story/faq-arrows.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/cat-canned/chicken-brown-rice-recipe-for-adults/breakdown.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="img/products/snacks/big-blast-wrapped-with-duck/product.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="Views/Shared/OurStoryChickenJerkyFAQ.cshtml" publishTime="09/13/2012 15:59:49" />
+    <file relUrl="Views/Shared/OurStoryChickenJerkyFAQ.cshtml" publishTime="09/13/2012 16:47:08" />
     <file relUrl="img/products/dog-canned/beef-brown-rice-recipe/product.png" publishTime="05/01/2012 23:11:12" />
     <file relUrl="img/shared/tab.jpg" publishTime="04/12/2012 11:40:39" />
     <file relUrl="css/global.css" publishTime="09/13/2012 12:43:11" />
@@ -164,7 +161,7 @@
     <file relUrl="img/shared/nav-video.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/dogs/turkey-barley-canned-dog.png" publishTime="08/08/2012 16:07:02" />
     <file relUrl="img/story/faq-arrow-closed.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="Views/Shared/TermsAndConditions.cshtml" publishTime="08/14/2012 10:24:21" />
+    <file relUrl="img/story/radura.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="bin/EntityFramework.dll" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/cat-dry/chicken-brown-rice-mix-for-adults/product-lg.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/products/snacks/poppers/product-sm.png" publishTime="08/08/2012 16:07:05" />
@@ -173,7 +170,7 @@
     <file relUrl="img/products/dog-dry/chicken-brown-rice-mix/breakdown.png" publishTime="08/08/2012 16:07:04" />
     <file relUrl="img/products/snacks/western-style-kabobs/product-sm.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/cat-dry/chicken-brown-rice-mix-for-adults/product.png" publishTime="08/08/2012 16:07:03" />
-    <file relUrl="img/products/dog-dry/salmon-brown-rice-mix/product-lg.png" publishTime="08/09/2012 11:49:56" />
+    <file relUrl="img/products/cat-canned/cod-shrimp-recipe/ingredients.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="Views/Category/DogInfo.cshtml" publishTime="08/21/2012 14:42:00" />
     <file relUrl="Views/Shared/Contact.cshtml" publishTime="08/14/2012 10:16:37" />
     <file relUrl="Views/Shared/_Layout.cshtml" publishTime="08/29/2012 09:42:59" />
@@ -184,11 +181,11 @@
     <file relUrl="img/products/snacks/western-grill/product-sm.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/cat-dry/salmon-brown-rice-mix/breakdown.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/shared/header.jpg" publishTime="04/12/2012 11:40:28" />
-    <file relUrl="bin/Purina.CanyonCreekRanch.Common.pdb" publishTime="09/13/2012 15:52:10" />
+    <file relUrl="bin/Purina.CanyonCreekRanch.Common.pdb" publishTime="09/19/2012 14:11:15" />
     <file relUrl="img/products/cat-canned/salmon-brown-rice-recipe/product-sm.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="img/shared/cows.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/cat-dry/chicken-brown-rice-for-kittens/product-lg.png" publishTime="08/09/2012 11:49:54" />
-    <file relUrl="img/products/cat-canned/cod-shrimp-recipe/ingredients.png" publishTime="08/09/2012 11:49:54" />
+    <file relUrl="Views/Shared/Error.cshtml" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/snacks/pork-skin-rings/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/dog-dry/salmon-brown-rice-mix/ingredients.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/snacks/yams/product-sm.png" publishTime="08/08/2012 16:07:05" />
@@ -211,7 +208,7 @@
     <file relUrl="img/products/dog-canned/turkey-barley-for-adults/product-sm.png" publishTime="08/08/2012 16:07:04" />
     <file relUrl="img/products/cat-dry/chicken-brown-rice-for-kittens/ingredients.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="img/products/dog-dry/chicken-brown-rice-mix/product-sm.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="img/shared/peas-and-carrots.png" publishTime="08/08/2012 16:07:05" />
+    <file relUrl="img/products/dog-canned/chicken-brown-rice-recipe/ingredients.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/products/snacks/trail-mix-for-dogs/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="Content/themes/base/jquery.ui.autocomplete.css" publishTime="03/25/2012 22:21:21" />
     <file relUrl="Views/Home/Index.cshtml" publishTime="08/21/2012 14:41:37" />
@@ -221,6 +218,7 @@
     <file relUrl="packages.config" publishTime="05/08/2012 11:39:27" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/cat-canned/chicken-brown-rice-recipe-for-adults/ingredients.png" publishTime="08/09/2012 11:49:54" />
+    <file relUrl="img/products/dog-dry/turkey-barley-mix-for-adults-7/product-lg.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/products/cat-dry/salmon-brown-rice-mix/product-lg.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/products/cat-canned/chicken-brown-rice-recipe-for-kittens/ingredients.png" publishTime="08/09/2012 11:49:54" />
     <file relUrl="img/shared/real-ingredients.png" publishTime="04/12/2012 11:40:36" />
@@ -235,17 +233,19 @@
     <file relUrl="Scripts/global.js" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/story/callout.png" publishTime="04/20/2012 21:55:33" />
     <file relUrl="img/products/dog-canned/chicken-brown-rice-recipe/product.png" publishTime="05/01/2012 23:11:44" />
-    <file relUrl="Views/Shared/SiteMap.cshtml" publishTime="09/13/2012 13:29:46" />
+    <file relUrl="Views/Shared/SiteMap.cshtml" publishTime="09/14/2012 09:39:50" />
     <file relUrl="img/products/snacks/western-style-cowboy-steaks/product-sm.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="bin/Purina.CanyonCreekRanch.Common.dll" publishTime="09/13/2012 15:52:11" />
+    <file relUrl="bin/Purina.CanyonCreekRanch.Common.dll" publishTime="09/19/2012 14:11:16" />
     <file relUrl="img/shared/spinach.jpg" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/products/dog-dry/beef-barley-mix/product.png" publishTime="05/01/2012 23:19:14" />
     <file relUrl="img/products/dog-dry/beef-barley-mix/product-lg.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="Content/themes/base/jquery.ui.progressbar.css" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/dog-dry/beef-barley-mix/ingredients.png" publishTime="08/08/2012 16:07:04" />
+    <file relUrl="img/products/snacks/turkey-strips/product-sm.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/shared/header-sm.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/snacks/snack-family.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/dog-dry/turkey-barley-mix-for-adults/ingredients.png" publishTime="08/08/2012 16:07:05" />
+    <file relUrl="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/cat-canned/turkey-wild-rice-recipe/product-sm.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="Views/Product/DogDetail.cshtml" publishTime="08/21/2012 14:42:35" />
     <file relUrl="img/products/snacks/yam-good-with-chicken/product-sm.png" publishTime="08/08/2012 16:07:05" />
@@ -287,9 +287,9 @@
     <file relUrl="img/products/dog-canned/chicken-brown-rice-recipe/breakdown.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="Content/themes/base/jquery.ui.base.css" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/cat-canned/chicken-brown-rice-recipe-for-kittens/product.png" publishTime="05/01/2012 22:59:36" />
-    <file relUrl="img/products/snacks/wrapovers-bananas/product.png" publishTime="08/08/2012 16:07:05" />
+    <file relUrl="Views/Shared/TermsAndConditions.cshtml" publishTime="08/14/2012 10:24:21" />
     <file relUrl="img/shared/todd-video.png" publishTime="08/09/2012 11:49:56" />
-    <file relUrl="bin/Purina.CanyonCreekRanch.Web.dll" publishTime="09/13/2012 15:52:12" />
+    <file relUrl="bin/Purina.CanyonCreekRanch.Web.dll" publishTime="09/19/2012 14:11:16" />
     <file relUrl="img/products/snacks/western-style-cowboy-steaks/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/dogs/dog-food-bag.jpg" publishTime="04/12/2012 11:40:13" />
     <file relUrl="img/shared/play-button.png" publishTime="08/08/2012 16:07:05" />
@@ -300,8 +300,8 @@
     <file relUrl="img/products/snacks/yam-good-with-chicken/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/shared/save-now-promo.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/shared/nav-our-story.png" publishTime="04/12/2012 11:40:33" />
-    <file relUrl="Views/Shared/_Header.cshtml" publishTime="09/13/2012 15:21:10" />
-    <file relUrl="Views/Shared/OurStoryFaq.cshtml" publishTime="09/13/2012 13:18:20" />
+    <file relUrl="Views/Shared/_Header.cshtml" publishTime="09/14/2012 10:05:35" />
+    <file relUrl="Views/Shared/OurStoryFaq.cshtml" publishTime="09/13/2012 16:35:13" />
     <file relUrl="img/products/dog-canned/salmon-brown-rice-recipe/product.png" publishTime="05/01/2012 23:12:10" />
     <file relUrl="img/products/snacks/chicken-breast-tenders/product-sm.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/snacks/big-blast-slims/product-sm.png" publishTime="08/08/2012 16:07:05" />
@@ -313,7 +313,7 @@
     <file relUrl="img/products/snacks/homestyle-ham/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/snacks/onward-glide/product-sm.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/shared/zucchini2.jpg" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="Web.config" publishTime="09/13/2012 16:20:28" />
+    <file relUrl="Web.config" publishTime="09/19/2012 14:11:17" />
     <file relUrl="img/products/cat-canned/cod-shrimp-recipe/breakdown.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="img/products/snacks/western-style-kabobs/product.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/snacks/snack-family-banner.jpg" publishTime="08/08/2012 16:07:05" />
@@ -321,25 +321,24 @@
     <file relUrl="img/sidebar/sidebar-promo.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="Content/themes/base/jquery.ui.all.css" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/cat-canned/chicken-brown-rice-recipe-for-kittens/breakdown.png" publishTime="08/08/2012 16:07:03" />
-    <file relUrl="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" publishTime="03/25/2012 22:21:21" />
+    <file relUrl="img/shared/nav-cats.png" publishTime="04/12/2012 11:40:31" />
     <file relUrl="img/cats/chicken-brown-rice-packaging.png" publishTime="04/12/2012 11:40:08" />
     <file relUrl="img/shared/nav-video-dog.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/story/callout-selected.png" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/products/cat-dry/chicken-brown-rice-for-kittens/product.png" publishTime="08/08/2012 16:07:03" />
     <file relUrl="img/shared/close.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/products/snacks/duck-tenders/product.png" publishTime="08/08/2012 16:07:05" />
-    <file relUrl="img/story/callout-active.png" publishTime="04/20/2012 21:55:33" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/shared/eggs2.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/shared/logo.png" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/products/dog-canned/turkey-barley-recipe-for-puppies/product.png" publishTime="08/09/2012 13:49:49" />
-    <file relUrl="img/products/snacks/turkey-strips/product-sm.png" publishTime="08/08/2012 16:07:05" />
+    <file relUrl="Views/Shared/Companions.cshtml" publishTime="09/17/2012 11:11:57" />
     <file relUrl="img/snacks/snack-tab-active.jpg" publishTime="08/08/2012 16:07:05" />
     <file relUrl="img/shared/peas.jpg" publishTime="08/09/2012 11:49:56" />
     <file relUrl="img/products/dog-canned/beef-brown-rice-recipe/product-lg.png" publishTime="08/09/2012 11:49:54" />
-    <file relUrl="bin/EntityFramework.xml" publishTime="03/25/2012 22:21:21" />
+    <file relUrl="bin/Purina.CanyonCreekRanch.Web.pdb" publishTime="09/19/2012 14:11:16" />
     <file relUrl="Content/themes/base/jquery.ui.core.css" publishTime="03/25/2012 22:21:21" />
-    <file relUrl="img/products/dog-dry/turkey-barley-mix-for-adults-7/product-lg.png" publishTime="08/09/2012 11:49:56" />
+    <file relUrl="img/story/callout-active.png" publishTime="04/20/2012 21:55:33" />
     <file relUrl="Content/themes/base/jquery.ui.datepicker.css" publishTime="03/25/2012 22:21:21" />
     <file relUrl="img/products/cat-canned/chicken-brown-rice-recipe-for-kittens/product-lg.png" publishTime="08/09/2012 11:49:54" />
   </publishProfile>

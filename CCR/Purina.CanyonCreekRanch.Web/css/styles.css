@@ -657,9 +657,9 @@ body {
 
 #header #nav ul li ul#snacks li.nav_box {
 	display:block;
-	height:36px;
+	height:48px;
 	margin-bottom:11px;
-	padding:8px 2px;
+	padding:5px 2px 12px 2px;
 	text-align:center;
 	width:169px
 }

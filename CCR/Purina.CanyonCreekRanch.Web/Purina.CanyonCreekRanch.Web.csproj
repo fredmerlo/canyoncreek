@@ -101,7 +101,6 @@
     <Content Include="css\styles.css" />
     <Content Include="css\videojs.css" />
     <Content Include="Global.asax" />
-    <Content Include="companion.html" />
     <Content Include="img\cats\cat-banner.jpg" />
     <Content Include="img\cats\chicken-brown-rice-ingredients.png" />
     <Content Include="img\cats\chicken-brown-rice-nutritionals.png" />
