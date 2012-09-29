@@ -7,7 +7,7 @@ using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Controllers
 {
-    //[Authorize(Roles = "CCRAdmin")]
+    [Authorize(Roles = "CCRAdmin")]
     public class PageContentController : Controller
     {
         private CCRDb db = new CCRDb();
