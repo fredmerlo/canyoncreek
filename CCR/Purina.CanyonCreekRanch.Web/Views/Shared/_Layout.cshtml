@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model Purina.CanyonCreekRanch.Common.Entities.PageContent
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -6,6 +7,10 @@
   @if (IsSectionDefined("Meta"))
   {
     @RenderSection("Meta", false)
+  }
+  else if (Model != null && !string.IsNullOrEmpty(Model.Meta))
+  {
+    @Html.Raw(Model.Meta)
   }
   else
   {

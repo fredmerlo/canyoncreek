@@ -5,12 +5,12 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-
+using Purina.CanyonCreekRanch.Common.Controllers;
 using Purina.CanyonCreekRanch.Common.Helpers;
 
 namespace Purina.CanyonCreekRanch.Web.Controllers
 {
-  public class HomeController : Controller
+  public class HomeController : BaseController
   {
     private void SetCouponData()
     {

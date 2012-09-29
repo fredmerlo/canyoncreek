@@ -12,6 +12,7 @@ namespace Purina.CanyonCreekRanch.Common.Entities
     public DbSet<Category> Categories { get; set; }
     public DbSet<BlogCategory> BlogCategories { get; set; }
     public DbSet<BlogEntry> BlogEntries { get; set; }
+    public DbSet<PageContent> PageContents { get; set; }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
     {

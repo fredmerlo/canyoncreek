@@ -9,6 +9,59 @@ using Purina.CanyonCreekRanch.Common.Entities;
 
 namespace Purina.CanyonCreekRanch.Admin.Models
 {
+  public class PageContentModel
+  {
+    public PageContentModel() { }
+    public PageContentModel(PageContent page)
+    {
+        if(page != null)
+        {
+          Id = page.Id;
+          Page = page.Page;
+          Meta = page.Meta;
+        }
+    }
+
+    public int Id { get; set; }
+    [Required]
+    public string Page { get; set; }
+    [AllowHtml]
+    [Required]
+    [DataType(DataType.MultilineText)]
+    public string Meta { get; set; }
+
+    public PageContent GetEntity()
+    {
+        return GetEntity(this);
+    }
+
+    public PageContent GetEntity(PageContentModel model)
+    {
+        PageContent entity = null;
+        if (model != null)
+        {
+            entity = new PageContent
+                         {
+                             Id = model.Id,
+                             Meta = model.Meta,
+                             Page = model.Page
+                         };
+        }
+
+        return entity;
+    }
+
+    public void MapEntity(PageContent entity)
+    {
+        if (entity != null)
+        {
+            entity.Id = Id;
+            entity.Meta = Meta;
+            entity.Page = Page;
+        }
+    }
+  }
+
   public class ProductModel
   {
     public ProductModel() { }
@@ -88,7 +141,7 @@ namespace Purina.CanyonCreekRanch.Admin.Models
       if (product != null)
       {
         entity = new Product();
-        entity.Active = Active;
+        entity.Active = product.Active;
         entity.Description = product.Description;
         entity.Id = product.Id;
         entity.FeedTable = product.FeedTable;

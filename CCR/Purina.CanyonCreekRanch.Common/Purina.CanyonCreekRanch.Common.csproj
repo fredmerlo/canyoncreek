@@ -49,10 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Entities\BlogCategory.cs" />
     <Compile Include="Entities\BlogEntry.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\CCRDb.cs" />
+    <Compile Include="Entities\PageContent.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Filters\RedirFilters.cs" />
     <Compile Include="Helpers\CouponEncode.cs" />
