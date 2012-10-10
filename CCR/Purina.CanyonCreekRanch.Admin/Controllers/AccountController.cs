@@ -23,7 +23,7 @@ namespace Purina.CanyonCreekRanch.Admin.Controllers
     {
       if (ModelState.IsValid)
       {
-        if (Membership.ValidateUser(model.UserName, model.Password) && Roles.IsUserInRole(model.UserName, "CCRTest"))
+        if (Membership.ValidateUser(model.UserName, model.Password) && Roles.IsUserInRole(model.UserName, "CCRAdmin"))
         {
           FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
 
