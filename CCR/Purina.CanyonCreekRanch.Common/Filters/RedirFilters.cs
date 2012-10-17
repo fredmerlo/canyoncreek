@@ -17,8 +17,8 @@ namespace Purina.CanyonCreekRanch.Common.Filters
       //if (filterContext.HttpContext.Request.Url.Host.Contains("canyoncreektreats.com")) {
       //  filterContext.HttpContext.Response.Redirect("http://canyoncreekranch.com/");
       //}
-      if (filterContext.HttpContext.Request.Url.Host == "betterwayproject.com" || filterContext.HttpContext.Request.Url.Host == "www.betterwayproject.com") {
-        filterContext.HttpContext.Response.Redirect("http://canyoncreekranch.com/betterwayproject");
+      if (filterContext.HttpContext.Request.Url.Host.ToLower().Contains("betterwayproject")) {
+        filterContext.HttpContext.Response.RedirectPermanent("http://canyoncreekranch.com/betterwayproject");
       }
       base.OnActionExecuting(filterContext);
     }
