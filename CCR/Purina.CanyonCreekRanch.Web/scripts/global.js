@@ -1,6 +1,6 @@
 /************************************************************************
  * Site: Canyon Creek Ranch
- * Author: Mesh
+ * Author: Departika
 *************************************************************************/
 $(document).ready(function() { /*$('.scroll').click(function(){
 		jQuery.scrollTo('.ingredient_dictionary', 800, {offset:-170});
@@ -47,6 +47,7 @@ $(function() {
 		items: '#our_story_slider, #home_slider'
 	}).navigator();
 });
+
 
 $(document).ready(function() { 
         $('#nav ul').superfish({ 
