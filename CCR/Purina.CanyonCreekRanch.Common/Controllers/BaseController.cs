@@ -13,7 +13,8 @@ namespace Purina.CanyonCreekRanch.Common.Controllers
 
         protected new ViewResult View(string viewName)
         {
-            var page = db.PageContents.ToList().FirstOrDefault(p => p.Page == Url.RequestContext.RouteData.Values["action"] as string);
+            var page = db.PageContents.ToList().FirstOrDefault(p => p.Page == Url.RequestContext.RouteData.Values["action"] as string) ??
+                       db.PageContents.ToList().FirstOrDefault(p => p.Page == Request.RawUrl.TrimStart(new[] {'/'}));
 
             return page == null ? base.View(viewName) : View(viewName, page);
         }

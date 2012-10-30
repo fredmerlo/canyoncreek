@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-
+using Purina.CanyonCreekRanch.Common.Controllers;
 using Purina.CanyonCreekRanch.Common.Entities;
 using Purina.CanyonCreekRanch.Common.Helpers;
 
 namespace Purina.CanyonCreekRanch.Web.Controllers
 {
-  public class CategoryController : Controller
+  public class CategoryController : BaseController
   {
     private CCRDb db = new CCRDb();
 
